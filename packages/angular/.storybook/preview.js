@@ -1,6 +1,3 @@
-import { setCompodocJson } from "@storybook/addon-docs/angular";
-import docJson from "../documentation.json";
-setCompodocJson(docJson);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -12,5 +9,19 @@ export const parameters = {
   },
   docs: {
     inlineStories: true,
+    lazyLoad: true,
+    url: 'docs/documentation.json'
+  },
+  console: {
+    disable: true,
+    filter: 'sp',
+  },
+  wrappers: {
+    disable: false,
+    default: 'None',
+    values: [
+      { name: 'None', value: '' },
+      { name: 'Container', value: 'app-container' }
+    ]
   }
 };
