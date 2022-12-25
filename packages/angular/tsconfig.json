@@ -1,21 +1,36 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
+    "rootDir": ".",
+    "outDir": "./dist/out-tsc",
+    "strict": false,
+    "sourceMap": true,
+    "declaration": false,
     "incremental": false,
-    "isolatedModules": true,
-    "jsx": "react",
-    "lib": ["es2017", "dom"],
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "rootDir": "./src",
     "skipLibCheck": true,
-    "target": "es5"
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es2017", "dom"],
+    "target": "es6",
+    "paths": {}
   },
-  "include": [
-    "src/**/*"
-  ],
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "compilationMode": "full",
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": false
+  },
+  "include": ["src/**/*"]
 }
