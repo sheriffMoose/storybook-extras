@@ -1,0 +1,64 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "cli": {
+        "packageManager": "yarn"
+    },
+    "newProjectRoot": ".",
+    "projects": {
+        "ng-app": {
+            "projectType": "application",
+            "root": ".",
+            "sourceRoot": "app",
+            "architect": {
+                "build": {
+                    "builder": "ngx-build-plus:browser",
+                    "options": {
+                        "outputPath": "dist",
+                        "index": "",
+                        "main": "app/main.ts",
+                        "tsConfig": "app/tsconfig.app.json",
+                        "extraWebpackConfig": "app/webpack.config.js",
+                        "aot": false,
+                        "buildOptimizer": false,
+                        "sourceMap": true,
+                        "namedChunks": true,
+                        "extractLicenses": true,
+                        "vendorChunk": true,
+                        "optimization": true,
+                        "commonChunk": false
+                    },
+                    "configurations": {
+                        "dev": {},
+                        "prod": {}
+                    },
+                    "defaultConfiguration": "prod"
+                },
+                "serve": {
+                    "builder": "ngx-build-plus:dev-server",
+                    "options": {
+                        "browserTarget": "ng-app:build",
+                        "watch": true
+                    },
+                    "configurations": {
+                        "dev": {
+                            "browserTarget": "ng-app:dev"
+                        },
+                        "prod": {
+                            "browserTarget": "ng-app:prod"
+                        }
+                    },
+                    "defaultConfiguration": "dev"
+                },
+                "start-storybook": {
+                    "builder": "@storybook/angular:start-storybook",
+                    "options": {
+                        "browserTarget": "ng-app:build",
+                        "compodoc": false,
+                        "compodocArgs": ["-e", "json", "-d", ".docs"]
+                    }
+                }
+            }
+        }
+    }
+}
