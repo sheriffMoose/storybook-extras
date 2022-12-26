@@ -1,6 +1,6 @@
-<div style="text-align:center;">
+<div align="center">
 
-<img src="logo.png" alt="logo" style="width:200px;"/>
+<img src="logo.png" alt="logo" width=200 />
 
 
 <h1>Storybook Angular Extras</h1>
