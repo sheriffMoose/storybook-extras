@@ -25,7 +25,7 @@
       "*.d.ts"
   ],
   "scripts": {
-      "postinstall": "node scripts/welcome.js",
+      "// postinstall": "node scripts/welcome.js",
       "clean": "rimraf ./dist",
       "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
       "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
