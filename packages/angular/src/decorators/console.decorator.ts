@@ -11,10 +11,16 @@ export const consoleDecorator = () => (storyFn, context) => {
         ['debug', 'log', 'info', 'warn', 'error'].forEach(name => {
             const method = console[name];
             console[name] = (...args) => {
-                const [app, title, subTitle, msg, ...data] = args;
+                const [argv0, ...argv] = args;
 
-                if (config.filter === app) {
-                    action(`[${name}] [${title}] [${subTitle}]`)({ msg, data });
+                const patterns = (config.patterns || []).map(p => new RegExp(p));
+                const isMatched = patterns.some(p => p.test(argv0));
+                if (isMatched) {
+                    if (config.omitFirst) {
+                        action(name)(...argv);
+                    } else {
+                        action(name)(...args);
+                    }
                 } else {
                     method(...args);
                 }
