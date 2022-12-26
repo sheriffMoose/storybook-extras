@@ -6,8 +6,17 @@
     "storybook",
     "angular",
     "services",
-    "source-code",
-    "storybook-addons"
+    "unit testing",
+    "docs",
+    "compodoc",
+    "wrapper",
+    "console",
+    "coverage",
+    "test runner",
+    "instrument",
+    "webpack",
+    "source code",
+    "storybook addons"
   ],
   "repository": {
     "type": "git",
