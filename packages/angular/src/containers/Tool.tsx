@@ -11,7 +11,7 @@ const DEFAULT_CONFIG: WrapperConfig = {
   values: [],
 };
 
-export const Tool: FC = memo(() => {
+export const Tool: FC<any> = memo(() => {
   const config = useParameter<WrapperConfig>(WRAPPERS_PARAM_KEY, DEFAULT_CONFIG);
 
   const [globals, updateGlobals] = useGlobals();
