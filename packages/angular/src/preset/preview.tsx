@@ -1,4 +1,4 @@
-import { CONSOLE_PARAM_KEY, DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from "src/constants";
+import { CONSOLE_PARAM_KEY, DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from "../constants";
 import { consoleDecorator, docsDecorator, ngModuleDecorator, wrapperDecorator } from "../decorators";
 
 export const decorators = [
