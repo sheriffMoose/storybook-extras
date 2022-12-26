@@ -27,7 +27,7 @@ Storybook addon that adds few features to the original Angular Storybook integra
 1. Install the addon:
 
 ```js
-yarn add @sheriffMoose/storybook-ngx -D
+yarn add @sheriffmoose/storybook-ngx -D
 ```
 
 2. Add the addon into your main.js
@@ -36,7 +36,7 @@ yarn add @sheriffMoose/storybook-ngx -D
 module.exports = {
     ...
     "addons": [
-        "@sheriffMoose/storybook-ngx",
+        "@sheriffmoose/storybook-ngx",
         ...
     ],
     ...
