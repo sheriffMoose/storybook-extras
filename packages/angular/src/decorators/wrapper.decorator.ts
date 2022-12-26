@@ -1,6 +1,6 @@
 import { componentWrapperDecorator } from '@storybook/angular';
-import { WRAPPERS_PARAM_KEY } from 'src/constants';
-import { getItemByName } from 'src/helpers';
+import { WRAPPERS_PARAM_KEY } from '../constants';
+import { getItemByName } from '../helpers';
 
 export const wrapperDecorator = () => (storyFn, context) => {
     const { globals, parameters } = context;
