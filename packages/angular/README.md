@@ -1,6 +1,13 @@
-<h1>@sheriffMoose/storybook-ngx</h1>
+<div style="text-align:center;">
+
+<img src="logo.png" alt="logo" style="width:200px;"/>
+
+
+<h1>Storybook Angular Extras</h1>
 
 Storybook addon that adds few features to the original Angular Storybook integration.
+
+</div>
 
 <h2>Table of Contents</h2>
 
