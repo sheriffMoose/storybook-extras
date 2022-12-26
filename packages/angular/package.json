@@ -1,6 +1,6 @@
 {
   "name": "@sheriffmoose/storybook-ngx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Storybook addon to add extra configurations for Angular applications.",
   "keywords": [
     "storybook",
