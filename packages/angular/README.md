@@ -7,6 +7,11 @@
 
 Storybook addon that adds few features to the original Angular Storybook integration.
 
+  
+[![Release](https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml/badge.svg)](https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml)
+[![npm version](https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx.svg)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
+
+[![NPM](https://nodei.co/npm/@sheriffmoose/storybook-ngx.png)](https://nodei.co/npm/@sheriffmoose/storybook-ngx/)
 </div>
 
 <h2>Table of Contents</h2>
