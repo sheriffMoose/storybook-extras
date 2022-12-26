@@ -4,8 +4,9 @@ export interface GlobalState {
 }
 
 export interface ConsoleConfig {
-    disable?: boolean;
-    filter?: string;
+    enabled?: boolean;
+    patterns?: RegExp[];
+    omitFirst?: boolean;
 }
 
 export interface DocsConfig {
@@ -27,13 +28,7 @@ export interface SelectorItem {
 }
 
 export interface WrapperConfig {
+    enabled?: boolean;
     default?: string;
-    disable?: boolean;
     values: Wrapper[];
-}
-
-export interface ngExtrasParameter {
-    console?: ConsoleConfig;
-    docs?: DocsConfig;
-    wrapper?: WrapperConfig;
 }

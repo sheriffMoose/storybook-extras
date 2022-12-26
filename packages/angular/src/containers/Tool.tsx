@@ -2,12 +2,12 @@ import { useGlobals, useParameter } from "@storybook/api";
 import { IconButton, Icons, TooltipLinkList, WithTooltip } from "@storybook/components";
 import React, { FC, Fragment, memo, useCallback, useMemo } from "react";
 import { WRAPPERS_PARAM_KEY } from "../constants";
-import { getDisplayedItems, getValueByName } from '../helpers';
+import { getDisplayedItems, getItemByName } from '../helpers';
 import { WrapperConfig } from "../types";
 
 const DEFAULT_CONFIG: WrapperConfig = {
+  enabled: false,
   default: null,
-  disable: true,
   values: [],
 };
 
@@ -18,7 +18,7 @@ export const Tool: FC = memo(() => {
   const globalValue = globals[WRAPPERS_PARAM_KEY]?.value;
 
   const selectedValue = useMemo(() => {
-    return getValueByName(globalValue, config.values, config.default);
+    return getItemByName(globalValue, config.values, config.default).value;
   }, [config, globalValue]);
 
   const onChange = useCallback(
@@ -28,7 +28,7 @@ export const Tool: FC = memo(() => {
     [config, globals, updateGlobals]
   );
 
-  if (config.disable) {
+  if (config.enabled === false) {
     return null;
   }
 
