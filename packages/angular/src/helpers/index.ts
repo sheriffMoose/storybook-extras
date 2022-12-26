@@ -38,23 +38,9 @@ export const getDisplayedItems = memoize(10)((
 });
 
 
-export const getValueByName = (
-    selectedValue: string,
-    items: any[] = [],
-    defaultName: string
-): string => {
-    if (selectedValue === 'None') {
-        return '';
-    }
-
-    if (items.find((item) => item.value === selectedValue)) {
-        return selectedValue;
-    }
-
-    const defaultValue = items.find((background) => background.name === defaultName);
-    if (defaultValue) {
-        return defaultValue.value;
-    }
-
-    return '';
+export const getItemByName = (selectedValue: string, items: any[] = [], defaultName: string) => {
+    const defaultItem = items.find((item) => item.name === defaultName);
+    const selectedItem = items.find((item) => item.value === selectedValue);
+    
+    return selectedItem || defaultItem || { value: '' };
 };
