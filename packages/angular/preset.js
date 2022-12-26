@@ -1,12 +1,12 @@
-function previewAnnotations(entry = []) {
-  return [...entry, require.resolve("./dist/esm/preset/preview")];
-}
 
-function managerEntries(entry = []) {
-  return [...entry, require.resolve("./dist/esm/preset/manager")];
-}
+const preview = require.resolve("./dist/esm/preset/preview");
+const manager = require.resolve("./dist/esm/preset/manager");
+
+const presetWebpack = require('./preset.webpack');
+
 
 module.exports = {
-  managerEntries,
-  previewAnnotations,
+  managerEntries: (entry = []) => [...entry, manager],
+  previewAnnotations: (entry = []) => [...entry, preview],
+  ...presetWebpack
 };

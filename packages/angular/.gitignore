@@ -7,3 +7,4 @@ build-storybook.log
 .angular/
 .docs/
 package-lock.json
+coverage
