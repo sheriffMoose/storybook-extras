@@ -6,5 +6,4 @@ build-storybook.log
 .env
 .angular/
 .docs/
-package-lock.json
 coverage
