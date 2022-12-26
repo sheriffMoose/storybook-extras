@@ -1,118 +1,220 @@
-<!-- README START -->
+<h1>@sheriffMoose/storybook-ngx</h1>
 
-# Storybook Addon Kit
+Storybook addon that adds few features to the original Angular Storybook integration.
 
-Simplify the creation of Storybook addons
+<h2>Table of Contents</h2>
 
-- 📝 Live-editing in development
-- ⚛️ React/JSX support
-- 📦 Transpiling and bundling with Babel
-- 🏷 Plugin metadata
-- 🚢 Release management with [Auto](https://github.com/intuit/auto)
-- 🧺 Boilerplate and sample code
-- 🛄 ESM support
-- 🛂 TypeScript by default with option to eject to JS
+- [Getting started](#getting-started)
+- [Features](#features)
+  - [Test Runner Coverage Instrumentation](#test-runner-coverage-instrumentation)
+  - [Angular Services Unit Testing](#angular-services-unit-testing)
+  - [Documentation Lazy Loading](#documentation-lazy-loading)
+  - [Console Logs](#console-logs)
+  - [Wrappers Selector](#wrappers-selector)
+    - [Configuration](#configuration)
+- [Credits](#credits)
+- [Roadmap](#roadmap)
 
-## Getting Started
+## Getting started
 
-Click the **Use this template** button to get started.
+1. Install the addon:
 
-![](https://user-images.githubusercontent.com/321738/125058439-8d9ef880-e0aa-11eb-9211-e6d7be812959.gif)
-
-Clone your repository and install dependencies.
-
-```sh
-yarn
+```js
+yarn add @sheriffMoose/storybook-ngx -D
 ```
 
-<!-- README END -->
+2. Add the addon into your main.js
 
-### Development scripts
-
-- `yarn start` runs babel in watch mode and starts Storybook
-- `yarn build` build and package your addon code
-
-### Switch from TypeScript to JavaScript
-
-Don't want to use TypeScript? We offer a handy eject command: `yarn eject-ts`
-
-This will convert all code to JS. It is a destructive process, so we recommended running this before you start writing any code.
-
-## What's included?
-
-![Demo](https://user-images.githubusercontent.com/42671/107857205-e7044380-6dfa-11eb-8718-ad02e3ba1a3f.gif)
-
-The addon code lives in `src`. It demonstrates all core addon related concepts. The three [UI paradigms](https://storybook.js.org/docs/react/addons/addon-types#ui-based-addons)
-
-- `src/Tool.js`
-- `src/Panel.js`
-- `src/Tab.js`
-
-Which, along with the addon itself, are registered in `src/preset/manager.js`.
-
-Managing State and interacting with a story:
-
-- `src/withGlobals.js` & `src/Tool.js` demonstrates how to use `useGlobals` to manage global state and modify the contents of a Story.
-- `src/withRoundTrip.js` & `src/Panel.js` demonstrates two-way communication using channels.
-- `src/Tab.js` demonstrates how to use `useParameter` to access the current story's parameters.
-
-Your addon might use one or more of these patterns. Feel free to delete unused code. Update `src/preset/manager.js` and `src/preset/preview.js` accordingly.
-
-Lastly, configure you addon name in `src/constants.js`.
-
-### Metadata
-
-Storybook addons are listed in the [catalog](https://storybook.js.org/addons) and distributed via npm. The catalog is populated by querying npm's registry for Storybook-specific metadata in `package.json`. This project has been configured with sample data. Learn more about available options in the [Addon metadata docs](https://storybook.js.org/docs/react/addons/addon-catalog#addon-metadata).
-
-## Release Management
-
-### Setup
-
-This project is configured to use [auto](https://github.com/intuit/auto) for release management. It generates a changelog and pushes it to both GitHub and npm. Therefore, you need to configure access to both:
-
-- [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens) Create a token with both _Read and Publish_ permissions.
-- [`GH_TOKEN`](https://github.com/settings/tokens) Create a token with the `repo` scope.
-
-Then open your `package.json` and edit the following fields:
-
-- `name`
-- `author`
-- `repository`
-
-#### Local
-
-To use `auto` locally create a `.env` file at the root of your project and add your tokens to it:
-
-```bash
-GH_TOKEN=<value you just got from GitHub>
-NPM_TOKEN=<value you just got from npm>
+```js
+module.exports = {
+    ...
+    "addons": [
+        "@sheriffMoose/storybook-ngx",
+        ...
+    ],
+    ...
+}
 ```
 
-Lastly, **create labels on GitHub**. You’ll use these labels in the future when making changes to the package.
+3. Refer to the sections below for the documentation of the built-in features.
 
-```bash
-npx auto create-labels
+## Features
+
+-   ⚡️ Zero config setup
+-   📚 Storybook v7 Implementation
+-   📔 Coverage Instrumentation for Test-Runner
+-   🧪 Auto injector for Angular services
+-   🦥 Lazy loading documentation
+-   💻 Console Logs Panel
+-   🌯 Toolbar setup for Story Wrappers
+
+### Test Runner Coverage Instrumentation
+
+Credits to `JS Devtools` for their amazing [`coverage istanbul loader`](https://jstools.dev/coverage-istanbul-loader). This addon simply imports `@jsdevtools/coverage-istanbul-loader` into webpack configuration to enable the coverage instrumentation.
+
+Read more about the coverage instrumentation in the official Test Runner documentation [here](https://github.com/storybookjs/test-runner#setting-up-code-coverage).
+
+Simply running `test-storybook --coverage` will show you test results coverage in the terminal and also will save the coverage results into coverage/storybook.
+
+### Angular Services Unit Testing
+
+-   This feature is for developers who want their testing to all run in the same place.
+-   Particulary this is helpful when you want to move business logic from components into services.
+-   But you still want to test it through Storybook.
+-   This feature does not require any setup. It relies on the official `@storybook/angular` implementation.
+-   It simply injects the service into an `APP_INITIALIZER` which runs before the `Angular` application starts.
+-   When the initializer runs, it puts the service instance into `parameters.providers` which you can retrieve in the play function like so:
+
+```jsx
+const meta: Meta = {
+    title: 'Services/AppService',
+    moduleMetadata: {
+        imports: [AppModule, CommonModule],
+        providers: [AppService],
+    },
+};
+
+export default meta;
+
+export const Primary: StoryObj = {
+    play: async ({ parameters: { providers } }) => {
+        const appService: AppService = providers.AppService;
+
+        expect(appService).toBeTruthy();
+    },
+};
 ```
 
-If you check on GitHub, you’ll now see a set of labels that `auto` would like you to use. Use these to tag future pull requests.
+### Documentation Lazy Loading
 
-#### GitHub Actions
+-   This feature uses `node-fetch` to load the `documentation.json` file during runtime, specifically in the preview iframe before the load of each story.
+-   This is very helpful if you are doing active development and your documentation is being updated regularly.
+-   This is also helpful if your application is already published along with its documentation and you need to load that remotely served documentation.
 
-This template comes with GitHub actions already set up to publish your addon anytime someone pushes to your repository.
+Here is a simple example of the first scenario:
 
-Go to `Settings > Secrets`, click `New repository secret`, and add your `NPM_TOKEN`.
+-   execute compodoc into a specific directory
+    ```
+    compodoc -e json -d dist/docs
+    ```
+-   Make sure to include static dir into your `main.js` file like so
 
-### Creating a release
-
-To create a release locally you can run the following command, otherwise the GitHub action will make the release for you.
-
-```sh
-yarn release
+```jsx
+module.exports = {
+    staticDirs: [{ from: '../dist/docs', to: '/docs' }],
+};
 ```
 
-That will:
+-   Next, enable the documentation lazy loading in the `preview.js` file like so:
 
-- Build and package the addon code
-- Bump the version
-- Push a release to GitHub and npm
-- Push a changelog to GitHub
+```jsx
+export const parameters = {
+    ...
+    docs: {
+        inlineStories: true,
+        ...
+        lazyLoad: true,
+        url: 'docs/documentation.json'
+    }
+}
+```
+
+The url property here can be a full url like `http://example.com/storybook/docs/documentation.json` or a relative path to the current storybook instance like `docs/documentation.json`.
+
+Notice in the example above, we are serving the `dist/docs` directory as `http://localhost:6006/docs` and when the lazy loading happens it will retrieve `docs/documentation.json` from `http://localhost:6006/docs/documentation.json`
+
+### Console Logs
+
+-   This feature uses the `Actions` panel from `@storybook/addon-actions` to display the console output.
+-   This is helpful if you need to focus on the console output of the application.
+-   To enable the feature use the parameters in `preview.js` like so:
+
+```jsx
+export const parameters = {
+    console: {
+        enabled: true,
+        patterns: [/^dev$/],
+        omitFirst: true,
+    },
+};
+```
+
+Currently, the patterns property is used to match the first argument of the `console` methods `debug`, `log`, `info`, `warn`& `error`. This allows developers to use special context for their app logs. For example: `console.log('dev', data);` will be matched using the `/^dev$/` pattern, and will trigger an action that shows up in the `Actions` panel. You can use the `omitFirst` property to make sure the `dev` item does not show, only other arguments will show up.
+
+### Wrappers Selector
+
+-   This feature uses `componentWrapperDecorator` from the official `@storybook/angular` to render wrapper elements dynamically around stories.
+-   This simply reads a list of pre-defined wrapper elements from the global parameters or each individual story parameters.
+-   This allows you to change the wrapper element during runtime instead of having static decorator all the time.
+-   This is very helpful specially if you want to see how your components render inside a root component with header and footer, or just simply inside a specific parent element.
+
+#### Configuration
+
+-   This toolbar menu works very similar to the official `@storybook/addon-backgrounds` addon.
+-   The configuration looks something like this:
+
+In `preview.js` or `preview.ts`:
+
+```tsx
+export const parameters = {
+    wrappers: {
+        enabled: true,
+        default: 'None',
+        values: [
+            { name: 'None', value: '' },
+            { name: 'Container', value: 'app-container' },
+            { name: 'Root', value: 'app-root' },
+        ],
+    },
+};
+```
+
+In a story file like `button.stories.ts`:
+
+```tsx
+import { type StoryObj, type Meta } from '@storybook/angular';
+import Button from './button.component';
+
+const meta: Meta<Button> = {
+    title: 'Example/Button',
+    component: Button,
+    parameters: {
+        wrappers: {
+            default: 'None',
+            values: [
+                { name: 'None', value: '' },
+                {
+                    name: 'Button Container',
+                    value: 'btn-container',
+                    options: {
+                        class: 'small',
+                        style: 'padding:5px;',
+                    },
+                },
+                { name: 'Container', value: 'app-container' },
+                { name: 'Root', value: 'app-root' },
+            ],
+        },
+    },
+};
+
+export default meta;
+```
+
+The wrapper item can also contain an `options` property which will be translated into HTML attributes for the wrapper. For example; the configuration above will render the following if `Button Container` is selected:
+
+```html
+<btn-container class="small" style="padding:5px;"></btn-container>
+```
+
+## Credits
+
+-   Thanks for `JS Devtools` for their amazing `coverage istanbul loader`.
+-   Thanks for `@storybook/addon-backgrounds` for the inspiration.
+-   This would not have been possible without the official `@storybook/angular` framework.
+-   Thanks for the team behind the official `Storybook Addon Kit` for the amazing work they put into this kit that was very helpful for generating this addon.
+
+## Roadmap
+
+-   Add better filteration mechanism for the console logs.
+-   Add new tab to display source code of components and their dependencies.
