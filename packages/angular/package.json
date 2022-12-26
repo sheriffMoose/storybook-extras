@@ -2,6 +2,23 @@
   "name": "@sheriffmoose/storybook-ngx",
   "version": "1.0.8",
   "description": "Storybook addon to add extra configurations for Angular applications.",
+  "author": "Mostafa Sherif <mosherif87@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheriffMoose/storybook-ngx"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "storybook": {
+    "displayName": "Angular Extras",
+    "supportedFrameworks": [
+      "angular"
+    ],
+    "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-ngx/main/logo.png"
+  },
   "keywords": [
     "storybook",
     "angular",
@@ -18,12 +35,6 @@
     "source code",
     "storybook addons"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sheriffMoose/storybook-ngx"
-  },
-  "author": "Mostafa Sherif <mosherif87@gmail.com>",
-  "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/ts/index.d.ts",
@@ -127,16 +138,5 @@
     "react-dom": {
       "optional": true
     }
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "storybook": {
-    "displayName": "Angular Extras",
-    "supportedFrameworks": [
-      "angular"
-    ],
-    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }
 }
