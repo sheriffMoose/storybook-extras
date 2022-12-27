@@ -1,3 +1,18 @@
+# v1.0.12 (Tue Dec 27 2022)
+
+#### ⚠️ Pushed to `main`
+
+- fix build ([@sheriffMoose](https://github.com/sheriffMoose))
+- Merge branch 'main' of https://github.com/sheriffMoose/storybook-ngx into main ([@sheriffMoose](https://github.com/sheriffMoose))
+- downgrade storybook version ([@sheriffMoose](https://github.com/sheriffMoose))
+- add angular badge ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.11 (Tue Dec 27 2022)
 
 #### ⚠️ Pushed to `main`
