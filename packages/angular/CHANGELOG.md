@@ -1,3 +1,15 @@
+# v1.0.15 (Tue Dec 27 2022)
+
+#### ⚠️ Pushed to `main`
+
+- update readme for service injection example ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.14 (Tue Dec 27 2022)
 
 #### ⚠️ Pushed to `main`
