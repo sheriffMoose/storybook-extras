@@ -10,9 +10,11 @@ Storybook addon that adds few features to the original Angular Storybook integra
   
 [![Release](https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=)](https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml)
 ![npm version](https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&color=CB3837&label=)
+![angular version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&logoColor=white&color=DD0031&label=)
 ![storybook version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&color=FF4785&label=)
-![](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&color=3178C6&label=)
-![NPM](https://img.shields.io/npm/l/@sheriffmoose/storybook-ngx)
+
+![typescript version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&color=3178C6&label=)
+![License](https://img.shields.io/npm/l/@sheriffmoose/storybook-ngx)
 
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/@sheriffmoose/storybook-ngx?logo=libraries.io)
 ![Snyk Vulnerabilities for npm scoped package](https://img.shields.io/snyk/vulnerabilities/npm/@sheriffmoose/storybook-ngx?logo=snyk)
