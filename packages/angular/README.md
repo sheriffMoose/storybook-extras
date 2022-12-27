@@ -19,6 +19,7 @@ Storybook addon that adds few features to the original Angular Storybook integra
 
 
 [![NPM](https://nodei.co/npm/@sheriffmoose/storybook-ngx.png)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
+
 </div>
 
 <h2>Table of Contents</h2>
@@ -87,10 +88,12 @@ Simply running `test-storybook --coverage` will show you test results coverage i
 ```jsx
 const meta: Meta = {
     title: 'Services/AppService',
-    moduleMetadata: {
-        imports: [AppModule, CommonModule],
-        providers: [AppService],
-    },
+    decorators: [
+        moduleMetadata({
+            imports: [AppModule, CommonModule],
+            providers: [AppService],
+        }),
+    ]
 };
 
 export default meta;
