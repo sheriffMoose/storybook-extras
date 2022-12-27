@@ -1,3 +1,19 @@
+# v1.0.13 (Tue Dec 27 2022)
+
+#### ⚠️ Pushed to `main`
+
+- update readme badges ([@sheriffMoose](https://github.com/sheriffMoose))
+- update typescript version ([@sheriffMoose](https://github.com/sheriffMoose))
+- remove yarn.lock ([@sheriffMoose](https://github.com/sheriffMoose))
+- remove package-lock.json ([@sheriffMoose](https://github.com/sheriffMoose))
+- re-update storybook to v7 ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.12 (Tue Dec 27 2022)
 
 #### ⚠️ Pushed to `main`
