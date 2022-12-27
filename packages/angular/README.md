@@ -16,8 +16,8 @@ Storybook addon that adds few features to the original Angular Storybook integra
 ![typescript version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&color=3178C6&label=)
 ![License](https://img.shields.io/npm/l/@sheriffmoose/storybook-ngx)
 
-![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/@sheriffmoose/storybook-ngx?logo=libraries.io)
-![Snyk Vulnerabilities for npm scoped package](https://img.shields.io/snyk/vulnerabilities/npm/@sheriffmoose/storybook-ngx?logo=snyk)
+[![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/@sheriffmoose/storybook-ngx?color=337AB7&logo=libraries.io&logoColor=white&label=rank)](https://libraries.io/npm/@sheriffmoose%2Fstorybook-ngx)
+[![Snyk Vulnerabilities for npm scoped package](https://img.shields.io/snyk/vulnerabilities/npm/@sheriffmoose/storybook-ngx?logo=snyk)](https://snyk.io/advisor/npm-package/@sheriffmoose/storybook-ngx)
 
 
 [![NPM](https://nodei.co/npm/@sheriffmoose/storybook-ngx.png)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
