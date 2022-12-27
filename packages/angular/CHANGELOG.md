@@ -1,3 +1,17 @@
+# v1.0.11 (Tue Dec 27 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/sheriffMoose/storybook-ngx into main ([@sheriffMoose](https://github.com/sheriffMoose))
+- update to storybook 7.0.0-beta.15 ([@sheriffMoose](https://github.com/sheriffMoose))
+- add README.md badges ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.10 (Mon Dec 26 2022)
 
 #### ⚠️ Pushed to `main`
