@@ -9,12 +9,13 @@ Storybook addon that adds few features to the original Angular Storybook integra
 
   
 [![Release](https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=)](https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml)
-![npm version](https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&color=CB3837&label=)
-![angular version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&logoColor=white&color=DD0031&label=)
-![storybook version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&color=FF4785&label=)
+[![License](https://img.shields.io/github/license/sheriffMoose/storybook-ngx)](https://github.com/sheriffMoose/storybook-ngx/blob/main/LICENSE)
 
-![typescript version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&color=3178C6&label=)
-![License](https://img.shields.io/npm/l/@sheriffmoose/storybook-ngx)
+[![npm version](https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&color=CB3837&label=)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
+[![angular version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&logoColor=white&color=DD0031&label=)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
+[![storybook version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&color=FF4785&label=)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
+[![typescript version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&color=3178C6&label=)
+](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
 
 [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/@sheriffmoose/storybook-ngx?color=337AB7&logo=libraries.io&logoColor=white&label=rank)](https://libraries.io/npm/@sheriffmoose%2Fstorybook-ngx)
 [![Snyk Vulnerabilities for npm scoped package](https://img.shields.io/snyk/vulnerabilities/npm/@sheriffmoose/storybook-ngx?logo=snyk)](https://snyk.io/advisor/npm-package/@sheriffmoose/storybook-ngx)
