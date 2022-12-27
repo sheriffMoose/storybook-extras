@@ -62,7 +62,7 @@ module.exports = {
 ## Features
 
 -   ⚡️ Zero config setup
--   📚 Storybook v7 Implementation
+-   📚 Supports latest Storybook Implementation
 -   📔 Coverage Instrumentation for Test-Runner
 -   🧪 Auto injector for Angular services
 -   🦥 Lazy loading documentation
