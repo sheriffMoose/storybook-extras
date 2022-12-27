@@ -1,3 +1,15 @@
+# v1.0.10 (Mon Dec 26 2022)
+
+#### ⚠️ Pushed to `main`
+
+- fix imports from src/ ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.9 (Mon Dec 26 2022)
 
 #### ⚠️ Pushed to `main`
