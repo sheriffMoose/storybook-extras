@@ -1,9 +1,12 @@
 import { APP_INITIALIZER } from '@angular/core';
-import { moduleMetadata } from '@storybook/angular';
 
 export const ngModuleDecorator = metadata => (storyFn, context) => {
-    const story = moduleMetadata(metadata)(storyFn, context);
-    const deps = [].concat(metadata.providers || [], context.parameters.providers || []);
+    const story = storyFn(context);
+    const deps = [].concat(
+        metadata.providers || [],
+        context.parameters.providers || [],
+        story?.moduleMetadata?.providers || []
+    );
 
     if (deps.length) {
         story.moduleMetadata.providers.push({
