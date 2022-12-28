@@ -1,10 +1,17 @@
-import { type StoryObj, type Meta } from "@storybook/angular";
+import { type StoryObj, type Meta, moduleMetadata } from "@storybook/angular";
 import Button from "./button.component";
+import { ButtonService } from "./button.service";
 
 const meta: Meta<Button> = {
   title: "Example/Button",
   component: Button,
   tags: ["docsPage"],
+  decorators: [
+    moduleMetadata({
+      declarations: [Button],
+      providers: [ButtonService]
+    })
+  ],
   argTypes: {
     backgroundColor: { control: "color" },
   },
