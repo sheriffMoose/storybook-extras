@@ -1,25 +1,34 @@
-<div align="center">
-
-<img src="logo.png" alt="logo" width=200 />
-
-
-<h1>Storybook Angular Extras</h1>
-
-Storybook addon that adds few features to the original Angular Storybook integration.
-
-  
-[![Release](https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=release)](https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml)
-[![License](https://img.shields.io/github/license/sheriffMoose/storybook-ngx?logo=github)](https://github.com/sheriffMoose/storybook-ngx/blob/main/LICENSE)
-
-[![npm version](https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
-[![angular version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label=)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
-[![storybook version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
-[![typescript version](https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label=)
-](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
-
-
-[![NPM](https://nodei.co/npm/@sheriffmoose/storybook-ngx.png)](https://npmjs.org/package/@sheriffmoose/storybook-ngx)
-
+<div style="text-align:center;" align="center">
+    <img src="logo.png" alt="logo" width=200 />
+    <h1>Storybook Angular Extras</h1>
+    <p>Storybook addon that adds few features to the original Angular Storybook integration.</p>
+    <p>
+        <a href="https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml">
+            <img src="https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=release"/>
+        </a>
+        <a href="https://github.com/sheriffMoose/storybook-ngx/blob/main/LICENSE">
+            <img src="https://img.shields.io/github/license/sheriffMoose/storybook-ngx?logo=github"/>
+        </a>
+    </p>
+    <p>
+        <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
+            <img src="https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label="/>
+        </a>
+        <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
+            <img src="https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label="/>
+        </a>
+        <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
+            <img src="https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label="/>
+        </a>
+        <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
+            <img src="https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label="/>
+        </a>
+    </p>
+    <p>
+        <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
+            <img src="https://nodei.co/npm/@sheriffmoose/storybook-ngx.png"/>
+        </a>
+    </p>
 </div>
 
 <h2>Table of Contents</h2>
@@ -29,6 +38,7 @@ Storybook addon that adds few features to the original Angular Storybook integra
   - [Test Runner Coverage Instrumentation](#test-runner-coverage-instrumentation)
   - [Angular Services Unit Testing](#angular-services-unit-testing)
   - [Documentation Lazy Loading](#documentation-lazy-loading)
+  - [Source Code](#source-code)
   - [Console Logs](#console-logs)
   - [Wrappers Selector](#wrappers-selector)
     - [Configuration](#configuration)
@@ -65,6 +75,7 @@ module.exports = {
 -   📔 Coverage Instrumentation for Test-Runner
 -   🧪 Auto injector for Angular services
 -   🦥 Lazy loading documentation
+-   💬 Source code display
 -   💻 Console Logs Panel
 -   🌯 Toolbar setup for Story Wrappers
 
@@ -144,6 +155,15 @@ export const parameters = {
 The url property here can be a full url like `http://example.com/storybook/docs/documentation.json` or a relative path to the current storybook instance like `docs/documentation.json`.
 
 Notice in the example above, we are serving the `dist/docs` directory as `http://localhost:6006/docs` and when the lazy loading happens it will retrieve `docs/documentation.json` from `http://localhost:6006/docs/documentation.json`
+
+You can also provide `data` property to be something like `require('../.docs/documentation.json')`, this way you don't need to call `setCompodocJson` method, it will be called automatically on your behalf, and the docs will be stored in memory for later usage.
+
+### Source Code
+- This feature relies on the documentation loaded previously from `compodoc` to display the source code of the components and/or services that exists in the `moduleMetadata`.
+- You don't need to re-declare your main component in the `declarations` section of `moduleMetadata`, it will be added directly.
+- Basically, the addon will retrieve the source code of any class under `declarations` or `providers`, along with templates & styles for the components if they exist.
+- No setup is needed for this feature, it is enabled by default.
+- Future releases will give the ability to disable it.
 
 ### Console Logs
 
@@ -235,8 +255,3 @@ The wrapper item can also contain an `options` property which will be translated
 -   Thanks for `@storybook/addon-backgrounds` for the inspiration.
 -   This would not have been possible without the official `@storybook/angular` framework.
 -   Thanks for the team behind the official `Storybook Addon Kit` for the amazing work they put into this kit that was very helpful for generating this addon.
-
-## Roadmap
-
--   Add better filteration mechanism for the console logs.
--   Add new tab to display source code of components and their dependencies.
