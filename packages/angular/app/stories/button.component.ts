@@ -1,16 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ButtonService } from './button.service';
 
 @Component({
   selector: 'storybook-button',
-  template: ` <button
-    type="button"
-    (click)="onClick.emit($event)"
-    [ngClass]="classes"
-    [ngStyle]="{ 'background-color': backgroundColor }"
-  >
-    {{ label }}
-  </button>`,
-  styleUrls: ['./button.css'],
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss'],
+  providers: [ButtonService],
 })
 export default class ButtonComponent {
   /**
@@ -44,6 +39,8 @@ export default class ButtonComponent {
    */
   @Output()
   onClick = new EventEmitter<Event>();
+
+  constructor(private service: ButtonService) { }
 
   public get classes(): string[] {
     const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';

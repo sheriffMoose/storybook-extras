@@ -1,11 +1,12 @@
 import { CONSOLE_PARAM_KEY, DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from "../constants";
-import { consoleDecorator, docsDecorator, ngModuleDecorator, wrapperDecorator } from "../decorators";
+import { consoleDecorator, docsDecorator, ngModuleDecorator, sourceDecorator, wrapperDecorator } from "../decorators";
 
 export const decorators = [
   consoleDecorator(),
   docsDecorator(),
   ngModuleDecorator({}),
   wrapperDecorator(),
+  sourceDecorator()
 ];
 
 export const parameters = {

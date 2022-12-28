@@ -3,16 +3,16 @@ import { IconButton, Icons, TooltipLinkList, WithTooltip } from "@storybook/comp
 import React, { FC, Fragment, memo, useCallback, useMemo } from "react";
 import { WRAPPERS_PARAM_KEY } from "../constants";
 import { getDisplayedItems, getItemByName } from '../helpers';
-import { WrapperConfig } from "../types";
+import { WrappersConfig } from "../types";
 
-const DEFAULT_CONFIG: WrapperConfig = {
+const DEFAULT_CONFIG: WrappersConfig = {
   enabled: false,
   default: null,
   values: [],
 };
 
-export const Tool: FC<any> = memo(() => {
-  const config = useParameter<WrapperConfig>(WRAPPERS_PARAM_KEY, DEFAULT_CONFIG);
+export const WrapperSelector: FC<any> = memo(() => {
+  const config = useParameter<WrappersConfig>(WRAPPERS_PARAM_KEY, DEFAULT_CONFIG);
 
   const [globals, updateGlobals] = useGlobals();
   const globalValue = globals[WRAPPERS_PARAM_KEY]?.value;

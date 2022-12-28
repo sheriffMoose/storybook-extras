@@ -1,40 +1,35 @@
+import React from 'react';
 import { addons, types } from "@storybook/addons";
+import { useAddonState, useChannel } from "@storybook/api";
+import { AddonPanel } from "@storybook/components";
+import { SourceCode, WrapperSelector } from "../components";
+import { ADDON_ID, EVENTS, PANEL_ID, TOOL_ID } from "../constants";
 
-import {
-  ADDON_ID,
-  TOOL_ID,
-  PANEL_ID,
-  TAB_ID,
-} from "../constants";
-import { Tool } from "../containers/Tool";
-import { Panel } from "../containers/Panel";
-import { Tab } from "../containers/Tab";
+const DEFAULT_STATE = { docs: null, components: [], services: [] };
 
-addons.register(ADDON_ID, () => {
+addons.register(ADDON_ID, (api) => {
   addons.add(TOOL_ID, {
     title: "Wrappers",
     type: types.TOOL,
     match: ({ viewMode }) => !!(viewMode && viewMode.match(/^(story|docs)$/)),
-    render: Tool,
+    render: WrapperSelector,
   });
 
-  // // Register the panel
-  // addons.add(PANEL_ID, {
-  //   type: types.PANEL,
-  //   title: "My addon",
-  //   match: ({ viewMode }) => viewMode === "story",
-  //   render: Panel,
-  // });
+  addons.add(PANEL_ID, {
+    type: types.PANEL,
+    title: "Source Code",
+    match: ({ viewMode }) => viewMode === "story",
+    render: ({ active, key }) => {
+      const [state, setState] = useAddonState(ADDON_ID, DEFAULT_STATE);
+      useChannel({ [EVENTS.SET_CONTEXT]: context => setState(context) });
 
-  // // Register the tab
-  // addons.add(TAB_ID, {
-  //   type: types.TAB,
-  //   title: "My addon",
-  //   //👇 Checks the current route for the story
-  //   route: ({ storyId }) => `/myaddon/${storyId}`,
-  //   //👇 Shows the Tab UI element in myaddon view mode
-  //   match: ({ viewMode }) => viewMode === "myaddon",
-  //   render: Tab,
-  // });
+      return (
+        <AddonPanel key={key} active={active}>
+          <SourceCode api={api} state={state} />
+        </AddonPanel>
+      );
+    }
+  });
+
 });
 
