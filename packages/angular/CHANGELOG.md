@@ -1,3 +1,15 @@
+# v1.0.16 (Wed Dec 28 2022)
+
+#### ⚠️ Pushed to `main`
+
+- add source code panel ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.15 (Tue Dec 27 2022)
 
 #### ⚠️ Pushed to `main`
