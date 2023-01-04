@@ -1,3 +1,15 @@
+# v1.0.17 (Wed Jan 04 2023)
+
+#### ⚠️ Pushed to `main`
+
+- [skip-ci] update readme & minor refactors ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.16 (Wed Dec 28 2022)
 
 #### ⚠️ Pushed to `main`
