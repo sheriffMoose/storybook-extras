@@ -2,8 +2,8 @@ import { makeDecorator, useChannel } from "@storybook/addons";
 import { EVENTS } from "../constants";
 
 export const sourceDecorator = makeDecorator({
-    name: 'sourceCode',
-    parameterName: 'sourceCode',
+    name: 'sourceDecorator',
+    parameterName: '_sourceCode',
     skipIfNoParametersOrOptions: false,
     wrapper: (storyFn, context) => {
         const story = storyFn(context);
