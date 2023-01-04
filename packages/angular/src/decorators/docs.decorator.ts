@@ -5,7 +5,7 @@ import { DOCS_PARAM_KEY, EVENTS } from "../constants";
 
 export const docsDecorator = makeDecorator({
     name: 'docsDecorator',
-    parameterName: 'docsDecorator',
+    parameterName: '_docs',
     skipIfNoParametersOrOptions: false,
     wrapper: (storyFn, context) => {
         const { parameters } = context;

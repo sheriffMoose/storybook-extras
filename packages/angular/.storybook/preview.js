@@ -13,8 +13,12 @@ export const parameters = {
     url: 'docs/documentation.json'
   },
   console: {
-    disable: true,
-    filter: 'sp',
+    disable: false,
+    patterns: [/^.+$/],
+    omitFirst: false,
+  },
+  sourceCode: {
+    disable: false,
   },
   wrappers: {
     disable: false,

@@ -43,7 +43,6 @@
   - [Wrappers Selector](#wrappers-selector)
     - [Configuration](#configuration)
 - [Credits](#credits)
-- [Roadmap](#roadmap)
 
 ## Getting started
 
@@ -134,7 +133,7 @@ Here is a simple example of the first scenario:
 
 ```jsx
 module.exports = {
-    staticDirs: [{ from: '../dist/docs', to: '/docs' }],
+    staticDirs: [{ from: '<DOCS_DIR_PATH>', to: '/<DOCS_SERVE_DIR>' }],
 };
 ```
 
@@ -147,16 +146,14 @@ export const parameters = {
         inlineStories: true,
         ...
         lazyLoad: true,
-        url: 'docs/documentation.json'
+        url: '<DOCS_SERVE_DIR>/documentation.json'
     }
 }
 ```
 
-The url property here can be a full url like `http://example.com/storybook/docs/documentation.json` or a relative path to the current storybook instance like `docs/documentation.json`.
+The url property here can be a full url like `http://example.com/storybook/docs/documentation.json` or a relative path to the current storybook instance like `../dist/docs/documentation.json`.
 
-Notice in the example above, we are serving the `dist/docs` directory as `http://localhost:6006/docs` and when the lazy loading happens it will retrieve `docs/documentation.json` from `http://localhost:6006/docs/documentation.json`
-
-You can also provide `data` property to be something like `require('../.docs/documentation.json')`, this way you don't need to call `setCompodocJson` method, it will be called automatically on your behalf, and the docs will be stored in memory for later usage.
+You can also provide `data` property to be something like `require('<DOCS_DIR_PATH>/documentation.json')`, this way you don't need to call `setCompodocJson` method, it will be called automatically on your behalf, and the docs will be stored in memory for later usage.
 
 ### Source Code
 - This feature relies on the documentation loaded previously from `compodoc` to display the source code of the components and/or services that exists in the `moduleMetadata`.

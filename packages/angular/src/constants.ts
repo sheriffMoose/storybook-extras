@@ -6,6 +6,7 @@ export const PARAM_KEY = `ngExtras`;
 export const CONSOLE_PARAM_KEY = `console`;
 export const DOCS_PARAM_KEY = `docs`;
 export const WRAPPERS_PARAM_KEY = `wrappers`;
+export const SOURCE_CODE_PARAM_KEY = `sourceCode`;
 
 export const EVENTS = {
   GET_DOCS: `${ADDON_ID}/getDocs`,
