@@ -1,6 +1,6 @@
 {
   "name": "@sheriffmoose/storybook-ngx",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Storybook addon to add extra configurations for Angular applications.",
   "author": {
     "name": "Mostafa Sherif",
@@ -140,6 +140,5 @@
     "url": "https://github.com/sheriffMoose/storybook-ngx/issues"
   },
   "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/sheriffMoose/storybook-ngx#readme",
-  "_id": "@sheriffmoose/storybook-ngx@1.0.18"
+  "homepage": "https://github.com/sheriffMoose/storybook-ngx#readme"
 }
