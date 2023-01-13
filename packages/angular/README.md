@@ -34,6 +34,7 @@
 <h2>Table of Contents</h2>
 
 - [Getting started](#getting-started)
+- [Demo](#demo)
 - [Features](#features)
   - [Test Runner Coverage Instrumentation](#test-runner-coverage-instrumentation)
   - [Angular Services Unit Testing](#angular-services-unit-testing)
@@ -66,6 +67,10 @@ module.exports = {
 ```
 
 3. Refer to the sections below for the documentation of the built-in features.
+
+## Demo
+Find the published demo storybook on chromatic [here](https://63c1a45beed1a8f036a44e28-kjxezvqgyr.chromatic.com/)
+
 
 ## Features
 

@@ -63,7 +63,7 @@
                     "builder": "@storybook/angular:build-storybook",
                     "options": {
                         "browserTarget": "ng-app:build-storybook",
-                        "compodoc": false,
+                        "compodoc": true,
                         "compodocArgs": ["-e", "json", "-d", ".docs"]
                     }
                 }
