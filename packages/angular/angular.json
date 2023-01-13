@@ -16,7 +16,7 @@
                     "builder": "ngx-build-plus:browser",
                     "options": {
                         "outputPath": "dist",
-                        "index": "",
+                        "index": "app/index.html",
                         "main": "app/main.ts",
                         "tsConfig": "app/tsconfig.app.json",
                         "extraWebpackConfig": "app/webpack.config.js",
@@ -43,10 +43,10 @@
                     },
                     "configurations": {
                         "dev": {
-                            "browserTarget": "ng-app:dev"
+                            "browserTarget": "ng-app:build:dev"
                         },
                         "prod": {
-                            "browserTarget": "ng-app:prod"
+                            "browserTarget": "ng-app:build:prod"
                         }
                     },
                     "defaultConfiguration": "dev"
@@ -54,7 +54,15 @@
                 "start-storybook": {
                     "builder": "@storybook/angular:start-storybook",
                     "options": {
-                        "browserTarget": "ng-app:build",
+                        "browserTarget": "ng-app:build-storybook",
+                        "compodoc": false,
+                        "compodocArgs": ["-e", "json", "-d", ".docs"]
+                    }
+                },
+                "build-storybook": {
+                    "builder": "@storybook/angular:build-storybook",
+                    "options": {
+                        "browserTarget": "ng-app:build-storybook",
                         "compodoc": false,
                         "compodocArgs": ["-e", "json", "-d", ".docs"]
                     }
