@@ -63,7 +63,7 @@
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs",
-    "chromatic": "npx chromatic --project-token=d6496f4622fe -d storybook-static"
+    "chromatic": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
   },
   "dependencies": {
     "@jsdevtools/coverage-istanbul-loader": "^3.0.5"
