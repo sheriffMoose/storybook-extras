@@ -1,3 +1,20 @@
+# v1.0.18 (Fri Jan 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- update storybook versions ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- Bump json5 from 1.0.1 to 1.0.2 [#1](https://github.com/sheriffMoose/storybook-ngx/pull/1) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.17 (Wed Jan 04 2023)
 
 #### ⚠️ Pushed to `main`
