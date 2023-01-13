@@ -1,3 +1,16 @@
+# v1.0.22 (Fri Jan 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/sheriffMoose/storybook-ngx into main ([@sheriffMoose](https://github.com/sheriffMoose))
+- update release.yml ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.20 (Fri Jan 13 2023)
 
 #### ⚠️ Pushed to `main`
