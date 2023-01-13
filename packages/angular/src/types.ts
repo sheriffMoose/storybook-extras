@@ -14,7 +14,7 @@ export interface SelectorItem {
 // CONFIG TYPES
 
 export interface ConsoleConfig {
-    enabled?: boolean;
+    disable?: boolean;
     patterns?: RegExp[];
     omitFirst?: boolean;
 }
@@ -25,11 +25,11 @@ export interface DocsConfig {
 }
 
 export interface SourceCodeConfig {
-    enabled?: boolean;
+    disable?: boolean;
 }
 
 export interface WrappersConfig {
-    enabled?: boolean;
+    disable?: boolean;
     default?: string;
     values: Wrapper[];
 }

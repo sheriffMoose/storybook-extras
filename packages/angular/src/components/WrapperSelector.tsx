@@ -6,7 +6,7 @@ import { getDisplayedItems, getItemByName } from '../helpers';
 import { WrappersConfig } from "../types";
 
 const DEFAULT_CONFIG: WrappersConfig = {
-  enabled: false,
+  disable: true,
   default: null,
   values: [],
 };
@@ -28,7 +28,7 @@ export const WrapperSelector: FC<any> = memo(() => {
     [config, globals, updateGlobals]
   );
 
-  if (config.enabled === false) {
+  if (config.disable === true) {
     return null;
   }
 
