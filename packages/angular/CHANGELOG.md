@@ -1,3 +1,18 @@
+# v1.0.20 (Fri Jan 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/sheriffMoose/storybook-ngx into main ([@sheriffMoose](https://github.com/sheriffMoose))
+- feat: allow enable/disable sourceCode panel & wrappers toolbar ([@sheriffMoose](https://github.com/sheriffMoose))
+- test: add extra wrappers for testing purposes ([@sheriffMoose](https://github.com/sheriffMoose))
+- fix: duplicate providers ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.19 (Fri Jan 13 2023)
 
 #### ⚠️ Pushed to `main`
