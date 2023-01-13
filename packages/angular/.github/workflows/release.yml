@@ -20,9 +20,14 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
+      - name: Build Addon
+        run: |
+          yarn build
+          
       - name: Build Storybook
         run: |
           yarn build-storybook
+          
       - name: Publish Chromatic
         run: |
           yarn chromatic
