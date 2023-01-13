@@ -2,11 +2,14 @@
   "name": "@sheriffmoose/storybook-ngx",
   "version": "1.0.18",
   "description": "Storybook addon to add extra configurations for Angular applications.",
-  "author": "Mostafa Sherif <mosherif87@gmail.com>",
+  "author": {
+    "name": "Mostafa Sherif",
+    "email": "mosherif87@gmail.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheriffMoose/storybook-ngx"
+    "url": "git+https://github.com/sheriffMoose/storybook-ngx.git"
   },
   "publishConfig": {
     "access": "public",
@@ -59,7 +62,8 @@
     "build-storybook": "ng run ng-app:build-storybook",
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
-    "eject-ts": "zx scripts/eject-typescript.mjs"
+    "eject-ts": "zx scripts/eject-typescript.mjs",
+    "chromatic": "npx chromatic --project-token=d6496f4622fe -d storybook-static"
   },
   "dependencies": {
     "@jsdevtools/coverage-istanbul-loader": "^3.0.5"
@@ -131,5 +135,11 @@
     "@storybook/theming": "7.0.0-beta.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sheriffMoose/storybook-ngx/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/sheriffMoose/storybook-ngx#readme",
+  "_id": "@sheriffmoose/storybook-ngx@1.0.18"
 }
