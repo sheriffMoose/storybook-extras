@@ -21,11 +21,12 @@ export const parameters = {
     disable: false,
   },
   wrappers: {
-    disable: false,
+    disable: true,
     default: 'None',
     values: [
       { name: 'None', value: '' },
-      { name: 'Container', value: 'app-container' }
+      { name: 'Boredered Container', value: 'app-border' },
+      { name: 'Highlight Container', value: 'app-highlight' },
     ]
   }
 };
