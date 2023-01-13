@@ -17,10 +17,7 @@ const meta: Meta<Button> = {
     ],
     argTypes: {
         backgroundColor: { control: 'color' },
-    },
-    parameters: {
-        isInDocs: true,
-    },
+    }
 };
 
 export default meta;

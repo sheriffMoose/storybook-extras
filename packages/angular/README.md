@@ -165,7 +165,14 @@ You can also provide `data` property to be something like `require('<DOCS_DIR_PA
 - You don't need to re-declare your main component in the `declarations` section of `moduleMetadata`, it will be added directly.
 - Basically, the addon will retrieve the source code of any class under `declarations` or `providers`, along with templates & styles for the components if they exist.
 - No setup is needed for this feature, it is enabled by default.
-- Future releases will give the ability to disable it.
+- You can disable it by using global or story parameters like so:
+  ```jsx
+  parameters: {
+    sourceCode: {
+        disable: true
+    }
+  }
+  ```
 
 ### Console Logs
 
@@ -176,7 +183,7 @@ You can also provide `data` property to be something like `require('<DOCS_DIR_PA
 ```jsx
 export const parameters = {
     console: {
-        enabled: true,
+        disable: false,
         patterns: [/^dev$/],
         omitFirst: true,
     },
@@ -202,7 +209,7 @@ In `preview.js` or `preview.ts`:
 ```tsx
 export const parameters = {
     wrappers: {
-        enabled: true,
+        disable: false,
         default: 'None',
         values: [
             { name: 'None', value: '' },

@@ -1,9 +1,12 @@
 import React, { FC } from "react";
 import { SyntaxHighlighter, TabsState } from "@storybook/components";
 import { getSourceCodeItems } from "../helpers";
+import { useAddonContext } from "./AddonContext";
 
 
-export const SourceCode: FC<any> = ({ api, state }) => {
+export const SourceCode: FC<any> = () => {
+  const { state } = useAddonContext();
+
   const { docs, components, services } = state;
 
   if (!docs) { return null; }
