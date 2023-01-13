@@ -20,14 +20,16 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
+      - name: Build Storybook
+        run: |
+          yarn build-storybook
+      - name: Publish Chromatic
+        run: |
+          yarn chromatic
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           yarn release
-
-      - name: Publish Chromatic
-        run: |
-          yarn build-storybook
-          yarn chromatic
