@@ -8,7 +8,10 @@ export const ngModuleDecorator = metadata => (storyFn, context) => {
         story?.moduleMetadata?.providers || []
     );
 
-    if (deps.length) {
+    const providersLoaded = !!context.parameters.providersLoaded;
+
+    if (deps.length && !providersLoaded) {
+        context.parameters.providersLoaded = true;
         story.moduleMetadata.providers.push({
             provide: APP_INITIALIZER,
             multi: true,
