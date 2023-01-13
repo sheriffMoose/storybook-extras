@@ -42,7 +42,6 @@
   - [Source Code](#source-code)
   - [Console Logs](#console-logs)
   - [Wrappers Selector](#wrappers-selector)
-    - [Configuration](#configuration)
 - [Credits](#credits)
 
 ## Getting started
