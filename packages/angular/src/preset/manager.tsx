@@ -1,8 +1,8 @@
-import React from 'react';
-import { addons, types } from '@storybook/addons';
+import React, { Fragment } from 'react';
+import { addons, types } from '@storybook/manager-api';
 import { useAddonState, useChannel } from '@storybook/api';
 import { AddonPanel } from '@storybook/components';
-import { SourceCode, WrapperSelector } from '../components';
+import { AddonContextProvider, SourceCode, WrapperSelector } from '../components';
 import { ADDON_ID, EVENTS, PANEL_ID, SOURCE_CODE_PARAM_KEY, TOOL_ID, WRAPPERS_PARAM_KEY } from '../constants';
 
 const DEFAULT_STATE = { docs: null, components: [], services: [] };
@@ -13,24 +13,22 @@ addons.register(ADDON_ID, (api) => {
     type: types.TOOL,
     paramKey: WRAPPERS_PARAM_KEY,
     match: ({ viewMode }) => !!(viewMode && viewMode.match(/^(story|docs)$/)),
-    render: WrapperSelector,
+    render: () => (
+      <Fragment>
+        <WrapperSelector />
+      </Fragment>
+    ),
   });
 
   addons.add(PANEL_ID, {
-    type: types.PANEL,
     title: 'Source Code',
+    type: types.PANEL,
     paramKey: SOURCE_CODE_PARAM_KEY,
-    match: ({ viewMode }) => viewMode === 'story',
-    render: ({ active, key }) => {
-      const [state, setState] = useAddonState(ADDON_ID, DEFAULT_STATE);
-      useChannel({ [EVENTS.SET_CONTEXT]: context => setState(context) });
-
-      return (
-        <AddonPanel key={key} active={active}>
-          <SourceCode api={api} state={state} />
-        </AddonPanel>
-      );
-    }
+    render: ({ active = true, key }) => (
+      <AddonContextProvider key={key} active={active}>
+        <SourceCode />
+      </AddonContextProvider>
+    ),
   });
 
 });

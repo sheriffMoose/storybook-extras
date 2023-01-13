@@ -26,3 +26,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           yarn release
+
+      - name: Publish Chromatic
+        run: |
+          yarn build-storybook
+          yarn chromatic
