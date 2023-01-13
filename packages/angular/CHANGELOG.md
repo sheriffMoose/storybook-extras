@@ -1,3 +1,15 @@
+# v1.0.19 (Fri Jan 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- add chromatic demo ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.18 (Fri Jan 13 2023)
 
 #### ⚠️ Pushed to `main`
