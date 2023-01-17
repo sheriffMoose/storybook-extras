@@ -1,3 +1,15 @@
+# v1.0.25 (Tue Jan 17 2023)
+
+#### ⚠️ Pushed to `main`
+
+- update package.json fields ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.24 (Tue Jan 17 2023)
 
 #### ⚠️ Pushed to `main`
