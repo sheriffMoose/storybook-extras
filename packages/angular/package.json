@@ -2,26 +2,10 @@
   "name": "@sheriffmoose/storybook-ngx",
   "version": "1.0.24",
   "description": "Storybook addon to add extra configurations for Angular applications.",
-  "author": {
-    "name": "Mostafa Sherif",
-    "email": "mosherif87@gmail.com"
-  },
+  "repository": "sheriffMoose/storybook-ngx",
+  "homepage": "https://github.com/sheriffMoose/storybook-ngx#readme",
+  "funding": "https://github.com/sheriffMoose/storybook-ngx?sponsor=1",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sheriffMoose/storybook-ngx.git"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "storybook": {
-    "displayName": "Angular Extras",
-    "supportedFrameworks": [
-      "angular"
-    ],
-    "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-ngx/main/logo.png"
-  },
   "keywords": [
     "storybook",
     "angular",
@@ -38,6 +22,27 @@
     "source code",
     "storybook addons"
   ],
+  "author": {
+    "name": "Mostafa Sherif",
+    "email": "mosherif87@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sheriffMoose/storybook-ngx/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "storybook": {
+    "displayName": "Angular Extras",
+    "supportedFrameworks": [
+      "angular"
+    ],
+    "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-ngx/main/logo.png"
+  },
+  "engines": {
+    "node": ">=16"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/ts/index.d.ts",
@@ -135,10 +140,5 @@
     "@storybook/theming": "7.0.0-beta.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "bugs": {
-    "url": "https://github.com/sheriffMoose/storybook-ngx/issues"
-  },
-  "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/sheriffMoose/storybook-ngx#readme"
+  }
 }
