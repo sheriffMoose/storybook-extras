@@ -1,11 +1,11 @@
 <div style="text-align:center;" align="center">
-    <img src="logo.png" alt="logo" width=200 />
+    <img src="https://github.com/sheriffMoose/storybook-ngx/blob/main/logo.png?raw=true" alt="logo" width=200 style="width:200px" />
     <h1>Storybook Angular Extras</h1>
     <p>Storybook addon that adds few features to the original Angular Storybook integration.</p>
     <p>
         <a href="https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml">
             <img src="https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=release"/>
-        </a>
+        </a>&nbsp;
         <a href="https://github.com/sheriffMoose/storybook-ngx/blob/main/LICENSE">
             <img src="https://img.shields.io/github/license/sheriffMoose/storybook-ngx?logo=github"/>
         </a>
@@ -13,13 +13,13 @@
     <p>
         <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
             <img src="https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label="/>
-        </a>
+        </a>&nbsp;
         <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
             <img src="https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label="/>
-        </a>
+        </a>&nbsp;
         <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
             <img src="https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label="/>
-        </a>
+        </a>&nbsp;
         <a href="https://npmjs.org/package/@sheriffmoose/storybook-ngx">
             <img src="https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label="/>
         </a>
@@ -42,6 +42,7 @@
   - [Source Code](#source-code)
   - [Console Logs](#console-logs)
   - [Wrappers Selector](#wrappers-selector)
+    - [Configuration](#configuration)
 - [Credits](#credits)
 
 ## Getting started
