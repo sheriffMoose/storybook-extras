@@ -1,3 +1,16 @@
+# v1.0.24 (Tue Jan 17 2023)
+
+#### ⚠️ Pushed to `main`
+
+- add Motivation & Roadmap ([@sheriffMoose](https://github.com/sheriffMoose))
+- add code of conduct & contibuting docs ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.23 (Fri Jan 13 2023)
 
 #### ⚠️ Pushed to `main`
