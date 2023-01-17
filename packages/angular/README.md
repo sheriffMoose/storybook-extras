@@ -31,8 +31,12 @@
     </p>
 </div>
 
+## Motivation
+I am such a huge fan of Storybook, and I have been using it for quite some time now. Since Storybook is purely based on React, I thought of this addon as the best way to appeal to more Angular developers. I really hope this will be a good addon to use alongside Storybook for Angular projects, maybe someday integrate these features into official Storybook libraries. I will be working on new features all the time. Your feedback is much appreciated.
+
 <h2>Table of Contents</h2>
 
+- [Motivation](#motivation)
 - [Getting started](#getting-started)
 - [Demo](#demo)
 - [Features](#features)
@@ -44,6 +48,7 @@
   - [Wrappers Selector](#wrappers-selector)
     - [Configuration](#configuration)
 - [Credits](#credits)
+- [Roadmap](#roadmap)
 
 ## Getting started
 
@@ -264,3 +269,9 @@ The wrapper item can also contain an `options` property which will be translated
 -   Thanks for `@storybook/addon-backgrounds` for the inspiration.
 -   This would not have been possible without the official `@storybook/angular` framework.
 -   Thanks for the team behind the official `Storybook Addon Kit` for the amazing work they put into this kit that was very helpful for generating this addon.
+
+## Roadmap
+Please feel free to request features, I will try to add them as soon as humanly possible. Currently the following features are in my pipeline:
+- Auto markdown documentation.
+- UI representation of Angular Service.
+- Swagger UI integration.
