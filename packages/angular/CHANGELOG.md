@@ -1,3 +1,15 @@
+# v1.0.26 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- upgrade storybook version ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.25 (Tue Jan 17 2023)
 
 #### ⚠️ Pushed to `main`
