@@ -12,15 +12,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: 'yarn'
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-      
+      - name: Restore Cached node_modules
+        uses: actions/cache@v3
+        with:
+          key: ${{ runner.os }}-node_modules
+          path: node_modules
+
       - name: Restore Cached Storybook
         uses: actions/cache@v3
         with:
