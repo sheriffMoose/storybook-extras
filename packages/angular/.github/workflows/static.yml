@@ -1,0 +1,26 @@
+name: Static
+
+on:
+  workflow_run:
+    workflows: [Chromatic]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: storybook-static
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: storybook-static
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
