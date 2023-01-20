@@ -1,3 +1,15 @@
+# v1.0.35 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- update story sort ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.34 (Fri Jan 20 2023)
 
 #### ⚠️ Pushed to `main`
