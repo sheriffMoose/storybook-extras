@@ -306,7 +306,7 @@ https://img.shields.io/github/license/sheriffMoose/storybook-ngx?logo=github
 [img.npm]:
 https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
 [img.angular]:
-https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
+https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label=
 [img.storybook]:
 https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
 [img.typescript]:
