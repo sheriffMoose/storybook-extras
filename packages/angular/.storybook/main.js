@@ -1,6 +1,7 @@
 module.exports = {
   framework: '@storybook/angular',
   stories: [
+    '../*.md',
     '../app/**/*.stories.mdx',
     '../app/**/*.stories.@(js|jsx|ts|tsx)'
   ],
@@ -12,7 +13,7 @@ module.exports = {
   ],
   addons: [
     '../preset.js',
-    '@storybook/addon-essentials'
+    '@storybook/addon-essentials',
   ],
   docs: {
     defaultName: 'Overview',
