@@ -28,5 +28,15 @@ export const parameters = {
       { name: 'Boredered Container', value: 'app-border' },
       { name: 'Highlight Container', value: 'app-highlight' },
     ]
-  }
+  },
+  options: {
+    storySort: {
+      order: [
+        ['Introduction', 'README'],
+        ['Changelog','CHANGELOG'],
+        ['Contributing Guide','CONTRIBUTING'],
+        ['Code of Conduct', 'CODE_OF_CONDUCT'],
+      ],
+    },
+  },
 };

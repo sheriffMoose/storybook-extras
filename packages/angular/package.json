@@ -7,8 +7,10 @@
   "funding": "https://github.com/sheriffMoose/storybook-ngx?sponsor=1",
   "license": "MIT",
   "keywords": [
+    "angular extras",
     "storybook",
     "angular",
+    "extras",
     "services",
     "unit testing",
     "docs",
@@ -71,7 +73,8 @@
     "chromatic": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
   },
   "dependencies": {
-    "@jsdevtools/coverage-istanbul-loader": "^3.0.5"
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
+    "@sheriffmoose/storybook-md": "^1.0.14"
   },
   "devDependencies": {
     "@angular-devkit/architect": "^0.1500",
@@ -93,6 +96,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@compodoc/compodoc": "^1.1.19",
     "@storybook/addon-a11y": "7.0.0-beta.31",
+    "@storybook/addon-docs": "^7.0.0-beta.31",
     "@storybook/addon-essentials": "7.0.0-beta.31",
     "@storybook/addon-interactions": "7.0.0-beta.31",
     "@storybook/addon-links": "7.0.0-beta.31",
@@ -102,6 +106,7 @@
     "@storybook/components": "7.0.0-beta.31",
     "@storybook/core-events": "7.0.0-beta.31",
     "@storybook/jest": "^0.0.11-next.0",
+    "@storybook/mdx2-csf": "^1.0.0-next.4",
     "@storybook/test-runner": "^0.10.0-next.4",
     "@storybook/testing-library": "^0.0.14-next.1",
     "@storybook/theming": "7.0.0-beta.31",
