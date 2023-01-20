@@ -1,3 +1,15 @@
+# v1.0.27 (Fri Jan 20 2023)
+
+#### 🐛 Bug Fix
+
+- Update demo link [#3](https://github.com/sheriffMoose/storybook-ngx/pull/3) ([@yannbf](https://github.com/yannbf))
+
+#### Authors: 1
+
+- Yann Braga ([@yannbf](https://github.com/yannbf))
+
+---
+
 # v1.0.26 (Fri Jan 20 2023)
 
 #### ⚠️ Pushed to `main`
