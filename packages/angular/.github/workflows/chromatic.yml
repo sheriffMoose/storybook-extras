@@ -1,0 +1,42 @@
+name: Chromatic
+
+on:
+  workflow_run:
+    workflows: [Release]
+    types:
+      - completed
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Addon
+        run: yarn build
+          
+      - name: Build Storybook
+        run: yarn build-storybook
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: storybook-static
+          path: storybook-static
+          retention-days: 1
+          
+      - name: Publish Chromatic
+        run: yarn chromatic
