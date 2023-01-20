@@ -32,10 +32,10 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        ['Introduction', 'README'],
-        ['Changelog','CHANGELOG'],
-        ['Contributing Guide','CONTRIBUTING'],
-        ['Code of Conduct', 'CODE_OF_CONDUCT'],
+        'Introduction', 'README',
+        'Changelog','CHANGELOG',
+        'Contributing Guide','CONTRIBUTING',
+        'Code of Conduct', 'CODE_OF_CONDUCT',
       ],
     },
   },
