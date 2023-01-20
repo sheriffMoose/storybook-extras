@@ -23,7 +23,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install
+        uses: bahmutov/npm-install@v1
 
       - name: Build Addon
         run: yarn build
