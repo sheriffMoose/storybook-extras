@@ -61,7 +61,7 @@ module.exports = {
 3. Refer to the sections below for the documentation of the built-in features.
 
 ## Demo
-Find the published demo storybook on chromatic [here](https://63c1a45beed1a8f036a44e28-kjxezvqgyr.chromatic.com/)
+Find the published demo storybook on chromatic [here](https://main--63c1a45beed1a8f036a44e28.chromatic.com/)
 
 
 ## Features
