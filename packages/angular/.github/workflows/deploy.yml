@@ -1,8 +1,8 @@
-name: Static
+name: Deploy
 
 on:
   workflow_run:
-    workflows: [Chromatic]
+    workflows: [Storybook]
     types:
       - completed
 
@@ -13,14 +13,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
+      - name: Restore Cached Storybook
+        uses: actions/cache@v3
         with:
-          name: storybook-static
+          key: ${{ runner.os }}-storybook-static
+          path: storybook-static
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: storybook-static
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

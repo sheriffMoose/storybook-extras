@@ -1,0 +1,44 @@
+name: Storybook
+
+on:
+  workflow_run:
+    workflows: [Release]
+    types:
+      - completed
+
+jobs:
+  storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Build Addon
+        run: yarn build
+          
+      - name: Build Storybook
+        run: yarn build-storybook
+
+      - name: Archive Built Storybook
+        uses: actions/upload-artifact@v3
+        with:
+          name: storybook-static
+          path: storybook-static
+          retention-days: 1
+
+      - name: Cache Built Storybook
+        uses: actions/cache@v3
+        with:
+          key: ${{ runner.os }}-storybook-static
+          path: storybook-static
