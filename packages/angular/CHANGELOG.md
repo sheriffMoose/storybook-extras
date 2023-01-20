@@ -1,3 +1,15 @@
+# v1.0.31 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- update workflows ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.30 (Fri Jan 20 2023)
 
 #### ⚠️ Pushed to `main`
