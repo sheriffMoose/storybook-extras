@@ -2,19 +2,15 @@ name: Chromatic
 
 on:
   workflow_run:
-    workflows: [Release]
+    workflows: [Deploy]
     types:
       - completed
 
 jobs:
-  release:
+  chromatic:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
       - uses: actions/checkout@v3
-
-      - name: Prepare repository
-        run: git fetch --unshallow --tags
 
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
@@ -24,19 +20,12 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-
-      - name: Build Addon
-        run: yarn build
-          
-      - name: Build Storybook
-        run: yarn build-storybook
-
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+      
+      - name: Restore Cached Storybook
+        uses: actions/cache@v3
         with:
-          name: storybook-static
+          key: ${{ runner.os }}-storybook-static
           path: storybook-static
-          retention-days: 1
           
       - name: Publish Chromatic
         run: yarn chromatic
