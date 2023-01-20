@@ -1,3 +1,15 @@
+# v1.0.32 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- cache node_modules between workflows ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.31 (Fri Jan 20 2023)
 
 #### ⚠️ Pushed to `main`
