@@ -1,3 +1,15 @@
+# v1.0.28 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- include markdown docs addon ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.27 (Fri Jan 20 2023)
 
 #### 🐛 Bug Fix
