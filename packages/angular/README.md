@@ -9,10 +9,15 @@
 [![][img.release]][link.release]
 [![][img.license]][link.license]
 
-[![][img.npm]][link.npm]
+![][img.node]
+![][img.npm]
+![][img.downloads]
+
 [![][img.angular]][link.npm]
 [![][img.storybook]][link.npm]
 [![][img.typescript]][link.npm]
+
+[![][img.health]][link.snyk]
 
 [![][img.banner]][link.npm]
 
@@ -303,14 +308,24 @@ https://github.com/sheriffMoose/storybook-ngx/blob/main/logo.png?raw=true
 https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=release
 [img.license]:
 https://img.shields.io/github/license/sheriffMoose/storybook-ngx?logo=github
+
+[img.node]:
+https://img.shields.io/node/v/@sheriffmoose/storybook-ngx?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
 [img.npm]:
 https://img.shields.io/npm/v/@sheriffmoose/storybook-ngx?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
+[img.downloads]:
+https://img.shields.io/npm/dt/@sheriffmoose/storybook-ngx?logo=docusign&logoColor=white&labelColor=purple&color=grey&label=
+
 [img.angular]:
 https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label=
 [img.storybook]:
 https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
 [img.typescript]:
 https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-ngx/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label=
+
+[img.health]:
+https://snyk.io/advisor/npm-package/@sheriffmoose/storybook-ngx/badge.svg
+
 [img.banner]:
 https://nodei.co/npm/@sheriffmoose/storybook-ngx.png
 
@@ -320,3 +335,5 @@ https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml
 https://github.com/sheriffMoose/storybook-ngx/blob/main/LICENSE
 [link.npm]:
 https://npmjs.org/package/@sheriffmoose/storybook-ngx
+[link.snyk]:
+https://snyk.io/advisor/npm-package/@sheriffmoose/storybook-ngx
