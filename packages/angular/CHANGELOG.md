@@ -1,3 +1,27 @@
+# v1.0.37 (Sun Jan 22 2023)
+
+#### 🐛 Bug Fix
+
+- update release.yml [#11](https://github.com/sheriffMoose/storybook-ngx/pull/11) ([@sheriffMoose](https://github.com/sheriffMoose))
+- Merge main into master [#10](https://github.com/sheriffMoose/storybook-ngx/pull/10) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@sheriffMoose](https://github.com/sheriffMoose))
+- add swagger-ui-react [#9](https://github.com/sheriffMoose/storybook-ngx/pull/9) ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### ⚠️ Pushed to `master`
+
+- add swagger/openapi support ([@sheriffMoose](https://github.com/sheriffMoose))
+- update readme ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- Bump @storybook/testing-library from 0.0.14-next.1 to 0.0.14--canary.30.5f44d14.0 [#7](https://github.com/sheriffMoose/storybook-ngx/pull/7) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.35 (Fri Jan 20 2023)
 
 #### ⚠️ Pushed to `main`
