@@ -3377,7 +3377,7 @@
 
 "@storybook/testing-library@^0.0.14-next.1":
   version "0.0.14-next.1"
-  resolved "https://registry.npmjs.org/@storybook/testing-library/-/testing-library-0.0.14-next.1.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/testing-library/-/testing-library-0.0.14-next.1.tgz#c8e93aea7b2a4caba4f4b60b2195e4de589f8a3c"
   integrity sha512-1CAl40IKIhcPaCC4pYCG0b9IiYNymktfV/jTrX7ctquRY3akaN7f4A1SippVHosksft0M+rQTFE0ccfWW581fw==
   dependencies:
     "@storybook/client-logger" next
