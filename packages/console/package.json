@@ -1,0 +1,75 @@
+{
+    "name": "@storybook-extras/console",
+    "version": "1.1.0",
+    "description": "Storybook addon for displaying console logs in `Actions` panel.",
+    "repository": "sheriffMoose/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "license": "MIT",
+    "keywords": [
+        "storybook",
+        "console",
+        "actions",
+        "panel",
+        "addons"
+    ],
+    "author": {
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "storybook": {
+        "displayName": "Console Logs",
+        "supportedFrameworks": [
+            "supported-frameworks"
+        ],
+        "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+    },
+    "engines": {
+        "node": ">=16"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
+    "files": [
+        "dist/**/*",
+        "README.md",
+        "*.js",
+        "*.d.ts"
+    ],
+    "scripts": {
+        "storybook": "storybook dev --port 6006"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@storybook/addon-essentials": "7.0.0-beta.31",
+        "@storybook/api": "7.0.0-beta.31",
+        "@storybook/components": "7.0.0-beta.31",
+        "@storybook/core-events": "7.0.0-beta.31",
+        "@storybook/csf-tools": "^7.0.0-beta.31",
+        "@storybook/react": "7.0.0-beta.31",
+        "@storybook/react-webpack5": "7.0.0-beta.31",
+        "auto": "^10.3.0",
+        "prettier": "^2.3.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "storybook": "7.0.0-beta.31",
+        "typescript": "^4.2.4",
+        "zx": "^1.14.1"
+    },
+    "peerDependencies": {
+        "@storybook/addons": "7.0.0-beta.31",
+        "@storybook/api": "7.0.0-beta.31",
+        "@storybook/components": "7.0.0-beta.31",
+        "@storybook/core-events": "7.0.0-beta.31",
+        "@storybook/theming": "7.0.0-beta.31",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}

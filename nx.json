@@ -14,5 +14,6 @@
         "accessToken": "OTkwMTBmMDgtZmUzOS00MDlkLWFiZmEtMDhlNjY5OGY1NDRmfHJlYWQtd3JpdGU="
       }
     }
-  }
+  },
+  "defaultProject": "@sheriffmoose/storybook-ngx"
 }

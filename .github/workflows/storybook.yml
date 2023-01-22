@@ -1,10 +1,6 @@
 name: Storybook
 
-on:
-  workflow_run:
-    workflows: [Release]
-    types:
-      - completed
+on: workflow_dispatch
 
 jobs:
   storybook:
@@ -30,7 +26,7 @@ jobs:
         run: yarn build
           
       - name: Build Storybook
-        run: yarn build-storybook
+        run: yarn build:storybook
 
       - name: Archive Built Storybook
         uses: actions/upload-artifact@v3
