@@ -12,7 +12,13 @@ module.exports = {
     }
   ],
   addons: [
-    '../preset.js',
+    {
+      name: '../preset.js',
+      options: {
+        disableMarkdown: true,
+        openapiURL: 'https://petstore3.swagger.io/api/v3/openapi.json'
+      }
+    },
     '@storybook/addon-essentials',
   ],
   docs: {
