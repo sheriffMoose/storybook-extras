@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/sheriffMoose/storybook-ngx/blob/main/logo.png?raw=true" alt="logo" width="200" />
+<img src="https://github.com/sheriffMoose/storybook-ngx/blob/master/logo.png?raw=true" alt="logo" width="200" />
 
 <h1>Storybook Angular Extras</h1>
 
@@ -50,9 +50,10 @@ I am such a huge fan of Storybook, and I have been using it for quite some time 
 yarn add @sheriffmoose/storybook-ngx -D
 ```
 
-2. Add the addon into your main.js
+1. Add the addon
 
 ```js
+// .storybook/main.js
 module.exports = {
     ...
     "addons": [
@@ -66,7 +67,7 @@ module.exports = {
 3. Refer to the sections below for the documentation of the built-in features.
 
 ## Demo
-Find the published demo storybook on chromatic [here](https://main--63c1a45beed1a8f036a44e28.chromatic.com/)
+Find the published demo storybook on chromatic [here](https://master--63c1a45beed1a8f036a44e28.chromatic.com/)
 
 
 ## Features
@@ -132,9 +133,10 @@ Here is a simple example of the first scenario:
     ```
     compodoc -e json -d dist/docs
     ```
--   Make sure to include static dir into your `main.js` file like so
+-   Make sure to include static dir like so
 
 ```jsx
+// .storybook/main.js
 module.exports = {
     staticDirs: [{ from: '<DOCS_DIR_PATH>', to: '/<DOCS_SERVE_DIR>' }],
 };
@@ -303,7 +305,7 @@ Please feel free to request features, I will try to add them as soon as humanly 
 
 
 [img.logo]:
-https://github.com/sheriffMoose/storybook-ngx/blob/main/logo.png?raw=true
+https://github.com/sheriffMoose/storybook-ngx/blob/master/logo.png?raw=true
 [img.release]:
 https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=release
 [img.license]:
@@ -332,7 +334,7 @@ https://nodei.co/npm/@sheriffmoose/storybook-ngx.png
 [link.release]:
 https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml
 [link.license]:
-https://github.com/sheriffMoose/storybook-ngx/blob/main/LICENSE
+https://github.com/sheriffMoose/storybook-ngx/blob/master/LICENSE
 [link.npm]:
 https://npmjs.org/package/@sheriffmoose/storybook-ngx
 [link.snyk]:
