@@ -39,6 +39,7 @@ I am such a huge fan of Storybook, and I have been using it for quite some time 
   - [Console Logs](#console-logs)
   - [Wrappers Selector](#wrappers-selector)
   - [Auto Markdown/HTML Support](#auto-markdownhtml-support)
+  - [Swagger/OpenAPI Integration](#swaggeropenapi-integration)
 - [Credits](#credits)
 - [Roadmap](#roadmap)
 
@@ -81,6 +82,7 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 -   💻 Console Logs Panel
 -   🌯 Toolbar setup for Story Wrappers
 -   📃 Auto Markdown & HTML Docs support
+-   👨‍💻 Swagger/OpenAPI Integration
 
 ### Test Runner Coverage Instrumentation
 
@@ -271,6 +273,27 @@ module.exports = {
             name: '@sheriffmoose/storybook-ngx',
             options: {
                 disableMarkdown: true
+            }
+        }
+    ]
+}
+```
+
+### Swagger/OpenAPI Integration
+OpenAPI (formly Swagger) is a popular specification for the management of RESTful APIs. Usually OpenAPI produces a `openapi.yml` or `openapi.json` file that can be used to integrate/visualize the APIs configured on the backend server.
+
+`Swagger UI` is a popular framework for the visualization of the `openapi.yml|json` files that allow comprehensive documentation + testing for the backend API services. 
+
+Thanks to the pre available `swagger-ui-react`, this feature simply integrates `SwaggerUI` component into one `.mdx` file and make it available on demand if the user decides to populate the `openapiURL` option when configuring the addon like so:
+
+```js
+// .storybook/main.js
+module.exports = {
+    addons: [
+        {
+            name: '@sheriffmoose/storybook-ngx',
+            options: {
+                openapiURL: 'https://petstore3.swagger.io/api/v3/openapi.json'
             }
         }
     ]
