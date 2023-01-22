@@ -1,3 +1,17 @@
+# v1.0.39 (Sun Jan 22 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: missing lodash import ([@sheriffMoose](https://github.com/sheriffMoose))
+- fix: env variables processing ([@sheriffMoose](https://github.com/sheriffMoose))
+- fix preset folder name ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.38 (Sun Jan 22 2023)
 
 #### 🐛 Bug Fix
