@@ -1,3 +1,23 @@
+# v1.0.40 (Sun Jan 22 2023)
+
+#### ⚠️ Pushed to `master`
+
+- fix: storybook-md loader ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- Bump @typescript-eslint/parser from 5.47.1 to 5.48.2 [#15](https://github.com/sheriffMoose/storybook-ngx/pull/15) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump concurrently from 6.5.1 to 7.6.0 [#12](https://github.com/sheriffMoose/storybook-ngx/pull/12) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @angular/compiler-cli from 15.1.0 to 15.1.1 [#14](https://github.com/sheriffMoose/storybook-ngx/pull/14) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @angular/cli from 15.1.0 to 15.1.2 [#13](https://github.com/sheriffMoose/storybook-ngx/pull/13) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.39 (Sun Jan 22 2023)
 
 #### ⚠️ Pushed to `master`
