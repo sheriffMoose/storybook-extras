@@ -1,2 +1,2 @@
-# storybookX
+# storybook-extras
 Storybook Extras Addons
