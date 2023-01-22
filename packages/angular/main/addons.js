@@ -1,14 +1,14 @@
 export const addons = (options) => {
-    if (options.disableMarkdown) {
-        return [];
-    }
+    const entries = [];
 
-    return [
-        {
+    if (!options.disableMarkdown) {
+        entries.push({
             name: '@sheriffmoose/storybook-md',
             options: {
                 mdExclude: [/\.component\.html$/]
             }
-        }
-    ]
+        })
+    }
+
+    return entries;
 }
