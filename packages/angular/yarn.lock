@@ -2721,10 +2721,10 @@
     "@angular-devkit/schematics" "15.1.2"
     jsonc-parser "3.2.0"
 
-"@sheriffmoose/storybook-md@^1.0.14":
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/@sheriffmoose/storybook-md/-/storybook-md-1.0.14.tgz#74c218d9d4739f157e18dffabb52c4ac4ca54414"
-  integrity sha512-STBcVBEVIIxr6+6MtueKOzcOBwxd0tSiJZMG66kiv2Jo5ZtHgdnYdEsai7+Gfsbw9BjMZGFWWCEjghOPdM/yfQ==
+"@sheriffmoose/storybook-md@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@sheriffmoose/storybook-md/-/storybook-md-1.0.16.tgz#bf192943516b7ac80df69952c13bc7b56ebe82d3"
+  integrity sha512-qQvcw4m1IkB/TWB3uTnVthrC2K9VgEz3M0BfHpo0HpNxZ/6uQU0V8rf6xnCj1m31FFb7XCgy914X7UEodqOedQ==
   dependencies:
     "@storybook/mdx2-csf" "^1.0.0-next.4"
 
