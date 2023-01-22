@@ -22,7 +22,9 @@
     "instrument",
     "webpack",
     "source code",
-    "storybook addons"
+    "storybook addons",
+    "swagger",
+    "openapi"
   ],
   "author": {
     "name": "Mostafa Sherif",

@@ -1,27 +1,16 @@
+const { addons, env, stories, webpackFinal } = require('./main');
 
 const preview = require.resolve("./dist/esm/preset/preview");
 const manager = require.resolve("./dist/esm/preset/manager");
 
-
-const presetWebpack = require('./preset.webpack');
-
+const managerEntries = (entry = []) => [...entry, manager];
+const previewAnnotations = (entry = []) => [...entry, preview];
 
 module.exports = {
-  addons: (options) => {
-    if (options.disableMarkdown) {
-      return [];
-    }
-
-    return [
-      {
-        name: '@sheriffmoose/storybook-md',
-        options: {
-          mdExclude: [/\.component\.html$/]
-        }
-      }
-    ]
-  },
-  managerEntries: (entry = []) => [...entry, manager],
-  previewAnnotations: (entry = []) => [...entry, preview],
-  ...presetWebpack,
+  stories,
+  addons,
+  env,
+  managerEntries,
+  previewAnnotations,
+  webpackFinal,
 };
