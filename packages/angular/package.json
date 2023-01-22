@@ -83,7 +83,7 @@
     "@angular-devkit/architect": "0.1501.2",
     "@angular-devkit/build-angular": "15.1.0",
     "@angular-devkit/core": "15.1.0",
-    "@angular/cli": "15.1.0",
+    "@angular/cli": "15.1.2",
     "@angular/common": "15.1.0",
     "@angular/compiler": "15.1.1",
     "@angular/compiler-cli": "15.1.0",
