@@ -6,7 +6,6 @@ const except = (plugins, toRemove) => {
 }
 
 export const webpackFinal = async (config, options) => {
-    console.log(options);
 
     config.module.rules.push({
         test: /\.(js|ts)$/,
@@ -23,5 +22,6 @@ export const webpackFinal = async (config, options) => {
     config.plugins = [
         ...except(config.plugins, [webpack.ProgressPlugin])
     ];
+    
     return config;
 }
