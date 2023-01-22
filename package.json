@@ -1,0 +1,16 @@
+{
+  "name": "@sheriffmoose/storybook-extras",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nrwl/nx-cloud": "latest",
+    "nx": "15.5.3",
+    "prettier": "^2.6.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
