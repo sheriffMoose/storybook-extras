@@ -1,3 +1,24 @@
+# v1.0.38 (Sun Jan 22 2023)
+
+#### 🐛 Bug Fix
+
+- docs: add swagger/openapi integration details [#17](https://github.com/sheriffMoose/storybook-ngx/pull/17) ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### ⚠️ Pushed to `master`
+
+- update roadmap & features lists ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- Bump node-fetch from 2.6.7 to 3.3.0 [#16](https://github.com/sheriffMoose/storybook-ngx/pull/16) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.37 (Sun Jan 22 2023)
 
 #### 🐛 Bug Fix
