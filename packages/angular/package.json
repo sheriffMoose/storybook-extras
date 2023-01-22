@@ -74,7 +74,8 @@
   },
   "dependencies": {
     "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
-    "@sheriffmoose/storybook-md": "^1.0.14"
+    "@sheriffmoose/storybook-md": "^1.0.14",
+    "swagger-ui-react": "^4.15.5"
   },
   "devDependencies": {
     "@angular-devkit/architect": "0.1501.2",
