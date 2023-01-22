@@ -26,18 +26,26 @@
 ## Motivation
 I am such a huge fan of Storybook, and I have been using it for quite some time now. Since Storybook is purely based on React, I thought of this addon as the best way to appeal to more Angular developers. I really hope this will be a good addon to use alongside Storybook for Angular projects, maybe someday integrate these features into official Storybook libraries. I will be working on new features all the time. Your feedback is much appreciated.
 
+For this addon, I am aiming for it to be:
+
+-   ⚡️ Zero config setup.
+-   📚 Supports latest Storybook v7.
+-   🙌 Introduce `must-have` features for `Storybook` on `Angular` .
+-   🐱‍🏍 Integrate as much `nice-to-have` features as possible.
+
 <h2>Table of Contents</h2>
 
 - [Motivation](#motivation)
 - [Getting started](#getting-started)
-- [Demo](#demo)
-- [Features](#features)
+- [Demo/Chromatic](#demochromatic)
+- [Angular Specific Features](#angular-specific-features)
   - [Test Runner Coverage Instrumentation](#test-runner-coverage-instrumentation)
   - [Angular Services Unit Testing](#angular-services-unit-testing)
   - [Documentation Lazy Loading](#documentation-lazy-loading)
   - [Source Code](#source-code)
-  - [Console Logs](#console-logs)
   - [Wrappers Selector](#wrappers-selector)
+- [Framework Agnostic Features](#framework-agnostic-features)
+  - [Console Logs](#console-logs)
   - [Auto Markdown/HTML Support](#auto-markdownhtml-support)
   - [Swagger/OpenAPI Integration](#swaggeropenapi-integration)
 - [Credits](#credits)
@@ -67,22 +75,20 @@ module.exports = {
 
 3. Refer to the sections below for the documentation of the built-in features.
 
-## Demo
+## Demo/Chromatic
 Find the published demo storybook on chromatic [here](https://master--63c1a45beed1a8f036a44e28.chromatic.com/)
 
 
-## Features
+## Angular Specific Features
 
--   ⚡️ Zero config setup
--   📚 Supports latest Storybook Implementation
+These particular features I found to be helpful when integrating Storybook into existing projects. Feel free to request any more features that you may find a must or even just nice-to-have 😊.
+
 -   📔 Coverage Instrumentation for Test-Runner
 -   🧪 Auto injector for Angular services
 -   🦥 Lazy loading documentation
 -   💬 Source code display
--   💻 Console Logs Panel
--   🌯 Toolbar setup for Story Wrappers
--   📃 Auto Markdown & HTML Docs support
--   👨‍💻 Swagger/OpenAPI Integration
+-   🌯 Story Wrappers selector toolbar
+
 
 ### Test Runner Coverage Instrumentation
 
@@ -176,24 +182,6 @@ You can also provide `data` property to be something like `require('<DOCS_DIR_PA
   }
   ```
 
-### Console Logs
-
--   This feature uses the `Actions` panel from `@storybook/addon-actions` to display the console output.
--   This is helpful if you need to focus on the console output of the application.
--   To enable the feature use the parameters in `preview.js` like so:
-
-```jsx
-export const parameters = {
-    console: {
-        disable: false,
-        patterns: [/^dev$/],
-        omitFirst: true,
-    },
-};
-```
-
-Currently, the patterns property is used to match the first argument of the `console` methods `debug`, `log`, `info`, `warn`& `error`. This allows developers to use special context for their app logs. For example: `console.log('dev', data);` will be matched using the `/^dev$/` pattern, and will trigger an action that shows up in the `Actions` panel. You can use the `omitFirst` property to make sure the `dev` item does not show, only other arguments will show up.
-
 ### Wrappers Selector
 
 -   This feature uses `componentWrapperDecorator` from the official `@storybook/angular` to render wrapper elements dynamically around stories.
@@ -260,6 +248,32 @@ The wrapper item can also contain an `options` property which will be translated
 <btn-container class="small" style="padding:5px;"></btn-container>
 ```
 
+## Framework Agnostic Features
+
+These features currently residing within this addon might be moved to another addon in the future for separation of concerns purposes.
+
+-   💻 Console Logs Panel
+-   📃 Auto Markdown & HTML Docs support
+-   👨‍💻 Swagger/OpenAPI Integration
+
+### Console Logs
+
+-   This feature uses the `Actions` panel from `@storybook/addon-actions` to display the console output.
+-   This is helpful if you need to focus on the console output of the application.
+-   To enable the feature use the parameters in `preview.js` like so:
+
+```jsx
+export const parameters = {
+    console: {
+        disable: false,
+        patterns: [/^dev$/],
+        omitFirst: true,
+    },
+};
+```
+
+Currently, the patterns property is used to match the first argument of the `console` methods `debug`, `log`, `info`, `warn`& `error`. This allows developers to use special context for their app logs. For example: `console.log('dev', data);` will be matched using the `/^dev$/` pattern, and will trigger an action that shows up in the `Actions` panel. You can use the `omitFirst` property to make sure the `dev` item does not show, only other arguments will show up.
+
 ### Auto Markdown/HTML Support
 This feature, I personally wanted to make available for all frameworks not just `Angular`. Therefore, I created another [`Markdown Docs`](https://www.npmjs.com/package/@sheriffmoose/storybook-md) addon which is now available for integration with zero-config. Huge thanks to the `Storybook` team and specially [`@shilman`](https://github.com/shilman) for the support and amazing feedback.
 
@@ -302,15 +316,17 @@ module.exports = {
 
 ## Credits
 
--   Thanks for `JS Devtools` for their amazing `coverage istanbul loader`.
--   Thanks for `@storybook/addon-backgrounds` for the inspiration.
+-   Thanks for `JS Devtools` for their amazing `coverage istanbul loader`, we are also working on integration this instrumentation into `@storybook/addon-coverage`.
+-   Thanks for `@storybook/addon-backgrounds` for the inspiration for the `wrappers selector` feature.
 -   This would not have been possible without the official `@storybook/angular` framework.
 -   Thanks for the team behind the official `Storybook Addon Kit` specially [`@winkerVSbecks`](https://github.com/winkerVSbecks) for the amazing work they put into this kit that was very helpful for generating this addon.
 
 ## Roadmap
 Please feel free to request features, I will try to add them as soon as humanly possible. Currently the following features are in my pipeline:
 - UI representation of Angular Service.
-- Swagger UI integration.
+- UI representation for Issues/Pull Requests (Github/Bitbucket/Jira)
+- Coverage Enhancements
+- Story Source representation
 
 
 
