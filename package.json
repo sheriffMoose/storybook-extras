@@ -10,10 +10,10 @@
     "build:storybook": "nx build:storybook"
   },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
     "auto": "^10.3.0",
+    "lerna": "^6.4.1",
     "nx": "15.5.3",
     "prettier": "^2.6.2"
   },
