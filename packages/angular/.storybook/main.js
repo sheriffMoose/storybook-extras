@@ -15,7 +15,7 @@ module.exports = {
     {
       name: '../preset.js',
       options: {
-        disableMarkdown: true,
+        disableMarkdown: false,
         openapiURL: 'https://petstore3.swagger.io/api/v3/openapi.json'
       }
     },

@@ -22,6 +22,6 @@ export const webpackFinal = async (config, options) => {
     config.plugins = [
         ...except(config.plugins, [webpack.ProgressPlugin])
     ];
-    
+
     return config;
 }
