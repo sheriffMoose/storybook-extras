@@ -1,3 +1,15 @@
+# v1.0.42 (Mon Jan 23 2023)
+
+#### ⚠️ Pushed to `master`
+
+- update release.yml ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.41 (Mon Jan 23 2023)
 
 #### ⚠️ Pushed to `master`
