@@ -30,6 +30,9 @@ jobs:
         with:
           key: ${{ runner.os }}-node_modules
           path: node_modules
+      
+      - name: Build
+        run: yarn build
 
       - name: Create Release
         env:
