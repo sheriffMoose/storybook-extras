@@ -15,5 +15,5 @@
       }
     }
   },
-  "defaultProject": "@sheriffmoose/storybook-ngx"
+  "defaultProject": "demo"
 }
