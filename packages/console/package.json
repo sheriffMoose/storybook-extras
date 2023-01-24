@@ -53,7 +53,7 @@
         "@storybook/components": "7.0.0-beta.31",
         "@storybook/core-events": "7.0.0-beta.31",
         "@storybook/csf-tools": "^7.0.0-beta.31",
-        "@storybook/react": "7.0.0-beta.31",
+        "@storybook/react": "7.0.0-beta.32",
         "@storybook/react-webpack5": "7.0.0-beta.31",
         "auto": "^10.3.0",
         "prettier": "^2.3.1",
