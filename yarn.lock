@@ -3571,7 +3571,7 @@
     "@storybook/mdx2-csf" next
 
 "@storybook-extras/preset@*", "@storybook-extras/preset@file:/home/mosherif87/storybook-extras/packages/preset":
-  version "0.0.6"
+  version "0.0.7"
   resolved "file:packages/preset"
   dependencies:
     "@storybook-extras/angular" "*"

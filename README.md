@@ -11,11 +11,7 @@
 
 ![][badge.node]
 ![][badge.npm]
-![][badge.downloads]
-
 [![][badge.storybook]][link.npm]
-
-[![][badge.health]][link.snyk]
 
 [![][badge.banner]][link.npm]
 
@@ -114,18 +110,18 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 [addon.markdown.link]: https://www.npmjs.com/package/@storybook-extras/markdown
 [addon.swagger.img]: https://img.shields.io/npm/v/@storybook-extras/swagger?logo=swagger&label=&color=grey&labelColor=85EA2D&logoColor=black&style=for-the-badge
 [addon.swagger.link]: https://www.npmjs.com/package/@storybook-extras/swagger
-[badge.logo]: https://github.com/sheriffMoose/storybook-extras/blob/master/logo.png?raw=true
-[badge.release]: https://badge.shields.io/github/actions/workflow/status/sheriffMoose/storybook-extras/release.yml?logo=github&label=release
-[badge.license]: https://badge.shields.io/github/license/sheriffMoose/storybook-extras?logo=github
-[badge.node]: https://badge.shields.io/node/v/@storybook-extras/preset?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
-[badge.npm]: https://badge.shields.io/npm/v/@storybook-extras/preset?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
-[badge.downloads]: https://badge.shields.io/npm/dt/@storybook-extras/preset?logo=docusign&logoColor=white&labelColor=purple&color=grey&label=
-[badge.angular]: https://badge.shields.io/npm/dependency-version/@storybook-extras/preset/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label=
-[badge.storybook]: https://badge.shields.io/npm/dependency-version/@storybook-extras/preset/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
-[badge.typescript]: https://badge.shields.io/npm/dependency-version/@storybook-extras/preset/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label=
-[badge.health]: https://snyk.io/advisor/npm-package/@storybook-extras/preset/badge.svg
+
+[logo]: https://github.com/sheriffMoose/storybook-extras/blob/master/logos/extras.svg?raw=true
+
+[badge.release]: https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-extras/release.yml?logo=github&label=release
+[badge.license]: https://img.shields.io/github/license/sheriffMoose/storybook-extras?logo=github
+
+[badge.node]: https://img.shields.io/node/v/@storybook-extras/preset?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
+[badge.npm]: https://img.shields.io/npm/v/@storybook-extras/preset?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
+[badge.storybook]: https://img.shields.io/npm/dependency-version/@storybook-extras/preset/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
+
 [badge.banner]: https://nodei.co/npm/@storybook-extras/preset.png
+
 [link.release]: https://github.com/sheriffMoose/storybook-extras/actions/workflows/release.yml
 [link.license]: https://github.com/sheriffMoose/storybook-extras/blob/master/LICENSE
 [link.npm]: https://npmjs.org/package/@storybook-extras/preset
-[link.snyk]: https://snyk.io/advisor/npm-package/@storybook-extras/preset

@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/preset",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
