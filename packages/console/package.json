@@ -29,7 +29,7 @@
         "supportedFrameworks": [
             "supported-frameworks"
         ],
-        "icon": "https://github.com/storybook-extras/blob/master/logos/console.svg"
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/console.svg"
     },
     "engines": {
         "node": ">=16"
