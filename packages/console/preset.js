@@ -1,4 +1,4 @@
-const preview = require.resolve("./src/preview");
+const preview = require.resolve("./main/preview");
 
 export default {
     previewAnnotations: (entries = []) => [...entries, preview]

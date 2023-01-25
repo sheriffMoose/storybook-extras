@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/console",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Storybook addon for displaying console logs in `Actions` panel.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
@@ -38,7 +38,7 @@
     "module": "dist/esm/index.js",
     "types": "dist/ts/index.d.ts",
     "files": [
-        "dist/**/*",
+        "main",
         "README.md",
         "*.js",
         "*.d.ts"

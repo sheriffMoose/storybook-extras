@@ -66,7 +66,7 @@ module.exports = {
 
 ## Roadmap
 - Pass openapiURL as environment variable
-
+- Support multiple openapiURLs
 
 [img.node]:
 https://img.shields.io/node/v/@storybook-extras/swagger?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=

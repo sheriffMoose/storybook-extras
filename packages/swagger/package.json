@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/swagger",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Storybook addon for Swagger UI.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
@@ -34,6 +34,7 @@
         "node": ">=16"
     },
     "files": [
+        "main",
         "README.md",
         "*.js"
     ],
