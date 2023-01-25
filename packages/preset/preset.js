@@ -8,12 +8,12 @@ export const addons = options => {
     const addons = [];
     const keys = ['console', 'markdown', 'swagger'];
 
-    if ((framework?.name || framework) === 'angular') {
+    if ((framework?.name || framework || '').includes('angular')) {
         keys.push('angular');
     }
 
     keys.forEach(key => {
-        if(extras?.[key] !== false) {
+        if (extras?.[key] !== false) {
             addons.push({ name: `@storybook-extras/${key}`, options: extras[key] || {} });
         }
     });
