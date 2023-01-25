@@ -14,18 +14,18 @@ module.exports = {
     ],
     addons: [
         //
+        {
+            name: '@storybook-extras/swagger',
+            options: {
+                openapiURL: 'https://petstore.swagger.io/v2/swagger.json',
+            },
+        },
         '@storybook-extras/angular',
         '@storybook-extras/console',
         {
             name: '@storybook-extras/markdown',
             options: {
                 mdExclude: [/\.component\.html$/],
-            },
-        },
-        {
-            name: '@storybook-extras/swagger',
-            options: {
-                openapiURL: 'https://petstore.swagger.io/v2/swagger.json',
             },
         },
         '@storybook/addon-essentials',

@@ -11,7 +11,7 @@ export function storyIndexers(indexers) {
   ];
 };
 
-export async function webpack(config, { mdInclude, mdExclude }) {
+export async function webpack(config, { mdInclude, mdExclude, presetsList }) {
   const module = config.module || {};
   let rules = module.rules || [];
   rules = [
