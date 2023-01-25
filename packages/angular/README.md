@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/sheriffMoose/storybook-ngx/blob/master/logo.png?raw=true" alt="logo" width="200" />
+<img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/angular.svg" alt="logo" width="200" />
 
 <h1>Storybook Angular Extras</h1>
 

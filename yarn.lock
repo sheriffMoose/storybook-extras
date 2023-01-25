@@ -3554,7 +3554,7 @@
     lodash.values "^4.3.0"
 
 "@storybook-extras/angular@*", "@storybook-extras/angular@file:/home/mosherif87/storybook-extras/packages/angular":
-  version "0.0.3"
+  version "0.0.4"
   resolved "file:packages/angular"
   dependencies:
     "@jsdevtools/coverage-istanbul-loader" "^3.0.5"

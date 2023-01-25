@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/angular",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://sheriffmoose.github.io/storybook-extras",
@@ -39,7 +39,7 @@
         "supportedFrameworks": [
             "angular"
         ],
-        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/angular.png"
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/angular.svg"
     },
     "engines": {
         "node": ">=16"
