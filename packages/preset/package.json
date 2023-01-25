@@ -28,9 +28,9 @@
         "registry": "https://registry.npmjs.org/"
     },
     "storybook": {
-        "displayName": "Angular Extras",
+        "displayName": "Storybook Extras Addons",
         "supportedFrameworks": [
-            "angular"
+            "supported-framewrks"
         ],
         "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/extras.png"
     },
