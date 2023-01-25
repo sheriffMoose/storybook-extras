@@ -119,7 +119,7 @@ export const Primary: StoryObj = {
 
 ### Documentation Lazy Loading
 
--   This feature uses `node-fetch` to load the `documentation.json` file during runtime, specifically in the preview iframe before the load of each story.
+-   This feature uses `fetch` to load the `documentation.json` file during runtime, specifically in the preview iframe before the load of each story.
 -   This is very helpful if you are doing active development and your documentation is being updated regularly.
 -   This is also helpful if your application is already published along with its documentation and you need to load that remotely served documentation.
 
