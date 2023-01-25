@@ -32,7 +32,7 @@
 1. Install the addon:
 
 ```js
-yarn add @storybook-extras/all -D
+yarn add @storybook-extras/preset -D
 ```
 
 1. Add the addon
@@ -42,7 +42,7 @@ yarn add @storybook-extras/all -D
 module.exports = {
     ...
     "addons": [
-        "@storybook-extras/all",
+        "@storybook-extras/preset",
         ...
     ],
     ...
