@@ -1,0 +1,71 @@
+{
+    "name": "@storybook-extras/console",
+    "version": "0.0.1",
+    "description": "Storybook addon for displaying console logs in `Actions` panel.",
+    "repository": "sheriffMoose/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "license": "MIT",
+    "keywords": [
+        "storybook",
+        "console",
+        "actions",
+        "panel",
+        "addons"
+    ],
+    "author": {
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "storybook": {
+        "displayName": "Console Logs",
+        "supportedFrameworks": [
+            "supported-frameworks"
+        ],
+        "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+    },
+    "engines": {
+        "node": ">=16"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
+    "files": [
+        "dist/**/*",
+        "README.md",
+        "*.js",
+        "*.d.ts"
+    ],
+    "scripts": {},
+    "devDependencies": {
+        "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/react": "next",
+        "@storybook/react-webpack5": "next",
+        "auto": "^10.3.0",
+        "prettier": "^2.3.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "storybook": "next",
+        "typescript": "^4.2.4",
+        "zx": "^1.14.1"
+    },
+    "peerDependencies": {
+        "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/theming": "next",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
