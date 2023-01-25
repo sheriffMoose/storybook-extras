@@ -3,8 +3,8 @@ module.exports = {
     stories: [
         //
         '../*.md',
-        // '../app/**/*.stories.mdx',
-        // '../app/**/*.stories.@(js|jsx|ts|tsx)',
+        '../app/**/*.stories.mdx',
+        '../app/**/*.stories.@(js|jsx|ts|tsx)',
     ],
     staticDirs: [
         {
@@ -14,9 +14,14 @@ module.exports = {
     ],
     addons: [
         //
-        // '@storybook-extras/angular',
+        '@storybook-extras/angular',
         '@storybook-extras/console',
-        '@storybook-extras/markdown',
+        {
+            name: '@storybook-extras/markdown',
+            options: {
+                mdExclude: [/\.component\.html$/],
+            },
+        },
         {
             name: '@storybook-extras/swagger',
             options: {

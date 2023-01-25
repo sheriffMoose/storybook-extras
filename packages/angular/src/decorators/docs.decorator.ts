@@ -1,6 +1,5 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import { addons, makeDecorator } from '@storybook/addons';
-import fetch from 'node-fetch';
 import { DOCS_PARAM_KEY, EVENTS } from "../constants";
 
 export const docsDecorator = makeDecorator({
