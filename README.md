@@ -92,23 +92,23 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 
 ## Addons
 
-| Addon              | Description                                 | Version                                      |                                                                                                 |
-| ------------------ | ------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Preset | Storybook Extras | [![addon.preset.img]][addon.preset.link]     | [`Docs`](https://github.com/sheriffMoose/storybook-extras/#readme)
-| Angular            | Extra features for Angular                  | [![][addon.angular.img]][addon.angular.link] | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/angular#readme)  |
-| Console Logs       | Display console logs in the storybook       | [![addon.console.img]][addon.console.link]   | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/console#readme)  |
-| Markdown/HTML Docs | Display markdown/html docs in the storybook | [![addon.markdown.img]][addon.markdown.link] | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/markdown#readme) |
-| OpenAPI/Swagger UI | Display OpenAPI/Swagger UI in the storybook | [![addon.swagger.img]][addon.swagger.link]   | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/swagger#readme)  |
+| | Addon              | Description                                 | Version                                      |                                                                                                 |
+| --- | ------------------ | ------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| <img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/extras.svg" with="32" height="32" /> | Preset | Storybook Extras | [![addon.preset.img]][addon.preset.link]     | [`Docs`](https://github.com/sheriffMoose/storybook-extras/#readme)
+| <img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/angular.svg" with="32" height="32" /> | Angular            | Extra features for Angular                  | [![][addon.angular.img]][addon.angular.link] | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/angular#readme)  |
+| <img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/console.svg" with="32" height="32" /> |  Console Logs       | Display console logs in the storybook       | [![addon.console.img]][addon.console.link]   | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/console#readme)  |
+| <img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/markdown.svg" with="32" height="32" /> |  Markdown/HTML Docs | Display markdown/html docs in the storybook | [![addon.markdown.img]][addon.markdown.link] | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/markdown#readme) |
+| <img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/swagger.svg" with="32" height="32" /> |  OpenAPI/Swagger UI | Display OpenAPI/Swagger UI in the storybook | [![addon.swagger.img]][addon.swagger.link]   | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/swagger#readme)  |
 
-[addon.preset.img]: https://img.shields.io/npm/v/@storybook-extras/preset?logo=storybook&logoColor=white&label=&color=grey&labelColor=FF4785&style=for-the-badge
+[addon.preset.img]: https://img.shields.io/npm/v/@storybook-extras/preset?label=&color=FF4785&style=for-the-badge
 [addon.preset.link]: https://www.npmjs.com/package/@storybook-extras/preset
-[addon.angular.img]: https://img.shields.io/npm/v/@storybook-extras/angular?logo=angular&label=&color=grey&labelColor=DD0031&style=for-the-badge
+[addon.angular.img]: https://img.shields.io/npm/v/@storybook-extras/angular?label=&color=FF4785&style=for-the-badge
 [addon.angular.link]: https://www.npmjs.com/package/@storybook-extras/angular
-[addon.console.img]: https://img.shields.io/npm/v/@storybook-extras/console?label=&color=grey&labelColor=339933&logoColor=white&style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjb2xvcj0iIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDVhMiAyIDAgMDEyLTJoMTJhMiAyIDAgMDEyIDJ2MTBhMiAyIDAgMDEtMiAySDRhMiAyIDAgMDEtMi0yVjV6bTMuMjkzIDEuMjkzYTEgMSAwIDAxMS40MTQgMGwzIDNhMSAxIDAgMDEwIDEuNDE0bC0zIDNhMSAxIDAgMDEtMS40MTQtMS40MTRMNy41ODYgMTAgNS4yOTMgNy43MDdhMSAxIDAgMDEwLTEuNDE0ek0xMSAxMmExIDEgMCAxMDAgMmgzYTEgMSAwIDEwMC0yaC0zeiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+
+[addon.console.img]: https://img.shields.io/npm/v/@storybook-extras/console?label=&color=FF4785&style=for-the-badge
 [addon.console.link]: https://www.npmjs.com/package/@storybook-extras/console
-[addon.markdown.img]: https://img.shields.io/npm/v/@storybook-extras/markdown?logo=markdown&label=&color=grey&labelColor=orange&style=for-the-badge
+[addon.markdown.img]: https://img.shields.io/npm/v/@storybook-extras/markdown?label=&color=FF4785&style=for-the-badge
 [addon.markdown.link]: https://www.npmjs.com/package/@storybook-extras/markdown
-[addon.swagger.img]: https://img.shields.io/npm/v/@storybook-extras/swagger?logo=swagger&label=&color=grey&labelColor=85EA2D&logoColor=black&style=for-the-badge
+[addon.swagger.img]: https://img.shields.io/npm/v/@storybook-extras/swagger?label=&color=FF4785&style=for-the-badge
 [addon.swagger.link]: https://www.npmjs.com/package/@storybook-extras/swagger
 
 [logo]: https://github.com/sheriffMoose/storybook-extras/blob/master/logos/extras.svg?raw=true
