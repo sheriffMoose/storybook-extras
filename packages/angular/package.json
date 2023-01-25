@@ -109,7 +109,7 @@
         "@typescript-eslint/eslint-plugin": "^5.45.1",
         "@typescript-eslint/parser": "^5.45.1",
         "auto": "^10.3.0",
-        "babel-loader": "^8.1.0",
+        "babel-loader": "^9.1.2",
         "boxen": "^5.0.1",
         "chromatic": "^6.14.0",
         "concurrently": "^7.6.0",
