@@ -1,27 +1,30 @@
 import path from 'path';
 import webpack from 'webpack';
+import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 
 const except = (plugins, toRemove) => {
     return (plugins || []).filter(p => !toRemove.some(i => p instanceof i));
-}
+};
 
 export const webpackFinal = async (config, options) => {
+    config.resolve.fallback = {
+        ...config.resolve.fallback,
+        buffer: false,
+    };
 
     config.module.rules.push({
         test: /\.(js|ts)$/,
         loader: '@jsdevtools/coverage-istanbul-loader',
         enforce: 'post',
         include: path.join(process.cwd(), 'src'),
-        exclude: [
-            /\.(e2e|spec|stories)\.ts$/,
-            /node_modules/,
-            /(ngfactory|ngstyle)\.js/
-        ],
+        exclude: [/\.(e2e|spec|stories)\.ts$/, /node_modules/, /(ngfactory|ngstyle)\.js/],
     });
 
     config.plugins = [
-        ...except(config.plugins, [webpack.ProgressPlugin])
+        //
+        ...except(config.plugins, [webpack.ProgressPlugin]),
+        new NodePolyfillPlugin(),
     ];
 
     return config;
-}
+};
