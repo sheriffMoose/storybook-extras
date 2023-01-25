@@ -3580,8 +3580,15 @@
     "@storybook-extras/swagger" "*"
 
 "@storybook-extras/swagger@*", "@storybook-extras/swagger@file:/home/mosherif87/storybook-extras/packages/swagger":
-  version "0.0.2"
+  version "0.0.3"
   resolved "file:packages/swagger"
+  dependencies:
+    swagger-ui-react "^4.15.5"
+
+"@storybook-extras/swagger@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@storybook-extras/swagger/-/swagger-0.0.2.tgz"
+  integrity sha512-2Clxq7Mrxms321NdihsmMXw/FlUdV2aukcVMgBBTj0neoI/5a/S5/LhL5aVc36vbQtdu/xv+qMsjsNEwv3A6+Q==
   dependencies:
     swagger-ui-react "^4.15.5"
 
@@ -7901,7 +7908,7 @@ delegates@^1.0.0:
     "@storybook-extras/console" "*"
     "@storybook-extras/markdown" "*"
     "@storybook-extras/preset" "*"
-    "@storybook-extras/swagger" "*"
+    "@storybook-extras/swagger" "^0.0.2"
     rxjs "6.5.4"
     zone.js "~0.11.4"
 
