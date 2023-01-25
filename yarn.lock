@@ -3565,7 +3565,7 @@
   resolved "file:packages/console"
 
 "@storybook-extras/markdown@*", "@storybook-extras/markdown@file:/home/mosherif87/storybook-extras/packages/markdown":
-  version "0.0.2"
+  version "0.0.3"
   resolved "file:packages/markdown"
   dependencies:
     "@storybook/mdx2-csf" next
@@ -3580,7 +3580,7 @@
     "@storybook-extras/swagger" "*"
 
 "@storybook-extras/swagger@*", "@storybook-extras/swagger@file:/home/mosherif87/storybook-extras/packages/swagger":
-  version "0.0.4"
+  version "0.0.5"
   resolved "file:packages/swagger"
   dependencies:
     swagger-ui-react "^4.15.5"

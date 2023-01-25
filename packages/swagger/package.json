@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/swagger",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Storybook addon for Swagger UI.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
@@ -28,7 +28,7 @@
         "supportedFrameworks": [
             "supported-frameworks"
         ],
-        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/swagger.png"
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/swagger.svg"
     },
     "engines": {
         "node": ">=16"

@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/markdown",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Storybook addon for auto importing markdown docs.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
@@ -30,7 +30,7 @@
         "supportedFrameworks": [
             "supported-frameworks"
         ],
-        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/markdown.png"
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/markdown.svg"
     },
     "engines": {
         "node": ">=16"
