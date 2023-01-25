@@ -1,0 +1,26 @@
+{
+    "name": "@storybook-extras/monorepo",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "start": "npm run storybook",
+        "storybook": "nx storybook",
+        "build": "nx run-many --target=build --all --parallel=10 --exclude=demo",
+        "release": "auto shipit",
+        "build:storybook": "nx build:storybook",
+        "chromatic": "nx chromatic"
+    },
+    "private": true,
+    "devDependencies": {
+        "@nrwl/nx-cloud": "latest",
+        "@nrwl/workspace": "^15.6.0",
+        "auto": "^10.3.0",
+        "lerna": "^6.4.1",
+        "nx": "15.5.3",
+        "prettier": "^2.6.2"
+    },
+    "workspaces": [
+        "demo",
+        "packages/*"
+    ]
+}
