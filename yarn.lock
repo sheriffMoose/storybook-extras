@@ -3554,7 +3554,7 @@
     lodash.values "^4.3.0"
 
 "@storybook-extras/angular@*", "@storybook-extras/angular@file:/home/mosherif87/storybook-extras/packages/angular":
-  version "0.0.2"
+  version "0.0.3"
   resolved "file:packages/angular"
   dependencies:
     "@jsdevtools/coverage-istanbul-loader" "^3.0.5"
@@ -3571,7 +3571,7 @@
     "@storybook/mdx2-csf" next
 
 "@storybook-extras/preset@*", "@storybook-extras/preset@file:/home/mosherif87/storybook-extras/packages/preset":
-  version "0.0.0"
+  version "0.0.3"
   resolved "file:packages/preset"
   dependencies:
     "@storybook-extras/angular" "*"
@@ -3579,7 +3579,7 @@
     "@storybook-extras/markdown" "*"
     "@storybook-extras/swagger" "*"
 
-"@storybook-extras/swagger@*", "@storybook-extras/swagger@^0.0.4", "@storybook-extras/swagger@file:/home/mosherif87/storybook-extras/packages/swagger":
+"@storybook-extras/swagger@*", "@storybook-extras/swagger@file:/home/mosherif87/storybook-extras/packages/swagger":
   version "0.0.4"
   resolved "file:packages/swagger"
   dependencies:
@@ -7901,7 +7901,7 @@ delegates@^1.0.0:
     "@storybook-extras/console" "*"
     "@storybook-extras/markdown" "*"
     "@storybook-extras/preset" "*"
-    "@storybook-extras/swagger" "^0.0.4"
+    "@storybook-extras/swagger" "*"
     rxjs "6.5.4"
     zone.js "~0.11.4"
 
