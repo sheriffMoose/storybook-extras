@@ -1,0 +1,10 @@
+{
+  "extends": "../app/tsconfig.app.json",
+  "compilerOptions": {
+      "types": ["node"],
+      "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["../app/test.ts", "../app/**/*.spec.ts", "../projects/**/*.spec.ts"],
+  "include": ["../app/**/*", "../src/**/*"],
+  "files": ["./typings.d.ts"]
+}
