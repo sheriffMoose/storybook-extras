@@ -1,65 +1,81 @@
 {
     "name": "@storybook-extras/swagger",
     "version": "0.0.1",
-    "description": "Storybook addon to add extra configurations for Angular applications.",
+    "description": "Storybook addon for Swagger UI.",
     "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://sheriffmoose.github.io/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
-      "storybook",
-      "extras",
-      "addons",
-      "swagger",
-      "openapi"
+        "storybook",
+        "addon",
+        "swagger",
+        "openapi"
     ],
     "author": {
-      "name": "Mostafa Sherif",
-      "email": "mosherif87@gmail.com"
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
     },
     "bugs": {
-      "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
     },
     "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org/"
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     },
     "storybook": {
-      "displayName": "Swagger UI",
-      "supportedFrameworks": [
-        "supported-frameworks"
-      ],
-      "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/swagger.png"
+        "displayName": "Swagger UI",
+        "supportedFrameworks": [
+            "supported-frameworks"
+        ],
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/md.png"
     },
     "engines": {
-      "node": ">=16"
+        "node": ">=16"
     },
     "files": [
-      "README.md",
-      "src",
-      "*.js"
+        "README.md",
+        "*.js"
     ],
     "scripts": {},
     "dependencies": {
-      "swagger-ui-react": "^4.15.5"
+        "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {
-      "@storybook/api": "next",
-      "@storybook/components": "next",
-      "@storybook/core-events": "next",
-      "@storybook/theming": "next",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "storybook": "next"
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-react": "^7.12.5",
+        "@babel/preset-typescript": "^7.13.0",
+        "@storybook/addon-essentials": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/csf-tools": "next",
+        "@storybook/react": "next",
+        "@storybook/react-webpack5": "next",
+        "auto": "^10.3.0",
+        "babel-loader": "^8.1.0",
+        "boxen": "^5.0.1",
+        "chromatic": "^6.14.0",
+        "concurrently": "^6.2.0",
+        "dedent": "^0.7.0",
+        "prettier": "^2.3.1",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "rimraf": "^3.0.2",
+        "storybook": "next",
+        "typescript": "^4.2.4",
+        "zx": "^1.14.1"
     },
     "peerDependencies": {
-      "@storybook/addons": "next",
-      "@storybook/api": "next",
-      "@storybook/components": "next",
-      "@storybook/core-events": "next",
-      "@storybook/theming": "next",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0"
+        "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/theming": "next",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     }
-  }
-  
+}
