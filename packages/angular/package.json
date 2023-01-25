@@ -126,7 +126,6 @@
         "rxjs": "6.5.4",
         "storybook": "next",
         "typescript": "4.8.2",
-        "webpack-node-externals": "^3.0.0",
         "zone.js": "~0.11.4",
         "zx": "^1.14.1"
     },
