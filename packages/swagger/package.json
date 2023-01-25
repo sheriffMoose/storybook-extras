@@ -1,0 +1,65 @@
+{
+    "name": "@storybook-extras/swagger",
+    "version": "0.0.1",
+    "description": "Storybook addon to add extra configurations for Angular applications.",
+    "repository": "sheriffMoose/storybook-extras",
+    "homepage": "https://sheriffmoose.github.io/storybook-extras",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "license": "MIT",
+    "keywords": [
+      "storybook",
+      "extras",
+      "addons",
+      "swagger",
+      "openapi"
+    ],
+    "author": {
+      "name": "Mostafa Sherif",
+      "email": "mosherif87@gmail.com"
+    },
+    "bugs": {
+      "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "storybook": {
+      "displayName": "Swagger UI",
+      "supportedFrameworks": [
+        "supported-frameworks"
+      ],
+      "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/swagger.png"
+    },
+    "engines": {
+      "node": ">=16"
+    },
+    "files": [
+      "README.md",
+      "src",
+      "*.js"
+    ],
+    "scripts": {},
+    "dependencies": {
+      "swagger-ui-react": "^4.15.5"
+    },
+    "devDependencies": {
+      "@storybook/api": "next",
+      "@storybook/components": "next",
+      "@storybook/core-events": "next",
+      "@storybook/theming": "next",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "storybook": "next"
+    },
+    "peerDependencies": {
+      "@storybook/addons": "next",
+      "@storybook/api": "next",
+      "@storybook/components": "next",
+      "@storybook/core-events": "next",
+      "@storybook/theming": "next",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  }
+  
