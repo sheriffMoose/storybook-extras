@@ -1,0 +1,81 @@
+{
+    "name": "@storybook-extras/preset",
+    "version": "0.0.0",
+    "description": "Storybook addon to add extra configurations for Angular applications.",
+    "repository": "sheriffMoose/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "license": "MIT",
+    "keywords": [
+        "storybook",
+        "extras",
+        "addons",
+        "angular",
+        "console",
+        "markdown",
+        "swagger",
+        "openapi"
+    ],
+    "author": {
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "storybook": {
+        "displayName": "Angular Extras",
+        "supportedFrameworks": [
+            "angular"
+        ],
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/sbx.png"
+    },
+    "engines": {
+        "node": ">=16"
+    },
+    "files": [
+        "README.md",
+        "preset.js"
+    ],
+    "scripts": {},
+    "dependencies": {
+        "@storybook-extras/angular": "*",
+        "@storybook-extras/console": "*",
+        "@storybook-extras/markdown": "*",
+        "@storybook-extras/swagger": "*"
+    },
+    "devDependencies": {
+        "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/react": "next",
+        "@storybook/react-webpack5": "next",
+        "auto": "^10.3.0",
+        "prettier": "^2.3.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "storybook": "next",
+        "typescript": "^4.2.4",
+        "zx": "^1.14.1"
+    },
+    "peerDependencies": {
+        "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/theming": "next",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "resolutions": {
+        "@storybook-extras/angular": "file:../angular",
+        "@storybook-extras/console": "file:../console",
+        "@storybook-extras/markdown": "file:../markdown",
+        "@storybook-extras/swagger": "file:../swagger"
+    }
+}
