@@ -1,5 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
+import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 
 const except = (plugins, toRemove) => {
     return (plugins || []).filter(p => !toRemove.some(i => p instanceof i));
@@ -20,7 +21,8 @@ export const webpackFinal = async (config, options) => {
     });
 
     config.plugins = [
-        ...except(config.plugins, [webpack.ProgressPlugin])
+        ...except(config.plugins, [webpack.ProgressPlugin]),
+        new NodePolyfillPlugin()
     ];
 
     return config;
