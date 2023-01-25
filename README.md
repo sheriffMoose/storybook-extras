@@ -98,11 +98,14 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 
 | Addon              | Description                                 | Version                                      |                                                                                                 |
 | ------------------ | ------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Preset | Storybook Extras | [![addon.preset.img]][addon.preset.link]     | [`Docs`](https://github.com/sheriffMoose/storybook-extras/#readme)
 | Angular            | Extra features for Angular                  | [![][addon.angular.img]][addon.angular.link] | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/angular#readme)  |
 | Console Logs       | Display console logs in the storybook       | [![addon.console.img]][addon.console.link]   | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/console#readme)  |
 | Markdown/HTML Docs | Display markdown/html docs in the storybook | [![addon.markdown.img]][addon.markdown.link] | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/markdown#readme) |
 | OpenAPI/Swagger UI | Display OpenAPI/Swagger UI in the storybook | [![addon.swagger.img]][addon.swagger.link]   | [`Docs`](https://github.com/sheriffMoose/storybook-extras/tree/master/packages/swagger#readme)  |
 
+[addon.preset.img]: https://img.shields.io/npm/v/@storybook-extras/preset?logo=storybook&logoColor=white&label=&color=grey&labelColor=FF4785&style=for-the-badge
+[addon.preset.link]: https://www.npmjs.com/package/@storybook-extras/preset
 [addon.angular.img]: https://img.shields.io/npm/v/@storybook-extras/angular?logo=angular&label=&color=grey&labelColor=DD0031&style=for-the-badge
 [addon.angular.link]: https://www.npmjs.com/package/@storybook-extras/angular
 [addon.console.img]: https://img.shields.io/npm/v/@storybook-extras/console?logo=windowsterminal&label=&color=grey&labelColor=339933&logoColor=white&style=for-the-badge
