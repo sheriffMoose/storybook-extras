@@ -3561,7 +3561,7 @@
     node-polyfill-webpack-plugin "^2.0.1"
 
 "@storybook-extras/console@*", "@storybook-extras/console@file:/home/mosherif87/storybook-extras/packages/console":
-  version "0.0.3"
+  version "0.0.4"
   resolved "file:packages/console"
 
 "@storybook-extras/markdown@*", "@storybook-extras/markdown@file:/home/mosherif87/storybook-extras/packages/markdown":
