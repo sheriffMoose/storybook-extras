@@ -32,7 +32,7 @@
         "supportedFrameworks": [
             "supported-framewrks"
         ],
-        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/extras.png"
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/extras.svg"
     },
     "engines": {
         "node": ">=16"

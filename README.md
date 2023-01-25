@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/sheriffMoose/storybook-extras/blob/master/logos/extras.png?raw=true" alt="logo" width="200" />
+<img src="https://github.com/sheriffMoose/storybook-extras/blob/master/logos/extras.svg?raw=true" alt="logo" width="200" />
 
 <h1>Storybook Extras</h1>
 
