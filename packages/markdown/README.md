@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/storybook-extras/blob/master/logos/markdown.png?raw=true" alt="logo" width="200" />
+<img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/markdown.svg" alt="logo" width="200" />
 
 <h1>Markdown Docs</h1>
 <p>Storybook addon for auto importing markdown/html docs.</p>

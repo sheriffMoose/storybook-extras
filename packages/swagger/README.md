@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/storybook-extras/blob/master/logos/swagger.png?raw=true" alt="logo" width="200" />
+<img src="https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/swagger.svg" alt="logo" width="200" />
 
 <h1>Storybook Swagger UI</h1>
 
