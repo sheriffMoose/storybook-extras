@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/storybook-extras/blob/master/logos/console.png?raw=true" alt="logo" width="200" />
+<img src="https://github.com/storybook-extras/blob/master/logos/console.svg" alt="logo" width="200" />
 
 <h1>Storybook Console Logs</h1>
 
