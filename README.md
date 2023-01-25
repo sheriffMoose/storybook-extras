@@ -108,7 +108,7 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 [addon.preset.link]: https://www.npmjs.com/package/@storybook-extras/preset
 [addon.angular.img]: https://img.shields.io/npm/v/@storybook-extras/angular?logo=angular&label=&color=grey&labelColor=DD0031&style=for-the-badge
 [addon.angular.link]: https://www.npmjs.com/package/@storybook-extras/angular
-[addon.console.img]: https://img.shields.io/npm/v/@storybook-extras/console?logo=windowsterminal&label=&color=grey&labelColor=339933&logoColor=white&style=for-the-badge
+[addon.console.img]: https://img.shields.io/npm/v/@storybook-extras/console?label=&color=grey&labelColor=339933&logoColor=white&style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iY3VycmVudENvbG9yIiBjb2xvcj0iIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDVhMiAyIDAgMDEyLTJoMTJhMiAyIDAgMDEyIDJ2MTBhMiAyIDAgMDEtMiAySDRhMiAyIDAgMDEtMi0yVjV6bTMuMjkzIDEuMjkzYTEgMSAwIDAxMS40MTQgMGwzIDNhMSAxIDAgMDEwIDEuNDE0bC0zIDNhMSAxIDAgMDEtMS40MTQtMS40MTRMNy41ODYgMTAgNS4yOTMgNy43MDdhMSAxIDAgMDEwLTEuNDE0ek0xMSAxMmExIDEgMCAxMDAgMmgzYTEgMSAwIDEwMC0yaC0zeiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+
 [addon.console.link]: https://www.npmjs.com/package/@storybook-extras/console
 [addon.markdown.img]: https://img.shields.io/npm/v/@storybook-extras/markdown?logo=markdown&label=&color=grey&labelColor=orange&style=for-the-badge
 [addon.markdown.link]: https://www.npmjs.com/package/@storybook-extras/markdown
