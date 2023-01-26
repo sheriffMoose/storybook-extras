@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/markdown",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "Storybook addon for auto importing markdown docs.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
