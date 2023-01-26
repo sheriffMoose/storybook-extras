@@ -8,6 +8,7 @@ import { ButtonService } from './button.service';
     providers: [ButtonService],
 })
 export class ButtonComponent implements OnInit {
+
     /**
      * Is this the principal call to action on the page?
      */
@@ -18,7 +19,7 @@ export class ButtonComponent implements OnInit {
      * What background color to use
      */
     @Input()
-    backgroundColor?: string;
+    backgroundColor: 'blue' | 'red' | 'gold' = 'blue';
 
     /**
      * How large should the button be?
