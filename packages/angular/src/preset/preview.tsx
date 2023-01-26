@@ -1,8 +1,7 @@
-import { CONSOLE_PARAM_KEY, DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from "../constants";
-import { consoleDecorator, docsDecorator, ngModuleDecorator, sourceDecorator, wrapperDecorator } from "../decorators";
+import {  DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from "../constants";
+import {  docsDecorator, ngModuleDecorator, sourceDecorator, wrapperDecorator } from "../decorators";
 
 export const decorators = [
-  consoleDecorator(),
   docsDecorator(),
   ngModuleDecorator({}),
   wrapperDecorator(),
@@ -21,15 +20,9 @@ export const parameters = {
     lazyLoad: false,
     url: ''
   },
-  [CONSOLE_PARAM_KEY]: {
-    enabled: true,
-    patterns: [/^dev$/],
-    omitFirst: true,
-  }
 };
 
 export const globals = {
-  [CONSOLE_PARAM_KEY]: null as any,
   [DOCS_PARAM_KEY]: null as any,
   [WRAPPERS_PARAM_KEY]: null as any,
 }
