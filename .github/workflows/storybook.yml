@@ -22,9 +22,18 @@ jobs:
           node-version: 16.x
       
       - name: Install dependencies
-        run: npm i
-        working-directory: demo
-
+      - uses: bahmutov/npm-install@v1
+        with:
+          working-directory: |
+            ./
+            ./demo
+            ./packages/angular
+            ./packages/console
+            ./packages/markdown
+            ./packages/preset
+            ./packages/swagger
+            ./packages/toolbars
+            ./packages/variants
 
       - name: Cache node_modules
         uses: actions/cache@v3
