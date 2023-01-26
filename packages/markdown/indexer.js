@@ -1,20 +1,26 @@
 import { loadCsf } from '@storybook/csf-tools';
 import { compile } from '@storybook/mdx2-csf';
+import { resolve } from 'path';
 
-export async function indexer(fileName, opts) {
-  const title = fileName.split('/').pop().replace(/\.(md|html)$/, '');
+export function getIndexer(options) {
+    const { configDir, titles } = options;
 
-  // Convert Markdown into MDX
-  const source = `
-      import { Meta, Description } from '@storybook/blocks';
+    return async (fileName, opts) => {
+        const titleKey = Object.keys(titles).find(key => resolve(configDir, key) === fileName) || '';
+        opts.makeTitle = useTitle => titles[titleKey] || useTitle;
 
-      <Meta title='${title}' />
-      <Description>{require('${fileName}')}</Description>
-  `;
+        // Convert Markdown into MDX
+        const source = `
+            import { Description, Meta, Story } from '@storybook/blocks';
 
-  // Compile MDX into CSF
-  const code = await compile(source, {});
+            <Meta title='Markdown Docs' />
+            <Description>{require('${fileName}')}</Description>
+        `;
 
-  // Parse CSF component
-  return loadCsf(code, { ...opts, fileName }).parse();
+        // Compile MDX into CSF
+        const code = await compile(source, {});
+
+        // Parse CSF component
+        return loadCsf(code, { ...opts, fileName }).parse();
+    };
 }
