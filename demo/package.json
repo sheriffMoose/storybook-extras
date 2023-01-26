@@ -2,6 +2,10 @@
     "name": "demo",
     "version": "0.0.15",
     "private": true,
+    "author": {
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
+    },
     "scripts": {
         "start": "npm run storybook",
         "docs": "compodoc -p tsconfig.json -e json -d .docs",
