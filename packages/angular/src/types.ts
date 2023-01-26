@@ -27,10 +27,3 @@ export interface WrappersConfig {
     default?: string;
     values: Wrapper[];
 }
-
-export interface ngExtrasConfig {
-    console?: ConsoleConfig;
-    docs?: DocsConfig;
-    sourceCode?: SourceCodeConfig;
-    wrappers?: WrappersConfig;
-}
