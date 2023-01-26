@@ -84,5 +84,6 @@
         "@storybook-extras/swagger": "file:../swagger",
         "@storybook-extras/toolbars": "file:../toolbars",
         "@storybook-extras/variants": "file:../variants"
-    }
+    },
+    "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
 }
