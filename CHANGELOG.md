@@ -1,3 +1,15 @@
+# v0.0.25 (Thu Jan 26 2023)
+
+#### ⚠️ Pushed to `master`
+
+- remove lerna (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.24 (Thu Jan 26 2023)
 
 #### ⚠️ Pushed to `master`
