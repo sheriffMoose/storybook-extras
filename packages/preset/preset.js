@@ -6,7 +6,7 @@ export const addons = options => {
     const extras = main.extras;
 
     const addons = [];
-    const keys = ['console', 'markdown', 'swagger'];
+    const keys = ['console', 'markdown', 'swagger', 'toolbars', 'variants'];
 
     if ((framework?.name || framework || '').includes('angular')) {
         keys.push('angular');
