@@ -61,8 +61,6 @@ parameters: {
 };
 ```
 
-The `groupBy` option allows nested grouping for the toolbars by the given keys.
-
 
 
 
