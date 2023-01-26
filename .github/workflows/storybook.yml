@@ -20,6 +20,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+
+      - name: Restore Cached node_modules
+        uses: actions/cache@v3
+        with:
+          key: ${{ runner.os }}-node_modules
+          path: node_modules
       
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
