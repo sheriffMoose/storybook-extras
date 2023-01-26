@@ -18,14 +18,14 @@ export const parameters = {
     omitFirst: true,
   },
   sourceCode: {
-    disable: false,
+    disable: true,
   },
   wrappers: {
     disable: false,
     default: 'None',
     values: [
       { name: 'None', value: '' },
-      { name: 'Boredered Container', value: 'app-border' },
+      { name: 'Bordered Container', value: 'app-border' },
       { name: 'Highlight Container', value: 'app-highlight' },
     ]
   },
