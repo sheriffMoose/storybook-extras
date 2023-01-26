@@ -3,12 +3,15 @@
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
+        "************ DEV **************": "",
         "start": "npm run storybook",
         "storybook": "nx storybook",
+        "build:watch": "nx run-many --target=build:watch --all --parallel=10 --exclude=demo",
+        "************ PROD **************": "",
         "build": "nx run-many --target=build --all --parallel=10 --exclude=demo",
-        "release": "auto shipit",
         "build:storybook": "nx build:storybook",
-        "chromatic": "nx chromatic"
+        "chromatic": "nx chromatic",
+        "release": "auto shipit"
     },
     "private": true,
     "devDependencies": {

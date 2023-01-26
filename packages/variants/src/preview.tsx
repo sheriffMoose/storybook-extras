@@ -13,6 +13,9 @@ export const parameters = {
             title: 'Variants',
             // icon: 'user',
             emoji: '👿',
+            isDisabled: (globals, parameter) => {
+                return parameter?.autoCalculate || parameter?.include?.length;
+            },
         },
     ],
 };
