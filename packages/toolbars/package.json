@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/toolbars",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "Storybook addon for adding custom toolbar buttons.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://sheriffmoose.github.io/storybook-extras",
@@ -115,5 +115,5 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
-    "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
+    "gitHead": "597b93fbccf28a8a49fd1b68cb2fe9359df7041a"
 }
