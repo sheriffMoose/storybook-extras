@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/preset",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
@@ -46,10 +46,10 @@
         "postpack": "rm ./README.md"
     },
     "dependencies": {
-        "@storybook-extras/angular": "^0.0.19",
-        "@storybook-extras/console": "^0.0.19",
-        "@storybook-extras/markdown": "^0.0.19",
-        "@storybook-extras/swagger": "^0.0.19",
+        "@storybook-extras/angular": "^0.0.20",
+        "@storybook-extras/console": "^0.0.20",
+        "@storybook-extras/markdown": "^0.0.20",
+        "@storybook-extras/swagger": "^0.0.20",
         "@storybook-extras/toolbars": "^0.0.15",
         "@storybook-extras/variants": "^0.0.15"
     },
