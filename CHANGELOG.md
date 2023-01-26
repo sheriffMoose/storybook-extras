@@ -1,3 +1,21 @@
+# v0.0.16 (Thu Jan 26 2023)
+
+#### ⚠️ Pushed to `master`
+
+- update demo (mosherif87@gmail.com)
+- `@storybook-extras/markdown`
+  - use makeTitle to change markdown/html docs stories titles (mosherif87@gmail.com)
+- `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - pump variants & toolbars version (mosherif87@gmail.com)
+- `@storybook-extras/swagger`
+  - update openapi story file name (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.15 (Wed Jan 25 2023)
 
 #### ⚠️ Pushed to `master`
