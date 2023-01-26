@@ -27,6 +27,9 @@ module.exports = {
         },
         markdown: {
             mdExclude: [/\.component\.html$/],
+            titles: {
+                '../CHANGELOG.md': 'Change Log',
+            }
         },
     },
 };
