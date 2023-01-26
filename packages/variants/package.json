@@ -122,5 +122,6 @@
     },
     "resolutions": {
         "@storybook-extras/toolbars": "file:../toolbars"
-    }
+    },
+    "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
 }
