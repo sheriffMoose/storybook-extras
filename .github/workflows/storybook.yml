@@ -23,6 +23,8 @@ jobs:
       
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        with:
+          working-directory: demo
 
       - name: Cache node_modules
         uses: actions/cache@v3
