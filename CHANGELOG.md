@@ -1,3 +1,15 @@
+# (Wed Jan 25 2023)
+
+#### ⚠️ Pushed to `master`
+
+- update lerna.json (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.11 (Wed Jan 25 2023)
 
 #### 🐛 Bug Fix
