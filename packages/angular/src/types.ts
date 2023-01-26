@@ -13,12 +13,6 @@ export interface SelectorItem {
 
 // CONFIG TYPES
 
-export interface ConsoleConfig {
-    disable?: boolean;
-    patterns?: RegExp[];
-    omitFirst?: boolean;
-}
-
 export interface DocsConfig {
     lazyLoad?: boolean;
     url?: string;
