@@ -7,7 +7,7 @@ import { useGlobals, useParameter } from '@storybook/manager-api';
 import { ButtonConfig } from './constants';
 
 const ButtonIcon: FC<any> = ({ button }) => {
-    const { icon, emoji } = button;
+    const { icon, emoji, isDisabled } = button;
     if (icon) {
         return <Icons icon={icon} />;
     } else if (emoji) {
@@ -25,9 +25,14 @@ export const ToolbarButton: FC<any> = memo(({ button }: { button: ButtonConfig }
 
     const [globals, updateGlobals] = useGlobals();
     const isActive = globals[button.key] || false;
+    const isDisabled = button?.isDisabled(globals, parameter);
     const onClick = () => {
-        updateGlobals({ [button.key]: !isActive  });
+        updateGlobals({ [button.key]: !isActive });
     };
+
+    if(isDisabled) {
+        return null;
+    }
 
     return (
         <IconButton key={button.key} title={button.title} active={isActive} onClick={onClick}>

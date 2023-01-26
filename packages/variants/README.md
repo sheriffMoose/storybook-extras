@@ -60,13 +60,18 @@ parameters: {
 
 ### Parameters
 
-| Name | Type | Default | Description | Notes |
+| Name | Type | Default | Description |
 | --- | --- | --- | --- |  --- |
-| `enable` | `boolean` | `false` | Enable the variants addon | If set to `false`, the toolbar button will be hidden and the addon will be disabled completely |
-| `include` | `string[]` | `[]` | Include variants from the list | Only variants in this list will be displayed, all other options except `groupBy` will be ignored |
-| `exclude` | `string[]` | `[]` | Exclude variants from the list | |
-| `groupBy` | `string[]` | `[]` | Group the variants by these keys | |
-| `autoCalculate` | `boolean` | `false` | Automatically calculate the variants | If set to `true`, the toolbar button will be of no use <br> // TODO: Remove the button if autoCalculate is set to `true` |
+| `enable` | `boolean` | `false` | Enable the variants addon |
+| `include` | `string[]` | `[]` | Include variants from the list |
+| `exclude` | `string[]` | `[]` | Exclude variants from the list |
+| `groupBy` | `string[]` | `[]` | Group the variants by these keys |
+| `autoCalculate` | `boolean` | `false` | Automatically calculate the variants |
+
+**NOTES**
+- If you set `autoCalculate` to `false`, you can use the `include` parameters to include the variants.
+- If you set `autoCalculate` to `true`, you can use the `exclude` parameters to filter the variants.
+- Toolbar button will not show if `autoCalculate` is set to `true` or `include` is not empty.
 
 
 
