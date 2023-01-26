@@ -2,7 +2,7 @@ module.exports = {
     framework: '@storybook/angular',
     stories: [
         //
-        '../*.md',
+        '../stories/**/*.@(md|html)',
         '../app/**/*.stories.mdx',
         '../app/**/*.stories.@(js|jsx|ts|tsx)',
     ],
@@ -28,8 +28,8 @@ module.exports = {
         markdown: {
             mdExclude: [/\.component\.html$/],
             titles: {
-                '../CHANGELOG.md': 'Change Log',
-            }
+                '../stories/markdown-main-js.md': 'Markdown/main.js',
+            },
         },
     },
 };
