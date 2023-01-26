@@ -16,6 +16,8 @@
 <h2>Table of Contents</h2>
 
 - [Getting started](#getting-started)
+- [Custom Titles](#custom-titles)
+  - [Predefined Titles](#predefined-titles)
 - [Read More](#read-more)
 
 ## Getting started
@@ -62,6 +64,46 @@ module.exports = {
 
 That's it, you're done. Now you will find README & CHANGELOG along with HTML docs if you want as well, in your Storybook sidebar and you can open them and see the contents.
 
+## Custom Titles
+
+Currently Storybook will be using the file name as the story title, e.g. `README.md` will be `README`. This addon supports multiple options to customize the title for your `.md` & `.html` files.
+
+| Precedence | Option | Example |
+| -- | --- | --- |
+| 1 | Use the HTML `title` tag | `<title>Docs/Custom Title</title>`  |
+| 2 | Use the HTML `meta` tag, usign `Meta` will throw an error | `<meta title="Custom Title" />` |
+| 3 | Uses a markdown comment in the file | `{/*title:"Custom Title"*/}` |
+| 4 | Use predefined list of titles from `main.js` | See below |
+| 5 | Use the filename with a `+` to separate the title. Note: full path will be omitted. | `Markdown+Custom Title.md` **becomes** `Markdown/Custom Title` |
+
+
+### Predefined Titles
+
+```js
+// .storybook/main.js
+
+module.exports = {
+    // if you are using @storybook-extras/markdown
+    addons: [
+        {
+            name: '@storybook-extras/markdown',
+            options: {
+                titles: {
+                    '../README.md': 'Custom Title'
+                }
+            }
+        }
+    ],
+    // if you are using @storybook-extras/preset
+    extras: {
+        markdown: {
+            titles: {
+                '../README.md': 'Custom Title'
+            }
+        }
+    }
+};
+```
 
 
 ## Read More
@@ -73,6 +115,7 @@ I have written a series of articles to explain the motivation and purpose behind
 * [`Storybook Markdown Docs (not mdx) Part 2`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-part-2-757463fcad84)
 * [`Storybook Addon for Auto Markdown Import`](https://sheriffmoose.medium.com/storybook-addon-for-auto-markdown-import-74f58b6d9c5c)
 * [`Support .html files in Storybook`](https://sheriffmoose.medium.com/support-html-files-in-storybook-9e4da45a829a)
+* [`Custom Titles for Storybook Docs?`](https://sheriffmoose.medium.com/custom-titles-for-storybook-docs-644927607692)
 
 Also make sure to check out these PRs that made this addon possible:
 
