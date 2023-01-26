@@ -1,3 +1,19 @@
+# v0.0.15 (Wed Jan 25 2023)
+
+#### 🐛 Bug Fix
+
+- Bump zone.js from 0.11.8 to 0.12.0 ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### 🔩 Dependency Updates
+
+- Bump zone.js from 0.11.8 to 0.12.0 [#11](https://github.com/sheriffMoose/storybook-extras/pull/11) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.0.5 (Wed Jan 25 2023)
 
 #### 🐛 Bug Fix

@@ -1,3 +1,25 @@
+# v0.0.15 (Wed Jan 25 2023)
+
+#### ⚠️ Pushed to `master`
+
+- update demo stories ([@sheriffMoose](https://github.com/sheriffMoose))
+- add yarn.lock & update storybook.yml ([@sheriffMoose](https://github.com/sheriffMoose))
+- update workflow files ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - hide variants button cases ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- `@storybook-extras/angular`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - Bump zone.js from 0.11.8 to 0.12.0 [#11](https://github.com/sheriffMoose/storybook-extras/pull/11) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # (Wed Jan 25 2023)
 
 #### ⚠️ Pushed to `master`
