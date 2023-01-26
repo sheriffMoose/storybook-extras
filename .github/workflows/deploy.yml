@@ -21,12 +21,12 @@ jobs:
         uses: actions/cache@v3
         with:
           key: ${{ runner.os }}-storybook-static
-          path: storybook-static
+          path: demo/storybook-static
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: storybook-static
+          path: demo/storybook-static
 
       - name: Deploy to GitHub Pages
         id: deployment
