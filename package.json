@@ -27,6 +27,7 @@
         "@auto-it/released": "^10.37.6",
         "@nrwl/nx-cloud": "latest",
         "auto": "^10.3.0",
+        "lerna": "^5.1.8",
         "nx": "latest",
         "prettier": "^2.6.2"
     },
