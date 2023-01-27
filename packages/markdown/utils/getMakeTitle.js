@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 const { readFileSync } = require('fs');
 
-exports.makeTitle = function (fileName, addonOptions) {
+exports.getMakeTitle = function (fileName, addonOptions) {
     const { configDir, titles } = addonOptions;
 
     return userTitle => {

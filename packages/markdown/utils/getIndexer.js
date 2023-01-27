@@ -1,7 +1,7 @@
-import { getMDX } from './getMDX';
-import { loadCsf } from '@storybook/csf-tools';
+const { getMDX: _getMDX } = require('./getMDX');
+const { loadCsf } = require('@storybook/csf-tools');
 
-export function getIndexer(addonOptions) {
+exports.getIndexer = (addonOptions, getMDX = _getMDX) => {
     return async (fileName, compileOptions) => {
         // Convert MD/HTML to MDX
         const code = await getMDX(fileName, addonOptions);
@@ -9,4 +9,4 @@ export function getIndexer(addonOptions) {
         // Parse CSF component
         return loadCsf(code, compileOptions).parse();
     };
-}
+};

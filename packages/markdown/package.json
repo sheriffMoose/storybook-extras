@@ -36,6 +36,8 @@
         "node": ">=16"
     },
     "files": [
+        "main",
+        "utils",
         "README.md",
         "*.js"
     ],
