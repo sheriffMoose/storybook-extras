@@ -1,5 +1,7 @@
-import loaderOptions from './loaderOptions';
+import { getLoaderOptions } from "../utils";
+
 const loader = require.resolve('./loader');
+const loaderOptions = getLoaderOptions();
 
 export async function webpack(config, addonOptions) {
     const module = config.module || {};

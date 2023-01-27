@@ -1,4 +1,4 @@
-import { getIndexer } from './getIndexer';
+import { getIndexer } from '../utils';
 
 export function storyIndexers(indexers, addonOptions) {
     const test = /\.(md|html)$/;
