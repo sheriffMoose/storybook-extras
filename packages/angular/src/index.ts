@@ -1,6 +1,9 @@
+import { webpackFinal } from './preset/webpackFinal';
+
 if (module && module.hot && module.hot.decline) {
-  module.hot.decline();
+    module.hot.decline();
 }
 
-// make it work with --isolatedModules
-export default {};
+export default {
+    webpackFinal,
+};
