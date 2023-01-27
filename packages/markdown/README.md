@@ -105,6 +105,9 @@ module.exports = {
 };
 ```
 
+**NOTE**:
+Custom Title processing is dependendant on [`#20809`](https://github.com/storybookjs/storybook/pull/20809)
+
 
 ## Read More
 
