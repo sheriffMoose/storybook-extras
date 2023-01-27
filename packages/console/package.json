@@ -3,7 +3,7 @@
     "version": "0.0.24",
     "description": "Storybook addon for displaying console logs in `Actions` panel.",
     "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/console#readme",
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
