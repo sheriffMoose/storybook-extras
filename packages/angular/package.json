@@ -49,8 +49,6 @@
     "types": "dist/ts/index.d.ts",
     "files": [
         "dist",
-        "main",
-        "utils",
         "README.md",
         "*.js",
         "*.d.ts"
@@ -103,7 +101,7 @@
         "@storybook/core-events": "next",
         "@storybook/jest": "^0.0.11-next.0",
         "@storybook/mdx2-csf": "^1.0.0-next.4",
-        "@storybook/test-runner": "^0.10.0-next.4",
+        "@storybook/test-runner": "*",
         "@storybook/testing-library": "^0.0.14-next.1",
         "@storybook/theming": "next",
         "@types/node": "^18.7.14",
@@ -140,6 +138,9 @@
         "@storybook/theming": "next",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
+    },
+    "resolutions": {
+        "@storybook/test-runner": "file:../../test-runner"
     },
     "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
 }
