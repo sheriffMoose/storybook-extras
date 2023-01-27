@@ -37,9 +37,16 @@
     "engines": {
         "node": ">=16"
     },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
     "files": [
+        "dist",
+        "main",
+        "utils",
         "README.md",
-        "preset.js"
+        "*.js",
+        "*.d.ts"
     ],
     "scripts": {
         "prepack": "cp ../../README.md ./",

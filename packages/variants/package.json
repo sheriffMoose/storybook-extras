@@ -42,6 +42,7 @@
     "files": [
         "dist",
         "main",
+        "utils",
         "README.md",
         "*.js",
         "*.d.ts"

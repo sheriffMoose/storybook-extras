@@ -35,11 +35,16 @@
     "engines": {
         "node": ">=16"
     },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
     "files": [
+        "dist",
         "main",
         "utils",
         "README.md",
-        "*.js"
+        "*.js",
+        "*.d.ts"
     ],
     "scripts": {
         "start": "yarn storybook",
