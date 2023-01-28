@@ -27,3 +27,9 @@ export interface WrappersConfig {
     default?: string;
     values: Wrapper[];
 }
+
+export interface AngularExtrasOptions {
+    enableCoverage?: boolean;
+    enableNodePolyfills?: boolean;
+    enableWebpackProgress?: boolean;
+}

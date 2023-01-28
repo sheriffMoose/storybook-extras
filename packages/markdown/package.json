@@ -1,9 +1,9 @@
 {
     "name": "@storybook-extras/markdown",
-    "version": "0.0.15",
+    "version": "0.0.24",
     "description": "Storybook addon for auto importing markdown docs.",
     "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/markdown#readme",
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
@@ -35,27 +35,24 @@
     "engines": {
         "node": ">=16"
     },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
     "files": [
+        "dist",
         "README.md",
-        "*.js"
+        "*.js",
+        "*.d.ts"
     ],
     "scripts": {
-        "start": "yarn storybook",
-        "storybook": "storybook dev --port 6006",
-        "build-storybook": "storybook build",
-        "prerelease": "zx scripts/prepublish-checks.mjs",
-        "release": "auto shipit",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "@storybook/mdx2-csf": "next"
     },
     "devDependencies": {
-        "@babel/cli": "^7.12.1",
-        "@babel/core": "^7.12.3",
-        "@babel/preset-env": "^7.12.1",
-        "@babel/preset-react": "^7.12.5",
-        "@babel/preset-typescript": "^7.13.0",
         "@storybook/addon-essentials": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",

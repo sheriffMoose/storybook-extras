@@ -1,9 +1,9 @@
 {
     "name": "@storybook-extras/variants",
-    "version": "0.0.16",
+    "version": "0.0.24",
     "description": "Storybook addon for displaying component variants all together in one story.",
     "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://sheriffmoose.github.io/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/variants#readme",
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
@@ -42,6 +42,7 @@
     "files": [
         "dist",
         "main",
+        "utils",
         "README.md",
         "*.js",
         "*.d.ts"

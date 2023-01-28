@@ -1,12 +1,3 @@
-import remarkSlug from 'remark-slug';
-import remarkExternalLinks from 'remark-external-links';
+import { getLoader, getMDX } from '@storybook-extras/devkit';
 
-export const loader = require.resolve('@storybook/mdx2-csf/loader');
-export const loaderOptions = {
-    skipCsf: true,
-    mdxCompileOptions: {
-        providerImportSource: '@storybook/addon-docs/mdx-react-shim',
-        remarkPlugins: [remarkSlug, remarkExternalLinks],
-    },
-    jsxOptions: {},
-};
+module.exports = getLoader(getMDX);
