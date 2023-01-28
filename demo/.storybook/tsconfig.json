@@ -1,10 +1,10 @@
 {
-  "extends": "../app/tsconfig.app.json",
+  "extends": "../tsconfig.app.json",
   "compilerOptions": {
       "types": ["node"],
       "allowSyntheticDefaultImports": true
   },
-  "exclude": ["../app/test.ts", "../app/**/*.spec.ts", "../projects/**/*.spec.ts"],
-  "include": ["../app/**/*", "../src/**/*"],
+  "exclude": ["../src/test.ts", "../src/**/*.spec.ts", "../projects/**/*.spec.ts"],
+  "include": ["../src/**/*", "../src/**/*", "../tsconfig.app.json", "../webpack.config.js"],
   "files": ["./typings.d.ts"]
 }
