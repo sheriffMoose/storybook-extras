@@ -1,3 +1,55 @@
+# v0.1.0 (Sat Jan 28 2023)
+
+#### 🚀 Enhancement
+
+- `@storybook-extras/devkit`
+  - feat: add devkit library to be shared between packages ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`
+  - feat: add angular addon options/types ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### ⚠️ Pushed to `master`
+
+- chore: pump storybook to v7.0.0-beta.36 ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update yarn.lock ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: add yarn.lock ([@sheriffMoose](https://github.com/sheriffMoose))
+- revert: changes to lerna.json ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update lerna & auto settings ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: rename `app` to `src` in the demo app ([@sheriffMoose](https://github.com/sheriffMoose))
+- Revert "remove lerna" ([@sheriffMoose](https://github.com/sheriffMoose))
+- remove lerna ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - v0.0.28 ([@sheriffMoose](https://github.com/sheriffMoose))
+  - v0.0.27 ([@sheriffMoose](https://github.com/sheriffMoose))
+  - chore: pump versions ([@sheriffMoose](https://github.com/sheriffMoose))
+  - v0.0.26 ([@sheriffMoose](https://github.com/sheriffMoose))
+  - chore: update README.md for devkit ([@sheriffMoose](https://github.com/sheriffMoose))
+  - v0.0.25 ([@sheriffMoose](https://github.com/sheriffMoose))
+  - Merge branch 'master' of https://github.com/sheriffMoose/storybook-extras ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/devkit`
+  - cleanup: remove Description tag from mdxCode ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`
+  - infra: use webpack-plugin-istanbul/loader for better coverage instrumentation ([@sheriffMoose](https://github.com/sheriffMoose))
+  - infra: move angular webpackFinal from js to ts ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/preset`
+  - chore: update versions in preset package.json ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/markdown`
+  - refactor: update markdown addon from js to ts & use the new devkit library ([@sheriffMoose](https://github.com/sheriffMoose))
+  - docs: add note about custom title processing not working ([@sheriffMoose](https://github.com/sheriffMoose))
+  - update markdown utils for exports ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/console`
+  - infra: remove console package changelog ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - infra: remove sub packages changelogs ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - update files list in package.json ([@sheriffMoose](https://github.com/sheriffMoose))
+  - update homepage in package.json ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v0.0.25 (Thu Jan 26 2023)
 
 #### ⚠️ Pushed to `master`
