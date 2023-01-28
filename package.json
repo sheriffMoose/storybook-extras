@@ -38,9 +38,6 @@
     ],
     "auto": {
         "plugins": [
-            "all-contributors",
-            "conventional-commits",
-            "first-time-contributor",
             [
                 "gh-pages",
                 {
