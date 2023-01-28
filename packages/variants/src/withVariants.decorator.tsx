@@ -1,5 +1,5 @@
 import { makeDecorator } from "@storybook/addons";
-import { DECORATOR_NAME, PARAM_KEY } from "./addon.constants";
+import { DECORATOR_NAME, PARAM_KEY } from "./constants";
 import { Variants } from "./variants.model";
 
 export const withVariants = makeDecorator({
