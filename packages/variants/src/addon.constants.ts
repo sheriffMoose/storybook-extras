@@ -9,4 +9,6 @@ export interface VariantsConfig {
     exclude?: any[];
     groupBy?: string[];
     autoCalculate?: boolean;
+    groupSeparator?: string;
+    variantSeparator?: string;
 }
