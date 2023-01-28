@@ -1,0 +1,47 @@
+{
+    "name": "@storybook-extras/devkit",
+    "version": "0.0.1",
+    "description": "Storybook Extras devkit.",
+    "repository": "sheriffMoose/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/devkit#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "license": "MIT",
+    "keywords": [
+        "storybook",
+        "addons",
+        "extras",
+        "devkit"
+    ],
+    "author": {
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "engines": {
+        "node": ">=16"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "@storybook/csf-tools": "next",
+        "@storybook/mdx2-csf": "next"
+    },
+    "devDependencies": {
+        "typescript": "^4.9.4"
+    },
+    "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
+}

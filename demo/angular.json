@@ -16,13 +16,12 @@
             "sourceRoot": "app",
             "architect": {
                 "build": {
-                    "builder": "ngx-build-plus:browser",
+                    "builder": "@angular-devkit/build-angular:browser-esbuild",
                     "options": {
                         "outputPath": "dist",
-                        "index": "app/index.html",
-                        "main": "app/main.ts",
-                        "tsConfig": "app/tsconfig.app.json",
-                        "extraWebpackConfig": "app/webpack.config.js",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "tsConfig": "tsconfig.app.json",
                         "aot": false,
                         "buildOptimizer": false,
                         "sourceMap": true,
@@ -57,7 +56,7 @@
                 "start-storybook": {
                     "builder": "@storybook/angular:start-storybook",
                     "options": {
-                        "browserTarget": "demo:build-storybook",
+                        "browserTarget": "demo:build",
                         "port": 6006,
                         "compodoc": false,
                         "compodocArgs": ["-e", "json", "-d", ".docs"]
@@ -66,7 +65,7 @@
                 "build-storybook": {
                     "builder": "@storybook/angular:build-storybook",
                     "options": {
-                        "browserTarget": "demo:build-storybook",
+                        "browserTarget": "demo:build",
                         "compodoc": true,
                         "compodocArgs": ["-e", "json", "-d", ".docs"]
                     }

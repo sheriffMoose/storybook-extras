@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/monorepo",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
     "author": {
         "name": "Mostafa Sherif",
@@ -11,6 +11,7 @@
         "start": "npm run storybook",
         "storybook": "nx storybook",
         "build:watch": "nx run-many --target=build:watch --all --parallel=10 --exclude=demo",
+        "test": "nx test:storybook",
         "************ PROD **************": "",
         "build": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "build:storybook": "nx build:storybook",
@@ -19,14 +20,50 @@
     },
     "private": true,
     "devDependencies": {
+        "@auto-it/all-contributors": "^10.37.6",
+        "@auto-it/conventional-commits": "^10.37.6",
+        "@auto-it/first-time-contributor": "^10.37.6",
+        "@auto-it/gh-pages": "^10.37.6",
+        "@auto-it/npm": "^10.37.6",
+        "@auto-it/released": "^10.37.6",
         "@nrwl/nx-cloud": "latest",
         "auto": "^10.3.0",
-        "lerna": "^6.4.1",
-        "nx": "latest",
+        "lerna": "^5.1.8",
+        "nx": "^15.6.3",
         "prettier": "^2.6.2"
     },
     "workspaces": [
         "demo",
         "packages/*"
-    ]
+    ],
+    "auto": {
+        "plugins": [
+            "all-contributors",
+            "conventional-commits",
+            "first-time-contributor",
+            [
+                "gh-pages",
+                {
+                    "buildCommand": "npm run build && npm run build:storybook",
+                    "dir": "./demo/storybook-static"
+                }
+            ],
+            [
+                "npm",
+                {
+                    "subPackageChangelogs": false
+                }
+            ],
+            "released"
+        ]
+    },
+    "resolutions": {
+        "@storybook-extras/angular": "file:./packages/angular",
+        "@storybook-extras/console": "file:./packages/console",
+        "@storybook-extras/devkit": "file:./packages/devkit",
+        "@storybook-extras/markdown": "file:./packages/markdown",
+        "@storybook-extras/swagger": "file:./packages/swagger",
+        "@storybook-extras/toolbars": "file:./packages/toolbars",
+        "@storybook-extras/variants": "file:./packages/variants"
+    }
 }
