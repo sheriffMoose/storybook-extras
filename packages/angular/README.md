@@ -80,7 +80,7 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 
 ### Test Runner Coverage Instrumentation
 
-Credits to `JS Devtools` for their amazing [`coverage istanbul loader`](https://jstools.dev/coverage-istanbul-loader). This addon simply imports `@jsdevtools/coverage-istanbul-loader` into webpack configuration to enable the coverage instrumentation.
+We've recently moved from `@jsdevtools/coverage-istanbul-loader` to one of our own created libraries `webpack-plugin-istanbul` to ensue it is working better with the latest versions of `Storybook` and `Angular` and specifically with the proper versions of `webpack` and `istanbul-lib-instrument`.
 
 Read more about the coverage instrumentation in the official Test Runner documentation [here](https://github.com/storybookjs/test-runner#setting-up-code-coverage).
 

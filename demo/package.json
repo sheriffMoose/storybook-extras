@@ -10,7 +10,7 @@
         "start": "npm run storybook",
         "docs": "compodoc -p tsconfig.json -e json -d .docs",
         "storybook": "ng run demo:start-storybook",
-        "test:storybook": "test-storybook --url=http://localhost:6006",
+        "test:storybook": "test-storybook --url=http://localhost:6006 --coverage",
         "build:storybook": "ng run demo:build-storybook",
         "chromatic": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
     },
