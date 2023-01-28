@@ -66,8 +66,8 @@
         "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\""
     },
     "dependencies": {
-        "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
-        "node-polyfill-webpack-plugin": "^2.0.1"
+        "node-polyfill-webpack-plugin": "^2.0.1",
+        "webpack-plugin-istanbul": "^1.0.3"
     },
     "devDependencies": {
         "@angular/core": "latest",
