@@ -1,6 +1,6 @@
 import { LegacyStoryFn, StoryContext } from "@storybook/types";
-import { PARAM_KEY, VariantsConfig } from "./addon.constants";
-import { concatDeep, groupByDeep, mapDeep } from "./addon.utils";
+import { PARAM_KEY, VariantsConfig } from "./constants";
+import { concatDeep, groupByDeep, mapDeep } from "@storybook-extras/devkit";
 
 export class Variants {
   config: VariantsConfig;

@@ -1,4 +1,4 @@
-import { PARAM_KEY } from './addon.constants';
+import { PARAM_KEY } from './constants';
 import { withVariants } from './withVariants.decorator';
 
 export const decorators = [withVariants()];
