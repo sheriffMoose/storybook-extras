@@ -1,97 +1,97 @@
 {
-  "name": "@storybook-extras/angular",
-  "version": "0.0.24",
-  "description": "Storybook addon to add extra configurations for Angular applications.",
-  "repository": "sheriffMoose/storybook-extras",
-  "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/angular#readme",
-  "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
-  "license": "MIT",
-  "keywords": [
-    "angular extras",
-    "storybook",
-    "angular",
-    "extras",
-    "services",
-    "unit testing",
-    "docs",
-    "compodoc",
-    "wrapper",
-    "coverage",
-    "test runner",
-    "instrument",
-    "webpack",
-    "source code",
-    "storybook addons"
-  ],
-  "author": {
-    "name": "Mostafa Sherif",
-    "email": "mosherif87@gmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/sheriffMoose/storybook-extras/issues"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "storybook": {
-    "displayName": "Angular Extras",
-    "supportedFrameworks": [
-      "angular"
+    "name": "@storybook-extras/angular",
+    "version": "0.0.25",
+    "description": "Storybook addon to add extra configurations for Angular applications.",
+    "repository": "sheriffMoose/storybook-extras",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/angular#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "license": "MIT",
+    "keywords": [
+        "angular extras",
+        "storybook",
+        "angular",
+        "extras",
+        "services",
+        "unit testing",
+        "docs",
+        "compodoc",
+        "wrapper",
+        "coverage",
+        "test runner",
+        "instrument",
+        "webpack",
+        "source code",
+        "storybook addons"
     ],
-    "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/angular.svg"
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/ts/index.d.ts",
-  "files": [
-    "dist",
-    "README.md",
-    "*.js",
-    "*.d.ts"
-  ],
-  "scripts": {
-    "*************** DEV ***************": "",
-    "clean": "rimraf ./dist",
-    "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
-    "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
-    "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
-    "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
-    "prebuild": "yarn clean",
-    "*************** BUILD ***************": "",
-    "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
-    "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\""
-  },
-  "dependencies": {
-    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
-    "node-polyfill-webpack-plugin": "^2.0.1"
-  },
-  "devDependencies": {
-    "@angular/core": "latest",
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "@babel/preset-typescript": "^7.13.0",
-    "@storybook/addon-essentials": "next",
-    "@storybook/angular": "next",
-    "concurrently": "^7.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "next",
-    "typescript": "4.8.2"
-  },
-  "peerDependencies": {
-    "@storybook/addons": "next",
-    "@storybook/api": "next",
-    "@storybook/components": "next",
-    "@storybook/core-events": "next",
-    "@storybook/theming": "next",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
+    "author": {
+        "name": "Mostafa Sherif",
+        "email": "mosherif87@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "storybook": {
+        "displayName": "Angular Extras",
+        "supportedFrameworks": [
+            "angular"
+        ],
+        "icon": "https://raw.githubusercontent.com/sheriffMoose/storybook-extras/master/logos/angular.svg"
+    },
+    "engines": {
+        "node": ">=16"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "*.js",
+        "*.d.ts"
+    ],
+    "scripts": {
+        "*************** DEV ***************": "",
+        "clean": "rimraf ./dist",
+        "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
+        "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
+        "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
+        "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
+        "prebuild": "yarn clean",
+        "*************** BUILD ***************": "",
+        "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
+        "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\""
+    },
+    "dependencies": {
+        "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
+        "node-polyfill-webpack-plugin": "^2.0.1"
+    },
+    "devDependencies": {
+        "@angular/core": "latest",
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-react": "^7.12.5",
+        "@babel/preset-typescript": "^7.13.0",
+        "@storybook/addon-essentials": "next",
+        "@storybook/angular": "next",
+        "concurrently": "^7.6.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "storybook": "next",
+        "typescript": "4.8.2"
+    },
+    "peerDependencies": {
+        "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/theming": "next",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "gitHead": "a833b1bbbc7260257a17fdb693784ea0e1ada4f7"
 }
