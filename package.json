@@ -11,6 +11,7 @@
         "start": "npm run storybook",
         "storybook": "nx storybook",
         "build:watch": "nx run-many --target=build:watch --all --parallel=10 --exclude=demo",
+        "test": "nx test:storybook",
         "************ PROD **************": "",
         "build": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "build:storybook": "nx build:storybook",
@@ -28,7 +29,7 @@
         "@nrwl/nx-cloud": "latest",
         "auto": "^10.3.0",
         "lerna": "^5.1.8",
-        "nx": "latest",
+        "nx": "^15.6.3",
         "prettier": "^2.6.2"
     },
     "workspaces": [
@@ -47,8 +48,22 @@
                     "dir": "./demo/storybook-static"
                 }
             ],
-            "npm",
+            [
+                "npm",
+                {
+                    "subPackageChangelogs": false
+                }
+            ],
             "released"
         ]
+    },
+    "resolutions": {
+        "@storybook-extras/angular": "file:./packages/angular",
+        "@storybook-extras/console": "file:./packages/console",
+        "@storybook-extras/devkit": "file:./packages/devkit",
+        "@storybook-extras/markdown": "file:./packages/markdown",
+        "@storybook-extras/swagger": "file:./packages/swagger",
+        "@storybook-extras/toolbars": "file:./packages/toolbars",
+        "@storybook-extras/variants": "file:./packages/variants"
     }
 }
