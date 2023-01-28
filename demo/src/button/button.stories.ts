@@ -83,7 +83,7 @@ export const WithSourceCode: Story = {
     },
 };
 
-export const WithCalculatedVariants: Story = {
+export const WithToolbarButton: Story = {
     args: {
         label: 'Button',
         backgroundColor: 'red',
