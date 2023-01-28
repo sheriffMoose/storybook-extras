@@ -1,8 +1,8 @@
-import { getIndexer } from '../utils';
+import { getIndexer } from '@storybook-extras/devkit';
 
-export function storyIndexers(indexers, addonOptions) {
+export const storyIndexers = (indexers, addonOptions) => {
     const test = /\.(md|html)$/;
     const indexer = getIndexer(addonOptions);
 
     return [{ test, indexer }, ...(indexers || [])];
-}
+};

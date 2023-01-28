@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "strict": false,
+      "sourceMap": true,
+      "declaration": true,
+      "incremental": false,
+      "skipLibCheck": true,
+      "noImplicitAny": false,
+      "importHelpers": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "downlevelIteration": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "jsx": "react",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "lib": ["es2017", "dom"],
+      "target": "es6",
+      "paths": {}
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+  }
+  

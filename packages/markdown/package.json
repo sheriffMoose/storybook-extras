@@ -40,29 +40,19 @@
     "types": "dist/ts/index.d.ts",
     "files": [
         "dist",
-        "main",
-        "utils",
         "README.md",
         "*.js",
         "*.d.ts"
     ],
     "scripts": {
-        "start": "yarn storybook",
-        "storybook": "storybook dev --port 6006",
-        "build-storybook": "storybook build",
-        "prerelease": "zx scripts/prepublish-checks.mjs",
-        "release": "auto shipit",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "@storybook/mdx2-csf": "next"
     },
     "devDependencies": {
-        "@babel/cli": "^7.12.1",
-        "@babel/core": "^7.12.3",
-        "@babel/preset-env": "^7.12.1",
-        "@babel/preset-react": "^7.12.5",
-        "@babel/preset-typescript": "^7.13.0",
         "@storybook/addon-essentials": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
