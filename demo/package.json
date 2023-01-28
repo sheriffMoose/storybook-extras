@@ -1,6 +1,6 @@
 {
     "name": "demo",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "private": true,
     "author": {
         "name": "Mostafa Sherif",
@@ -23,7 +23,7 @@
         "@angular/platform-browser": "15.1.1",
         "@angular/platform-browser-dynamic": "15.1.1",
         "@angular/router": "15.1.1",
-        "@storybook-extras/preset": "^0.0.31",
+        "@storybook-extras/preset": "^0.0.32",
         "rxjs": "7.8.0",
         "zone.js": "~0.12.0"
     },
