@@ -1,3 +1,18 @@
+# v0.0.33 (Sat Jan 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- `@storybook-extras/variants`
+  - feat: update variants package to use util methods from devkit (mosherif87@gmail.com)
+- `@storybook-extras/devkit`
+  - feat: add array methods to devkit package (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.32 (Sat Jan 28 2023)
 
 #### ⚠️ Pushed to `master`
