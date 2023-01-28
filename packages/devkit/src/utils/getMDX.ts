@@ -4,7 +4,7 @@ import { getCompileOptions } from './getCompileOptions';
 
 const mdxCode = (title, content) => `
 
-import { Description, Meta } from '@storybook/blocks';
+import { Meta } from '@storybook/blocks';
 
 <Meta title='${title}' />
 
