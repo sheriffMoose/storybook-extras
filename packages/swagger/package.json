@@ -38,7 +38,9 @@
         "README.md",
         "*.js"
     ],
-    "scripts": {},
+    "scripts": {
+        "prebuild": "rimraf ./dist"
+    },
     "dependencies": {
         "swagger-ui-react": "^4.15.5"
     },

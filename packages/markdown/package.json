@@ -45,6 +45,7 @@
         "*.d.ts"
     ],
     "scripts": {
+        "prebuild": "rimraf ./dist",
         "build": "tsc",
         "build:watch": "tsc -w",
         "prepublishOnly": "npm run build"

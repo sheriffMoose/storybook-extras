@@ -48,15 +48,15 @@
         "*.d.ts"
     ],
     "scripts": {
-        "clean": "rimraf ./dist",
+        "*************** DEV ***************": "",
         "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
         "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
         "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
         "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
-        "prebuild": "yarn clean",
+        "*************** BUILD ***************": "",
+        "prebuild": "rimraf ./dist",
         "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
-        "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\"",
-        "chromatic": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
+        "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\""
     },
     "dependencies": {
         "@storybook-extras/devkit": "^0.0.38",
