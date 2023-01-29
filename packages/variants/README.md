@@ -19,6 +19,7 @@
 - [Getting started](#getting-started)
 - [How to use](#how-to-use)
   - [Parameters](#parameters)
+- [Compatibility](#compatibility)
 
 ## Getting started
 
@@ -61,7 +62,7 @@ parameters: {
 ### Parameters
 
 | Name | Type | Default | Description |
-| --- | --- | --- | --- |  --- |
+| --- | --- | --- | --- |
 | `enable` | `boolean` | `false` | Enable the variants addon |
 | `include` | `string[]` | `[]` | Include variants from the list |
 | `exclude` | `string[]` | `[]` | Exclude variants from the list |
@@ -73,6 +74,19 @@ parameters: {
 - If you set `autoCalculate` to `true`, you can use the `exclude` parameters to filter the variants.
 - Toolbar button will not show if `autoCalculate` is set to `true` or `include` is not empty.
 
+
+## Compatibility
+
+This addon was initially developed for Angular 15 & Storybook v7 in mind. However, you can still use it in older versions, but you will need to install the use the decorator directly in `preview.js` instead of adding the addon in your `main.js`.
+
+```js
+// .storybook/preview.js
+import { withVariants } from '@storybook-extras/variants';
+
+export const decorators = [withVariants()];
+```
+
+This approach will also work for React, Vue, and other frameworks. Please open an issue if you find any compatibility issues, pull requests are always welcome.
 
 
 
