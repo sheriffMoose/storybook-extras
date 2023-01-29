@@ -1,3 +1,21 @@
+# v0.0.39 (Sun Jan 29 2023)
+
+#### ⚠️ Pushed to `master`
+
+- infra: update yarn.lock (mosherif87@gmail.com)
+- `@storybook-extras/markdown`
+  - chore: update devkit imports (mosherif87@gmail.com)
+- `@storybook-extras/markdown`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - infra: update package.json dependencies (mosherif87@gmail.com)
+- `@storybook-extras/angular`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - infra: cleanup before build for all packages (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.38 (Sun Jan 29 2023)
 
 #### ⚠️ Pushed to `master`
