@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/devkit",
-    "version": "0.0.35",
+    "version": "0.0.36",
     "description": "Storybook Extras devkit.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/devkit#readme",
