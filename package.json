@@ -16,6 +16,7 @@
         "build": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "build:storybook": "nx build:storybook",
         "chromatic": "nx chromatic",
+        "prerelease": "yarn build",
         "release": "auto shipit"
     },
     "private": true,
