@@ -2,6 +2,25 @@
 
 #### ⚠️ Pushed to `master`
 
+- chore: make sure to build before release (mosherif87@gmail.com)
+- `@storybook-extras/variants`
+  - docs: add variants compatibility details (mosherif87@gmail.com)
+  - variants: use the proper exports from devkit (mosherif87@gmail.com)
+- `@storybook-extras/devkit`
+  - devkit: update package exports & typesVersions (mosherif87@gmail.com)
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - v0.0.36 (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
+# v0.0.35 (Sun Jan 29 2023)
+
+#### ⚠️ Pushed to `master`
+
 - chore: make sure to build before release ([@sheriffMoose](https://github.com/sheriffMoose))
 
 #### Authors: 1
