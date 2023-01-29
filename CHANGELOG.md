@@ -1,3 +1,15 @@
+# v0.0.35 (Sun Jan 29 2023)
+
+#### ⚠️ Pushed to `master`
+
+- chore: make sure to build before release ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v0.0.34 (Sat Jan 28 2023)
 
 #### ⚠️ Pushed to `master`
