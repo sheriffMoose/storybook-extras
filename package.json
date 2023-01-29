@@ -42,7 +42,7 @@
             [
                 "gh-pages",
                 {
-                    "buildCommand": "npm run build && npm run build:storybook",
+                    "buildCommand": "yarn build:storybook",
                     "dir": "./demo/storybook-static"
                 }
             ],
