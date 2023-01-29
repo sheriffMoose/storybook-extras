@@ -77,7 +77,7 @@ parameters: {
 
 ## Compatibility
 
-This addon was initially developed for Angular 15 & Storybook v7 in mind. However, you can still use it in older versions, but you will need to install the use the decorator directly in `preview.js` instead of adding the addon in your `main.js`.
+This addon was initially developed for Angular 15 & Storybook v7 in mind. However, you can still use it in older versions, but you will need to use the decorator directly in `preview.js` instead of adding the addon in your `main.js`.
 
 ```js
 // .storybook/preview.js
