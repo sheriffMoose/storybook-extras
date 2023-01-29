@@ -1,3 +1,18 @@
+# v0.0.34 (Sat Jan 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- `@storybook-extras/variants`
+  - feat: export withVariants decorator (mosherif87@gmail.com)
+- `@storybook-extras/devkit`
+  - chore: update devkit node imports to require (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.33 (Sat Jan 28 2023)
 
 #### ⚠️ Pushed to `master`
