@@ -1,4 +1,3 @@
-import { readFileSync } from 'fs';
 import { compile, CompileOptions } from '@storybook/mdx2-csf';
 import { getCompileOptions } from './getCompileOptions';
 
@@ -14,7 +13,7 @@ ${content}
 
 const _toMDX = (fileName, addonOptions) => {
     // Read the file
-    const content = readFileSync(fileName, 'utf8');
+    const content = require('fs').readFileSync(fileName, 'utf8');
     // Get the compile options
     const options = getCompileOptions(fileName, addonOptions);
     // Get the title

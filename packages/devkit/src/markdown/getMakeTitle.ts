@@ -1,12 +1,9 @@
-import { resolve } from 'path';
-import { readFileSync } from 'fs';
-
 export const getMakeTitle = (fileName: string, addonOptions: any) => {
     const { configDir, titles } = addonOptions;
 
     return (userTitle: string) => {
-        const titleKey = Object.keys(titles || {}).find(key => resolve(configDir, key) === fileName) || '';
-        const content = readFileSync(fileName, 'utf8').toString();
+        const titleKey = Object.keys(titles || {}).find(key => require('path').resolve(configDir, key) === fileName) || '';
+        const content = require('fs').readFileSync(fileName, 'utf8').toString();
 
         const htmlTitle = (content.match(/<title>(.*)<\/title>/i) || [])[1];
         const metaTitle = (content.match(/<meta title=[`'"“”‘’„”«»](.*)[`'"“”‘’„”«»] \/>/i) || [])[1];
