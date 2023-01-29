@@ -1,4 +1,4 @@
-import { getIndexer } from '@storybook-extras/devkit';
+import { getIndexer } from '@storybook-extras/devkit/markdown';
 
 export const storyIndexers = (indexers, addonOptions) => {
     const test = /\.(md|html)$/;
