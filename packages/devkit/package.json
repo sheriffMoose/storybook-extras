@@ -27,10 +27,38 @@
         "node": ">=16"
     },
     "main": "./dist/index.js",
+    "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "files": [
-        "dist"
+        "dist/*"
     ],
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./array": {
+            "import": "./dist/array/index.js",
+            "require": "./dist/array/index.js",
+            "types": "./dist/array/index.d.ts"
+        },
+        "./markdown": {
+            "import": "./dist/markdown/index.js",
+            "require": "./dist/markdown/index.js",
+            "types": "./dist/markdown/index.d.ts"
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "array": [
+                "dist/array/index.d.ts"
+            ],
+            "markdown": [
+                "dist/markdown/index.d.ts"
+            ]
+        }
+    },
     "scripts": {
         "build": "tsc",
         "build:watch": "tsc -w",
