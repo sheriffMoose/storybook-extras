@@ -1,4 +1,4 @@
-import { getLoaderOptions } from '@storybook-extras/devkit';
+import { getLoaderOptions } from '@storybook-extras/devkit/markdown';
 
 const loader = require.resolve('@storybook-extras/markdown/loader');
 const loaderOptions = getLoaderOptions();
