@@ -1,6 +1,7 @@
 import { LegacyStoryFn, StoryContext } from '@storybook/types';
 import { PARAM_KEY, VariantsConfig } from './constants';
 import { concatDeep, groupByDeep, mapDeep } from '@storybook-extras/devkit/array';
+import cartesian from 'cartesian';
 
 export class Variants {
     config: VariantsConfig;
@@ -60,14 +61,16 @@ export class Variants {
 
     private _populateStoryTemplate(story) {
         Object.keys(story.props).forEach(key => {
-            const value = story.props[key];
-            let replacedValue = story.props[key];
-            if (typeof value === 'string') {
-                replacedValue = `'${story.props[key]}'`;
-            } else if (typeof value === 'object') {
-                replacedValue = JSON.stringify(story.props[key]).replace(/"/g, "'");
+            if (story.template) {
+                const value = story.props[key];
+                let replacedValue = story.props[key];
+                if (typeof value === 'string') {
+                    replacedValue = `'${story.props[key]}'`;
+                } else if (typeof value === 'object') {
+                    replacedValue = JSON.stringify(story.props[key]).replace(/"/g, "'");
+                }
+                story.template = story.template.replace(`"${key}"`, `"${replacedValue}"`);
             }
-            story.template = story.template.replace(`"${key}"`, `"${replacedValue}"`);
         });
         return story;
     }
@@ -97,7 +100,7 @@ export class Variants {
             argsMap[argName] = values;
         });
 
-        const combinations = require('cartesian')(argsMap);
+        const combinations = cartesian(argsMap);
 
         return combinations;
     }
