@@ -1,3 +1,16 @@
+# v0.0.38 (Sun Jan 29 2023)
+
+#### ⚠️ Pushed to `master`
+
+- `@storybook-extras/variants`
+  - variants: null check for story template & proper import for cartesian (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif (mosherif87@gmail.com)
+
+---
+
 # v0.0.35 (Sun Jan 29 2023)
 
 #### ⚠️ Pushed to `master`
