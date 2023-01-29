@@ -4,7 +4,7 @@
       "outDir": "./dist",
       "strict": false,
       "sourceMap": true,
-      "declaration": true,
+      "declaration": false,
       "incremental": false,
       "skipLibCheck": true,
       "noImplicitAny": false,
