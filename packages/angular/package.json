@@ -55,13 +55,12 @@
     ],
     "scripts": {
         "*************** DEV ***************": "",
-        "clean": "rimraf ./dist",
         "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
         "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
         "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
         "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
-        "prebuild": "yarn clean",
         "*************** BUILD ***************": "",
+        "prebuild": "rimraf ./dist",
         "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
         "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\""
     },
@@ -81,6 +80,7 @@
         "concurrently": "^7.6.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "rimraf": "^3.0.2",
         "storybook": "next",
         "typescript": "4.8.2"
     },

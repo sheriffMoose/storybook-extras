@@ -60,6 +60,7 @@
         }
     },
     "scripts": {
+        "prebuild": "rimraf ./dist",
         "build": "tsc",
         "build:watch": "tsc -w",
         "prepublishOnly": "npm run build"
@@ -71,6 +72,7 @@
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.6",
+        "rimraf": "^3.0.2",
         "typescript": "^4.9.4"
     },
     "gitHead": "bc5ab559b9e7fe9c199d19a87d3970ccd0758a03"
