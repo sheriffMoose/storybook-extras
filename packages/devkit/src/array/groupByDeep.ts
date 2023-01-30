@@ -1,11 +1,11 @@
-import { chain, get, map, set } from 'lodash-es';
+import _ from 'lodash-es';
 
 export const groupByDeep = (collection, keys) => {
-    return chain(collection)
-        .map(item => map(keys, key => get(item, key)))
+    return _.chain(collection)
+        .map(item => _.map(keys, key => _.get(item, key)))
         .reduce((result, paths, idx) => {
-            const items = get(result, paths.join('.'), []);
-            set(result, paths.join('.'), [...items, collection[idx]]);
+            const items = _.get(result, paths.join('.'), []);
+            _.set(result, paths.join('.'), [...items, collection[idx]]);
             return result;
         }, {})
         .value();

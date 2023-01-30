@@ -1,13 +1,13 @@
-import { chain, isArray, isObject, map } from 'lodash-es';
+import _ from 'lodash-es';
 
 export const mapDeep = (collection, iteratee) => {
-    return chain(collection)
+    return _.chain(collection)
         .values()
         .map(item => {
-            if (isArray(item)) {
-                return map(item, iteratee);
+            if (_.isArray(item)) {
+                return _.map(item, iteratee);
             }
-            if (isObject(item)) {
+            if (_.isObject(item)) {
                 return mapDeep(item, iteratee);
             }
             return null;

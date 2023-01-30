@@ -1,11 +1,11 @@
-import { isArray, isString, map } from 'lodash-es';
+import _ from 'lodash-es';
 
 export const concatDeep = (item, parentChar, childChar) => {
-    if (isString(item)) {
+    if (_.isString(item)) {
         return `${item}${childChar}`;
-    } else if (isArray(item)) {
+    } else if (_.isArray(item)) {
         return (
-            map(item, subItem => {
+            _.map(item, subItem => {
                 return concatDeep(subItem, parentChar, childChar);
             }).join('') + parentChar
         );
