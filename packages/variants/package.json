@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/variants",
-    "version": "0.0.40",
+    "version": "0.0.41",
     "description": "Storybook addon for displaying component variants all together in one story.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/variants#readme",
@@ -60,8 +60,8 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.40",
-        "@storybook-extras/toolbars": "^0.0.40",
+        "@storybook-extras/devkit": "^0.0.41",
+        "@storybook-extras/toolbars": "^0.0.41",
         "cartesian": "^1.0.1"
     },
     "devDependencies": {
