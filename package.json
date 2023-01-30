@@ -33,8 +33,7 @@
         "auto": "^10.3.0",
         "lerna": "^5.1.8",
         "nx": "^15.6.3",
-        "prettier": "^2.6.2",
-        "workspace": "^0.0.1-preview.1"
+        "prettier": "^2.6.2"
     },
     "workspaces": [
         "demo",
