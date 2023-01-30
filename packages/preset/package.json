@@ -42,9 +42,11 @@
     "types": "dist/ts/index.d.ts",
     "files": [
         "dist",
-        "main",
-        "utils",
+        "stories",
+        "package.json",
         "README.md",
+        "CHANGELOG.md",
+        "LICENSE",
         "*.js",
         "*.d.ts"
     ],
@@ -77,11 +79,11 @@
         "zx": "^1.14.1"
     },
     "peerDependencies": {
-        "@storybook/addons": "*",
-        "@storybook/api": "*",
-        "@storybook/components": "*",
-        "@storybook/core-events": "*",
-        "@storybook/theming": "*",
+  "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/theming": "next",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },

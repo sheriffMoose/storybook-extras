@@ -3,7 +3,7 @@
     "version": "0.0.39",
     "description": "Storybook addon for Swagger UI.",
     "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://github.com/sheriffMoose/storybook-extras#readme",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/swagger#readme",
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
@@ -33,23 +33,34 @@
     "engines": {
         "node": ">=16"
     },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/ts/index.d.ts",
     "files": [
-        "main",
+        "dist",
+        "stories",
+        "package.json",
         "README.md",
-        "*.js"
+        "CHANGELOG.md",
+        "LICENSE",
+        "*.js",
+        "*.d.ts"
     ],
     "scripts": {
-        "prebuild": "rimraf ./dist"
+        "*************** DEV ***************": "",
+        "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
+        "build:esm": "tsc --module es2015 --target es5 --outDir dist/esm",
+        "build:ts": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
+        "*************** BUILD ***************": "",
+        "prebuild": "rimraf ./dist",
+        "build": "concurrently \"yarn build:cjs\" \"yarn build:esm\" \"yarn build:ts\"",
+        "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
+        "@storybook-extras/devkit": "workspace:^",
         "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {
-        "@babel/cli": "^7.12.1",
-        "@babel/core": "^7.12.3",
-        "@babel/preset-env": "^7.12.1",
-        "@babel/preset-react": "^7.12.5",
-        "@babel/preset-typescript": "^7.13.0",
         "@storybook/addon-essentials": "next",
         "@storybook/angular": "next",
         "@storybook/api": "next",
@@ -63,10 +74,10 @@
         "react-dom": "^18.2.0",
         "rimraf": "^3.0.2",
         "storybook": "next",
-        "typescript": "4.8.2"
+        "typescript": "^4.9.4"
     },
     "peerDependencies": {
-        "@storybook/addons": "next",
+  "@storybook/addons": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
         "@storybook/core-events": "next",
