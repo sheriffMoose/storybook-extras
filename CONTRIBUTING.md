@@ -2,7 +2,8 @@
 
 - Ensure you have node version 16 installed (suggestion: v16.5).
 - Ensure if you are using Windows to use the Windows Subsystem for Linux (WSL).
-- Run `yarn build` directory to build the addon.
+- Run `yarn build <addon name>` directory to build a specific addon.
+- Run `yarn build:all` directory to build all addons.
 
 The `yarn build` & `yarn build:watch` scripts will build run `tsc` to build the addon typescript files into javascript in the `dist` folder.
 

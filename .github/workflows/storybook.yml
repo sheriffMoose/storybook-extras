@@ -50,7 +50,7 @@ jobs:
           path: node_modules
 
       - name: Build Addons
-        run: yarn build
+        run: yarn build:all
           
       - name: Build Storybook
         run: yarn build:storybook
