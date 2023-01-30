@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/markdown",
-    "version": "0.0.39",
+    "version": "0.0.40",
     "description": "Storybook addon for auto importing markdown docs.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/markdown#readme",
@@ -59,7 +59,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.39",
+        "@storybook-extras/devkit": "^0.0.40",
         "@storybook/mdx2-csf": "next"
     },
     "devDependencies": {
@@ -79,7 +79,7 @@
         "typescript": "4.8.2"
     },
     "peerDependencies": {
-  "@storybook/addons": "next",
+        "@storybook/addons": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
         "@storybook/core-events": "next",

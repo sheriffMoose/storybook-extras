@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/preset",
-    "version": "0.0.39",
+    "version": "0.0.40",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/#readme",
@@ -55,13 +55,13 @@
         "postpack": "rm ./README.md"
     },
     "dependencies": {
-        "@storybook-extras/angular": "^0.0.39",
-        "@storybook-extras/console": "^0.0.39",
-        "@storybook-extras/devkit": "^0.0.39",
-        "@storybook-extras/markdown": "^0.0.39",
-        "@storybook-extras/swagger": "^0.0.39",
-        "@storybook-extras/toolbars": "^0.0.39",
-        "@storybook-extras/variants": "^0.0.39"
+        "@storybook-extras/angular": "^0.0.40",
+        "@storybook-extras/console": "^0.0.40",
+        "@storybook-extras/devkit": "^0.0.40",
+        "@storybook-extras/markdown": "^0.0.40",
+        "@storybook-extras/swagger": "^0.0.40",
+        "@storybook-extras/toolbars": "^0.0.40",
+        "@storybook-extras/variants": "^0.0.40"
     },
     "devDependencies": {
         "@storybook/addons": "next",
@@ -79,7 +79,7 @@
         "zx": "^1.14.1"
     },
     "peerDependencies": {
-  "@storybook/addons": "next",
+        "@storybook/addons": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
         "@storybook/core-events": "next",

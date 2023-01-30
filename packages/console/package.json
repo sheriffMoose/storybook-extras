@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/console",
-    "version": "0.0.39",
+    "version": "0.0.40",
     "description": "Storybook addon for displaying console logs in `Actions` panel.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/console#readme",
@@ -74,7 +74,7 @@
         "typescript": "4.8.2"
     },
     "peerDependencies": {
-  "@storybook/addons": "next",
+        "@storybook/addons": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
         "@storybook/core-events": "next",
