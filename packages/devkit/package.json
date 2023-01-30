@@ -67,7 +67,7 @@
         "*************** BUILD ***************": "",
         "prebuild": "rimraf ./dist",
         "build": "concurrently \"yarn build:cjs\" \"yarn build:esm\" \"yarn build:ts\"",
-        "build:watch": "concurrently \"yarn build:esm -- --watch\" \"yarn build:ts -- --watch\""
+        "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
         "@storybook/csf-tools": "next",
@@ -76,6 +76,7 @@
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.6",
+        "concurrently": "^7.6.0",
         "rimraf": "^3.0.2",
         "typescript": "^4.9.4"
     },
