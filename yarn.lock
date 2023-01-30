@@ -4802,7 +4802,7 @@ __metadata:
     react-dom: ^18.2.0
     rimraf: ^3.0.2
     storybook: next
-    typescript: 4.8.2
+    typescript: 4.9.4
     webpack-plugin-istanbul: ^1.0.3
   peerDependencies:
     "@storybook/addons": "*"
@@ -4846,7 +4846,7 @@ __metadata:
     react-dom: ^18.2.0
     rimraf: ^3.0.2
     storybook: next
-    typescript: 4.8.2
+    typescript: 4.9.4
   peerDependencies:
     "@storybook/addons": "*"
     "@storybook/api": "*"
@@ -4886,7 +4886,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/markdown@portal:./packages/markdown::locator=%40storybook-extras%2Fmonorepo%40workspace%3A."
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
     "@storybook/mdx2-csf": next
   peerDependencies:
     "@storybook/addons": "*"
@@ -4903,7 +4903,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/markdown@workspace:packages/markdown"
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -4918,7 +4918,7 @@ __metadata:
     react-dom: ^18.2.0
     rimraf: ^3.0.2
     storybook: next
-    typescript: 4.8.2
+    typescript: 4.9.4
   peerDependencies:
     "@storybook/addons": "*"
     "@storybook/api": "*"
@@ -4948,17 +4948,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/preset@^0.0.41, @storybook-extras/preset@workspace:packages/preset":
+"@storybook-extras/preset@^0.0.43, @storybook-extras/preset@workspace:packages/preset":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/preset@workspace:packages/preset"
   dependencies:
-    "@storybook-extras/angular": ^0.0.41
-    "@storybook-extras/console": ^0.0.41
-    "@storybook-extras/devkit": ^0.0.41
-    "@storybook-extras/markdown": ^0.0.41
-    "@storybook-extras/swagger": ^0.0.41
-    "@storybook-extras/toolbars": ^0.0.41
-    "@storybook-extras/variants": ^0.0.41
+    "@storybook-extras/angular": ^0.0.43
+    "@storybook-extras/console": ^0.0.43
+    "@storybook-extras/devkit": ^0.0.43
+    "@storybook-extras/markdown": ^0.0.43
+    "@storybook-extras/swagger": ^0.0.43
+    "@storybook-extras/toolbars": ^0.0.43
+    "@storybook-extras/variants": ^0.0.43
     "@storybook/addons": next
     "@storybook/api": next
     "@storybook/components": next
@@ -5062,7 +5062,7 @@ __metadata:
     react-dom: ^18.2.0
     rimraf: ^3.0.2
     storybook: next
-    typescript: 4.8.2
+    typescript: 4.9.4
   peerDependencies:
     "@storybook/addons": "*"
     "@storybook/api": "*"
@@ -5078,8 +5078,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/variants@portal:./packages/variants::locator=%40storybook-extras%2Fmonorepo%40workspace%3A."
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
-    "@storybook-extras/toolbars": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
+    "@storybook-extras/toolbars": ^0.0.43
     cartesian: ^1.0.1
   peerDependencies:
     "@storybook/addons": "*"
@@ -5096,8 +5096,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/variants@workspace:packages/variants"
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
-    "@storybook-extras/toolbars": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
+    "@storybook-extras/toolbars": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -5112,7 +5112,7 @@ __metadata:
     react-dom: ^18.2.0
     rimraf: ^3.0.2
     storybook: next
-    typescript: 4.8.2
+    typescript: 4.9.4
   peerDependencies:
     "@storybook/addons": "*"
     "@storybook/api": "*"
@@ -10598,7 +10598,7 @@ cors@latest:
     "@angular/platform-browser-dynamic": 15.1.1
     "@angular/router": 15.1.1
     "@compodoc/compodoc": ^1.1.19
-    "@storybook-extras/preset": ^0.0.41
+    "@storybook-extras/preset": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/addons": next
     "@storybook/angular": next
@@ -10622,7 +10622,7 @@ cors@latest:
     react-dom: ^18.2.0
     rxjs: 7.8.0
     storybook: next
-    typescript: 4.8.2
+    typescript: 4.9.4
     zone.js: ~0.12.0
   languageName: unknown
   linkType: soft
@@ -22421,17 +22421,7 @@ storybook@next:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.8.2":
-  version: 4.8.2
-  resolution: "typescript@npm:4.8.2"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 7f5b81d0d558c9067f952c7af52ab7f19c2e70a916817929e4a5b256c93990bf3178eccb1ac8a850bc75df35f6781b6f4cb3370ce20d8b1ded92ed462348f628
-  languageName: node
-  linkType: hard
-
-"typescript@npm:^3 || ^4, typescript@npm:^4.0.3, typescript@npm:^4.2.4, typescript@npm:^4.9.4":
+"typescript@npm:4.9.4, typescript@npm:^3 || ^4, typescript@npm:^4.0.3, typescript@npm:^4.2.4, typescript@npm:^4.9.4":
   version: 4.9.4
   resolution: "typescript@npm:4.9.4"
   bin:
@@ -22441,17 +22431,7 @@ storybook@next:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.8.2#~builtin<compat/typescript>":
-  version: 4.8.2
-  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=aae4e6"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 5cb0f02f414f5405f4b0e7ee1fd7fa9177b6a8783c9017b6cad85f56ce4c4f93e0e6f2ce37e863cb597d44227cd009474c9fbd85bf7a50004e5557426cb58079
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.2.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.9.4#~builtin<compat/typescript>, typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.2.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
   version: 4.9.4
   resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
   bin:
