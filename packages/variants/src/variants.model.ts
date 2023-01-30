@@ -1,6 +1,6 @@
 import { LegacyStoryFn, StoryContext } from '@storybook/types';
 import { PARAM_KEY, VariantsConfig } from './constants';
-import { concatDeep, groupByDeep, mapDeep } from '@storybook-extras/devkit/array';
+import { concatDeep, groupByDeep, mapDeep, filterDeep } from '@storybook-extras/devkit/array';
 import cartesian from 'cartesian';
 
 export class Variants {
@@ -27,7 +27,7 @@ export class Variants {
         const isGlobalEnabled = globals[PARAM_KEY] === true;
         const isParameterEnabled = this.config?.enable === true;
         const autoCalculate = this.config?.autoCalculate === true;
-        const isPredefined = (this.config?.include || []).length;
+        const isPredefined = (this.config?.items || []).length;
         const isEmpty = this._variants.length === 0;
 
         if (isPredefined) {
@@ -46,11 +46,11 @@ export class Variants {
         const groupSeperator = groupSeparator || '<br><br>\n';
         const variantSeperator = variantSeparator || '&nbsp;\n';
 
-        const groupedVariants = groupByDeep(this._variants, groupByKeys);
-        const mappedVariants = mapDeep(groupedVariants, 'template');
-        const concatenatedVariants = concatDeep(mappedVariants, groupSeperator, variantSeperator);
+        const groups = groupByDeep(this._variants, groupByKeys);
+        const templates = mapDeep(groups, 'template');
+        const concatenated = concatDeep(templates, groupSeperator, variantSeperator);
 
-        return concatenatedVariants;
+        return concatenated;
     }
 
     private _getVariantContext(combination): any {
@@ -75,14 +75,28 @@ export class Variants {
         return story;
     }
 
+    private _getFilters() {
+        const items = this.config.items || [];
+        const includes = this.config?.include || [];
+        const excludes = this.config?.exclude || [];
+
+        let includeKeys = includes.filter(item => typeof item === 'string');
+        if (!includeKeys.length) {
+            includeKeys = Object.keys(this.context.argTypes);
+        }
+
+        const excludeKeys = excludes.filter(item => typeof item === 'string');
+
+        const includeValues = includes.filter(item => typeof item === 'object');
+        const excludeValues = excludes.filter(item => typeof item === 'object');
+
+        return { items, includeKeys, excludeKeys, includeValues, excludeValues };
+    }
+
     // Credit to @yannbf & @itaditya for this amazing code snippet
     // https://github.com/itaditya/storybook-addon-variants
     private _getCombinations(): any[] {
-        if (!this.config) {
-            return [];
-        } else if ((this.config?.include || []).length) {
-            return this.config.include;
-        }
+        const filter = this._getFilters();
 
         const argsMap = {};
         const sortedArgTypes = [...Object.entries(this.context.argTypes)].sort(([firstName], [secondName]) => {
@@ -92,7 +106,12 @@ export class Variants {
         sortedArgTypes.forEach(([argName, argData]) => {
             // @ts-expect-error
             const { name: typeName, value } = argData?.type || argData;
-            if (!['enum', 'boolean'].includes(typeName)) {
+
+            const isVariant = ['enum', 'boolean'].includes(typeName);
+            const isIncluded = filter.includeKeys.includes(argName);
+            const isExcluded = filter.excludeKeys.includes(argName);
+
+            if (!isVariant || isExcluded || !isIncluded) {
                 return;
             }
 
@@ -102,6 +121,8 @@ export class Variants {
 
         const combinations = cartesian(argsMap);
 
-        return combinations;
+        const onlyIncluded = filterDeep(combinations, filter.includeValues, false);
+        const withoutExcluded = filterDeep(onlyIncluded, filter.excludeValues, true);
+        return filter.items.concat(withoutExcluded);
     }
 }
