@@ -1,3 +1,5 @@
+import { Options } from '@storybook/types';
+
 export interface Wrapper {
     name: string;
     value: string;
@@ -14,8 +16,21 @@ export interface SelectorItem {
 // CONFIG TYPES
 
 export interface DocsConfig {
-    lazyLoad?: boolean;
+    /**
+     * @deprecated `url` is deprecated, use `fetch` instead
+     */
     url?: string;
+    /**
+     * @deprecated `lazyLoad` is deprecated, it is now enabled by default if you use `fetch`
+     */
+    lazyLoad?: boolean;
+    /**
+     * @deprecated `data` is deprecated, use `compodoc` instead
+     */
+    data?: any;
+
+    compodoc?: any;
+    fetch?: string;
 }
 
 export interface SourceCodeConfig {
@@ -28,8 +43,8 @@ export interface WrappersConfig {
     values: Wrapper[];
 }
 
-export interface AngularExtrasOptions {
+export type AngularExtrasOptions = Options & {
     enableCoverage?: boolean;
     enableNodePolyfills?: boolean;
     enableWebpackProgress?: boolean;
-}
+};

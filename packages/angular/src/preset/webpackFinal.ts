@@ -1,44 +1,41 @@
+import { checkBoolean, rejectByInstance } from '@storybook-extras/devkit';
 import { Options } from '@storybook/types';
 import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
+import { isAbsolute, resolve } from 'path';
 import { Configuration, ProgressPlugin } from 'webpack';
+import { COMPODOC_ID } from '../constants';
 import { AngularExtrasOptions } from '../types';
-import { join } from 'path';
-
-const except = (plugins, toRemove) => {
-    return (plugins || []).filter(p => !toRemove.some(i => p instanceof i));
-};
-
-const checkFlag = (variable, defaultValue) => {
-    if (defaultValue === true) {
-        return variable !== false;
-    } else if (defaultValue === false) {
-        return variable === true;
-    } else {
-        return variable;
-    }
-};
 
 export const webpackFinal = async (config: Configuration, options: Options & AngularExtrasOptions) => {
     const { enableCoverage, enableNodePolyfills, enableWebpackProgress } = options;
 
+    config.resolve = config.resolve || { alias: {} };
+    config.resolve.alias = config.resolve.alias || {};
     config.module = config.module || { rules: [] };
     config.module.rules = config.module.rules || [];
     config.plugins = config.plugins || [];
 
-    if (!checkFlag(enableWebpackProgress, false)) {
-        config.plugins = except(config.plugins, [ProgressPlugin]);
+    const main = require(`${options.configDir}/main`);
+    let compodoc = main?.docs?.compodoc;
+    if (compodoc) {
+        compodoc = isAbsolute(compodoc) ? compodoc : resolve(options.configDir, compodoc);
+        config.resolve.alias[COMPODOC_ID] = compodoc;
     }
 
-    if (checkFlag(enableNodePolyfills, true)) {
+    if (!checkBoolean(enableWebpackProgress, false)) {
+        config.plugins = rejectByInstance(config.plugins, [ProgressPlugin]);
+    }
+
+    if (checkBoolean(enableNodePolyfills, true)) {
         config.plugins.push(new NodePolyfillPlugin());
     }
 
-    if (checkFlag(enableCoverage, true)) {
+    if (checkBoolean(enableCoverage, true)) {
         config.module.rules.push({
             test: /\.(js|ts)$/,
             use: [{ loader: 'webpack-plugin-istanbul/loader', options: {} }],
             enforce: 'post',
-            include: join(process.cwd(), 'src'),
+            include: resolve(process.cwd(), 'src'),
             exclude: [/\.(e2e|spec|stories)\.ts$/, /node_modules/, /(ngfactory|ngstyle)\.js/],
         });
     }
