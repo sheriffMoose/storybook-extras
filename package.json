@@ -10,13 +10,15 @@
         "************ DEV **************": "",
         "start": "npm run storybook",
         "storybook": "nx storybook",
-        "build:watch": "nx run-many --target=build:watch --all --parallel=10 --exclude=demo",
+        "build:watch": "nx build:watch",
+        "build:all:watch": "nx run-many --target=build:watch --all --parallel=10 --exclude=demo",
         "test": "nx test:storybook",
         "************ PROD **************": "",
-        "build": "nx run-many --target=build --all --parallel=10 --exclude=demo",
+        "build": "nx build",
+        "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "build:storybook": "nx build:storybook",
         "chromatic": "nx chromatic",
-        "prerelease": "yarn build",
+        "prerelease": "yarn build:all",
         "release": "auto shipit"
     },
     "private": true,
@@ -31,7 +33,8 @@
         "auto": "^10.3.0",
         "lerna": "^5.1.8",
         "nx": "^15.6.3",
-        "prettier": "^2.6.2"
+        "prettier": "^2.6.2",
+        "workspace": "^0.0.1-preview.1"
     },
     "workspaces": [
         "demo",
@@ -56,12 +59,13 @@
         ]
     },
     "resolutions": {
-        "@storybook-extras/angular": "file:./packages/angular",
-        "@storybook-extras/console": "file:./packages/console",
-        "@storybook-extras/devkit": "file:./packages/devkit",
-        "@storybook-extras/markdown": "file:./packages/markdown",
-        "@storybook-extras/swagger": "file:./packages/swagger",
-        "@storybook-extras/toolbars": "file:./packages/toolbars",
-        "@storybook-extras/variants": "file:./packages/variants"
-    }
+        "@storybook-extras/angular": "portal:./packages/angular",
+        "@storybook-extras/console": "portal:./packages/console",
+        "@storybook-extras/devkit": "portal:./packages/devkit",
+        "@storybook-extras/markdown": "portal:./packages/markdown",
+        "@storybook-extras/swagger": "portal:./packages/swagger",
+        "@storybook-extras/toolbars": "portal:./packages/toolbars",
+        "@storybook-extras/variants": "portal:./packages/variants"
+    },
+    "packageManager": "yarn@3.3.1"
 }
