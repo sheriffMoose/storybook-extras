@@ -2,6 +2,22 @@
 
 #### ⚠️ Pushed to `master`
 
+- v0.0.41 ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: yarn install state ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update nx.json ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: yarn install ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update yarn config ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
+# v0.0.41 (Mon Jan 30 2023)
+
+#### ⚠️ Pushed to `master`
+
 - chore: yarn install state (mosherif87@gmail.com)
 - infra: update nx.json (mosherif87@gmail.com)
 - infra: yarn install (mosherif87@gmail.com)
