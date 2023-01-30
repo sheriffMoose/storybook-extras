@@ -18,8 +18,9 @@ module.exports = {
       '@storybook/addon-essentials',
   ],
   docs: {
-      defaultName: 'Overview',
       autodocs: true,
+      defaultName: 'Overview',
+      compodoc: '../.docs/documentation.json'
   },
   extras: {
       swagger: {
