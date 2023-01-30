@@ -84,11 +84,11 @@
         "typescript": "4.8.2"
     },
     "peerDependencies": {
-        "@storybook/addons": "*",
-        "@storybook/api": "*",
-        "@storybook/components": "*",
-        "@storybook/core-events": "*",
-        "@storybook/theming": "*",
+  "@storybook/addons": "next",
+        "@storybook/api": "next",
+        "@storybook/components": "next",
+        "@storybook/core-events": "next",
+        "@storybook/theming": "next",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
