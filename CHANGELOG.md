@@ -1,3 +1,39 @@
+# v0.0.40 (Mon Jan 30 2023)
+
+#### ⚠️ Pushed to `master`
+
+- chore: update build scripts (mosherif87@gmail.com)
+- demo: add new extras & variants stories (mosherif87@gmail.com)
+- `@storybook-extras/angular`
+  - refactor(angular): update source code processing mechanism - use methods from @storybook/angular (mosherif87@gmail.com)
+  - feat(angular): update docs decorator to allow handling compodoc from main.js (mosherif87@gmail.com)
+- `@storybook-extras/swagger`
+  - refactor(swagger): move from javascript to typescript (mosherif87@gmail.com)
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - chore: cleanup package.json & tsconfig.json in all packages (mosherif87@gmail.com)
+- `@storybook-extras/devkit`
+  - fix(devkit): typo for upperSnakeCase export (mosherif87@gmail.com)
+  - feat(devkit): add upperSnakeCase (mosherif87@gmail.com)
+  - chore(devkit): update files list in package.json (mosherif87@gmail.com)
+  - refactor(devkit): update lodash imports (mosherif87@gmail.com)
+  - devkit: add filterDeep method (mosherif87@gmail.com)
+  - devkit: add checkBoolean method (mosherif87@gmail.com)
+  - devkit: add rejectByInstance method (mosherif87@gmail.com)
+  - devkit: update build process (mosherif87@gmail.com)
+- `@storybook-extras/console`
+  - refactor(console): move from javascript to typescript (mosherif87@gmail.com)
+- `@storybook-extras/variants`
+  - feat(variants): add items, include & exclude arrays handling for better variants configuration (mosherif87@gmail.com)
+  - docs: fix typo in variants docs (mosherif87@gmail.com)
+- `@storybook-extras/preset`
+  - chore(preset): update peerDependencies (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v0.0.39 (Sun Jan 29 2023)
 
 #### ⚠️ Pushed to `master`
