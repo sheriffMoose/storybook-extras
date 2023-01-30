@@ -2,6 +2,21 @@
 
 #### ⚠️ Pushed to `master`
 
+- chore: yarn install state (mosherif87@gmail.com)
+- infra: update nx.json (mosherif87@gmail.com)
+- infra: yarn install (mosherif87@gmail.com)
+- infra: update yarn config (mosherif87@gmail.com)
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
+# v0.0.41 (Mon Jan 30 2023)
+
+#### ⚠️ Pushed to `master`
+
 - infra: yarn install (mosherif87@gmail.com)
 - infra: update yarn config (mosherif87@gmail.com)
 
