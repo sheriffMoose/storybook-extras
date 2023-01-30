@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { useAddonState, useChannel } from '@storybook/manager-api';
+import { useChannel, useAddonState, useStorybookApi } from '@storybook/manager-api';
 import { ADDON_ID, EVENTS } from '../constants';
 
-const DEFAULT_STATE = { docs: null, components: [], services: [] };
+const DEFAULT_STATE: State = { context: null };
 
 export interface State {
-    docs: any;
-    components: any[];
-    services: any[];
+    context: any;
 }
 
 interface AddonContextStore {
@@ -16,24 +14,18 @@ interface AddonContextStore {
 }
 
 export const AddonContext = React.createContext<AddonContextStore>({
-    state: {
-        docs: null,
-        components: [],
-        services: [],
-    },
-    setState: () => { },
+    state: { context: null },
+    setState: () => {},
 });
-
 
 export const AddonContextProvider: React.FC<any> = ({ active, ...props }) => {
     const [state, setState] = useAddonState(ADDON_ID, DEFAULT_STATE);
 
     useChannel({
-        [EVENTS.SET_CONTEXT]: React.useCallback((context) => {
-            setState(context);
+        [EVENTS.SET_SOURCE_CODE]: React.useCallback(context => {
+            setState({ context });
         }, []),
     });
-
 
     if (!active) return null;
 

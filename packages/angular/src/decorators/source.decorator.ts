@@ -1,38 +1,35 @@
-import { makeDecorator, useChannel } from "@storybook/addons";
-import { EVENTS } from "../constants";
+import { makeDecorator, useChannel } from '@storybook/addons';
+import { findComponentByName, getCompodocJson } from '@storybook/angular/dist/client/docs';
+import { StoryFnAngularReturnType } from '@storybook/angular/dist/client/types';
+import { EVENTS, SOURCE_CODE_DECORATOR, SOURCE_CODE_PARAM_KEY } from '../constants';
+import { getSourceCode } from '../helpers';
 
-export const sourceDecorator = makeDecorator({
-    name: 'sourceDecorator',
-    parameterName: '_sourceCode',
+const getMetadata = (metadata = {}, type?) => {
+    const data = metadata[type] || Object.values(metadata).flat(Number.MAX_VALUE);
+    return data
+        .filter(x => typeof x === 'function')
+        .map(x => x?.name)
+        .filter(Boolean);
+};
+
+export const sourceCodeDecorator = makeDecorator({
+    name: SOURCE_CODE_DECORATOR,
+    parameterName: SOURCE_CODE_PARAM_KEY,
     skipIfNoParametersOrOptions: false,
     wrapper: (storyFn, context) => {
-        const story = storyFn(context);
+        const story: StoryFnAngularReturnType = storyFn(context);
+        const metadata = story.moduleMetadata || {};
+        const docs = getCompodocJson();
 
-        const getMetadata = (type) => {
-            const metadata = (story as any)?.moduleMetadata || {};
-            return (metadata[type] || [])
-                .filter(x => typeof (x) === 'function')
-                .map(x => x?.name)
-                .filter(Boolean);
-        }
+        const components = getMetadata(metadata)
+            .map(item => findComponentByName(item, docs))
+            .filter(Boolean);
 
-        const emit = useChannel({
-            [EVENTS.SET_DOCS]: docs => {
-                const data = {
-                    docs,
-                    components: getMetadata('declarations'),
-                    services: getMetadata('providers'),
-                };
-                emit(EVENTS.SET_CONTEXT, data);
-            }
-        });
+        const sourceCode = getSourceCode(components);
 
-
-        const compodocs = window['__STORYBOOK_COMPODOC_JSON__'];
-        if (compodocs) {
-            emit(EVENTS.SET_DOCS, compodocs);
-        }
+        const emit = useChannel({});
+        emit(EVENTS.SET_SOURCE_CODE, sourceCode);
 
         return story;
-    }
+    },
 });

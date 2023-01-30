@@ -1,21 +1,19 @@
 import { setCompodocJson } from '@storybook/addon-docs/angular';
-import { addons, makeDecorator } from '@storybook/addons';
-import { COMPODOC_ID, COMPODOC_SOURCE_ID, DOCS_PARAM_KEY, EVENTS } from '../constants';
-import { DocsConfig } from '../types';
+import { makeDecorator } from '@storybook/addons';
 import { deprecate } from '@storybook/client-logger';
 import { global } from '@storybook/global';
+import { COMPODOC_ID, COMPODOC_SOURCE_ID, DOCS_DECORATOR, DOCS_PARAM_KEY } from '../constants';
+import { DocsConfig } from '../types';
 
 export const docsDecorator = makeDecorator({
-    name: 'docsDecorator',
-    parameterName: '_docs',
+    name: DOCS_DECORATOR,
+    parameterName: DOCS_PARAM_KEY,
     skipIfNoParametersOrOptions: false,
     wrapper: (storyFn, context) => {
         const config: DocsConfig = context.parameters[DOCS_PARAM_KEY];
-        const channel = addons.getChannel();
 
         const setDocs = docs => {
             setCompodocJson(docs);
-            channel.emit(EVENTS.SET_DOCS, docs);
         };
 
         const fetchDocs = url =>
