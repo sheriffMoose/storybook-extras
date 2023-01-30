@@ -1,1 +1,1 @@
-export * from './toUpperSnakeCase';
+export * from './upperSnakeCase';
