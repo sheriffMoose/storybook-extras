@@ -5,6 +5,7 @@ export const DECORATOR_NAME = `${PARAM_KEY}Decorator`;
 
 export interface VariantsConfig {
     enable?: boolean;
+    items?: any[];
     include?: any[];
     exclude?: any[];
     groupBy?: string[];
