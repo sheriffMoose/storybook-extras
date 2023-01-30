@@ -30,7 +30,14 @@
     "module": "dist/esm/index.js",
     "types": "dist/ts/index.d.ts",
     "files": [
-        "dist/*"
+        "dist",
+        "stories",
+        "package.json",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE",
+        "*.js",
+        "*.d.ts"
     ],
     "exports": {
         ".": {
