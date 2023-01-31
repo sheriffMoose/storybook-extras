@@ -31,7 +31,7 @@ jobs:
         run: npm run build:all
 
       - name: Build Storybook
-        run: npm run storybook
+        run: npm run build
 
       - name: Create Release
         env:
