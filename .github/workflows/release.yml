@@ -28,7 +28,7 @@ jobs:
           install-command: npm install
 
       - name: Build Addon
-        run: npm run build
+        run: npm run build:all
 
       - name: Build Storybook
         run: npm run storybook
