@@ -15,7 +15,7 @@
         "build": "nx build",
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "chromatic": "nx chromatic",
-        "prerelease": "npm run build:all",
+        "prerelease": "npm run build",
         "release": "auto shipit"
     },
     "private": true,
@@ -41,7 +41,6 @@
             [
                 "gh-pages",
                 {
-                    "buildCommand": "npm run build:storybook",
                     "dir": "./demo/storybook-static"
                 }
             ],
