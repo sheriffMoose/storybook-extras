@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/toolbars",
-    "version": "0.0.45",
+    "version": "0.0.47",
     "description": "Storybook addon for adding custom toolbar buttons.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/toolbars#readme",
@@ -72,7 +72,7 @@
         "react-dom": "^18.2.0",
         "rimraf": "^3.0.2",
         "storybook": "next",
-        "typescript": "4.8.2"
+        "typescript": "4.9.5"
     },
     "peerDependencies": {
         "@storybook/addons": "*",

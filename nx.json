@@ -1,23 +1,26 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "storybook-extras",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "accessToken": "OTkwMTBmMDgtZmUzOS00MDlkLWFiZmEtMDhlNjY5OGY1NDRmfHJlYWQtd3JpdGU="
-      }
-    }
-  },
-  "workspaceLayout": {
-    "appsDir": ".",
-    "libsDir": "packages"
-  },
-  "defaultProject": "demo"
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "npmScope": "storybook-extras",
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/nx-cloud",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e"],
+                "accessToken": "OTkwMTBmMDgtZmUzOS00MDlkLWFiZmEtMDhlNjY5OGY1NDRmfHJlYWQtd3JpdGU="
+            }
+        }
+    },
+    "targetDependencies": {
+        "build": [
+            {
+                "target": "build",
+                "projects": "dependencies"
+            }
+        ]
+    },
+    "workspaceLayout": {
+        "appsDir": ".",
+        "libsDir": "packages"
+    },
+    "defaultProject": "demo"
 }

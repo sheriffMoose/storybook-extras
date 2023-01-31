@@ -1,5 +1,102 @@
 # v0.0.41 (Mon Jan 30 2023)
 
+#### 🐛 Bug Fix
+
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - fix: release & build issues [#20](https://github.com/sheriffMoose/storybook-extras/pull/20) ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### ⚠️ Pushed to `master`
+
+- chore: update nx build target dependencies ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update build command ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update workflow run command ([@sheriffMoose](https://github.com/sheriffMoose))
+- fix: release.yml typos ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update release.yml to build addons first before release ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: add auto npm plugin ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: yarn install state ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update nx.json ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update yarn config ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - chore: pump version ([@sheriffMoose](https://github.com/sheriffMoose))
+  - v0.0.43 ([@sheriffMoose](https://github.com/sheriffMoose))
+  - v0.0.41 ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - chore: update package.json scripts ([@sheriffMoose](https://github.com/sheriffMoose))
+  - chore: remove yarn completely ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/markdown`
+  - markdown: fix preset error ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/swagger`
+  - chore: fix versions ([@sheriffMoose](https://github.com/sheriffMoose))
+  - chore: set correct versions ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - infra: yarn install ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): bump @angular/compiler from 15.1.1 to 15.1.2 [#14](https://github.com/sheriffMoose/storybook-extras/pull/14) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps-dev): bump @angular/cli from 15.1.1 to 15.1.3 [#18](https://github.com/sheriffMoose/storybook-extras/pull/18) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump @angular/common from 15.1.1 to 15.1.2 [#15](https://github.com/sheriffMoose/storybook-extras/pull/15) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump @angular/core from 15.1.1 to 15.1.2 [#16](https://github.com/sheriffMoose/storybook-extras/pull/16) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/markdown`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - chore(deps-dev): bump typescript from 4.8.2 to 4.9.5 [#19](https://github.com/sheriffMoose/storybook-extras/pull/19) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
+# v0.0.41 (Mon Jan 30 2023)
+
+#### 🐛 Bug Fix
+
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - fix: release & build issues [#20](https://github.com/sheriffMoose/storybook-extras/pull/20) ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### ⚠️ Pushed to `master`
+
+- chore: update nx build target dependencies ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update build command ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update workflow run command ([@sheriffMoose](https://github.com/sheriffMoose))
+- fix: release.yml typos ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: update release.yml to build addons first before release ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: add auto npm plugin ([@sheriffMoose](https://github.com/sheriffMoose))
+- chore: yarn install state ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update nx.json ([@sheriffMoose](https://github.com/sheriffMoose))
+- infra: update yarn config ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - chore: update package.json scripts ([@sheriffMoose](https://github.com/sheriffMoose))
+  - chore: remove yarn completely ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/markdown`
+  - markdown: fix preset error ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/swagger`
+  - chore: fix versions ([@sheriffMoose](https://github.com/sheriffMoose))
+  - chore: set correct versions ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/devkit`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - v0.0.43 ([@sheriffMoose](https://github.com/sheriffMoose))
+  - v0.0.41 ([@sheriffMoose](https://github.com/sheriffMoose))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/markdown`, `@storybook-extras/preset`, `@storybook-extras/swagger`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - infra: yarn install ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): bump @angular/compiler from 15.1.1 to 15.1.2 [#14](https://github.com/sheriffMoose/storybook-extras/pull/14) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps-dev): bump @angular/cli from 15.1.1 to 15.1.3 [#18](https://github.com/sheriffMoose/storybook-extras/pull/18) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump @angular/common from 15.1.1 to 15.1.2 [#15](https://github.com/sheriffMoose/storybook-extras/pull/15) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump @angular/core from 15.1.1 to 15.1.2 [#16](https://github.com/sheriffMoose/storybook-extras/pull/16) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@storybook-extras/angular`, `@storybook-extras/console`, `@storybook-extras/markdown`, `@storybook-extras/toolbars`, `@storybook-extras/variants`
+  - chore(deps-dev): bump typescript from 4.8.2 to 4.9.5 [#19](https://github.com/sheriffMoose/storybook-extras/pull/19) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
+# v0.0.41 (Mon Jan 30 2023)
+
 #### ⚠️ Pushed to `master`
 
 - v0.0.41 ([@sheriffMoose](https://github.com/sheriffMoose))

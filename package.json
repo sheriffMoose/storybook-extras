@@ -15,7 +15,7 @@
         "build": "nx build",
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "chromatic": "nx chromatic",
-        "prerelease": "npm run build:all",
+        "prerelease": "npm run build",
         "release": "auto shipit"
     },
     "private": true,
@@ -41,7 +41,6 @@
             [
                 "gh-pages",
                 {
-                    "buildCommand": "npm run build:storybook",
                     "dir": "./demo/storybook-static"
                 }
             ],
@@ -55,12 +54,12 @@
         ]
     },
     "resolutions": {
-        "@storybook-extras/angular": "portal:./packages/angular",
-        "@storybook-extras/console": "portal:./packages/console",
-        "@storybook-extras/devkit": "portal:./packages/devkit",
-        "@storybook-extras/markdown": "portal:./packages/markdown",
-        "@storybook-extras/swagger": "portal:./packages/swagger",
-        "@storybook-extras/toolbars": "portal:./packages/toolbars",
-        "@storybook-extras/variants": "portal:./packages/variants"
+        "@storybook-extras/angular": "file:./packages/angular",
+        "@storybook-extras/console": "file:./packages/console",
+        "@storybook-extras/devkit": "file:./packages/devkit",
+        "@storybook-extras/markdown": "file:./packages/markdown",
+        "@storybook-extras/swagger": "file:./packages/swagger",
+        "@storybook-extras/toolbars": "file:./packages/toolbars",
+        "@storybook-extras/variants": "file:./packages/variants"
     }
 }
