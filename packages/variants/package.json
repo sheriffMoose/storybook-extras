@@ -61,7 +61,7 @@
     },
     "dependencies": {
         "@storybook-extras/devkit": "latest",
-        "@storybook-extras/toolbars": "^0.0.47",
+        "@storybook-extras/toolbars": "latest",
         "cartesian": "^1.0.1"
     },
     "devDependencies": {
