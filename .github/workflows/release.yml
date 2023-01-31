@@ -27,8 +27,14 @@ jobs:
         with:
           install-command: npm install
 
+      - name: Build Addon
+        uses: npm run build
+
+      - name: Build Storybook
+        uses: npm run storybook
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn release
+        run: npm run release
