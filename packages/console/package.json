@@ -72,7 +72,7 @@
         "rimraf": "^3.0.2",
         "storybook": "next",
         "tslib": "^2.5.0",
-        "typescript": "4.8.2"
+        "typescript": "4.9.5"
     },
     "peerDependencies": {
         "@storybook/addons": "next",
