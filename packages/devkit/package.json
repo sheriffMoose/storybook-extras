@@ -74,7 +74,7 @@
         "*************** BUILD ***************": "",
         "prebuild": "rimraf ./dist",
         "build": "concurrently \"npm run build:cjs\" \"npm run build:esm\" \"npm run build:ts\"",
-        "build:watch": "concurrently \"npm run build:cjs --watch\" \"npm run build:esm --watch\" \"npm run build:ts --watch\""
+        "watch": "concurrently \"npm run build:cjs --watch\" \"npm run build:esm --watch\" \"npm run build:ts --watch\""
     },
     "dependencies": {
         "@storybook/csf-tools": "next",
