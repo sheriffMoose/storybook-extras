@@ -28,10 +28,10 @@ jobs:
           install-command: npm install
 
       - name: Build Addon
-        uses: npm run build
+        run: npm run build
 
       - name: Build Storybook
-        uses: npm run storybook
+        run: npm run storybook
 
       - name: Create Release
         env:
