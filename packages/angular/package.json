@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/angular",
-    "version": "0.0.39",
+    "version": "0.0.45",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/angular#readme",
@@ -68,7 +68,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "workspace:^",
+        "@storybook-extras/devkit": "^0.0.45",
         "node-polyfill-webpack-plugin": "^2.0.1",
         "webpack-plugin-istanbul": "^1.0.3"
     },
@@ -81,10 +81,11 @@
         "react-dom": "^18.2.0",
         "rimraf": "^3.0.2",
         "storybook": "next",
+        "tslib": "^2.5.0",
         "typescript": "4.8.2"
     },
     "peerDependencies": {
-  "@storybook/addons": "next",
+        "@storybook/addons": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
         "@storybook/core-events": "next",
