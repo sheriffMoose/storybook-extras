@@ -1,6 +1,6 @@
 {
-  "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "npmScope": "storybook-extras",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -14,6 +14,10 @@
         "accessToken": "OTkwMTBmMDgtZmUzOS00MDlkLWFiZmEtMDhlNjY5OGY1NDRmfHJlYWQtd3JpdGU="
       }
     }
+  },
+  "workspaceLayout": {
+    "appsDir": ".",
+    "libsDir": "packages"
   },
   "defaultProject": "demo"
 }

@@ -79,11 +79,11 @@
         "zx": "^1.14.1"
     },
     "peerDependencies": {
-  "@storybook/addons": "next",
-        "@storybook/api": "next",
-        "@storybook/components": "next",
-        "@storybook/core-events": "next",
-        "@storybook/theming": "next",
+        "@storybook/addons": "*",
+        "@storybook/api": "*",
+        "@storybook/components": "*",
+        "@storybook/core-events": "*",
+        "@storybook/theming": "*",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },

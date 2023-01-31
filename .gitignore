@@ -104,5 +104,4 @@ dist
 .tern-port
 
 # Yarn
-.yarn*
-.pnp.*
+**/.yarn/cache
