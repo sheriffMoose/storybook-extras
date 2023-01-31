@@ -18,7 +18,7 @@
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "build:storybook": "nx build:storybook",
         "chromatic": "nx chromatic",
-        "prerelease": "yarn build:all",
+        "prerelease": "npm run build:all",
         "release": "auto shipit"
     },
     "private": true,
@@ -44,7 +44,7 @@
             [
                 "gh-pages",
                 {
-                    "buildCommand": "yarn build:storybook",
+                    "buildCommand": "npm run build:storybook",
                     "dir": "./demo/storybook-static"
                 }
             ],
@@ -65,6 +65,5 @@
         "@storybook-extras/swagger": "portal:./packages/swagger",
         "@storybook-extras/toolbars": "portal:./packages/toolbars",
         "@storybook-extras/variants": "portal:./packages/variants"
-    },
-    "packageManager": "yarn@3.3.1"
+    }
 }
