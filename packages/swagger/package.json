@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/swagger",
-    "version": "0.0.45",
+    "version": "0.0.47",
     "description": "Storybook addon for Swagger UI.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/swagger#readme",
@@ -57,7 +57,7 @@
         "watch": "concurrently \"npm run build:cjs --watch\" \"npm run build:esm --watch\" \"npm run build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.45",
+        "@storybook-extras/devkit": "^0.0.47",
         "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {
