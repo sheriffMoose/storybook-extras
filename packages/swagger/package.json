@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/swagger",
-    "version": "0.0.39",
+    "version": "0.0.45",
     "description": "Storybook addon for Swagger UI.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/swagger#readme",
@@ -57,7 +57,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "workspace:^",
+        "@storybook-extras/devkit": "^0.0.45",
         "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {
@@ -74,10 +74,11 @@
         "react-dom": "^18.2.0",
         "rimraf": "^3.0.2",
         "storybook": "next",
+        "tslib": "^2.5.0",
         "typescript": "^4.9.4"
     },
     "peerDependencies": {
-  "@storybook/addons": "next",
+        "@storybook/addons": "next",
         "@storybook/api": "next",
         "@storybook/components": "next",
         "@storybook/core-events": "next",
