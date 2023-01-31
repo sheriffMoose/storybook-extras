@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/devkit",
-    "version": "0.0.43",
+    "version": "0.0.45",
     "description": "Storybook Extras devkit.",
     "repository": "sheriffMoose/storybook-extras",
     "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/devkit#readme",
@@ -85,6 +85,7 @@
         "@types/lodash-es": "^4.17.6",
         "concurrently": "^7.6.0",
         "rimraf": "^3.0.2",
+        "tslib": "^2.5.0",
         "typescript": "^4.9.4"
     },
     "gitHead": "bc5ab559b9e7fe9c199d19a87d3970ccd0758a03"

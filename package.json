@@ -1,6 +1,6 @@
 {
-    "name": "@storybook-extras/monorepo",
-    "version": "0.0.2",
+    "name": "storybook-extras",
+    "version": "0.0.0",
     "license": "MIT",
     "author": {
         "name": "Mostafa Sherif",
