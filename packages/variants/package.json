@@ -60,7 +60,7 @@
         "watch": "concurrently \"npm run build:cjs --watch\" \"npm run build:esm --watch\" \"npm run build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.47",
+        "@storybook-extras/devkit": "latest",
         "@storybook-extras/toolbars": "^0.0.47",
         "cartesian": "^1.0.1"
     },

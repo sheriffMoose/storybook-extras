@@ -59,7 +59,7 @@
         "watch": "concurrently \"npm run build:cjs --watch\" \"npm run build:esm --watch\" \"npm run build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.47",
+        "@storybook-extras/devkit": "latest",
         "@storybook/mdx2-csf": "next"
     },
     "devDependencies": {
