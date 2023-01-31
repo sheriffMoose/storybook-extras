@@ -68,7 +68,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit":"^0.0.43",
+        "@storybook-extras/devkit": "^0.0.43",
         "node-polyfill-webpack-plugin": "^2.0.1",
         "webpack-plugin-istanbul": "^1.0.3"
     },

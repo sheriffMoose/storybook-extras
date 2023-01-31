@@ -4774,7 +4774,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/angular@portal:./packages/angular::locator=%40storybook-extras%2Fmonorepo%40workspace%3A."
   dependencies:
-    "@storybook-extras/devkit": "workspace:^"
+    "@storybook-extras/devkit": ^0.0.43
     node-polyfill-webpack-plugin: ^2.0.1
     webpack-plugin-istanbul: ^1.0.3
   peerDependencies:
@@ -4793,7 +4793,7 @@ __metadata:
   resolution: "@storybook-extras/angular@workspace:packages/angular"
   dependencies:
     "@angular/core": latest
-    "@storybook-extras/devkit": "workspace:^"
+    "@storybook-extras/devkit": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     concurrently: ^7.6.0
@@ -4886,7 +4886,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/markdown@portal:./packages/markdown::locator=%40storybook-extras%2Fmonorepo%40workspace%3A."
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
     "@storybook/mdx2-csf": next
   peerDependencies:
     "@storybook/addons": "*"
@@ -4903,7 +4903,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/markdown@workspace:packages/markdown"
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -4948,17 +4948,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/preset@^0.0.41, @storybook-extras/preset@workspace:packages/preset":
+"@storybook-extras/preset@^0.0.43, @storybook-extras/preset@workspace:packages/preset":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/preset@workspace:packages/preset"
   dependencies:
-    "@storybook-extras/angular": ^0.0.41
-    "@storybook-extras/console": ^0.0.41
-    "@storybook-extras/devkit": ^0.0.41
-    "@storybook-extras/markdown": ^0.0.41
-    "@storybook-extras/swagger": ^0.0.41
-    "@storybook-extras/toolbars": ^0.0.41
-    "@storybook-extras/variants": ^0.0.41
+    "@storybook-extras/angular": ^0.0.43
+    "@storybook-extras/console": ^0.0.43
+    "@storybook-extras/devkit": ^0.0.43
+    "@storybook-extras/markdown": ^0.0.43
+    "@storybook-extras/swagger": ^0.0.43
+    "@storybook-extras/toolbars": ^0.0.43
+    "@storybook-extras/variants": ^0.0.43
     "@storybook/addons": next
     "@storybook/api": next
     "@storybook/components": next
@@ -4987,7 +4987,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/swagger@portal:./packages/swagger::locator=%40storybook-extras%2Fmonorepo%40workspace%3A."
   dependencies:
-    "@storybook-extras/devkit": "workspace:^"
+    "@storybook-extras/devkit": ^0.0.43
     swagger-ui-react: ^4.15.5
   peerDependencies:
     "@storybook/addons": "*"
@@ -5004,7 +5004,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/swagger@workspace:packages/swagger"
   dependencies:
-    "@storybook-extras/devkit": "workspace:^"
+    "@storybook-extras/devkit": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -5078,8 +5078,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/variants@portal:./packages/variants::locator=%40storybook-extras%2Fmonorepo%40workspace%3A."
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
-    "@storybook-extras/toolbars": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
+    "@storybook-extras/toolbars": ^0.0.43
     cartesian: ^1.0.1
   peerDependencies:
     "@storybook/addons": "*"
@@ -5096,8 +5096,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook-extras/variants@workspace:packages/variants"
   dependencies:
-    "@storybook-extras/devkit": ^0.0.41
-    "@storybook-extras/toolbars": ^0.0.41
+    "@storybook-extras/devkit": ^0.0.43
+    "@storybook-extras/toolbars": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -10598,7 +10598,7 @@ cors@latest:
     "@angular/platform-browser-dynamic": 15.1.1
     "@angular/router": 15.1.1
     "@compodoc/compodoc": ^1.1.19
-    "@storybook-extras/preset": ^0.0.41
+    "@storybook-extras/preset": ^0.0.43
     "@storybook/addon-essentials": next
     "@storybook/addons": next
     "@storybook/angular": next
