@@ -15,8 +15,8 @@
         "build": "nx build",
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "chromatic": "nx chromatic",
-        "prerelease": "npm run build",
-        "release": "auto shipit"
+        "prerelease": "npm run build && auto-changelog -c ./changelog/config.json",
+        "release": "auto shipit --no-changelog"
     },
     "private": true,
     "devDependencies": {
@@ -46,12 +46,7 @@
                     "dir": "./demo/storybook-static"
                 }
             ],
-            [
-                "npm",
-                {
-                    "subPackageChangelogs": false
-                }
-            ],
+            "npm",
             "released"
         ]
     },
