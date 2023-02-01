@@ -1,0 +1,24 @@
+{
+    "tagPattern": "v",
+    "unreleased": true,
+    "hideCredit": true,
+    "commitLimit": false,
+    "hideEmptyReleases": true,
+    "template": "./changelog/template.hbs",
+    "handlebarsSetup": "./changelog/setup.js",
+    "types": ["feat", "fix", "docs", "refactor", "test", "chore", "revert"],
+    "scopes": [
+        { "key": "angular", "img": "" },
+        { "key": "console", "img": "" },
+        { "key": "devkit", "img": "" },
+        { "key": "markdown", "img": "" },
+        { "key": "preset", "img": "" },
+        { "key": "swagger", "img": "" },
+        { "key": "toolbars", "img": "" },
+        { "key": "variants", "img": "" },
+        { "key": "infra", "img": "" },
+        { "key": "ci", "img": "" },
+        { "key": "demo", "img": "" },
+        { "key": "others", "img": "" }
+    ]
+}

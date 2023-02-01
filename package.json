@@ -28,6 +28,8 @@
         "@auto-it/released": "^10.37.6",
         "@nrwl/nx-cloud": "latest",
         "auto": "^10.3.0",
+        "auto-changelog": "^2.4.0",
+        "handlebars-helpers": "^0.10.0",
         "lerna": "^5.1.8",
         "nx": "^15.6.3",
         "prettier": "^2.6.2"
