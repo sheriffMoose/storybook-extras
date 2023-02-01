@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file. The format 
 Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]([`undefined`](undefined))
+
+
+
+### **infra**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`de2b78a`](https://github.com/sheriffMoose/storybook-extras/commit/de2b78a0d5b556e4acd3f07d8eb375126376beac) | chore | add changelog template |
+| [`cdf82ac`](https://github.com/sheriffMoose/storybook-extras/commit/cdf82acacfd399849990259cf77702a58b2b01f0) | chore | add changelog template |
 ## [v0.0.50]([`undefined`](undefined)) - 2023-01-31
 
 
@@ -48,6 +58,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`52531a5`](https://github.com/sheriffMoose/storybook-extras/commit/52531a514cb0fa969783a1e586d8d8b24da99f1b) | N/A | infra: yarn install |
+| [`fea23b9`](https://github.com/sheriffMoose/storybook-extras/commit/fea23b91a245fbf114bcfd0b66cd6c03f09ad8db) | N/A | Bump version to: v0.0.40 [skip ci] |
 | [`cf9b3ff`](https://github.com/sheriffMoose/storybook-extras/commit/cf9b3ff2a9adb5f4056fe3e3263210c46813825b) | N/A | infra: update yarn config |
 | [`0727ef3`](https://github.com/sheriffMoose/storybook-extras/commit/0727ef3cad8f9101f5f62dfbef0440a427b3ff4d) | N/A | infra: update nx.json |
 | [`a8caa5c`](https://github.com/sheriffMoose/storybook-extras/commit/a8caa5c3a55d681da2af07ef7d076c55b49341f8) | N/A | chore: yarn install state |
@@ -101,7 +112,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`226da2e`](https://github.com/sheriffMoose/storybook-extras/commit/226da2e8bc4edefcf8d021b8d38c1af858212487) | N/A | chore: cleanup package.json & tsconfig.json in all packages |
 | [`2a0d279`](https://github.com/sheriffMoose/storybook-extras/commit/2a0d279b6c5aaa5e14e41367d6f37a935d0e07a1) | N/A | demo: add new extras & variants stories |
 | [`405e001`](https://github.com/sheriffMoose/storybook-extras/commit/405e001685d66958ab4e8bd91f30a782cdb51c3f) | N/A | devkit: add filterDeep method |
-| [`fea23b9`](https://github.com/sheriffMoose/storybook-extras/commit/fea23b91a245fbf114bcfd0b66cd6c03f09ad8db) | N/A | Bump version to: v0.0.40 [skip ci] |
+| [`f0d87db`](https://github.com/sheriffMoose/storybook-extras/commit/f0d87db07a8584ca7da38f845d5c6bf483746f0c) | N/A | Bump version to: v0.0.40 [skip ci] |
+| [`04de581`](https://github.com/sheriffMoose/storybook-extras/commit/04de581d841a177789c3d198173cb6747375de1b) | N/A | Bump version to: v0.0.39 [skip ci] |
 | [`336463f`](https://github.com/sheriffMoose/storybook-extras/commit/336463fb83e0dbc08989d5a8fba2ea913270e15f) | N/A | devkit: update build process |
 | [`41a950c`](https://github.com/sheriffMoose/storybook-extras/commit/41a950c575588a6f57cd4464196bd99c2a9ccb09) | N/A | devkit: add checkBoolean method |
 | [`2b672ad`](https://github.com/sheriffMoose/storybook-extras/commit/2b672adb375285e8d15bc2886e63c5b99d9ef448) | N/A | devkit: add rejectByInstance method |
@@ -121,7 +133,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`efeb6c8`](https://github.com/sheriffMoose/storybook-extras/commit/efeb6c8a7d4cfc101c05c10b877e13472df9ed26) | N/A | infra: update yarn.lock |
 | [`7e079c1`](https://github.com/sheriffMoose/storybook-extras/commit/7e079c1c1fbf09923e3c5032f2d6e0195393649f) | N/A | chore: update devkit imports |
-| [`04de581`](https://github.com/sheriffMoose/storybook-extras/commit/04de581d841a177789c3d198173cb6747375de1b) | N/A | Bump version to: v0.0.39 [skip ci] |
+| [`31ac530`](https://github.com/sheriffMoose/storybook-extras/commit/31ac53009d67130710a154b8cdf029df1845afdc) | N/A | Bump version to: v0.0.39 [skip ci] |
+| [`8cb7364`](https://github.com/sheriffMoose/storybook-extras/commit/8cb7364df49208b403851d1249f9ed34463a75bd) | N/A | Bump version to: v0.0.38 [skip ci] |
 | [`9a1a74f`](https://github.com/sheriffMoose/storybook-extras/commit/9a1a74fedac865286ef6a699d6434db76b882294) | N/A | infra: cleanup before build for all packages |
 ## [v0.0.38]([`undefined`](undefined)) - 2023-01-29
 
@@ -131,7 +144,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`8cb7364`](https://github.com/sheriffMoose/storybook-extras/commit/8cb7364df49208b403851d1249f9ed34463a75bd) | N/A | Bump version to: v0.0.38 [skip ci] |
+| [`08f04d6`](https://github.com/sheriffMoose/storybook-extras/commit/08f04d65a2f32ad016ae5e3935ed8e4fa52ef117) | N/A | Bump version to: v0.0.38 [skip ci] |
+| [`45a0564`](https://github.com/sheriffMoose/storybook-extras/commit/45a0564070161147009e0ee3e541b45dca89cba3) | N/A | Bump version to: v0.0.37 [skip ci] |
 | [`699f4e4`](https://github.com/sheriffMoose/storybook-extras/commit/699f4e4a23469676ecd18d6b92cd9204fadbf0ed) | N/A | variants: null check for story template & proper import for cartesian |
 ## [v0.0.37]([`undefined`](undefined)) - 2023-01-29
 
@@ -142,7 +156,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`4797253`](https://github.com/sheriffMoose/storybook-extras/commit/479725381f2de65dda20d7ce180d62edc17b8aeb) | N/A | variants: use the proper exports from devkit |
-| [`45a0564`](https://github.com/sheriffMoose/storybook-extras/commit/45a0564070161147009e0ee3e541b45dca89cba3) | N/A | Bump version to: v0.0.37 [skip ci] |
+| [`34f7945`](https://github.com/sheriffMoose/storybook-extras/commit/34f794503df90e8f34ad6252b08a82d2ab5934ea) | N/A | Bump version to: v0.0.37 [skip ci] |
 | [`1ac253d`](https://github.com/sheriffMoose/storybook-extras/commit/1ac253de2263f033c090980adfe4271ce3259bb7) | N/A | devkit: update package exports & typesVersions |
 | [`117d12f`](https://github.com/sheriffMoose/storybook-extras/commit/117d12fd70ad17259a93419213e1c86c232ac8c0) | N/A | docs: add variants compatibility details |
 ## [v0.0.36]([`undefined`](undefined)) - 2023-01-28
@@ -153,6 +167,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
+| [`f682725`](https://github.com/sheriffMoose/storybook-extras/commit/f682725755910b1b45988265e0f9abab9b059658) | N/A | Bump version to: v0.0.35 [skip ci] |
 | [`c1afbda`](https://github.com/sheriffMoose/storybook-extras/commit/c1afbda523f826a4817518115b23c4243922fd5a) | N/A | [skip ci]: pump version 0.0.35 |
 ## [v0.0.35]([`undefined`](undefined)) - 2023-01-29
 
@@ -162,7 +177,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`f682725`](https://github.com/sheriffMoose/storybook-extras/commit/f682725755910b1b45988265e0f9abab9b059658) | N/A | Bump version to: v0.0.35 [skip ci] |
+| [`bc5ab55`](https://github.com/sheriffMoose/storybook-extras/commit/bc5ab559b9e7fe9c199d19a87d3970ccd0758a03) | N/A | Bump version to: v0.0.35 [skip ci] |
+| [`e9d9fa9`](https://github.com/sheriffMoose/storybook-extras/commit/e9d9fa9190ec9c22ba0b50526c04e7eabcc5f7c9) | N/A | Bump version to: v0.0.34 [skip ci] |
 | [`5b83bd9`](https://github.com/sheriffMoose/storybook-extras/commit/5b83bd9510ef16f42b7022841860617ff57e2f5e) | N/A | chore: make sure to build before release |
 ## [v0.0.34]([`undefined`](undefined)) - 2023-01-28
 
@@ -172,7 +188,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`e9d9fa9`](https://github.com/sheriffMoose/storybook-extras/commit/e9d9fa9190ec9c22ba0b50526c04e7eabcc5f7c9) | N/A | Bump version to: v0.0.34 [skip ci] |
+| [`8e9ad12`](https://github.com/sheriffMoose/storybook-extras/commit/8e9ad129112088aa68de1b9c064ed177adb6af02) | N/A | Bump version to: v0.0.34 [skip ci] |
+| [`c1d8c3f`](https://github.com/sheriffMoose/storybook-extras/commit/c1d8c3f21890cccefe9eb2f1ebc5192151fff5b1) | N/A | Bump version to: v0.0.33 [skip ci] |
 | [`433bc61`](https://github.com/sheriffMoose/storybook-extras/commit/433bc61b7d3e4bc85dfc639aa5adae8d27f7f539) | N/A | chore: update devkit node imports to require |
 | [`ee174d8`](https://github.com/sheriffMoose/storybook-extras/commit/ee174d8c5021dd3466a2a5c835a793b0b586cc29) | N/A | feat: export withVariants decorator |
 ## [v0.0.33]([`undefined`](undefined)) - 2023-01-28
@@ -185,7 +202,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`3989b06`](https://github.com/sheriffMoose/storybook-extras/commit/3989b06c91766acd3cdffb8bfad7cb261a172bff) | N/A | feat: add array methods to devkit package |
 | [`31a9886`](https://github.com/sheriffMoose/storybook-extras/commit/31a988624eb0a84458e9bc2af3394582483e8d91) | N/A | feat: update variants package to use util methods from devkit |
-| [`c1d8c3f`](https://github.com/sheriffMoose/storybook-extras/commit/c1d8c3f21890cccefe9eb2f1ebc5192151fff5b1) | N/A | Bump version to: v0.0.33 [skip ci] |
+| [`4086354`](https://github.com/sheriffMoose/storybook-extras/commit/40863542bb2d7944d9a5292ee4654017be490118) | N/A | Bump version to: v0.0.33 [skip ci] |
+| [`165bc3e`](https://github.com/sheriffMoose/storybook-extras/commit/165bc3eae8b4b2c1bd80873c3399e330e0dbcefe) | N/A | Bump version to: v0.0.32 [skip ci] |
 ## [v0.0.32]([`undefined`](undefined)) - 2023-01-28
 
 
@@ -195,7 +213,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`9cb9e63`](https://github.com/sheriffMoose/storybook-extras/commit/9cb9e631fb2d6b0d1471270ccb925145bef656ef) | N/A | refactor: update variants addon to work properly with storybook v6.5 |
-| [`165bc3e`](https://github.com/sheriffMoose/storybook-extras/commit/165bc3eae8b4b2c1bd80873c3399e330e0dbcefe) | N/A | Bump version to: v0.0.32 [skip ci] |
+| [`14e0a5b`](https://github.com/sheriffMoose/storybook-extras/commit/14e0a5b8786673c8315cae0dc54c7badbf9e9fa7) | N/A | Bump version to: v0.0.32 [skip ci] |
+| [`befaa40`](https://github.com/sheriffMoose/storybook-extras/commit/befaa40f984bd3cdaf6c3e0aa060d7e795483415) | N/A | Bump version to: v0.0.31 [skip ci] |
 | [`5c20ac6`](https://github.com/sheriffMoose/storybook-extras/commit/5c20ac6af380972d46d5fa486326af7d12f11cfc) | N/A | demo: update story name |
 ## [v0.0.31]([`undefined`](undefined)) - 2023-01-28
 
@@ -205,7 +224,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`befaa40`](https://github.com/sheriffMoose/storybook-extras/commit/befaa40f984bd3cdaf6c3e0aa060d7e795483415) | N/A | Bump version to: v0.0.31 [skip ci] |
+| [`621b30c`](https://github.com/sheriffMoose/storybook-extras/commit/621b30c2fc031d8a17f6ad2812016b9a29dd7048) | N/A | Bump version to: v0.0.31 [skip ci] |
+| [`fcefca3`](https://github.com/sheriffMoose/storybook-extras/commit/fcefca3ab795a52f440168a84f23d8ea410b3ed5) | N/A | Bump version to: v0.0.30 [skip ci] |
 ## [v0.0.30]([`undefined`](undefined)) - 2023-01-28
 
 
@@ -215,7 +235,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`af33989`](https://github.com/sheriffMoose/storybook-extras/commit/af33989d350dabfc4b2500da692b96643b16a5a4) | N/A | chore: add .npmrc & disable lock files |
-| [`fcefca3`](https://github.com/sheriffMoose/storybook-extras/commit/fcefca3ab795a52f440168a84f23d8ea410b3ed5) | N/A | Bump version to: v0.0.30 [skip ci] |
+| [`904913f`](https://github.com/sheriffMoose/storybook-extras/commit/904913fd6e435c716e2d5cd5bcc938993a0b637d) | N/A | Bump version to: v0.0.29 [skip ci] |
+| [`f2e9ab7`](https://github.com/sheriffMoose/storybook-extras/commit/f2e9ab715fa338752d17bf8fab84ad2f27478368) | N/A | Bump version to: v0.0.30 [skip ci] |
 ## [v0.0.29]([`undefined`](undefined)) - 2023-01-28
 
 
@@ -224,7 +245,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`904913f`](https://github.com/sheriffMoose/storybook-extras/commit/904913fd6e435c716e2d5cd5bcc938993a0b637d) | N/A | Bump version to: v0.0.29 [skip ci] |
+| [`10f605b`](https://github.com/sheriffMoose/storybook-extras/commit/10f605bc9f33420b42926563a1b23400228bd095) | N/A | Bump version to: v0.0.29 [skip ci] |
 | [`3044b54`](https://github.com/sheriffMoose/storybook-extras/commit/3044b540cb7b136655249546f46590c1a7f16e6a) | N/A | chore: update auto plugins |
 ## [v0.0.28]([`undefined`](undefined)) - 2023-01-28
 
@@ -280,6 +301,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`d9f5411`](https://github.com/sheriffMoose/storybook-extras/commit/d9f541150f647dd02847fb3ea556533d5749a441) | N/A | update markdown utils for exports |
 | [`225bddf`](https://github.com/sheriffMoose/storybook-extras/commit/225bddfdd509155452e0fdad9abfe4b03451d1bc) | N/A | chore: rename `app` to `src` in the demo app |
 | [`074cc06`](https://github.com/sheriffMoose/storybook-extras/commit/074cc06e3cebe80389246803988a5663d7461ca4) | N/A | infra: move angular webpackFinal from js to ts |
+| [`0bec0bd`](https://github.com/sheriffMoose/storybook-extras/commit/0bec0bd720da60be047068dad618170d71921b6d) | N/A | Bump version to: v0.0.24 [skip ci] |
 | [`b08c8b6`](https://github.com/sheriffMoose/storybook-extras/commit/b08c8b605ccd259e590c764eaa8abf03500e2b3c) | N/A | chore: update versions in preset package.json |
 | [`86c6849`](https://github.com/sheriffMoose/storybook-extras/commit/86c6849462ff76aed165bf74ac88dd95e73028f8) | N/A | update homepage in package.json |
 | [`fd63db9`](https://github.com/sheriffMoose/storybook-extras/commit/fd63db97fcd535ba5518c5580fbc571b648b663e) | N/A | Bump version to: 0.0.2 [skip ci] |
@@ -294,7 +316,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`39fc22b`](https://github.com/sheriffMoose/storybook-extras/commit/39fc22b6086747f3104ffffbfa734a5fe52127af) | N/A | update auto config |
-| [`0bec0bd`](https://github.com/sheriffMoose/storybook-extras/commit/0bec0bd720da60be047068dad618170d71921b6d) | N/A | Bump version to: v0.0.24 [skip ci] |
+| [`acc1d0a`](https://github.com/sheriffMoose/storybook-extras/commit/acc1d0aec68fee66f24019d31694c3a153faa85c) | N/A | Bump version to: v0.0.24 [skip ci] |
+| [`8c1094b`](https://github.com/sheriffMoose/storybook-extras/commit/8c1094b276d4604f422dce144549de7707d87a6a) | N/A | Bump version to: v0.0.23 [skip ci] |
 ## [v0.0.23]([`undefined`](undefined)) - 2023-01-26
 
 
@@ -304,7 +327,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`4916990`](https://github.com/sheriffMoose/storybook-extras/commit/49169903b0463730be9e39da8ed7a5d66f18e45a) | N/A | add auto config |
-| [`8c1094b`](https://github.com/sheriffMoose/storybook-extras/commit/8c1094b276d4604f422dce144549de7707d87a6a) | N/A | Bump version to: v0.0.23 [skip ci] |
+| [`33f9892`](https://github.com/sheriffMoose/storybook-extras/commit/33f989236da512a31644953a6c348b15f04040c9) | N/A | Bump version to: v0.0.22 [skip ci] |
+| [`ff3c574`](https://github.com/sheriffMoose/storybook-extras/commit/ff3c5740c0fbd2e44fcb7eb5023dbdb347650a6c) | N/A | Bump version to: v0.0.23 [skip ci] |
 ## [v0.0.22]([`undefined`](undefined)) - 2023-01-26
 
 
@@ -314,8 +338,9 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`380f24d`](https://github.com/sheriffMoose/storybook-extras/commit/380f24dd0be66ca3b8aa675884e91e7151e1aacc) | N/A | update markdown docs |
+| [`cd114d9`](https://github.com/sheriffMoose/storybook-extras/commit/cd114d96ef99ccfc3ff5b2590aab4f08766b083e) | N/A | Bump version to: v0.0.21 [skip ci] |
 | [`2f7c6a2`](https://github.com/sheriffMoose/storybook-extras/commit/2f7c6a2d674d8014ba92c7515d0769c06a27f5c2) | N/A | updated yarn.lock |
-| [`33f9892`](https://github.com/sheriffMoose/storybook-extras/commit/33f989236da512a31644953a6c348b15f04040c9) | N/A | Bump version to: v0.0.22 [skip ci] |
+| [`5eeec1e`](https://github.com/sheriffMoose/storybook-extras/commit/5eeec1e31554c734086b7573c64936b0c02d2059) | N/A | Bump version to: v0.0.22 [skip ci] |
 ## [v0.0.21]([`undefined`](undefined)) - 2023-01-26
 
 
@@ -326,7 +351,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`60a4601`](https://github.com/sheriffMoose/storybook-extras/commit/60a4601b2e6bffa493f8ae71c60b9ad7ab116082) | N/A | updates for markdown/html title processing |
 | [`12b7df2`](https://github.com/sheriffMoose/storybook-extras/commit/12b7df2d0edd286f02de920cbeef1c5dee6e2c3f) | N/A | add more html/markdown demos |
-| [`cd114d9`](https://github.com/sheriffMoose/storybook-extras/commit/cd114d96ef99ccfc3ff5b2590aab4f08766b083e) | N/A | Bump version to: v0.0.21 [skip ci] |
+| [`9e22109`](https://github.com/sheriffMoose/storybook-extras/commit/9e221093e14640110845375fa6308546adce0bed) | N/A | Bump version to: v0.0.20 [skip ci] |
+| [`3ae858d`](https://github.com/sheriffMoose/storybook-extras/commit/3ae858dea3799d6365dcea4d6b7fb76fee17ec1a) | N/A | Bump version to: v0.0.21 [skip ci] |
 | [`43ac6d0`](https://github.com/sheriffMoose/storybook-extras/commit/43ac6d071449ead25c861c9d02a06125574d1af1) | N/A | update yarn.lock |
 ## [v0.0.20]([`undefined`](undefined)) - 2023-01-26
 
@@ -343,8 +369,9 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`37989a8`](https://github.com/sheriffMoose/storybook-extras/commit/37989a87e3154a5dafc37a10fb268b0691d607a3) | N/A | pump variants & toolbars version |
 | [`7431d91`](https://github.com/sheriffMoose/storybook-extras/commit/7431d918ba70de6440a5b57289c1523a642e8121) | N/A | use makeTitle to change markdown/html docs stories titles |
-| [`9e22109`](https://github.com/sheriffMoose/storybook-extras/commit/9e221093e14640110845375fa6308546adce0bed) | N/A | Bump version to: v0.0.20 [skip ci] |
+| [`63e77c4`](https://github.com/sheriffMoose/storybook-extras/commit/63e77c4f79e6eba21b9fa6c575a9f6d43c5dcd32) | N/A | Bump version to: v0.0.20 [skip ci] |
 | [`149f48f`](https://github.com/sheriffMoose/storybook-extras/commit/149f48ff2911dcec5001fa158582a8fa17c33110) | N/A | Bump version to: v0.0.19 [skip ci] |
+| [`62a48dd`](https://github.com/sheriffMoose/storybook-extras/commit/62a48ddc45c1999f34c4688bcddaed5e1fee4e2f) | N/A | Bump version to: v0.0.15 [skip ci] |
 | [`893d116`](https://github.com/sheriffMoose/storybook-extras/commit/893d1167f1690747434de83d3ce3577005f072f6) | N/A | update yarn.lock |
 | [`9241a16`](https://github.com/sheriffMoose/storybook-extras/commit/9241a16c91197c3209acfd4bbc580294e37bf439) | N/A | update author in package.json |
 | [`798177d`](https://github.com/sheriffMoose/storybook-extras/commit/798177d3b5906e1a5398d76ddb8ceab7983a9761) | N/A | pump toolbars & variants versions |
@@ -362,7 +389,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`a517385`](https://github.com/sheriffMoose/storybook-extras/commit/a517385ada92d8aa4bc5a21e9c85194d188c43fe) | N/A | add yarn.lock & update storybook.yml |
 | [`73c95ec`](https://github.com/sheriffMoose/storybook-extras/commit/73c95ecf85707137ad78badf7c01046b4db378e5) | N/A | update demo stories |
 | [`f934d5e`](https://github.com/sheriffMoose/storybook-extras/commit/f934d5e09c1e9f9f058069d0efaaa6109891b503) | N/A | hide variants button cases |
-| [`62a48dd`](https://github.com/sheriffMoose/storybook-extras/commit/62a48ddc45c1999f34c4688bcddaed5e1fee4e2f) | N/A | Bump version to: v0.0.15 [skip ci] |
+| [`a0f833a`](https://github.com/sheriffMoose/storybook-extras/commit/a0f833a4ce3748eb40d30baa3e53263c21fa7f81) | N/A | Bump version to: v0.0.14 [skip ci] |
+| [`2614c62`](https://github.com/sheriffMoose/storybook-extras/commit/2614c62c9c229f03cdfef9533538a67744d0f1a8) | N/A | Bump version to: v0.0.15 [skip ci] |
 | [`ed9a080`](https://github.com/sheriffMoose/storybook-extras/commit/ed9a080ba1ca23275cc362dfce427ed95491159f) | N/A | update workflow files |
 ## [v0.0.14]([`undefined`](undefined)) - 2023-01-25
 
@@ -377,7 +405,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`a0f833a`](https://github.com/sheriffMoose/storybook-extras/commit/a0f833a4ce3748eb40d30baa3e53263c21fa7f81) | N/A | Bump version to: v0.0.14 [skip ci] |
+| [`c3a022d`](https://github.com/sheriffMoose/storybook-extras/commit/c3a022d35aca32189dffa5ae8d8f3da168fcc6c5) | N/A | Bump version to: v0.0.14 [skip ci] |
+| [`68779eb`](https://github.com/sheriffMoose/storybook-extras/commit/68779eb00adc827fad1dd0957d92e1d1296d0f1f) | N/A | Bump version to: v0.0.12 [skip ci] |
 | [`288b685`](https://github.com/sheriffMoose/storybook-extras/commit/288b68587c15145eda97c95c21408b7ba1c9d5dd) | N/A | Bump independent versions [skip ci] |
 | [`6cd3be1`](https://github.com/sheriffMoose/storybook-extras/commit/6cd3be119209fe8f9a6f11c590d3dfee9ea24145) | N/A | update lerna.json |
 ## [v0.0.12]([`undefined`](undefined)) - 2023-01-25
@@ -388,7 +417,17 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
-| [`68779eb`](https://github.com/sheriffMoose/storybook-extras/commit/68779eb00adc827fad1dd0957d92e1d1296d0f1f) | N/A | Bump version to: v0.0.12 [skip ci] |
+| [`339f91b`](https://github.com/sheriffMoose/storybook-extras/commit/339f91be41e4793ae7730c7f8a491b2e291cc005) | N/A | Bump version to: v0.0.11 [skip ci] |
+| [`a833b1b`](https://github.com/sheriffMoose/storybook-extras/commit/a833b1bbbc7260257a17fdb693784ea0e1ada4f7) | N/A | Bump version to: v0.0.12 [skip ci] |
+## [v0.0.11]([`undefined`](undefined)) - 2023-01-25
+
+
+
+### **others**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`5aa81cc`](https://github.com/sheriffMoose/storybook-extras/commit/5aa81ccda820fd31b5a5f9aa158010e369309b48) | N/A | Bump version to: v0.0.11 [skip ci] |
 ## [v0.0.2]([`undefined`](undefined)) - 2023-01-26
 
 
@@ -431,8 +470,9 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`893d116`](https://github.com/sheriffMoose/storybook-extras/commit/893d1167f1690747434de83d3ce3577005f072f6) | N/A | update yarn.lock |
 | [`9241a16`](https://github.com/sheriffMoose/storybook-extras/commit/9241a16c91197c3209acfd4bbc580294e37bf439) | N/A | update author in package.json |
 | [`798177d`](https://github.com/sheriffMoose/storybook-extras/commit/798177d3b5906e1a5398d76ddb8ceab7983a9761) | N/A | pump toolbars & variants versions |
-| [`fd63db9`](https://github.com/sheriffMoose/storybook-extras/commit/fd63db97fcd535ba5518c5580fbc571b648b663e) | N/A | Bump version to: 0.0.2 [skip ci] |
+| [`fd8759e`](https://github.com/sheriffMoose/storybook-extras/commit/fd8759eed37b62754a33cfc7dca3c1f535ffedf8) | N/A | Bump version to: 0.0.2 [skip ci] |
 | [`ed9a080`](https://github.com/sheriffMoose/storybook-extras/commit/ed9a080ba1ca23275cc362dfce427ed95491159f) | N/A | update workflow files |
+| [`98c043f`](https://github.com/sheriffMoose/storybook-extras/commit/98c043fb647d6cbeb19687db5e6bc4d626b744aa) | N/A | Bump version to: 0.0.1 [skip ci] |
 | [`e10c222`](https://github.com/sheriffMoose/storybook-extras/commit/e10c2228887692fa4e292eebf5dbba49049868f7) | N/A | add lerna.json |
 | [`c5d56cc`](https://github.com/sheriffMoose/storybook-extras/commit/c5d56cc04ee5187f2ea7599990fc3ccf3507cc09) | N/A | use module.exports instead of export default |
 | [`b1db9c6`](https://github.com/sheriffMoose/storybook-extras/commit/b1db9c66783d80a77046c83c14f084f30e74d9a1) | N/A | update demo |
@@ -498,7 +538,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`d1946e9`](https://github.com/sheriffMoose/storybook-extras/commit/d1946e9b64df95152da286a34304e3588facc0a2) | N/A | cleanup package.json |
 | [`4293599`](https://github.com/sheriffMoose/storybook-extras/commit/4293599e4b6981455d038208174b54fc11c57829) | N/A | update storybook.yml |
 | [`7c98282`](https://github.com/sheriffMoose/storybook-extras/commit/7c9828290b24d6c4b4e6632800c8162a4ac9d266) | N/A | add toolbars logo |
-| [`98c043f`](https://github.com/sheriffMoose/storybook-extras/commit/98c043fb647d6cbeb19687db5e6bc4d626b744aa) | N/A | Bump version to: 0.0.1 [skip ci] |
+| [`203c84b`](https://github.com/sheriffMoose/storybook-extras/commit/203c84b6e5fe6b3fc6311e9dca73e2cd01587049) | N/A | Bump version to: 0.0.1 [skip ci] |
 | [`414b3d9`](https://github.com/sheriffMoose/storybook-extras/commit/414b3d90fd2ffadbbc26a1f8766f4a4c9a9ddaf2) | N/A | update storybook.yml |
 | [`edd8079`](https://github.com/sheriffMoose/storybook-extras/commit/edd8079bb3ed3ca257e37f9ebb60fc294c0afa3a) | N/A | update storybook.yml |
 | [`8cbb145`](https://github.com/sheriffMoose/storybook-extras/commit/8cbb14565c089cfd55c5e75ebcd8ff29148fab94) | N/A | pump console version |
@@ -513,7 +553,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`0fdbd57`](https://github.com/sheriffMoose/storybook-extras/commit/0fdbd57fd904cd268f7e4792dd04a5bec8a61ddc) | N/A | Update storybook.yml |
 | [`58b1b32`](https://github.com/sheriffMoose/storybook-extras/commit/58b1b325474744c4b8717cb157d7dddd1fe1405e) | N/A | patch version for swagger addon |
 | [`8a34e9a`](https://github.com/sheriffMoose/storybook-extras/commit/8a34e9a05fc30a9ccae0508e968177b3e082f6f2) | N/A | Update storybook.yml |
-## [v0.0.0-angular.42]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.42]([`undefined`](undefined)) - 2023-01-23
 
 
 
@@ -527,7 +567,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`400c439`](https://github.com/sheriffMoose/storybook-extras/commit/400c43921365d28fb9200f3104ea48cbfd6ce3e0) | chore | update `release.yml` |
-## [v0.0.0-angular.41]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.41]([`undefined`](undefined)) - 2023-01-23
 
 
 
@@ -541,7 +581,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`9918dec`](https://github.com/sheriffMoose/storybook-extras/commit/9918dec168af9ea08db717f9e1d451c3ebbd9ef8) | chore | update exported files list |
-## [v0.0.0-angular.40]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.40]([`undefined`](undefined)) - 2023-01-22
 
 
 
@@ -551,7 +591,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`9d38550`](https://github.com/sheriffMoose/storybook-extras/commit/9d38550a51e4bd0d30146983ce306e68f92a9513) | fix | update `storybook-md` loader |
 | [`bfe141b`](https://github.com/sheriffMoose/storybook-extras/commit/bfe141bf6e1bb04249bb067e093cc33e5d3977bd) | release | v0.0.0-angular.40 |
-## [v0.0.0-angular.39]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.39]([`undefined`](undefined)) - 2023-01-22
 
 
 
@@ -563,7 +603,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`09cecd1`](https://github.com/sheriffMoose/storybook-extras/commit/09cecd17566bcdbc5332cc1ed18d5857463def3b) | fix | add missing `lodash` import |
 | [`9e2d324`](https://github.com/sheriffMoose/storybook-extras/commit/9e2d32484cbedc67328acb88e60e301a91efdad9) | fix | environment variables processing |
 | [`0c270ec`](https://github.com/sheriffMoose/storybook-extras/commit/0c270ec6307e9eb548e079e5624c790e8c19aff4) | fix | rename preset folder |
-## [v0.0.0-angular.38]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.38]([`undefined`](undefined)) - 2023-01-22
 
 
 
@@ -573,7 +613,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`d473446`](https://github.com/sheriffMoose/storybook-extras/commit/d473446f33bb1c4b5e9fef48de817cc10fa051d3) | docs | update `Roadmap` & `Features` |
 | [`6e5b065`](https://github.com/sheriffMoose/storybook-extras/commit/6e5b0659ccbb1d3bd9c971f349f3a457a9614b82) | release | v0.0.0-angular.38 |
-## [v0.0.0-angular.37]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.37]([`undefined`](undefined)) - 2023-01-22
 
 
 
@@ -596,7 +636,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`a11b477`](https://github.com/sheriffMoose/storybook-extras/commit/a11b477ae822d12988bdd305ed76cbc885c401f6) | N/A | Bump @storybook/testing-library |
-## [v0.0.0-angular.35]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.35]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -610,7 +650,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`a96a131`](https://github.com/sheriffMoose/storybook-extras/commit/a96a1311e71899e8b606f6ad7609fa58b3c10838) | chore | update story sort |
-## [v0.0.0-angular.34]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.34]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -624,7 +664,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`35358f1`](https://github.com/sheriffMoose/storybook-extras/commit/35358f1713d3578ad2c590f70c72bf46c7423a69) | chore | remove yarn cache |
-## [v0.0.0-angular.33]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.33]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -638,7 +678,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`0aa78be`](https://github.com/sheriffMoose/storybook-extras/commit/0aa78be4b3e5150558236837af7407b880f7bb73) | chore | update permissions |
-## [v0.0.0-angular.32]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.32]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -652,7 +692,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`6d0505c`](https://github.com/sheriffMoose/storybook-extras/commit/6d0505cc4d9109dd6f0e5a0f5ed8c2fae3e85b54) | chore | cache node_module between workflows |
-## [v0.0.0-angular.31]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.31]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -666,7 +706,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`754d3d4`](https://github.com/sheriffMoose/storybook-extras/commit/754d3d41f97788244dd25dc5eb608ad437861d3f) | chore(ci): chore | update workflows |
-## [v0.0.0-angular.30]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.30]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -680,7 +720,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`b850e4a`](https://github.com/sheriffMoose/storybook-extras/commit/b850e4af7272fa02c24287a0fdaea00a33afd88a) | chore(ci): chore | update workflows |
-## [v0.0.0-angular.29]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.29]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -696,7 +736,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`cd74c69`](https://github.com/sheriffMoose/storybook-extras/commit/cd74c6954b6d25230bc27268c2e5420c97c47b62) | chore(ci): chore(ci): chore | update workflows |
-## [v0.0.0-angular.28]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.28]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -706,7 +746,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`c4f2fe6`](https://github.com/sheriffMoose/storybook-extras/commit/c4f2fe6f3e5b831116a4cdc55a65507cec0868b1) | feat | include `storybook-md` addon |
 | [`d602ecb`](https://github.com/sheriffMoose/storybook-extras/commit/d602ecb26f17e10dc682aec0768b0b5cb3d29f17) | release | v0.0.0-angular.28 |
-## [v0.0.0-angular.27]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.27]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -715,7 +755,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`858f530`](https://github.com/sheriffMoose/storybook-extras/commit/858f530d399ecaea6397ddcca7d24e726a488254) | release | v0.0.0-angular.27 |
-## [v0.0.0-angular.26]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.26]([`undefined`](undefined)) - 2023-01-20
 
 
 
@@ -730,7 +770,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`df9e389`](https://github.com/sheriffMoose/storybook-extras/commit/df9e389418a3fa2632740befda4abd4cb846c506) | chore | pump storybook to v7.0.0-beta.31 |
 | [`36f358f`](https://github.com/sheriffMoose/storybook-extras/commit/36f358fcbe030d4e284a62d76acfafa8393efc07) | chore | update `FUNDING.yml` |
-## [v0.0.0-angular.25]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.25]([`undefined`](undefined)) - 2023-01-17
 
 
 
@@ -744,7 +784,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`fc511f5`](https://github.com/sheriffMoose/storybook-extras/commit/fc511f5725de32e5881592745432ba248ecb2c28) | chore | update `package.json` fields |
-## [v0.0.0-angular.24]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.24]([`undefined`](undefined)) - 2023-01-17
 
 
 
@@ -760,7 +800,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`7f98d76`](https://github.com/sheriffMoose/storybook-extras/commit/7f98d764dc11ce3d1a4fb277c0316c4fa12f168f) | chore | add `FUNDING.yml` |
-## [v0.0.0-angular.23]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.23]([`undefined`](undefined)) - 2023-01-13
 
 
 
@@ -774,7 +814,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`82bfac0`](https://github.com/sheriffMoose/storybook-extras/commit/82bfac0948e5755855616ecf4d4014137d6da825) | chore | fix release workflow |
-## [v0.0.0-angular.22]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.22]([`undefined`](undefined)) - 2023-01-13
 
 
 
@@ -788,7 +828,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`7b0cb9e`](https://github.com/sheriffMoose/storybook-extras/commit/7b0cb9e985e81bae094080417f47ee4b2a94495c) | chore | update `release.yml` |
-## [v0.0.0-angular.21]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.21]([`undefined`](undefined)) - 2023-01-13
 
 
 
@@ -798,7 +838,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`62d9595`](https://github.com/sheriffMoose/storybook-extras/commit/62d9595f74fbc01475be5c9100e4e63be8bea638) | release | v0.0.0-angular.21 |
 | [`ccb6856`](https://github.com/sheriffMoose/storybook-extras/commit/ccb6856f58319c3c8b1167b63596af1fb97ec02e) | docs | update `README.md` |
-## [v0.0.0-angular.20]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.20]([`undefined`](undefined)) - 2023-01-13
 
 
 
@@ -810,7 +850,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`d3dae1e`](https://github.com/sheriffMoose/storybook-extras/commit/d3dae1e6ed7291057e83d32aabd3737cb66d50db) | feat | enable/disable `sourceCode` panel & `wrappers` toolbar |
 | [`d5af284`](https://github.com/sheriffMoose/storybook-extras/commit/d5af284b4506915537db50efef99bc84c785c3b4) | release | v0.0.0-angular.20 |
 | [`3bfa3e6`](https://github.com/sheriffMoose/storybook-extras/commit/3bfa3e6630981028badadc97aaa451301f860d8a) | fix | duplication providers |
-## [v0.0.0-angular.19]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.19]([`undefined`](undefined)) - 2023-01-13
 
 
 
@@ -824,7 +864,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`70bbf93`](https://github.com/sheriffMoose/storybook-extras/commit/70bbf9365931008d8885eb3ed4cd8d4459b65daa) | chore | add `chromatic` demo |
-## [v0.0.0-angular.18]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.18]([`undefined`](undefined)) - 2023-01-13
 
 
 
@@ -838,7 +878,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`bf98fb0`](https://github.com/sheriffMoose/storybook-extras/commit/bf98fb014ce7061b1747f47d4d2379418e6cb191) | chore | pump storybook to v7.0.0-beta.26 |
-## [v0.0.0-angular.17]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.17]([`undefined`](undefined)) - 2023-01-04
 
 
 
@@ -848,7 +888,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`20718cd`](https://github.com/sheriffMoose/storybook-extras/commit/20718cd01e69dc56d1b4f56092dfb8dba68d86e4) | docs | update `README.md` |
 | [`efb87d9`](https://github.com/sheriffMoose/storybook-extras/commit/efb87d903b5330ff3b69d994ae59489017fd9f85) | release | v0.0.0-angular.17 |
-## [v0.0.0-angular.16]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.16]([`undefined`](undefined)) - 2022-12-28
 
 
 
@@ -858,7 +898,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`a7e042b`](https://github.com/sheriffMoose/storybook-extras/commit/a7e042b644297f461dc914895a337f42a674c9c7) | feat | add source code panel |
 | [`95054a4`](https://github.com/sheriffMoose/storybook-extras/commit/95054a4bbc45ee93d79e77da92fd6be8a38c2f02) | release | v0.0.0-angular.16 |
-## [v0.0.0-angular.15]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.15]([`undefined`](undefined)) - 2022-12-27
 
 
 
@@ -868,7 +908,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`7c4b76e`](https://github.com/sheriffMoose/storybook-extras/commit/7c4b76e3b028cc48ec5e2dd9303653b1cbbfd4c2) | docs | add service injection example |
 | [`7b76abd`](https://github.com/sheriffMoose/storybook-extras/commit/7b76abdcb86cf987aec4c5144c23f990e9b0668b) | release | v0.0.0-angular.15 |
-## [v0.0.0-angular.14]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.14]([`undefined`](undefined)) - 2022-12-27
 
 
 
@@ -878,7 +918,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`296be34`](https://github.com/sheriffMoose/storybook-extras/commit/296be34eabd67b0e39cae9b7dd49b46efa5b45fe) | fix | mitigate empty providers list in ngModuleDecorator |
 | [`76cf00b`](https://github.com/sheriffMoose/storybook-extras/commit/76cf00b89f668c6123bf880a797e14a0e2e280d1) | release | v0.0.0-angular.14 |
-## [v0.0.0-angular.13]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.13]([`undefined`](undefined)) - 2022-12-27
 
 
 
@@ -896,7 +936,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`a3887cf`](https://github.com/sheriffMoose/storybook-extras/commit/a3887cf0bafbc0f4f8bd6ca68aee6513a0266774) | chore | remove `package-lock.json` |
 | [`1dc6cdf`](https://github.com/sheriffMoose/storybook-extras/commit/1dc6cdf795821b1d289e26e7fea681e9d4fa2adb) | chore | remove `yarn.lock` |
 | [`e549ef6`](https://github.com/sheriffMoose/storybook-extras/commit/e549ef6394032e0d0e803b5bc0aa8357c8015a8c) | chore(infra): re-chore | pump storybook to v7.0.0-beta.31 |
-## [v0.0.0-angular.12]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.12]([`undefined`](undefined)) - 2022-12-27
 
 
 
@@ -912,7 +952,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`9c804cb`](https://github.com/sheriffMoose/storybook-extras/commit/9c804cbea95443b3c428d2ff6698fc19ac263a3b) | chore | fix build |
 | [`ad5d3de`](https://github.com/sheriffMoose/storybook-extras/commit/ad5d3de4555c2eb18076a4732322a5ed44bec500) | chore | downgrade storybook version |
-## [v0.0.0-angular.11]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.11]([`undefined`](undefined)) - 2022-12-27
 
 
 
@@ -927,7 +967,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`c3c1212`](https://github.com/sheriffMoose/storybook-extras/commit/c3c1212d6b1710aac0289fb6d28cea5eefa21c9d) | chore | pump storybook to v7.0.0-beta.15 |
-## [v0.0.0-angular.10]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.10]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -941,7 +981,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`04fc210`](https://github.com/sheriffMoose/storybook-extras/commit/04fc210f9e8b83a7b21cb99d87b1497111e02824) | chore | fix imports from src |
-## [v0.0.0-angular.9]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.9]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -955,7 +995,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`2e8089f`](https://github.com/sheriffMoose/storybook-extras/commit/2e8089f64988fc46b0bd4fb4d69dd7243d448071) | chore | update `package.json` |
-## [v0.0.0-angular.8]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.8]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -965,7 +1005,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`dd5443d`](https://github.com/sheriffMoose/storybook-extras/commit/dd5443d0179c2b587219159852ac750d48627f89) | release | v0.0.0-angular.8 |
 | [`0148dc1`](https://github.com/sheriffMoose/storybook-extras/commit/0148dc1005453b68f3f91926d57f94d8c1a792e4) | docs | update `README.md` |
-## [v0.0.0-angular.7]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.7]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -975,7 +1015,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`c140141`](https://github.com/sheriffMoose/storybook-extras/commit/c1401410ef4a9252f028be5afde75a81be940a78) | release | v0.0.0-angular.7 |
 | [`1574705`](https://github.com/sheriffMoose/storybook-extras/commit/1574705e0fe1bf4d9e402e6ed1929a9f54e0bc37) | chore(infra): docs | fix package name |
-## [v0.0.0-angular.6]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.6]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -989,7 +1029,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`d920e71`](https://github.com/sheriffMoose/storybook-extras/commit/d920e71b4436c32c65ed8dbe99e0cac47b00b66a) | chore | update keywords in `package.json` |
-## [v0.0.0-angular.5]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.5]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -999,7 +1039,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`ad5f4e1`](https://github.com/sheriffMoose/storybook-extras/commit/ad5f4e19b2281ebf758fbb8fcb179fb50c2e7bdb) | release | v0.0.0-angular.5 |
 | [`f265b55`](https://github.com/sheriffMoose/storybook-extras/commit/f265b55099bc092af88fb653cd9dfcf186ce467e) | docs | initial documentation for `angular` package |
-## [v0.0.0-angular.4]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.4]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -1009,7 +1049,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | --- | --- | --- |
 | [`7e04b75`](https://github.com/sheriffMoose/storybook-extras/commit/7e04b754e675be7d8ee3ca196d997e81ca61108a) | docs | initial documentation for `angular` package |
 | [`689dc99`](https://github.com/sheriffMoose/storybook-extras/commit/689dc9980a9ffe15716c6c599b86c313a3a7e426) | release | v0.0.0-angular.4 |
-## [v0.0.0-angular.3]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.3]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -1023,7 +1063,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | Commit | Type | Description |
 | --- | --- | --- |
 | [`434103d`](https://github.com/sheriffMoose/storybook-extras/commit/434103dfee2455ceaf9ca0ebb484b4936de6568e) | chore | add files via upload |
-## [v0.0.0-angular.2]([`undefined`](undefined)) - 2023-01-31
+## [v0.0.0-angular.2]([`undefined`](undefined)) - 2022-12-26
 
 
 
@@ -1211,7 +1251,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 | [`c9dbe0c`](https://github.com/sheriffMoose/storybook-extras/commit/c9dbe0ca32461500863f88fb0b10286ffeabb3ea) | N/A | remove console decorator from angular addon |
 | [`200fe4e`](https://github.com/sheriffMoose/storybook-extras/commit/200fe4eda7aed5505ae420357882d18500c1cbe9) | N/A | add markdown & swagger logos |
 | [`68779eb`](https://github.com/sheriffMoose/storybook-extras/commit/68779eb00adc827fad1dd0957d92e1d1296d0f1f) | N/A | Bump version to: v0.0.12 [skip ci] |
-| [`288b685`](https://github.com/sheriffMoose/storybook-extras/commit/288b68587c15145eda97c95c21408b7ba1c9d5dd) | N/A | Bump independent versions [skip ci] |
+| [`b1419e1`](https://github.com/sheriffMoose/storybook-extras/commit/b1419e17ae9dda95bd2d92d820640cc536505962) | N/A | Bump independent versions [skip ci] |
 | [`201f469`](https://github.com/sheriffMoose/storybook-extras/commit/201f4690ae92f582154c6c5fe1a8048023d52b0e) | N/A | preset v0.0.7 |
 | [`edd269d`](https://github.com/sheriffMoose/storybook-extras/commit/edd269dd80328247094507befb93f9478b8ea698) | N/A | proper handling of addon options |
 | [`8ff4690`](https://github.com/sheriffMoose/storybook-extras/commit/8ff4690c2de19ecbf481a4f1a5fe5b18fe6b9fea) | N/A | Update storybook.yml |
