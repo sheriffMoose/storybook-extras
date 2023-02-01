@@ -8,19 +8,7 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 
-### **infra**
-
-| Commit | Type | Description |
-| --- | --- | --- |
-| [`de2b78a`](https://github.com/sheriffMoose/storybook-extras/commit/de2b78a0d5b556e4acd3f07d8eb375126376beac) | chore | add changelog template |
-<<<<<<< HEAD
-=======
-| [`39adc58`](https://github.com/sheriffMoose/storybook-extras/commit/39adc588a6aab8ac46d270f7d3424467ac198742) | chore | add changelog template |
->>>>>>> 9098551 (chore(infra): add changelog template)
-| [`cdf82ac`](https://github.com/sheriffMoose/storybook-extras/commit/cdf82acacfd399849990259cf77702a58b2b01f0) | chore | add changelog template |
 ## [v0.0.50]([`undefined`](undefined)) - 2023-01-31
-
-
 
 ### **infra**
 
