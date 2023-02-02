@@ -17,9 +17,10 @@
         "chromatic": "nx chromatic",
         "************ RELEASE **************": "",
         "changelog": "auto-changelog -c ./changelog/config.json",
-        "prerelease": "npm run build && npm run changelog",
+        "prerelease": "npm run build",
         "release": "auto shipit --no-changelog",
-        "postrelease": "push-dir --dir demo/storybook-static --branch gh-pages --cleanup --message 'Update Storybook'"
+        "postrelease": "npm run changelog && npm run deploy",
+        "deploy": "push-dir --dir demo/storybook-static --branch gh-pages --cleanup --message 'Update Storybook'"
     },
     "private": true,
     "devDependencies": {
