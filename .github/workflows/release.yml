@@ -27,12 +27,6 @@ jobs:
         with:
           install-command: npm install
 
-      - name: Build Addon
-        run: npm run build:all
-
-      - name: Build Storybook
-        run: npm run build
-
       - name: setup git config
         run: |
           git config user.name "GitHub Actions Bot"
