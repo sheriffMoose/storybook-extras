@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file. The format 
 Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [v0.0.58]([`undefined`](undefined)) - 2023-02-03
+
+
+
+### **release**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`3c64dda`](https://github.com/sheriffMoose/storybook-extras/commit/3c64dda6a5813dedf84b241670b60699e38f77b5) | chore | Update `CHANGELOG.md` [skip ci] |
+### **infra**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`6754721`](https://github.com/sheriffMoose/storybook-extras/commit/6754721c07c0b4750d655010519557683731af12) | chore | update keywords in `package.json` |
+### **others**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`f54071f`](https://github.com/sheriffMoose/storybook-extras/commit/f54071f1e5f15bc69bfc282be5617b9dfbe55036) | N/A | Bump version to: v0.0.58 [skip ci] |
 ## [v0.0.57]([`undefined`](undefined)) - 2023-02-03
 
 
