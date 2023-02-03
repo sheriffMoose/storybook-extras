@@ -1,10 +1,7 @@
-<div align="center">
-
-<img src="https://github.com/sheriffMoose/storybook-extras/blob/master/logos/extras.svg?raw=true" alt="logo" width="200" />
-
-<h1>Storybook Extras</h1>
-
-<p>Storybook addons library with a bunch of useful features along with other nice-to-haves and definitely silly features.</p>
+<div align="center" style="align:center;">
+    <img src="https://github.com/sheriffMoose/storybook-extras/blob/master/logos/extras.svg?raw=true" alt="logo" width="200" />
+    <h1>Storybook Extras</h1>
+    <p>Storybook addons library with a bunch of useful features along with other nice-to-haves and definitely silly features.</p>
 
 [![][badge.release]][link.release]
 [![][badge.license]][link.license]
@@ -20,7 +17,7 @@
 <h2>Table of Contents</h2>
 
 - [Getting started](#getting-started)
-- [Demo/Chromatic](#demochromatic)
+- [Demo](#demo)
 - [Addons](#addons)
 
 ## Getting started
@@ -87,9 +84,9 @@ module.exports = {
 
 4. Refer to the sections below for the documentation of the respective addons.
 
-## Demo/Chromatic
+## Demo
 
-Find the published demo storybook on chromatic [here](https://master--63c1a45beed1a8f036a44e28.chromatic.com/)
+Find the published demo storybook [here](https://sheriffmoose.github.io/storybook-extras/)
 
 ## Addons
 
