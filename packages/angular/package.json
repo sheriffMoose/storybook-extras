@@ -7,10 +7,10 @@
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
-        "angular extras",
         "storybook",
-        "angular",
+        "addons",
         "extras",
+        "angular",
         "services",
         "unit testing",
         "docs",
