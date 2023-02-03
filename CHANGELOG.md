@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. The format 
 Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]([`undefined`](undefined))
+## [v0.0.54]([`undefined`](undefined)) - 2023-02-03
 
 
 
@@ -12,7 +12,33 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 | Commit | Type | Description |
 | --- | --- | --- |
+| [`e4a6a83`](https://github.com/sheriffMoose/storybook-extras/commit/e4a6a8392be7bd66aa36330a20ae00f89da10b4f) | chore | update release workflow to use `auto` once more |
+### **others**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`921b813`](https://github.com/sheriffMoose/storybook-extras/commit/921b8131ae0fe18270ba5020d11275734643dd02) | N/A | Bump version to: v0.0.54 [skip ci] |
+## [v0.0.52]([`undefined`](undefined)) - 2023-02-03
+
+
+
+### **release**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`1d4dc3c`](https://github.com/sheriffMoose/storybook-extras/commit/1d4dc3c3a0ba6699d4828c19d751523e98393491) | chore | Update `CHANGELOG.md` |
+### **infra**
+
+| Commit | Type | Description |
+| --- | --- | --- |
 | [`5536e54`](https://github.com/sheriffMoose/storybook-extras/commit/5536e5412bf50158ba78a3bd77ce2a2c83c96ad0) | chore | update postrelease scripts to remove `auto` |
+| [`31b398b`](https://github.com/sheriffMoose/storybook-extras/commit/31b398be25cd2c9a90ddbeff385d166341206364) | chore | update `release.yml` |
+| [`ebb571e`](https://github.com/sheriffMoose/storybook-extras/commit/ebb571e518d159806eaa68677a786927cbe0d064) | chore | update `release.yml` |
+### **others**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [`64171a0`](https://github.com/sheriffMoose/storybook-extras/commit/64171a0358622231d2a39d0726df3c6c0aafa254) | N/A | docs: update `README.md` |
 ## [v0.0.51]([`undefined`](undefined)) - 2023-02-01
 
 
