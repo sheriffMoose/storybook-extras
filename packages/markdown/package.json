@@ -8,11 +8,12 @@
     "license": "MIT",
     "keywords": [
         "storybook",
+        "addons",
+        "extras",
         "docs",
         "markdown",
         "readme",
-        "changelog",
-        "addons"
+        "changelog"
     ],
     "author": {
         "name": "Mostafa Sherif",

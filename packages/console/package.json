@@ -8,10 +8,11 @@
     "license": "MIT",
     "keywords": [
         "storybook",
+        "addons",
+        "extras",
         "console",
         "actions",
-        "panel",
-        "addons"
+        "panel"
     ],
     "author": {
         "name": "Mostafa Sherif",
