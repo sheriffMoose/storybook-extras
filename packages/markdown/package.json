@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/markdown",
-    "version": "0.0.57",
+    "version": "0.0.58",
     "description": "Storybook addon for auto importing markdown docs.",
     "license": "MIT",
     "keywords": [
