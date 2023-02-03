@@ -21,7 +21,7 @@
         "postrelease": "npm run release:deploy",
         "release:deploy": "push-dir --dir demo/storybook-static --branch gh-pages --cleanup --message 'Update Storybook'",
         "postrelease:deploy": "npm run release:changelog",
-        "release:changelog": "auto-changelog -c ./changelog/config.json",
+        "release:changelog": "git pull && auto-changelog -c ./changelog/config.json",
         "postrelease:changelog": "git add . && git commit -a -m 'chore(release): Update `CHANGELOG.md` [skip ci]' && git push"
     },
     "private": true,
