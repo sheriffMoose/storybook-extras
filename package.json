@@ -24,7 +24,6 @@
     },
     "private": true,
     "devDependencies": {
-        "@auto-it/gh-pages": "^10.37.6",
         "@nrwl/nx-cloud": "latest",
         "auto": "^10.3.0",
         "auto-changelog": "^2.4.0",
@@ -41,13 +40,7 @@
     "auto": {
         "plugins": [
             "npm",
-            "released",
-            [
-                "gh-pages",
-                {
-                    "dir": "demo/storybook-static"
-                }
-            ]
+            "released"
         ]
     },
     "packageManager": "yarn@3.4.1"
