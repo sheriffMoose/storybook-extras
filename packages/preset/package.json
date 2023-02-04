@@ -2,9 +2,6 @@
     "name": "@storybook-extras/preset",
     "version": "0.0.58",
     "description": "An ultimate collection of addons for Storybook",
-    "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://github.com/sheriffMoose/storybook-extras/#readme",
-    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
         "storybook",
@@ -20,8 +17,12 @@
         "name": "Mostafa Sherif",
         "email": "mosherif87@gmail.com"
     },
-    "bugs": {
-        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/devkit#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sheriffMoose/storybook-extras.git",
+        "directory": "packages/devkit"
     },
     "publishConfig": {
         "access": "public",
