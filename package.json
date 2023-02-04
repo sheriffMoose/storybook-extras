@@ -52,13 +52,5 @@
             ]
         ]
     },
-    "resolutions": {
-        "@storybook-extras/angular": "file:./packages/angular",
-        "@storybook-extras/console": "file:./packages/console",
-        "@storybook-extras/devkit": "file:./packages/devkit",
-        "@storybook-extras/markdown": "file:./packages/markdown",
-        "@storybook-extras/swagger": "file:./packages/swagger",
-        "@storybook-extras/toolbars": "file:./packages/toolbars",
-        "@storybook-extras/variants": "file:./packages/variants"
-    }
+    "packageManager": "yarn@3.4.1"
 }

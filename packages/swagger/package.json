@@ -59,7 +59,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "latest",
+        "@storybook-extras/devkit": "^0.0.58",
         "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {
@@ -80,11 +80,11 @@
         "typescript": "^4.9.4"
     },
     "peerDependencies": {
-        "@storybook/addons": "next",
-        "@storybook/api": "next",
-        "@storybook/components": "next",
-        "@storybook/core-events": "next",
-        "@storybook/theming": "next",
+        "@storybook/addons": "*",
+        "@storybook/api": "*",
+        "@storybook/components": "*",
+        "@storybook/core-events": "*",
+        "@storybook/theming": "*",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },

@@ -45,9 +45,9 @@
     "engines": {
         "node": ">=16"
     },
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "types": "dist/ts/index.d.ts",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
     "files": [
         "dist",
         "stories",
@@ -69,7 +69,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "latest",
+        "@storybook-extras/devkit": "^0.0.58",
         "node-polyfill-webpack-plugin": "^2.0.1",
         "webpack-plugin-istanbul": "^1.0.3"
     },
@@ -88,11 +88,11 @@
         "vite": "^4.0.0"
     },
     "peerDependencies": {
-        "@storybook/addons": "next",
-        "@storybook/api": "next",
-        "@storybook/components": "next",
-        "@storybook/core-events": "next",
-        "@storybook/theming": "next",
+        "@storybook/addons": "*",
+        "@storybook/api": "*",
+        "@storybook/components": "*",
+        "@storybook/core-events": "*",
+        "@storybook/theming": "*",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
