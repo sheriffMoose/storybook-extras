@@ -11,7 +11,6 @@
         "storybook": "nx storybook",
         "build:watch": "nx run-many --target=build:watch --all --parallel=10 --exclude=demo",
         "test": "nx test:storybook",
-        "postinstall": "patch-package",
         "************ PROD **************": "",
         "build": "nx build",
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
@@ -32,7 +31,6 @@
         "handlebars-helpers": "^0.10.0",
         "lerna": "^5.1.8",
         "nx": "^15.6.3",
-        "patch-package": "^6.5.1",
         "prettier": "^2.6.2",
         "push-dir": "^0.4.1"
     },
