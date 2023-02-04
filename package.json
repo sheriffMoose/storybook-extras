@@ -30,8 +30,7 @@
         "handlebars-helpers": "^0.10.0",
         "lerna": "^5.1.8",
         "nx": "^15.6.3",
-        "prettier": "^2.6.2",
-        "push-dir": "^0.4.1"
+        "prettier": "^2.6.2"
     },
     "workspaces": [
         "demo",

@@ -19703,17 +19703,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"push-dir@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "push-dir@npm:0.4.1"
-  dependencies:
-    minimist: ^1.2.0
-  bin:
-    push-dir: bin/push-dir.js
-  checksum: b35b2f5c883903510297f2ce28f172f0c5206adea79506ec4dbbe5b4b055c3c0c0c98761201d79ad3b4791eaa03b69602b3e4cc9656e98e5af47de1f612c4f17
-  languageName: node
-  linkType: hard
-
 "q@npm:^1.5.1":
   version: 1.5.1
   resolution: "q@npm:1.5.1"
@@ -21815,7 +21804,6 @@ __metadata:
     lerna: ^5.1.8
     nx: ^15.6.3
     prettier: ^2.6.2
-    push-dir: ^0.4.1
   languageName: unknown
   linkType: soft
 
