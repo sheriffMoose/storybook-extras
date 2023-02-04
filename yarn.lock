@@ -18974,7 +18974,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"patch-package@npm:^6.5.0, patch-package@npm:^6.5.1":
+"patch-package@npm:^6.5.0":
   version: 6.5.1
   resolution: "patch-package@npm:6.5.1"
   dependencies:
@@ -21829,7 +21829,6 @@ __metadata:
     handlebars-helpers: ^0.10.0
     lerna: ^5.1.8
     nx: ^15.6.3
-    patch-package: ^6.5.1
     prettier: ^2.6.2
     push-dir: ^0.4.1
   languageName: unknown
