@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/variants",
-    "version": "0.0.62",
+    "version": "0.0.63",
     "description": "Storybook addon for displaying component variants all together in one story.",
     "license": "MIT",
     "keywords": [
