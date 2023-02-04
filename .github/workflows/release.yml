@@ -27,6 +27,9 @@ jobs:
         with:
           install-command: yarn install
 
+      - name: Build
+        run: yarn build --skip-nx-cache
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
