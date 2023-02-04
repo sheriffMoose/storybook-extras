@@ -9,12 +9,12 @@
     "scripts": {
         "start": "yarn storybook",
         "docs": "compodoc -p tsconfig.json -e json -d .docs",
-        "prestorybook:serve": "yarn docs",
-        "storybook:serve": "ng run demo:start-storybook",
-        "prestorybook:build": "yarn docs",
-        "storybook:build": "ng run demo:build-storybook",
-        "storybook:test": "test-storybook --url=http://localhost:6006 --coverage",
-        "storybook:deploy": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
+        "prestorybook": "yarn docs",
+        "storybook": "ng run demo:start-storybook",
+        "prebuild": "yarn docs",
+        "build": "ng run demo:build-storybook",
+        "test": "test-storybook --url=http://localhost:6006 --coverage",
+        "deploy": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
     },
     "dependencies": {
         "@angular/animations": "15.1.2",
@@ -25,7 +25,7 @@
         "@angular/platform-browser": "15.1.1",
         "@angular/platform-browser-dynamic": "15.1.1",
         "@angular/router": "15.1.1",
-        "@storybook-extras/preset": "^0.0.58",
+        "@storybook-extras/preset": "workspace:^",
         "rxjs": "7.8.0",
         "zone.js": "~0.12.0"
     },

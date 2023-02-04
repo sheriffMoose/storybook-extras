@@ -52,17 +52,22 @@
         "*.d.ts"
     ],
     "scripts": {
+        "*************** BUILD ***************": "",
+        "prebuild": "rimraf ./dist",
+        "build": "tsc",
+        "build:watch": "yarn build --watch",
+        "*************** RELEASE ***************": "",
         "prepack": "cp ../../README.md ./",
         "postpack": "rm ./README.md"
     },
     "dependencies": {
-        "@storybook-extras/angular": "^0.0.58",
-        "@storybook-extras/console": "^0.0.58",
-        "@storybook-extras/devkit": "^0.0.58",
-        "@storybook-extras/markdown": "^0.0.58",
-        "@storybook-extras/swagger": "^0.0.58",
-        "@storybook-extras/toolbars": "^0.0.58",
-        "@storybook-extras/variants": "^0.0.58"
+        "@storybook-extras/angular": "workspace:^",
+        "@storybook-extras/console": "workspace:^",
+        "@storybook-extras/devkit": "workspace:^",
+        "@storybook-extras/markdown": "workspace:^",
+        "@storybook-extras/swagger": "workspace:^",
+        "@storybook-extras/toolbars": "workspace:^",
+        "@storybook-extras/variants": "workspace:^"
     },
     "devDependencies": {
         "@storybook/addons": "next",

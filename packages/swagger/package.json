@@ -59,7 +59,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.58",
+        "@storybook-extras/devkit": "workspace:^",
         "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {
