@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/angular",
-    "version": "0.0.58",
+    "version": "0.0.59",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "license": "MIT",
     "keywords": [

@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/swagger",
-    "version": "0.0.58",
+    "version": "0.0.59",
     "description": "Storybook addon for Swagger UI.",
     "license": "MIT",
     "keywords": [
