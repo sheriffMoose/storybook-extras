@@ -2,9 +2,6 @@
     "name": "@storybook-extras/toolbars",
     "version": "0.0.57",
     "description": "Storybook addon for adding custom toolbar buttons.",
-    "repository": "sheriffMoose/storybook-extras",
-    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/toolbars#readme",
-    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "license": "MIT",
     "keywords": [
         "storybook",
@@ -18,8 +15,12 @@
         "name": "Mostafa Sherif",
         "email": "mosherif87@gmail.com"
     },
-    "bugs": {
-        "url": "https://github.com/sheriffMoose/storybook-extras/issues"
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/devkit#readme",
+    "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sheriffMoose/storybook-extras.git",
+        "directory": "packages/devkit"
     },
     "publishConfig": {
         "access": "public",
@@ -55,8 +56,8 @@
         "build:ts": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
         "*************** BUILD ***************": "",
         "prebuild": "rimraf ./dist",
-        "build": "concurrently \"npm run build:cjs\" \"npm run build:esm\" \"npm run build:ts\"",
-        "watch": "concurrently \"npm run build:cjs --watch\" \"npm run build:esm --watch\" \"npm run build:ts --watch\""
+        "build": "concurrently \"yarn build:cjs\" \"yarn build:esm\" \"yarn build:ts\"",
+        "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "devDependencies": {
         "@storybook/addon-essentials": "next",
