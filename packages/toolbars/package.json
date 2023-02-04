@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/toolbars",
-    "version": "0.0.60",
+    "version": "0.0.61",
     "description": "Storybook addon for adding custom toolbar buttons.",
     "license": "MIT",
     "keywords": [
