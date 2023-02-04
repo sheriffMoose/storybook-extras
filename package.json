@@ -13,7 +13,7 @@
         "test": "nx test:storybook",
         "postinstall": "patch-package",
         "************ PROD **************": "",
-        "build": "nx storybook:build",
+        "build": "nx build",
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "chromatic": "nx chromatic",
         "************ RELEASE **************": "",
