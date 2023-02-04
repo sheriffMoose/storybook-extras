@@ -1,0 +1,111 @@
+version: 2.1
+
+parameters:
+    workflow:
+        description: Which workflow to run
+        type: enum
+        enum: ['ci', 'pr', 'merged', 'daily']
+        default: 'ci'
+
+executors:
+    node_16_executor:
+        parameters:
+            class:
+                description: The Resource class
+                type: enum
+                enum: ['small', 'medium', 'medium+', 'large', 'xlarge']
+                default: 'small'
+        working_directory: /tmp/extras
+        docker:
+            - image: cimg/node:16.17.1
+              environment:
+                  NODE_OPTIONS: --max_old_space_size=6144
+        resource_class: <<parameters.class>>
+
+orbs:
+    git-shallow-clone: guitarrapc/git-shallow-clone@2.4.1
+    browser-tools: circleci/browser-tools@1.4.0
+    discord: antonioned/discord@0.1.0
+
+jobs:
+    build:
+        executor:
+            class: large
+            name: node_16_executor
+        steps:
+            - git-shallow-clone/checkout_advanced:
+                  clone_options: '--depth 1 --verbose'
+            - restore_cache:
+                  name: Restore Yarn cache
+                  keys:
+                      - build-all-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+            - run:
+                  name: Install
+                  command: yarn install
+            - save_cache:
+                  name: Save Yarn cache
+                  key: build-all-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+                  paths:
+                      - ~/.yarn/berry/cache
+            - run:
+                  name: Build
+                  command: yarn build
+    demo:
+        executor:
+            class: large
+            name: node_16_executor
+        steps:
+            - git-shallow-clone/checkout_advanced:
+                  clone_options: '--depth 1 --verbose'
+            - restore_cache:
+                  name: Restore Yarn cache
+                  keys:
+                      - build-demo-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+            - run:
+                  name: Install
+                  command: yarn install
+            - save_cache:
+                  name: Save Yarn cache
+                  key: build-demo-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+                  paths:
+                      - ~/.yarn/berry/cache
+            - run:
+                  name: Build
+                  command: yarn build:all
+
+workflows:
+    ci:
+        when:
+            and:
+                - equal: [api, << pipeline.trigger_source >>]
+                - equal: [ci, << pipeline.parameters.workflow >>]
+        jobs:
+            - build
+            - demo:
+                  requires:
+                      - build
+    pr:
+        when:
+            equal: [pr, << pipeline.parameters.workflow >>]
+        jobs:
+            - build
+            - demo:
+                  requires:
+                      - build
+
+    merged:
+        when:
+            equal: [merged, << pipeline.parameters.workflow >>]
+        jobs:
+            - build
+            - demo:
+                  requires:
+                      - build
+    daily:
+        when:
+            equal: [daily, << pipeline.parameters.workflow >>]
+        jobs:
+            - build
+            - demo:
+                  requires:
+                      - build
