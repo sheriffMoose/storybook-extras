@@ -16,11 +16,8 @@
         "build:all": "nx run-many --target=build --all --parallel=10 --exclude=demo",
         "chromatic": "nx chromatic",
         "************ RELEASE **************": "",
-        "prerelease": "yarn build --skip-nx-cache",
         "release": "auto shipit --no-changelog",
-        "postrelease": "yarn release:changelog",
-        "release:changelog": "git pull && auto-changelog -c ./changelog/config.json",
-        "postrelease:changelog": "git add . && git commit -a -m 'chore(release): Update `CHANGELOG.md` [skip ci]' && git push"
+        "changelog": "auto-changelog -c ./changelog/config.json"
     },
     "private": true,
     "devDependencies": {
