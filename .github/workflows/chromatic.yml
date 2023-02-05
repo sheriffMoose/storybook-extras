@@ -2,7 +2,7 @@ name: Chromatic
 
 on:
   workflow_run:
-    workflows: [Deploy]
+    workflows: [Release]
     types:
       - completed
 

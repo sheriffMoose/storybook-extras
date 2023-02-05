@@ -35,13 +35,13 @@ jobs:
             - restore_cache:
                   name: Restore Yarn cache
                   keys:
-                      - build-all-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+                      - build-all-{{ checksum "./yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
             - run:
                   name: Install
                   command: yarn install
             - save_cache:
                   name: Save Yarn cache
-                  key: build-all-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+                  key: build-all-{{ checksum "./yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
                   paths:
                       - ~/.yarn/berry/cache
             - run:
@@ -55,13 +55,13 @@ jobs:
             - restore_cache:
                   name: Restore Yarn cache
                   keys:
-                      - build-demo-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+                      - build-demo-{{ checksum "./yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
             - run:
                   name: Install
                   command: yarn install
             - save_cache:
                   name: Save Yarn cache
-                  key: build-demo-{{ checksum "code/yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
+                  key: build-demo-{{ checksum "./yarn.lock" }}--{{ checksum "scripts/yarn.lock" }}
                   paths:
                       - ~/.yarn/berry/cache
             - run:

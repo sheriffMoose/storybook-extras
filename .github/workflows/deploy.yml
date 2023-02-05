@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   workflow_run:
-    workflows: [Storybook]
+    workflows: [Release]
     types:
       - completed
 
