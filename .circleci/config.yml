@@ -1,11 +1,18 @@
 version: 2.1
 
 parameters:
-    workflow:
-        description: Which workflow to run
-        type: enum
-        enum: ['ci', 'pr', 'merged', 'daily']
-        default: 'ci'
+    GHA_Actor:
+        type: string
+        default: ''
+    GHA_Action:
+        type: string
+        default: ''
+    GHA_Event:
+        type: string
+        default: ''
+    GHA_Meta:
+        type: string
+        default: ''
 
 executors:
     node_16_executor:
@@ -74,38 +81,12 @@ jobs:
                   command: yarn build:all
 
 workflows:
-    ci:
+    pull_request:
         when:
-            and:
-                - equal: [api, << pipeline.trigger_source >>]
-                - equal: [ci, << pipeline.parameters.workflow >>]
+            - and: [<< pipeline.parameters.GHA_Action >>]
+            - equal: ["pull_request", << pipeline.parameters.GHA_Event >>]
         jobs:
             - build
             - demo:
-                  requires:
-                      - build
-    pr:
-        when:
-            equal: [pr, << pipeline.parameters.workflow >>]
-        jobs:
-            - build
-            - demo:
-                  requires:
-                      - build
-
-    merged:
-        when:
-            equal: [merged, << pipeline.parameters.workflow >>]
-        jobs:
-            - build
-            - demo:
-                  requires:
-                      - build
-    daily:
-        when:
-            equal: [daily, << pipeline.parameters.workflow >>]
-        jobs:
-            - build
-            - demo:
-                  requires:
-                      - build
+                requires:
+                    - build

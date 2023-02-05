@@ -1,0 +1,18 @@
+name: CircleCI
+
+on:
+    pull_request_target:
+        types: [opened, synchronize, labeled, unlabeled, reopened, converted_to_draft, ready_for_review]
+    push:
+        branches:
+            - master
+
+jobs:
+    circleci:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Trigger CircleCI Pipeline
+              id: pull_request
+              uses: CircleCI-Public/trigger-circleci-pipeline-action@v1.0.6
+              env:
+                CCI_TOKEN: ${{ secrets.CCI_TOKEN }}
