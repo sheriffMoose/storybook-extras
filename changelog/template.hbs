@@ -25,7 +25,7 @@
             | Commit | Type | Description |
             | --- | --- | --- |
             {{#forEachUnique items}}
-                | {{#href this}}{{/href}} | {{type}} | {{message}} |
+                | [{{shorthash}}]({{href}}) | {{type}} | {{message}} |
             {{/forEachUnique}}
         {{/forEachScope}}
     {{/if}}
