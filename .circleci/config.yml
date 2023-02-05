@@ -16,29 +16,19 @@ parameters:
 
 executors:
     node_16_executor:
-        parameters:
-            class:
-                description: The Resource class
-                type: enum
-                enum: ['small', 'medium', 'medium+', 'large', 'xlarge']
-                default: 'small'
         working_directory: /tmp/extras
         docker:
             - image: cimg/node:16.17.1
               environment:
                   NODE_OPTIONS: --max_old_space_size=6144
-        resource_class: <<parameters.class>>
+        resource_class: 'large'
 
 orbs:
     git-shallow-clone: guitarrapc/git-shallow-clone@2.4.1
-    browser-tools: circleci/browser-tools@1.4.0
-    discord: antonioned/discord@0.1.0
 
 jobs:
     build:
-        executor:
-            class: large
-            name: node_16_executor
+        executor: node_16_executor
         steps:
             - git-shallow-clone/checkout_advanced:
                   clone_options: '--depth 1 --verbose'
@@ -58,9 +48,7 @@ jobs:
                   name: Build
                   command: yarn build
     demo:
-        executor:
-            class: large
-            name: node_16_executor
+        executor: node_16_executor
         steps:
             - git-shallow-clone/checkout_advanced:
                   clone_options: '--depth 1 --verbose'
@@ -83,7 +71,8 @@ jobs:
 workflows:
     pull_request:
         when:
-            - equal: ["pull_request", << pipeline.parameters.GHA_Action >>]
+            and:
+                - equal: ["pull_request", << pipeline.parameters.GHA_Action >>]
         jobs:
             - build
             - demo:
