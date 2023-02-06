@@ -545,17 +545,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/platform-browser-dynamic@npm:15.1.1":
-  version: 15.1.1
-  resolution: "@angular/platform-browser-dynamic@npm:15.1.1"
+"@angular/platform-browser-dynamic@npm:15.1.3":
+  version: 15.1.3
+  resolution: "@angular/platform-browser-dynamic@npm:15.1.3"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/common": 15.1.1
-    "@angular/compiler": 15.1.1
-    "@angular/core": 15.1.1
-    "@angular/platform-browser": 15.1.1
-  checksum: 0575d6a34248f7083a00f7badf52a9a13e022f925910a6646a025bd8f7babc3b998b26b80b129a977b13b07c838ca9544cc8738e7ca050fb09e7484ab9546d2d
+    "@angular/common": 15.1.3
+    "@angular/compiler": 15.1.3
+    "@angular/core": 15.1.3
+    "@angular/platform-browser": 15.1.3
+  checksum: cc5795398c38dac184c60d4970397901d8c1ae35b443939c9815e8409c9d14c1e25c8abf50572bafce9cecf9b9f94b2a75563badb43baa34ea7128b38c4acd63
   languageName: node
   linkType: hard
 
@@ -10354,7 +10354,7 @@ __metadata:
     "@angular/core": 15.1.2
     "@angular/forms": 15.1.2
     "@angular/platform-browser": 15.1.1
-    "@angular/platform-browser-dynamic": 15.1.1
+    "@angular/platform-browser-dynamic": 15.1.3
     "@angular/router": 15.1.1
     "@compodoc/compodoc": ^1.1.19
     "@storybook-extras/preset": "*"
