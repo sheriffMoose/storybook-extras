@@ -61,8 +61,8 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "workspace:^",
-        "@storybook-extras/toolbars": "workspace:^",
+        "@storybook-extras/devkit": "*",
+        "@storybook-extras/toolbars": "*",
         "cartesian": "^1.0.1"
     },
     "devDependencies": {

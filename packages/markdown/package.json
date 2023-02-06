@@ -61,7 +61,7 @@
         "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
     },
     "dependencies": {
-        "@storybook-extras/devkit": "workspace:^",
+        "@storybook-extras/devkit": "*",
         "@storybook/mdx2-csf": "next"
     },
     "devDependencies": {

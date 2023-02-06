@@ -61,13 +61,13 @@
         "postpack": "rm ./README.md"
     },
     "dependencies": {
-        "@storybook-extras/angular": "workspace:^",
-        "@storybook-extras/console": "workspace:^",
-        "@storybook-extras/devkit": "workspace:^",
-        "@storybook-extras/markdown": "workspace:^",
-        "@storybook-extras/swagger": "workspace:^",
-        "@storybook-extras/toolbars": "workspace:^",
-        "@storybook-extras/variants": "workspace:^"
+        "@storybook-extras/angular": "*",
+        "@storybook-extras/console": "*",
+        "@storybook-extras/devkit": "*",
+        "@storybook-extras/markdown": "*",
+        "@storybook-extras/swagger": "*",
+        "@storybook-extras/toolbars": "*",
+        "@storybook-extras/variants": "*"
     },
     "devDependencies": {
         "@storybook/addons": "next",
