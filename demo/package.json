@@ -17,7 +17,7 @@
         "deploy": "npx chromatic --project-token=d6496f4622fe -d storybook-static --exit-once-uploaded"
     },
     "dependencies": {
-        "@angular/animations": "15.1.2",
+        "@angular/animations": "15.1.3",
         "@angular/common": "15.1.2",
         "@angular/compiler": "15.1.2",
         "@angular/core": "15.1.2",
