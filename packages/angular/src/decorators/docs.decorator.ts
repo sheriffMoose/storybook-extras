@@ -28,20 +28,6 @@ export const docsDecorator = makeDecorator({
         } else if (config?.compodoc) {
             global[COMPODOC_SOURCE_ID] = `parameters.docs.compodoc`;
             setDocs(config.compodoc);
-        } else if (config?.data) {
-            deprecate(`docsDecorator: 'data' has been renamed to 'compodoc'`);
-            global[COMPODOC_SOURCE_ID] = `parameters.docs.data`;
-            setDocs(config.data);
-        } else if (config?.url && config?.lazyLoad) {
-            deprecate(`docsDecorator: 'url' & 'lazyLoad' are  deprecated, use 'fetch' instead`);
-            global[COMPODOC_SOURCE_ID] = `parameters.docs.url`;
-            fetchDocs(config.url);
-        } else {
-            try {
-                global[COMPODOC_SOURCE_ID] = `main.docs.require`;
-                const docs = require(COMPODOC_ID);
-                setDocs(docs);
-            } catch (e) {}
         }
 
         return storyFn(context);
