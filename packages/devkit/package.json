@@ -70,7 +70,7 @@
     "scripts": {
         "*************** DEV ***************": "",
         "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
-        "build:esm": "tsc --module es2015 --target es5 --outDir dist/esm",
+        "build:esm": "tsc --module es2022 --target es2022 --outDir dist/esm",
         "build:ts": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
         "*************** BUILD ***************": "",
         "prebuild": "rimraf ./dist",
