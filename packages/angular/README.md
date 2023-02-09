@@ -23,7 +23,6 @@
 
 </div>
 
-
 <h2>Table of Contents</h2>
 
 - [Getting started](#getting-started)
@@ -61,8 +60,8 @@ module.exports = {
 3. Refer to the sections below for the documentation of the built-in features.
 
 ## Demo/Chromatic
-Find the published demo storybook on chromatic [here](https://master--63c1a45beed1a8f036a44e28.chromatic.com/)
 
+Find the published demo storybook on chromatic [here](https://master--63c1a45beed1a8f036a44e28.chromatic.com/)
 
 ## Features
 
@@ -76,7 +75,6 @@ Find the published demo storybook on chromatic [here](https://master--63c1a45bee
 -   🦥 Lazy loading documentation
 -   💬 Source code display
 -   🌯 Story Wrappers selector toolbar
-
 
 ### Test Runner Coverage Instrumentation
 
@@ -103,7 +101,7 @@ const meta: Meta = {
             imports: [AppModule, CommonModule],
             providers: [AppService],
         }),
-    ]
+    ],
 };
 
 export default meta;
@@ -131,44 +129,44 @@ Here is a simple example of the first scenario:
     ```
 -   Make sure to include static dir like so
 
-```jsx
-// .storybook/main.js
+```ts
+// .storybook/main.ts
 module.exports = {
     staticDirs: [{ from: '<DOCS_DIR_PATH>', to: '/<DOCS_SERVE_DIR>' }],
 };
 ```
 
--   Next, enable the documentation lazy loading in the `preview.js` file like so:
+-   Next, enable the documentation lazy loading in the `preview.@(js|ts)` file like so:
 
-```jsx
+```ts
 export const parameters = {
     ...
     docs: {
         inlineStories: true,
         ...
-        lazyLoad: true,
-        url: '<DOCS_SERVE_DIR>/documentation.json'
+        fetch: '<DOCS_SERVE_DIR>/documentation.json'
     }
 }
 ```
 
 The url property here can be a full url like `http://example.com/storybook/docs/documentation.json` or a relative path to the current storybook instance like `../dist/docs/documentation.json`.
 
-You can also provide `data` property to be something like `require('<DOCS_DIR_PATH>/documentation.json')`, this way you don't need to call `setCompodocJson` method, it will be called automatically on your behalf, and the docs will be stored in memory for later usage.
+You can also provide `compodoc` property to be something like `require('<DOCS_DIR_PATH>/documentation.json')` or have it imported already with `import compodoc from '<DOCS_DIR_PATH>/documentation.json`, this way you don't need to call `setCompodocJson` method, it will be called automatically on your behalf, and the docs will be stored in memory for later usage.
 
 ### Source Code
-- This feature relies on the documentation loaded previously from `compodoc` to display the source code of the components and/or services that exists in the `moduleMetadata`.
-- You don't need to re-declare your main component in the `declarations` section of `moduleMetadata`, it will be added directly.
-- Basically, the addon will retrieve the source code of any class under `declarations` or `providers`, along with templates & styles for the components if they exist.
-- No setup is needed for this feature, it is enabled by default.
-- You can disable it by using global or story parameters like so:
-  ```jsx
-  parameters: {
-    sourceCode: {
-        disable: true
+
+-   This feature relies on the documentation loaded previously from `compodoc` to display the source code of the components and/or services that exists in the `moduleMetadata`.
+-   You don't need to re-declare your main component in the `declarations` section of `moduleMetadata`, it will be added directly.
+-   Basically, the addon will retrieve the source code of any class under `declarations` or `providers`, along with templates & styles for the components if they exist.
+-   No setup is needed for this feature, it is enabled by default.
+-   You can disable it by using global or story parameters like so:
+    ```jsx
+    parameters: {
+        sourceCode: {
+            disable: true;
+        }
     }
-  }
-  ```
+    ```
 
 ### Wrappers Selector
 
@@ -236,61 +234,26 @@ The wrapper item can also contain an `options` property which will be translated
 <btn-container class="small" style="padding:5px;"></btn-container>
 ```
 
-
 ## Roadmap
+
 Please feel free to request features, I will try to add them as soon as humanly possible. Currently the following features are in my pipeline:
-- UI representation of Angular Service.
-- UI representation for Issues/Pull Requests (Github/Bitbucket/Jira).
-- Coverage Enhancements.
-- Story Source representation.
 
+-   UI representation of Angular Service.
+-   UI representation for Issues/Pull Requests (Github/Bitbucket/Jira).
+-   Coverage Enhancements.
+-   Story Source representation.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[img.logo]:
-https://github.com/sheriffMoose/storybook-ngx/blob/master/logo.png?raw=true
-[img.release]:
-https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-ngx/release.yml?logo=github&label=release
-[img.license]:
-https://img.shields.io/github/license/sheriffMoose/storybook-ngx?logo=github
-
-[img.node]:
-https://img.shields.io/node/v/@storybook-extras/angular?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
-[img.npm]:
-https://img.shields.io/npm/v/@storybook-extras/angular?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
-[img.downloads]:
-https://img.shields.io/npm/dt/@storybook-extras/angular?logo=docusign&logoColor=white&labelColor=purple&color=grey&label=
-
-[img.angular]:
-https://img.shields.io/npm/dependency-version/@storybook-extras/angular/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label=
-[img.storybook]:
-https://img.shields.io/npm/dependency-version/@storybook-extras/angular/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
-[img.typescript]:
-https://img.shields.io/npm/dependency-version/@storybook-extras/angular/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label=
-
-[img.health]:
-https://snyk.io/advisor/npm-package/@storybook-extras/angular/badge.svg
-
-[img.banner]:
-https://nodei.co/npm/@storybook-extras/angular.png
-
-[link.release]:
-https://github.com/sheriffMoose/storybook-ngx/actions/workflows/release.yml
-[link.license]:
-https://github.com/sheriffMoose/storybook-ngx/blob/master/LICENSE
-[link.npm]:
-https://npmjs.org/package/@storybook-extras/angular
-[link.snyk]:
-https://snyk.io/advisor/npm-package/@storybook-extras/angular
+[img.release]: https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-extras/release.yml?logo=github&label=release
+[img.license]: https://img.shields.io/github/license/sheriffMoose/storybook-extras?logo=github
+[img.node]: https://img.shields.io/node/v/@storybook-extras/angular?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
+[img.npm]: https://img.shields.io/npm/v/@storybook-extras/angular?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
+[img.downloads]: https://img.shields.io/npm/dt/@storybook-extras/angular?logo=docusign&logoColor=white&labelColor=purple&color=grey&label=
+[img.angular]: https://img.shields.io/npm/dependency-version/@storybook-extras/angular/dev/@angular/core?logo=angular&labelColor=DD0031&color=grey&label=
+[img.storybook]: https://img.shields.io/npm/dependency-version/@storybook-extras/angular/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
+[img.typescript]: https://img.shields.io/npm/dependency-version/@storybook-extras/angular/dev/typescript?logo=typescript&logoColor=white&labelColor=3178C6&color=grey&label=
+[img.health]: https://snyk.io/advisor/npm-package/@storybook-extras/angular/badge.svg
+[img.banner]: https://nodei.co/npm/@storybook-extras/angular.png
+[link.release]: https://github.com/sheriffMoose/storybook-extras/actions/workflows/release.yml
+[link.license]: https://github.com/sheriffMoose/storybook-extras/blob/master/LICENSE
+[link.npm]: https://npmjs.org/package/@storybook-extras/angular
+[link.snyk]: https://snyk.io/advisor/npm-package/@storybook-extras/angular
