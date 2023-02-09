@@ -1,7 +1,7 @@
 import { makeDecorator } from '@storybook/addons';
-import { componentWrapperDecorator } from '@storybook/angular';
-import { WRAPPERS_PARAM_KEY } from '../constants';
-import { getItemByName } from '../helpers';
+import { componentWrapperDecorator } from '@storybook/angular/dist/index.js';
+import { WRAPPERS_PARAM_KEY } from '../utils/constants';
+import { getItemByName } from '../utils/helpers';
 
 export const wrapperDecorator = makeDecorator({
     name: 'wrapperDecorator',

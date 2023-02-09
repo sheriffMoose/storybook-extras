@@ -1,7 +1,7 @@
 import { addons, types } from '@storybook/manager-api';
 import React, { Fragment } from 'react';
-import { AddonContextProvider, SourceCode, WrapperSelector } from '../components';
-import { ADDON_ID, SOURCE_CODE_PANEL_ID, SOURCE_CODE_PARAM_KEY, WRAPPERS_PARAM_KEY, WRAPPERS_TOOL_ID } from '../constants';
+import { AddonContextProvider, SourceCode, WrapperSelector } from './components';
+import { ADDON_ID, SOURCE_CODE_PANEL_ID, SOURCE_CODE_PARAM_KEY, WRAPPERS_PARAM_KEY, WRAPPERS_TOOL_ID } from './utils/constants';
 
 addons.register(ADDON_ID, api => {
     addons.add(WRAPPERS_TOOL_ID, {

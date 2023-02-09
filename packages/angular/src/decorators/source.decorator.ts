@@ -1,8 +1,8 @@
 import { makeDecorator, useChannel } from '@storybook/addons';
 import { findComponentByName, getCompodocJson } from '@storybook/angular/dist/client/docs';
 import { StoryFnAngularReturnType } from '@storybook/angular/dist/client/types';
-import { EVENTS, SOURCE_CODE_DECORATOR, SOURCE_CODE_PARAM_KEY } from '../constants';
-import { getSourceCode } from '../helpers';
+import { EVENTS, SOURCE_CODE_DECORATOR, SOURCE_CODE_PARAM_KEY } from '../utils/constants';
+import { getSourceCode } from '../utils/helpers';
 
 const getMetadata = (metadata = {}, type?) => {
     const data = metadata[type] || Object.values(metadata).flat(Number.MAX_VALUE);

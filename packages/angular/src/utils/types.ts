@@ -44,6 +44,7 @@ export interface WrappersConfig {
 }
 
 export type AngularExtrasOptions = Options & {
+    enableVite?: boolean;
     enableCoverage?: boolean;
     enableNodePolyfills?: boolean;
     enableWebpackProgress?: boolean;

@@ -1,5 +1,7 @@
-import { DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from '../constants';
-import { docsDecorator, ngModuleDecorator, sourceCodeDecorator, wrapperDecorator } from '../decorators';
+import './utils/polyfills';
+
+import { DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from './utils/constants';
+import { docsDecorator, ngModuleDecorator, sourceCodeDecorator, wrapperDecorator } from './decorators';
 
 export const decorators = [
     //
