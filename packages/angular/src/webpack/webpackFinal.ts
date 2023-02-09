@@ -3,8 +3,8 @@ import { Options } from '@storybook/types';
 import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 import { isAbsolute, resolve } from 'path';
 import { Configuration, ProgressPlugin } from 'webpack';
-import { COMPODOC_ID } from '../constants';
-import { AngularExtrasOptions } from '../types';
+import { COMPODOC_ID } from '../utils/constants';
+import { AngularExtrasOptions } from '../utils/types';
 
 export const webpackFinal = async (config: Configuration, options: Options & AngularExtrasOptions) => {
     const { enableCoverage, enableNodePolyfills, enableWebpackProgress } = options;

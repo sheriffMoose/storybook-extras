@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useChannel, useAddonState, useStorybookApi } from '@storybook/manager-api';
-import { ADDON_ID, EVENTS } from '../constants';
+import { ADDON_ID, EVENTS } from '../utils/constants';
 
 const DEFAULT_STATE: State = { context: null };
 

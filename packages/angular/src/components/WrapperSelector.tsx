@@ -1,9 +1,9 @@
 import { useGlobals, useParameter } from "@storybook/api";
 import { IconButton, Icons, TooltipLinkList, WithTooltip } from "@storybook/components";
 import React, { FC, Fragment, memo, useCallback, useMemo } from "react";
-import { WRAPPERS_PARAM_KEY } from "../constants";
-import { getDisplayedItems, getItemByName } from '../helpers';
-import { WrappersConfig } from "../types";
+import { WRAPPERS_PARAM_KEY } from "../utils/constants";
+import { getDisplayedItems, getItemByName } from '../utils/helpers';
+import { WrappersConfig } from "../utils/types";
 
 const DEFAULT_CONFIG: WrappersConfig = {
   disable: true,

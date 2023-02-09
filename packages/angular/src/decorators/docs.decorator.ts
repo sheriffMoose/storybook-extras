@@ -2,8 +2,8 @@ import { setCompodocJson } from '@storybook/addon-docs/angular';
 import { makeDecorator } from '@storybook/addons';
 import { deprecate } from '@storybook/client-logger';
 import { global } from '@storybook/global';
-import { COMPODOC_ID, COMPODOC_SOURCE_ID, DOCS_DECORATOR, DOCS_PARAM_KEY } from '../constants';
-import { DocsConfig } from '../types';
+import { COMPODOC_ID, COMPODOC_SOURCE_ID, DOCS_DECORATOR, DOCS_PARAM_KEY } from '../utils/constants';
+import { DocsConfig } from '../utils/types';
 
 export const docsDecorator = makeDecorator({
     name: DOCS_DECORATOR,

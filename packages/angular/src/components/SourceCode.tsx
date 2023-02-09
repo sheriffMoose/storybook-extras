@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { SyntaxHighlighter, TabsState } from '@storybook/components';
-import { getSourceCode } from '../helpers';
 import { useAddonContext } from './AddonContext';
 
 export const SourceCode: FC<any> = () => {
