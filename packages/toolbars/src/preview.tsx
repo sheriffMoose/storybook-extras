@@ -1,5 +1,5 @@
-import { PARAM_KEY } from './constants';
+import { PARAM_KEY, ToolbarsParameter } from './types';
 
 export const parameters = {
-    [PARAM_KEY]: [],
+    [PARAM_KEY]: [] as ToolbarsParameter[],
 };
