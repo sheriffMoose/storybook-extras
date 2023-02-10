@@ -1,10 +1,10 @@
 import { LegacyStoryFn, StoryContext } from '@storybook/types';
-import { PARAM_KEY, VariantsConfig } from './constants';
+import { PARAM_KEY, VariantsParameter } from './types';
 import { concatDeep, groupByDeep, mapDeep, filterDeep } from '@storybook-extras/devkit/array';
 import cartesian from 'cartesian';
 
 export class Variants {
-    config: VariantsConfig;
+    config: VariantsParameter;
     private _variants: any = [];
 
     constructor(private storyFn: LegacyStoryFn | any, private context: StoryContext | any) {
