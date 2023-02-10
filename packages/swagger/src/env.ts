@@ -8,7 +8,7 @@ export const env = (env, options) => {
             // get value from addon options
             const value = options[key] || false;
 
-            return { ...obj, [upperSnakeCase(key)]: value };
+            return { ...obj, [`_${upperSnakeCase(key)}_`]: value };
         },
         { ...env },
     );
