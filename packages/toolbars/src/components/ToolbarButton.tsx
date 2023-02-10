@@ -4,7 +4,7 @@ import React, { memo } from 'react';
 import { IconButton, Icons } from '@storybook/components';
 import { useGlobals, useParameter } from '@storybook/manager-api';
 
-import { ButtonConfig } from './constants';
+import { ToolbarsParameter } from '../types';
 
 const ButtonIcon: FC<any> = ({ button }) => {
     const { icon, emoji, isDisabled } = button;
@@ -17,7 +17,7 @@ const ButtonIcon: FC<any> = ({ button }) => {
     }
 };
 
-export const ToolbarButton: FC<any> = memo(({ button }: { button: ButtonConfig }) => {
+export const ToolbarButton: FC<any> = memo(({ button }: { button: ToolbarsParameter }) => {
     const parameter = useParameter(button.key, { enable: false });
     if (parameter?.enable === false) {
         return null;
