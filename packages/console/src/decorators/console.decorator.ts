@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { makeDecorator } from '@storybook/addons';
-import { DECORATOR_NAME, PARAM_KEY } from './constants';
+import { DECORATOR_NAME, PARAM_KEY } from '../types';
 
 export const consoleDecorator = makeDecorator({
   name: DECORATOR_NAME,
