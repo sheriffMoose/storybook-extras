@@ -27,9 +27,9 @@
     "engines": {
         "node": ">=16"
     },
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "types": "dist/ts/index.d.ts",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
     "files": [
         "dist",
         "stories",
@@ -42,40 +42,36 @@
     ],
     "exports": {
         ".": {
-            "import": "./dist/esm/index.js",
-            "require": "./dist/cjs/index.js",
-            "types": "./dist/ts/index.d.ts"
+            "import": "./dist/index.js",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
         },
         "./array": {
-            "import": "./dist/esm/array/index.js",
-            "require": "./dist/cjs/array/index.js",
-            "types": "./dist/ts/array/index.d.ts"
+            "import": "./dist/array/index.js",
+            "require": "./dist/array/index.js",
+            "types": "./dist/array/index.d.ts"
         },
         "./markdown": {
-            "import": "./dist/esm/markdown/index.js",
-            "require": "./dist/cjs/markdown/index.js",
-            "types": "./dist/ts/markdown/index.d.ts"
+            "import": "./dist/markdown/index.js",
+            "require": "./dist/markdown/index.js",
+            "types": "./dist/markdown/index.d.ts"
         }
     },
     "typesVersions": {
         "*": {
             "array": [
-                "dist/ts/array/index.d.ts"
+                "dist/array/index.d.ts"
             ],
             "markdown": [
-                "dist/ts/markdown/index.d.ts"
+                "dist/markdown/index.d.ts"
             ]
         }
     },
     "scripts": {
-        "*************** DEV ***************": "",
-        "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
-        "build:esm": "tsc --module es2022 --target es2022 --outDir dist/esm",
-        "build:ts": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
         "*************** BUILD ***************": "",
         "prebuild": "rimraf ./dist",
-        "build": "concurrently \"yarn build:cjs\" \"yarn build:esm\" \"yarn build:ts\"",
-        "build:watch": "concurrently \"yarn build:cjs --watch\" \"yarn build:esm --watch\" \"yarn build:ts --watch\""
+        "build": "tsc",
+        "build:watch": "yarn build --watch"
     },
     "dependencies": {
         "@storybook/csf-tools": "next",
@@ -84,7 +80,6 @@
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.6",
-        "concurrently": "^7.6.0",
         "rimraf": "^3.0.2",
         "tslib": "^2.5.0",
         "typescript": "^4.9.4"
