@@ -1,5 +1,1 @@
-const preview = require.resolve("./dist/esm/preview");
-
-export default {
-    previewAnnotations: (entries = []) => [...entries, preview]
-}
+module.exports = require('./dist/preset');
