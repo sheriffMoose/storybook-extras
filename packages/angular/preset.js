@@ -1,5 +1,5 @@
-const manager = require.resolve('./dist/esm/manager');
-const preview = require.resolve('./dist/esm/preview');
+const manager = require.resolve('./dist/manager');
+const preview = require.resolve('./dist/preview');
 const { webpackFinal } = require('./dist/esm');
 
 const managerEntries = (entries = []) => [...entries, manager];
