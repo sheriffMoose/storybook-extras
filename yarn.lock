@@ -29,6 +29,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@angular-devkit/architect@npm:0.1501.1":
+  version: 0.1501.1
+  resolution: "@angular-devkit/architect@npm:0.1501.1"
+  dependencies:
+    "@angular-devkit/core": 15.1.1
+    rxjs: 6.6.7
+  checksum: bc04d9aeee128562717c47ab2cff17a7127afb1f4a91c65b1e75647290f991bad78665441deb5429b1a7b4882dbaabc05eb1dc9a2bc551e22ac1d7b9ef937658
+  languageName: node
+  linkType: hard
+
+"@angular-devkit/architect@npm:0.1501.2":
+  version: 0.1501.2
+  resolution: "@angular-devkit/architect@npm:0.1501.2"
+  dependencies:
+    "@angular-devkit/core": 15.1.2
+    rxjs: 6.6.7
+  checksum: fc693f4f9daeb08ebfaf084d294ac2fcdbe67341cbfe85c7fdfaec3ebf021f48ff237b4cc48c997a773f5f8db72988417e6b4a328c6ae0562fd4053c8846ee8c
+  languageName: node
+  linkType: hard
+
 "@angular-devkit/architect@npm:0.1501.3":
   version: 0.1501.3
   resolution: "@angular-devkit/architect@npm:0.1501.3"
@@ -49,7 +69,103 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/build-angular@npm:15.1.5, @angular-devkit/build-angular@npm:>=15.0.0":
+"@angular-devkit/build-angular@npm:15.1.1":
+  version: 15.1.1
+  resolution: "@angular-devkit/build-angular@npm:15.1.1"
+  dependencies:
+    "@ampproject/remapping": 2.2.0
+    "@angular-devkit/architect": 0.1501.1
+    "@angular-devkit/build-webpack": 0.1501.1
+    "@angular-devkit/core": 15.1.1
+    "@babel/core": 7.20.12
+    "@babel/generator": 7.20.7
+    "@babel/helper-annotate-as-pure": 7.18.6
+    "@babel/plugin-proposal-async-generator-functions": 7.20.7
+    "@babel/plugin-transform-async-to-generator": 7.20.7
+    "@babel/plugin-transform-runtime": 7.19.6
+    "@babel/preset-env": 7.20.2
+    "@babel/runtime": 7.20.7
+    "@babel/template": 7.20.7
+    "@discoveryjs/json-ext": 0.5.7
+    "@ngtools/webpack": 15.1.1
+    ansi-colors: 4.1.3
+    autoprefixer: 10.4.13
+    babel-loader: 9.1.2
+    babel-plugin-istanbul: 6.1.1
+    browserslist: 4.21.4
+    cacache: 17.0.4
+    chokidar: 3.5.3
+    copy-webpack-plugin: 11.0.0
+    critters: 0.0.16
+    css-loader: 6.7.3
+    esbuild: 0.16.17
+    esbuild-wasm: 0.16.17
+    glob: 8.0.3
+    https-proxy-agent: 5.0.1
+    inquirer: 8.2.4
+    jsonc-parser: 3.2.0
+    karma-source-map-support: 1.4.0
+    less: 4.1.3
+    less-loader: 11.1.0
+    license-webpack-plugin: 4.0.2
+    loader-utils: 3.2.1
+    magic-string: 0.27.0
+    mini-css-extract-plugin: 2.7.2
+    open: 8.4.0
+    ora: 5.4.1
+    parse5-html-rewriting-stream: 6.0.1
+    piscina: 3.2.0
+    postcss: 8.4.21
+    postcss-loader: 7.0.2
+    resolve-url-loader: 5.0.0
+    rxjs: 6.6.7
+    sass: 1.57.1
+    sass-loader: 13.2.0
+    semver: 7.3.8
+    source-map-loader: 4.0.1
+    source-map-support: 0.5.21
+    terser: 5.16.1
+    text-table: 0.2.0
+    tree-kill: 1.2.2
+    tslib: 2.4.1
+    webpack: 5.75.0
+    webpack-dev-middleware: 6.0.1
+    webpack-dev-server: 4.11.1
+    webpack-merge: 5.8.0
+    webpack-subresource-integrity: 5.1.0
+  peerDependencies:
+    "@angular/compiler-cli": ^15.0.0
+    "@angular/localize": ^15.0.0
+    "@angular/platform-server": ^15.0.0
+    "@angular/service-worker": ^15.0.0
+    karma: ^6.3.0
+    ng-packagr: ^15.0.0
+    protractor: ^7.0.0
+    tailwindcss: ^2.0.0 || ^3.0.0
+    typescript: ">=4.8.2 <5.0"
+  dependenciesMeta:
+    esbuild:
+      optional: true
+  peerDependenciesMeta:
+    "@angular/localize":
+      optional: true
+    "@angular/platform-server":
+      optional: true
+    "@angular/service-worker":
+      optional: true
+    karma:
+      optional: true
+    ng-packagr:
+      optional: true
+    protractor:
+      optional: true
+    tailwindcss:
+      optional: true
+  checksum: 81ab0449cc865f9b29740b46471215e2cf3f6787aeb5790937d47f3d31ff5ae4a1d510ef9d147b9d02b5bc36292f8db9240174aeeb9922ff39cf82617adbd7ff
+  languageName: node
+  linkType: hard
+
+"@angular-devkit/build-angular@npm:>=15.0.0":
   version: 15.1.5
   resolution: "@angular-devkit/build-angular@npm:15.1.5"
   dependencies:
@@ -145,6 +261,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@angular-devkit/build-webpack@npm:0.1501.1":
+  version: 0.1501.1
+  resolution: "@angular-devkit/build-webpack@npm:0.1501.1"
+  dependencies:
+    "@angular-devkit/architect": 0.1501.1
+    rxjs: 6.6.7
+  peerDependencies:
+    webpack: ^5.30.0
+    webpack-dev-server: ^4.0.0
+  checksum: 03da5438ac4906e8bbf34d5c645d48617192bc183a105246e66fb052fa3c90c73cbaf53d9f66ac1239a0c5a75117c2325ad1d8c1cea175ee1b30d5312c110365
+  languageName: node
+  linkType: hard
+
 "@angular-devkit/build-webpack@npm:0.1501.5":
   version: 0.1501.5
   resolution: "@angular-devkit/build-webpack@npm:0.1501.5"
@@ -192,6 +321,24 @@ __metadata:
     chokidar:
       optional: true
   checksum: 5bc6f7b36411636f7be51836bdd014ca6a1db5b4f8f7cbaa08eed40e0cfad2a26cfa6f52bfb53de6e1ab8a52d3954b94eed00e2b9db12c941a3f421b508fa4d9
+  languageName: node
+  linkType: hard
+
+"@angular-devkit/core@npm:15.1.2":
+  version: 15.1.2
+  resolution: "@angular-devkit/core@npm:15.1.2"
+  dependencies:
+    ajv: 8.12.0
+    ajv-formats: 2.1.1
+    jsonc-parser: 3.2.0
+    rxjs: 6.6.7
+    source-map: 0.7.4
+  peerDependencies:
+    chokidar: ^3.5.2
+  peerDependenciesMeta:
+    chokidar:
+      optional: true
+  checksum: 17debe0fb95edcd2503202e47079b361ecc9b369dd09d7bff7e9d28c63cb44a3d76f6d75f0422e2b998cccccca5f10b8e120a9e20659aa105653bd705abef4eb
   languageName: node
   linkType: hard
 
@@ -270,14 +417,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/animations@npm:15.1.3":
-  version: 15.1.3
-  resolution: "@angular/animations@npm:15.1.3"
+"@angular/animations@npm:15.1.2":
+  version: 15.1.2
+  resolution: "@angular/animations@npm:15.1.2"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/core": 15.1.3
-  checksum: 41d21bf138eccc632bf7ee21a91b96bd9b86e4815c523af284041ab79ddfd167e769444c1541e542c93d635b082a1c037cbb13b9ffec97fd46b6b528b9edc156
+    "@angular/core": 15.1.2
+  checksum: 66f67526c06e56917d76f32b4fa9d0e5fb04707275d0e8067dc7ecb86538cefb9c76d57a2a0247ffe80bdce6bbe24e827f12bd50bd921ac52533b970c3170e1d
   languageName: node
   linkType: hard
 
@@ -428,17 +575,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/router@npm:15.1.4":
-  version: 15.1.4
-  resolution: "@angular/router@npm:15.1.4"
+"@angular/router@npm:15.1.1":
+  version: 15.1.1
+  resolution: "@angular/router@npm:15.1.1"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/common": 15.1.4
-    "@angular/core": 15.1.4
-    "@angular/platform-browser": 15.1.4
+    "@angular/common": 15.1.1
+    "@angular/core": 15.1.1
+    "@angular/platform-browser": 15.1.1
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: f9f44035bc1290971f41385a6f0e61f6f91f36f4005a94bafa1c2cd2289cfd7502e587978a7731dae7439bfcd36d0430fd4dd1ccfb4e2e3ac15672304753dc95
+  checksum: c7d2c5078a0975bae15f905098a4e6752425a38a468e9f12106b2a604bcb01db7f1ab8ad3497dd91eb77b59bff4422cd1e14d50006976aa7bfe58de9baa0f16f
   languageName: node
   linkType: hard
 
@@ -659,7 +806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.12.11, @babel/generator@npm:^7.19.3, @babel/generator@npm:^7.20.7, @babel/generator@npm:^7.7.2":
+"@babel/generator@npm:^7.12.11, @babel/generator@npm:^7.15.8, @babel/generator@npm:^7.19.3, @babel/generator@npm:^7.20.7, @babel/generator@npm:^7.7.2":
   version: 7.20.14
   resolution: "@babel/generator@npm:7.20.14"
   dependencies:
@@ -945,7 +1092,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.13.16, @babel/parser@npm:^7.14.7, @babel/parser@npm:^7.19.3, @babel/parser@npm:^7.20.13, @babel/parser@npm:^7.20.7":
+"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.13.16, @babel/parser@npm:^7.14.7, @babel/parser@npm:^7.15.8, @babel/parser@npm:^7.19.3, @babel/parser@npm:^7.20.13, @babel/parser@npm:^7.20.7":
   version: 7.20.15
   resolution: "@babel/parser@npm:7.20.15"
   bin:
@@ -2059,7 +2206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.1.6, @babel/traverse@npm:^7.19.3, @babel/traverse@npm:^7.20.10, @babel/traverse@npm:^7.20.12, @babel/traverse@npm:^7.20.13, @babel/traverse@npm:^7.20.5, @babel/traverse@npm:^7.20.7, @babel/traverse@npm:^7.7.2":
+"@babel/traverse@npm:^7.1.6, @babel/traverse@npm:^7.15.4, @babel/traverse@npm:^7.19.3, @babel/traverse@npm:^7.20.10, @babel/traverse@npm:^7.20.12, @babel/traverse@npm:^7.20.13, @babel/traverse@npm:^7.20.5, @babel/traverse@npm:^7.20.7, @babel/traverse@npm:^7.7.2":
   version: 7.20.13
   resolution: "@babel/traverse@npm:7.20.13"
   dependencies:
@@ -2077,7 +2224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.0.0, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.19.0, @babel/types@npm:^7.19.3, @babel/types@npm:^7.2.0, @babel/types@npm:^7.20.0, @babel/types@npm:^7.20.2, @babel/types@npm:^7.20.5, @babel/types@npm:^7.20.7, @babel/types@npm:^7.3.0, @babel/types@npm:^7.3.3, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
+"@babel/types@npm:^7.0.0, @babel/types@npm:^7.15.6, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.19.0, @babel/types@npm:^7.19.3, @babel/types@npm:^7.2.0, @babel/types@npm:^7.20.0, @babel/types@npm:^7.20.2, @babel/types@npm:^7.20.5, @babel/types@npm:^7.20.7, @babel/types@npm:^7.3.0, @babel/types@npm:^7.3.3, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
   version: 7.20.7
   resolution: "@babel/types@npm:7.20.7"
   dependencies:
@@ -2535,7 +2682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@istanbuljs/load-nyc-config@npm:^1.0.0":
+"@istanbuljs/load-nyc-config@npm:^1.0.0, @istanbuljs/load-nyc-config@npm:^1.1.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
   dependencies:
@@ -3782,6 +3929,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ngtools/webpack@npm:15.1.1":
+  version: 15.1.1
+  resolution: "@ngtools/webpack@npm:15.1.1"
+  peerDependencies:
+    "@angular/compiler-cli": ^15.0.0
+    typescript: ">=4.8.2 <5.0"
+    webpack: ^5.54.0
+  checksum: 510602b65297c4516b39d943c41ebe4ef9515ebbe64935ea337ba4390de77e1f08031db80131944dccc2cc7ec2f22de262830dcf0ffe74932ccb0fd46e1ced1a
+  languageName: node
+  linkType: hard
+
 "@ngtools/webpack@npm:15.1.5":
   version: 15.1.5
   resolution: "@ngtools/webpack@npm:15.1.5"
@@ -4595,6 +4753,7 @@ __metadata:
   dependencies:
     "@angular/core": latest
     "@storybook-extras/devkit": "*"
+    "@storybook/addon-coverage": ^0.0.8
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/builder-vite": next
@@ -4606,6 +4765,8 @@ __metadata:
     tslib: ^2.5.0
     typescript: 4.9.5
     vite: ^4.0.0
+    vite-plugin-istanbul: ^4.0.0
+    vite-plugin-require-transform: ^1.0.9
     webpack-plugin-istanbul: ^1.0.3
   peerDependencies:
     "@storybook/addons": "*"
@@ -4900,6 +5061,18 @@ __metadata:
     react-dom:
       optional: true
   checksum: 18a7c1286894072c0b715b7e05aab0db4d9bbdd4fde6b424234feb6584082fcd8a397eb3ae5699f9d1b5ba79d52cb9ad00b1ad7f4a25084e8fca10c6357f13c1
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-coverage@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "@storybook/addon-coverage@npm:0.0.8"
+  dependencies:
+    "@types/babel__core": ^7.1.19
+    "@types/istanbul-lib-coverage": ^2.0.4
+    babel-plugin-istanbul: ^6.1.1
+    vite-plugin-istanbul: ^3.0.1
+  checksum: 8cf18a291699df1b630f77698abfd4d370dabfba55ae186e522b76b9bc76ce6a866cdd5d0e8c044dda135dd2873651d3ab9d2ddc93903222bdabf236ef64645e
   languageName: node
   linkType: hard
 
@@ -6086,7 +6259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14, @types/babel__core@npm:^7.1.20":
+"@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14, @types/babel__core@npm:^7.1.19, @types/babel__core@npm:^7.1.20":
   version: 7.20.0
   resolution: "@types/babel__core@npm:7.20.0"
   dependencies:
@@ -6351,7 +6524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
+"@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1, @types/istanbul-lib-coverage@npm:^2.0.4":
   version: 2.0.4
   resolution: "@types/istanbul-lib-coverage@npm:2.0.4"
   checksum: a25d7589ee65c94d31464c16b72a9dc81dfa0bea9d3e105ae03882d616e2a0712a9c101a599ec482d297c3591e16336962878cb3eb1a0a62d5b76d277a890ce7
@@ -10158,10 +10331,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "demo@workspace:demo"
   dependencies:
-    "@angular-devkit/architect": 0.1501.5
-    "@angular-devkit/build-angular": 15.1.5
+    "@angular-devkit/architect": 0.1501.2
+    "@angular-devkit/build-angular": 15.1.1
     "@angular-devkit/core": 15.1.1
-    "@angular/animations": 15.1.3
+    "@angular/animations": 15.1.2
     "@angular/cli": 15.1.3
     "@angular/common": 15.1.2
     "@angular/compiler": 15.1.2
@@ -10170,7 +10343,7 @@ __metadata:
     "@angular/forms": 15.1.2
     "@angular/platform-browser": 15.1.1
     "@angular/platform-browser-dynamic": 15.1.3
-    "@angular/router": 15.1.4
+    "@angular/router": 15.1.1
     "@compodoc/compodoc": ^1.1.19
     "@storybook-extras/preset": "*"
     "@storybook/addon-essentials": next
@@ -21719,6 +21892,44 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
+  languageName: node
+  linkType: hard
+
+"vite-plugin-istanbul@npm:^3.0.1":
+  version: 3.0.4
+  resolution: "vite-plugin-istanbul@npm:3.0.4"
+  dependencies:
+    "@istanbuljs/load-nyc-config": ^1.1.0
+    istanbul-lib-instrument: ^5.1.0
+    picocolors: ^1.0.0
+    test-exclude: ^6.0.0
+  checksum: 74fa99e2e2bded28ff6ba47bddf3cdd2eae04d37f2b6d257dcf5571c75f3433c6495fe94bba1f12acd0fc6046a6e83ea618b0547726ba68190bf292c7cb34695
+  languageName: node
+  linkType: hard
+
+"vite-plugin-istanbul@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "vite-plugin-istanbul@npm:4.0.0"
+  dependencies:
+    "@istanbuljs/load-nyc-config": ^1.1.0
+    istanbul-lib-instrument: ^5.1.0
+    picocolors: ^1.0.0
+    test-exclude: ^6.0.0
+  peerDependencies:
+    vite: ">=2.9.1 <= 5"
+  checksum: d523523784ec77efcc39f6850b9fbdf1744f7441ffa5a33feff1e3a783ffa7a6a4df26863282937a85d3d7f6d4bfea578b08d80644e4c601d7d599671b9cd302
+  languageName: node
+  linkType: hard
+
+"vite-plugin-require-transform@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "vite-plugin-require-transform@npm:1.0.9"
+  dependencies:
+    "@babel/generator": ^7.15.8
+    "@babel/parser": ^7.15.8
+    "@babel/traverse": ^7.15.4
+    "@babel/types": ^7.15.6
+  checksum: 63407ee372f832a5326f122e091a4e07658e6b4d3fab3c57289e3a57faded8d47e57c8416ec68bf8d7dec6008b736651e01d8def0c0648667bbf3d915c438740
   languageName: node
   linkType: hard
 
