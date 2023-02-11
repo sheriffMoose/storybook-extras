@@ -54,6 +54,10 @@ export default config;
 
 - Thanks to the pre available `swagger-ui-react`, this feature simply integrates `SwaggerUI` component into one `.mdx` file and make it available on demand if the user decides to populate the `url` option when configuring the addon like so:
 
+**EXPERIMENTAL FEATURE**
+For the current time being, the `stories` property is working with only one item. We are working on this feature to allow multiple endpoints and hopefully more configuration items in the near future releases.
+
+
 ```ts
 // .storybook/main.ts
 import { StorybookConfig } from '@storybook/angular';

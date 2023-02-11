@@ -56,6 +56,7 @@
     },
     "dependencies": {
         "@storybook-extras/devkit": "*",
+        "css-loader": "^6.7.3",
         "swagger-ui-react": "^4.15.5"
     },
     "devDependencies": {

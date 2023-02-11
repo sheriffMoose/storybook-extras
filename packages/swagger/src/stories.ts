@@ -1,14 +1,15 @@
 import path from 'path';
-import { SwaggerConfig } from './types';
+import { storyFileName, SwaggerConfig } from './types';
 
 export const stories = (entries = [], options: SwaggerConfig) => {
-    (options.stories || []).forEach(story => {
+    const story = (options.stories || [])[0];
+    if (story) {
         entries.push({
             titlePrefix: story.title,
             directory: path.resolve(__dirname, '../stories'),
-            files: '.swagger',
+            files: storyFileName,
         });
-    });
+    }
 
     return [...entries];
 };

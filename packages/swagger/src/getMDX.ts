@@ -11,7 +11,8 @@ import 'swagger-ui-react/swagger-ui.css';
 <SwaggerUI url="${url}" />
 `;
 
-export const getMDX = async story => {
+export const getMDX = async (fileName, addonOptions) => {
+    const story = addonOptions.stories[0];
     const src = mdxCode(story);
     const code = await compile(src, {});
     return code;

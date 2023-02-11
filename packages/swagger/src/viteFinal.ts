@@ -1,15 +1,16 @@
-import { mergeConfig, InlineConfig } from 'vite';
+import { InlineConfig, mergeConfig } from 'vite';
 import { getMDX } from './getMDX';
-import { SwaggerConfig } from './types';
+import { storyFileName, SwaggerConfig } from './types';
 
 export const viteFinal = async (config: InlineConfig, options: SwaggerConfig) => {
     return mergeConfig(config, {
         plugins: [
             {
                 name: 'swagger',
-                async transform(...args) {
-                    if (/\.swagger$/.test(args[1])) {
-                        const code = await getMDX(options.stories[0]);
+                async transform(src, fileName) {
+                    const regex = new RegExp(storyFileName)
+                    if (regex.test(fileName)) {
+                        const code = await getMDX(fileName, options);
                         return { code, map: null };
                     }
                 },
