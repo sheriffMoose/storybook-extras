@@ -16,12 +16,12 @@
         "name": "Mostafa Sherif",
         "email": "mosherif87@gmail.com"
     },
-    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/devkit#readme",
+    "homepage": "https://github.com/sheriffMoose/storybook-extras/tree/master/packages/variants#readme",
     "funding": "https://github.com/sheriffMoose/storybook-extras?sponsor=1",
     "repository": {
         "type": "git",
         "url": "https://github.com/sheriffMoose/storybook-extras.git",
-        "directory": "packages/devkit"
+        "directory": "packages/variants"
     },
     "publishConfig": {
         "access": "public",
@@ -70,7 +70,7 @@
         "@storybook/csf-tools": "next",
         "@storybook/react": "next",
         "@storybook/react-webpack5": "next",
-                "react": "^18.2.0",
+        "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "rimraf": "^3.0.2",
         "storybook": "next",
