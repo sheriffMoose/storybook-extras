@@ -1,9 +1,15 @@
-export const stories = (entries = [], options) => {
-    const extraStoryPath = require.resolve('../stories/swagger.stories.mdx');
+import path from 'path';
+import { SwaggerConfig } from './types';
 
-    if (options.openapiURL) {
-        entries.push(extraStoryPath);
-    }
+export const stories = (entries = [], options: SwaggerConfig) => {
+    options.stories.forEach(story => {
+        entries.push({
+            titlePrefix: story.title,
+            directory: path.resolve(__dirname, '../stories'),
+            files: '.swagger',
+            importPathMatcher: /^(?:\.swagger)$/,
+        });
+    });
 
     return [...entries];
 };

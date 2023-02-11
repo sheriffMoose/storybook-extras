@@ -1,11 +1,19 @@
-import { mergeConfig } from 'vite';
+import { mergeConfig, InlineConfig } from 'vite';
+import { getMDX } from './getMDX';
+import { SwaggerConfig } from './types';
 
-export const viteFinal = async (config, options) => {
-    const env = await options.presets.apply('env', {});
-
+export const viteFinal = async (config: InlineConfig, options: SwaggerConfig) => {
     return mergeConfig(config, {
-        define: {
-            'process.env': env,
-        },
+        plugins: [
+            {
+                name: 'swagger',
+                async transform(...args) {
+                    if (/\.swagger$/.test(args[1])) {
+                        const code = await getMDX(options.stories[0]);
+                        return { code, map: null };
+                    }
+                },
+            },
+        ],
     });
 };

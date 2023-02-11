@@ -18,7 +18,6 @@
 
 - [Getting started](#getting-started)
 - [How to use](#how-to-use)
-- [Roadmap](#roadmap)
 
 ## Getting started
 
@@ -48,7 +47,7 @@ module.exports = {
 
 - `Swagger UI` is a popular framework for the visualization of the `openapi.yml|json` files that allow comprehensive documentation + testing for the backend API services. 
 
-- Thanks to the pre available `swagger-ui-react`, this feature simply integrates `SwaggerUI` component into one `.mdx` file and make it available on demand if the user decides to populate the `openapiURL` option when configuring the addon like so:
+- Thanks to the pre available `swagger-ui-react`, this feature simply integrates `SwaggerUI` component into one `.mdx` file and make it available on demand if the user decides to populate the `url` option when configuring the addon like so:
 
 ```js
 // .storybook/main.js
@@ -57,16 +56,17 @@ module.exports = {
         {
             name: '@storybook-extras/swagger',
             options: {
-                openapiURL: 'https://petstore3.swagger.io/api/v3/openapi.json'
+                stories: [
+                    {
+                        title: 'Swagger UI',
+                        url: 'https://petstore3.swagger.io/api/v3/openapi.json',
+                    },
+                ],
             }
         }
     ]
 }
 ```
-
-## Roadmap
-- Pass openapiURL as environment variable
-- Support multiple openapiURLs
 
 [img.node]:
 https://img.shields.io/node/v/@storybook-extras/swagger?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
