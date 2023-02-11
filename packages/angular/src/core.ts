@@ -8,7 +8,7 @@ export const core = async (config, options: Options & AngularConfig) => {
     const framework = await options.presets.apply<StorybookConfig['framework']>('framework');
 
     let builderName = '@storybook/builder-webpack5';
-    if (checkBoolean(options.enableVite, false)) {
+    if (checkBoolean(options.enableVite, false) && options.configType === 'DEVELOPMENT') {
         builderName = '@storybook/builder-vite';
     }
 

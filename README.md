@@ -75,8 +75,8 @@ const config: StorybookConfig & ExtrasConfig = {
         "markdown": false,
         // set options for markdown/html docs
         "markdown": {
-            "include": path.join(process.cwd(), 'src'),
-            "exclude": [/\.component.html$/] // exclude angular component html files
+            "includes": path.join(process.cwd(), 'src'),
+            "excludes": [/\.component.html$/], // exclude angular component html files
         }
 
         // disable swagger docs completely

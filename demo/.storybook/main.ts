@@ -27,7 +27,7 @@ const config: StorybookConfig & ExtrasConfig = {
     extras: {
         angular: {
             enableVite: true,
-            enableCoverage: false,
+            enableCoverage: true,
         },
         swagger: {
             stories: [
@@ -35,15 +35,10 @@ const config: StorybookConfig & ExtrasConfig = {
                     title: 'Backend APIs/Petstore V2',
                     url: 'https://petstore.swagger.io/v2/swagger.json',
                 },
-                {
-                    title: 'Backend APIs/Petstore V3',
-                    url: 'https://petstore3.swagger.io/api/v3/openapi.json',
-                },
             ],
         },
         markdown: {
-            include: '../stories/**/*.@(md|html)',
-            exclude: [/\.component\.html$/],
+            excludes: [/\.component\.html$/, /iframe\.html$/],
             stories: [
                 {
                     path: '../stories/markdown-main-js.md',
