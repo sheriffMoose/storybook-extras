@@ -1,3 +1,3 @@
-export { env } from './env';
 export { stories } from './stories';
+export { storyIndexers } from './storyIndexers';
 export { viteFinal } from './viteFinal';
