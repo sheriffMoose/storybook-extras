@@ -1,10 +1,6 @@
 name: Deploy
 
-on:
-  workflow_run:
-    workflows: [Release]
-    types:
-      - completed
+on: workflow_dispatch
 
 permissions:
   id-token: write

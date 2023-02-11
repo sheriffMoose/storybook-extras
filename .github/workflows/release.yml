@@ -39,14 +39,8 @@ jobs:
                 key: ${{ runner.os }}-node_modules
                 path: node_modules
 
-            - name: Build Addons & Demo
-              run: yarn build
-
-            - name: Cache Storybook
-              uses: actions/cache@v3
-              with:
-                key: ${{ runner.os }}-storybook-static
-                path: demo/storybook-static
+            - name: Build Addons
+              run: yarn build:all
 
             - name: Create Release
               env:
