@@ -4,7 +4,7 @@ export interface StoryConfig {
 }
 
 export interface MarkdownConfig {
-    include?: string | RegExp;
-    exclude?: RegExp[];
+    includes?: string | RegExp;
+    excludes?: RegExp[];
     stories?: StoryConfig[];
 }

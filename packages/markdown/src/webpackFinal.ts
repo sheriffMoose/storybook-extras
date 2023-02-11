@@ -1,26 +1,21 @@
 import { Configuration, RuleSetRule } from 'webpack';
-import { Options } from '@storybook/types';
 import { getLoaderOptions } from '@storybook-extras/devkit/markdown';
 import { MarkdownConfig } from './types';
 
-const loader = require.resolve('@storybook-extras/markdown/loader');
+const loader = require.resolve('./loader');
 const loaderOptions = getLoaderOptions();
 
-export const webpackFinal = async (config: Configuration, options: Options & MarkdownConfig) => {
-    const module = config.module || {};
-    const rules = (module?.rules || []).filter((rule: RuleSetRule) => rule.test.toString() !== '/\\.md$/');
+export const webpackFinal = async (config: Configuration, addonOptions: MarkdownConfig) => {
+    const { includes, excludes } = addonOptions;
 
-    const { include, exclude } = options;
-    config.module.rules = [
-        ...rules,
-        {
-            test: /\.(md|html)$/,
-            use: [{ loader, options: { ...loaderOptions, options } }],
-            include: include || process.cwd(),
-            exclude: [/node_modules/].concat(exclude || []),
-        },
-    ];
-
+    config.module = config.module || { rules: [] };
+    config.module.rules = (config.module?.rules || []).filter((rule: RuleSetRule) => rule?.test?.toString() !== '/\\.md$/');
+    config.module.rules.push({
+        test: /\.(md|html)$/,
+        use: [{ loader, options: { ...loaderOptions, addonOptions } }],
+        include: includes || process.cwd(),
+        exclude: [/node_modules/].concat(excludes || []),
+    });
 
     return config;
 };

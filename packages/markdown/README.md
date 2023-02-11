@@ -51,7 +51,7 @@ const config: StorybookConfig & ExtrasConfig = {
 export default config;
 ```
 
-3. Optionally you may want to pass `include` and/or `exclude` options if needed like so:
+3. Optionally you may want to pass `includes` and/or `excludes` options if needed like so:
 
 ```ts
 export default {
@@ -59,8 +59,8 @@ export default {
         {
             name: '@storybook-extras/markdown',
             options: {
-                include: '../stories/**/*.@(md|html)',
-                exclude: [/\.component\.html$/],
+                includes: '../stories/**/*.@(md|html)',
+                excludes: [/\.component\.html$/],
                 stories: [
                     {
                         path: '../stories/markdown-main-js.md',
