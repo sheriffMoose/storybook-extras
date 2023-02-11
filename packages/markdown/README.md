@@ -24,15 +24,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/markdown -D
 ```
 
 2. Add the addon to your Storybook config:
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "stories": [
         "../*.@(md|html)",
@@ -44,22 +47,30 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 3. Optionally you may want to pass `include` and/or `exclude` options if needed like so:
 
-```js
-module.exports = {
+```ts
+export default {
     addons: [
         {
             name: '@storybook-extras/markdown',
             options: {
-                include: path.join(process.cwd(), 'src'),
-                exclude: [/\.component\.html/] // Disable loading Angular component files
-            }
-        }
-    ]
-}
+                include: '../stories/**/*.@(md|html)',
+                exclude: [/\.component\.html$/],
+                stories: [
+                    {
+                        path: '../stories/markdown-main-js.md',
+                        title: 'Markdown/main.js',
+                    },
+                ],
+            },
+        },
+    ],
+};
 ```
 
 That's it, you're done. Now you will find README & CHANGELOG along with HTML docs if you want as well, in your Storybook sidebar and you can open them and see the contents.
@@ -68,81 +79,67 @@ That's it, you're done. Now you will find README & CHANGELOG along with HTML doc
 
 Currently Storybook will be using the file name as the story title, e.g. `README.md` will be `README`. This addon supports multiple options to customize the title for your `.md` & `.html` files.
 
-| Precedence | Option | Example |
-| -- | --- | --- |
-| 1 | Use the HTML `title` tag | `<title>Docs/Custom Title</title>`  |
-| 2 | Use the HTML `meta` tag, usign `Meta` will throw an error | `<meta title="Custom Title" />` |
-| 3 | Uses a markdown comment in the file | `{/*title:"Custom Title"*/}` |
-| 4 | Use predefined list of titles from `main.js` | See below |
-| 5 | Use the filename with a `+` to separate the title. Note: full path will be omitted. | `Markdown+Custom Title.md` **becomes** `Markdown/Custom Title` |
-
+| Precedence | Option                                                                              | Example                                                        |
+| ---------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1          | Use the HTML `title` tag                                                            | `<title>Docs/Custom Title</title>`                             |
+| 2          | Use the HTML `meta` tag, usign `Meta` will throw an error                           | `<meta title="Custom Title" />`                                |
+| 3          | Uses a markdown comment in the file                                                 | `{/*title:"Custom Title"*/}`                                   |
+| 4          | Use predefined list of titles from `main.js`                                        | See below                                                      |
+| 5          | Use the filename with a `+` to separate the title. Note: full path will be omitted. | `Markdown+Custom Title.md` **becomes** `Markdown/Custom Title` |
 
 ### Predefined Titles
 
-```js
-// .storybook/main.js
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
 
-module.exports = {
+const config: StorybookConfig & ExtrasConfig = {
     // if you are using @storybook-extras/markdown
     addons: [
         {
             name: '@storybook-extras/markdown',
             options: {
                 titles: {
-                    '../README.md': 'Custom Title'
-                }
-            }
-        }
+                    '../README.md': 'Custom Title',
+                },
+            },
+        },
     ],
     // if you are using @storybook-extras/preset
     extras: {
         markdown: {
             titles: {
-                '../README.md': 'Custom Title'
-            }
-        }
-    }
+                '../README.md': 'Custom Title',
+            },
+        },
+    },
 };
+
+export default config;
 ```
 
 **NOTE**:
 Custom Title processing is dependendant on [`#20809`](https://github.com/storybookjs/storybook/pull/20809)
 
-
 ## Read More
 
 I have written a series of articles to explain the motivation and purpose behind this addon. Feel free to read through.
 
-* [`Addon-Kit is a developer’s dream come true`](https://sheriffmoose.medium.com/storybook-addon-kit-is-a-developers-dream-come-true-65ab254970d5)
-* [`Storybook Markdown Docs (not mdx)`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-cfa25632ebfc)
-* [`Storybook Markdown Docs (not mdx) Part 2`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-part-2-757463fcad84)
-* [`Storybook Addon for Auto Markdown Import`](https://sheriffmoose.medium.com/storybook-addon-for-auto-markdown-import-74f58b6d9c5c)
-* [`Support .html files in Storybook`](https://sheriffmoose.medium.com/support-html-files-in-storybook-9e4da45a829a)
-* [`Custom Titles for Storybook Docs?`](https://sheriffmoose.medium.com/custom-titles-for-storybook-docs-644927607692)
+-   [`Addon-Kit is a developer’s dream come true`](https://sheriffmoose.medium.com/storybook-addon-kit-is-a-developers-dream-come-true-65ab254970d5)
+-   [`Storybook Markdown Docs (not mdx)`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-cfa25632ebfc)
+-   [`Storybook Markdown Docs (not mdx) Part 2`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-part-2-757463fcad84)
+-   [`Storybook Addon for Auto Markdown Import`](https://sheriffmoose.medium.com/storybook-addon-for-auto-markdown-import-74f58b6d9c5c)
+-   [`Support .html files in Storybook`](https://sheriffmoose.medium.com/support-html-files-in-storybook-9e4da45a829a)
+-   [`Custom Titles for Storybook Docs?`](https://sheriffmoose.medium.com/custom-titles-for-storybook-docs-644927607692)
 
 Also make sure to check out these PRs that made this addon possible:
 
-* [`storybookjs/storybook #20679 Update Story Indexer to support DocsOnly pages from Markdown/HTML`](https://github.com/storybookjs/storybook/pull/20679)
-* [`storybookjs/docs-mdx #10 Add support for Markdown/HTML titles`](https://github.com/storybookjs/docs-mdx/pull/10)
+-   [`storybookjs/storybook #20679 Update Story Indexer to support DocsOnly pages from Markdown/HTML`](https://github.com/storybookjs/storybook/pull/20679)
+-   [`storybookjs/docs-mdx #10 Add support for Markdown/HTML titles`](https://github.com/storybookjs/docs-mdx/pull/10)
 
-
-
-
-
-
-
-
-
-
-
-[img.node]:
-https://img.shields.io/node/v/@storybook-extras/console?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
-[img.npm]:
-https://img.shields.io/npm/v/@storybook-extras/markdown?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
-[img.storybook]:
-https://img.shields.io/npm/dependency-version/@storybook-extras/markdown/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
-[img.banner]:
-https://nodei.co/npm/@storybook-extras/markdown.png
-
-[link.npm]:
-https://npmjs.org/package/@storybook-extras/markdown
+[img.node]: https://img.shields.io/node/v/@storybook-extras/console?logo=node.js&logoColor=white&labelColor=339933&color=grey&label=
+[img.npm]: https://img.shields.io/npm/v/@storybook-extras/markdown?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
+[img.storybook]: https://img.shields.io/npm/dependency-version/@storybook-extras/markdown/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
+[img.banner]: https://nodei.co/npm/@storybook-extras/markdown.png
+[link.npm]: https://npmjs.org/package/@storybook-extras/markdown

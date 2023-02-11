@@ -1,5 +1,1 @@
-if (module && module.hot && module.hot.decline) {
-    module.hot.decline();
-}
-
-export { storyIndexers, webpack } from './preset';
+export * from './types';
