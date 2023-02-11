@@ -1,6 +1,6 @@
 import { StorybookConfig } from '@storybook/angular';
 
-const config: StorybookConfig = {
+const config: StorybookConfig & { extras: any } = {
     framework: '@storybook/angular',
     stories: [
         //
@@ -22,14 +22,18 @@ const config: StorybookConfig = {
     docs: {
         autodocs: true,
         defaultName: 'Overview',
-        compodoc: '../.docs/documentation.json',
     },
     extras: {
         swagger: {
-            openapiURL: 'https://petstore.swagger.io/v2/swagger.json',
+            stories: [
+                {
+                    title: 'Backend APIs',
+                    url: 'https://petstore.swagger.io/v2/swagger.json',
+                }
+            ]
         },
         markdown: {
-            mdExclude: [/\.component\.html$/],
+            exclude: [/\.component\.html$/],
             titles: {
                 '../stories/markdown-main-js.md': 'Markdown/main.js',
             },

@@ -46,7 +46,7 @@ module.exports = {
 }
 ```
 
-3. Optionally you may want to pass `mdInclude` and/or `mdExclude` options if needed like so:
+3. Optionally you may want to pass `include` and/or `exclude` options if needed like so:
 
 ```js
 module.exports = {
@@ -54,8 +54,8 @@ module.exports = {
         {
             name: '@storybook-extras/markdown',
             options: {
-                mdInclude: path.join(process.cwd(), 'src'),
-                mdExclude: [/\.component\.html/] // Disable loading Angular component files
+                include: path.join(process.cwd(), 'src'),
+                exclude: [/\.component\.html/] // Disable loading Angular component files
             }
         }
     ]
