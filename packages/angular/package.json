@@ -66,7 +66,10 @@
     },
     "dependencies": {
         "@storybook-extras/devkit": "*",
+        "@storybook/addon-coverage": "^0.0.8",
         "node-polyfill-webpack-plugin": "^2.0.1",
+        "vite-plugin-istanbul": "^4.0.0",
+        "vite-plugin-require-transform": "^1.0.9",
         "webpack-plugin-istanbul": "^1.0.3"
     },
     "devDependencies": {

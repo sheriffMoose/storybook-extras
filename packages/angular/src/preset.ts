@@ -1,3 +1,5 @@
+import { core } from './core';
+import { viteFinal } from './vite/viteFinal';
 import { webpackFinal } from './webpack/webpackFinal';
 
 const manager = require.resolve('./manager');
@@ -7,7 +9,9 @@ const managerEntries = (entries = []) => [...entries, manager];
 const previewAnnotations = (entries = []) => [...entries, preview];
 
 export default {
+    core,
     managerEntries,
     previewAnnotations,
+    viteFinal,
     webpackFinal,
 };

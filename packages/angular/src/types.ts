@@ -19,6 +19,7 @@ export interface WrappersParameter {
 }
 
 export type AngularConfig = {
+    enableVite?: boolean;
     enableCoverage?: boolean;
     enableNodePolyfills?: boolean;
     enableWebpackProgress?: boolean;
