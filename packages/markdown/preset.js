@@ -1,1 +1,1 @@
-export * from './dist/esm'
+module.exports = require('./dist')
