@@ -2,7 +2,6 @@ import { type StoryObj, type Meta, moduleMetadata } from '@storybook/angular';
 import { BorderModule } from '../border/border.module';
 import { HighlightModule } from '../highlight/highlight.module';
 import { ButtonComponent } from './button.component';
-import { ButtonService } from './button.service';
 
 const meta: Meta<ButtonComponent> = {
     title: 'Button',
@@ -10,8 +9,6 @@ const meta: Meta<ButtonComponent> = {
     decorators: [
         moduleMetadata({
             imports: [BorderModule, HighlightModule],
-            declarations: [ButtonComponent],
-            providers: [ButtonService],
         }),
     ],
     argTypes: {

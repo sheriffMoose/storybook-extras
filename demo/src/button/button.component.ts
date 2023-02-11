@@ -4,7 +4,7 @@ import { ButtonService } from './button.service';
 @Component({
     selector: 'storybook-button',
     templateUrl: './button.component.html',
-    styleUrls: ['./button.component.scss'],
+    styleUrls: ['./button.component.scss', './button.extras.scss'],
     providers: [ButtonService],
 })
 export class ButtonComponent implements OnInit {
@@ -40,7 +40,7 @@ export class ButtonComponent implements OnInit {
     @Output()
     onClick = new EventEmitter<Event>();
 
-    constructor(private service: ButtonService) { }
+    // constructor(private service: ButtonService) {}
 
     public get classes(): string[] {
         const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
@@ -48,5 +48,5 @@ export class ButtonComponent implements OnInit {
         return ['storybook-button', `storybook-button--${this.size}`, mode];
     }
 
-    ngOnInit() { }
+    ngOnInit() {}
 }

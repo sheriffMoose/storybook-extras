@@ -28,6 +28,9 @@ export const WithDocumentation: Story = {
             compodoc: require('../../.docs/documentation.json'),
         },
     },
+    play: async ({}) => {
+        console.log('dev', '__STORYBOOK_COMPODOC_SOURCE__', global.__STORYBOOK_COMPODOC_SOURCE__);
+    },
 };
 
 export const WithLazyLoadedDocumentation: Story = {
@@ -36,14 +39,17 @@ export const WithLazyLoadedDocumentation: Story = {
             fetch: 'docs/documentation.json',
         },
     },
+    play: async ({}) => {
+        console.log('dev', '__STORYBOOK_COMPODOC_SOURCE__', global.__STORYBOOK_COMPODOC_SOURCE__);
+    },
 };
 
 export const WithConsoleLogs: Story = {
-    play: async ({ canvasElement }) => {
+    play: async ({}) => {
         console.log('dev', 'this message will show only in the Actions panel');
         console.log('test', 'this message will show only in the Developer Tools Console');
-    }
-}
+    },
+};
 
 export const WithBorderWrapper: Story = {
     args: {
