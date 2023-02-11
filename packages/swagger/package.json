@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/swagger",
-    "version": "0.0.66",
+    "version": "0.0.67",
     "description": "Storybook addon for Swagger UI.",
     "license": "MIT",
     "keywords": [
@@ -55,7 +55,7 @@
         "build:watch": "yarn build --watch"
     },
     "dependencies": {
-        "@storybook-extras/devkit": "*",
+        "@storybook-extras/devkit": "^0.0.67",
         "css-loader": "^6.7.3",
         "swagger-ui-react": "^4.15.5"
     },
