@@ -29,16 +29,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/architect@npm:0.1501.1":
-  version: 0.1501.1
-  resolution: "@angular-devkit/architect@npm:0.1501.1"
-  dependencies:
-    "@angular-devkit/core": 15.1.1
-    rxjs: 6.6.7
-  checksum: bc04d9aeee128562717c47ab2cff17a7127afb1f4a91c65b1e75647290f991bad78665441deb5429b1a7b4882dbaabc05eb1dc9a2bc551e22ac1d7b9ef937658
-  languageName: node
-  linkType: hard
-
 "@angular-devkit/architect@npm:0.1501.3":
   version: 0.1501.3
   resolution: "@angular-devkit/architect@npm:0.1501.3"
@@ -59,103 +49,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/build-angular@npm:15.1.1":
-  version: 15.1.1
-  resolution: "@angular-devkit/build-angular@npm:15.1.1"
-  dependencies:
-    "@ampproject/remapping": 2.2.0
-    "@angular-devkit/architect": 0.1501.1
-    "@angular-devkit/build-webpack": 0.1501.1
-    "@angular-devkit/core": 15.1.1
-    "@babel/core": 7.20.12
-    "@babel/generator": 7.20.7
-    "@babel/helper-annotate-as-pure": 7.18.6
-    "@babel/plugin-proposal-async-generator-functions": 7.20.7
-    "@babel/plugin-transform-async-to-generator": 7.20.7
-    "@babel/plugin-transform-runtime": 7.19.6
-    "@babel/preset-env": 7.20.2
-    "@babel/runtime": 7.20.7
-    "@babel/template": 7.20.7
-    "@discoveryjs/json-ext": 0.5.7
-    "@ngtools/webpack": 15.1.1
-    ansi-colors: 4.1.3
-    autoprefixer: 10.4.13
-    babel-loader: 9.1.2
-    babel-plugin-istanbul: 6.1.1
-    browserslist: 4.21.4
-    cacache: 17.0.4
-    chokidar: 3.5.3
-    copy-webpack-plugin: 11.0.0
-    critters: 0.0.16
-    css-loader: 6.7.3
-    esbuild: 0.16.17
-    esbuild-wasm: 0.16.17
-    glob: 8.0.3
-    https-proxy-agent: 5.0.1
-    inquirer: 8.2.4
-    jsonc-parser: 3.2.0
-    karma-source-map-support: 1.4.0
-    less: 4.1.3
-    less-loader: 11.1.0
-    license-webpack-plugin: 4.0.2
-    loader-utils: 3.2.1
-    magic-string: 0.27.0
-    mini-css-extract-plugin: 2.7.2
-    open: 8.4.0
-    ora: 5.4.1
-    parse5-html-rewriting-stream: 6.0.1
-    piscina: 3.2.0
-    postcss: 8.4.21
-    postcss-loader: 7.0.2
-    resolve-url-loader: 5.0.0
-    rxjs: 6.6.7
-    sass: 1.57.1
-    sass-loader: 13.2.0
-    semver: 7.3.8
-    source-map-loader: 4.0.1
-    source-map-support: 0.5.21
-    terser: 5.16.1
-    text-table: 0.2.0
-    tree-kill: 1.2.2
-    tslib: 2.4.1
-    webpack: 5.75.0
-    webpack-dev-middleware: 6.0.1
-    webpack-dev-server: 4.11.1
-    webpack-merge: 5.8.0
-    webpack-subresource-integrity: 5.1.0
-  peerDependencies:
-    "@angular/compiler-cli": ^15.0.0
-    "@angular/localize": ^15.0.0
-    "@angular/platform-server": ^15.0.0
-    "@angular/service-worker": ^15.0.0
-    karma: ^6.3.0
-    ng-packagr: ^15.0.0
-    protractor: ^7.0.0
-    tailwindcss: ^2.0.0 || ^3.0.0
-    typescript: ">=4.8.2 <5.0"
-  dependenciesMeta:
-    esbuild:
-      optional: true
-  peerDependenciesMeta:
-    "@angular/localize":
-      optional: true
-    "@angular/platform-server":
-      optional: true
-    "@angular/service-worker":
-      optional: true
-    karma:
-      optional: true
-    ng-packagr:
-      optional: true
-    protractor:
-      optional: true
-    tailwindcss:
-      optional: true
-  checksum: 81ab0449cc865f9b29740b46471215e2cf3f6787aeb5790937d47f3d31ff5ae4a1d510ef9d147b9d02b5bc36292f8db9240174aeeb9922ff39cf82617adbd7ff
-  languageName: node
-  linkType: hard
-
-"@angular-devkit/build-angular@npm:>=15.0.0":
+"@angular-devkit/build-angular@npm:15.1.5, @angular-devkit/build-angular@npm:>=15.0.0":
   version: 15.1.5
   resolution: "@angular-devkit/build-angular@npm:15.1.5"
   dependencies:
@@ -248,19 +142,6 @@ __metadata:
     tailwindcss:
       optional: true
   checksum: 9be01d0136380db9672a100bb378125eba3a1fad6311f1a4dbed428b9a942efd5c10b43d2fe0b72a0d8227166f9f1f32d0441ec3adde5170f47e435942aef405
-  languageName: node
-  linkType: hard
-
-"@angular-devkit/build-webpack@npm:0.1501.1":
-  version: 0.1501.1
-  resolution: "@angular-devkit/build-webpack@npm:0.1501.1"
-  dependencies:
-    "@angular-devkit/architect": 0.1501.1
-    rxjs: 6.6.7
-  peerDependencies:
-    webpack: ^5.30.0
-    webpack-dev-server: ^4.0.0
-  checksum: 03da5438ac4906e8bbf34d5c645d48617192bc183a105246e66fb052fa3c90c73cbaf53d9f66ac1239a0c5a75117c2325ad1d8c1cea175ee1b30d5312c110365
   languageName: node
   linkType: hard
 
@@ -3901,17 +3782,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngtools/webpack@npm:15.1.1":
-  version: 15.1.1
-  resolution: "@ngtools/webpack@npm:15.1.1"
-  peerDependencies:
-    "@angular/compiler-cli": ^15.0.0
-    typescript: ">=4.8.2 <5.0"
-    webpack: ^5.54.0
-  checksum: 510602b65297c4516b39d943c41ebe4ef9515ebbe64935ea337ba4390de77e1f08031db80131944dccc2cc7ec2f22de262830dcf0ffe74932ccb0fd46e1ced1a
-  languageName: node
-  linkType: hard
-
 "@ngtools/webpack@npm:15.1.5":
   version: 15.1.5
   resolution: "@ngtools/webpack@npm:15.1.5"
@@ -4728,7 +4598,6 @@ __metadata:
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/builder-vite": next
-    concurrently: ^7.6.0
     node-polyfill-webpack-plugin: ^2.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -4806,7 +4675,6 @@ __metadata:
     "@storybook/mdx2-csf": next
     "@storybook/react": next
     "@storybook/react-webpack5": next
-    concurrently: ^7.6.0
     react: ^18.2.0
     react-dom: ^18.2.0
     rimraf: ^3.0.2
@@ -9514,26 +9382,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^7.6.0":
-  version: 7.6.0
-  resolution: "concurrently@npm:7.6.0"
-  dependencies:
-    chalk: ^4.1.0
-    date-fns: ^2.29.1
-    lodash: ^4.17.21
-    rxjs: ^7.0.0
-    shell-quote: ^1.7.3
-    spawn-command: ^0.0.2-1
-    supports-color: ^8.1.0
-    tree-kill: ^1.2.2
-    yargs: ^17.3.1
-  bin:
-    conc: dist/bin/concurrently.js
-    concurrently: dist/bin/concurrently.js
-  checksum: f705c9a7960f1b16559ca64958043faeeef6385c0bf30a03d1375e15ab2d96dba4f8166f1bbbb1c85e8da35ca0ce3c353875d71dff2aa132b2357bb533b3332e
-  languageName: node
-  linkType: hard
-
 "config-chain@npm:^1.1.12":
   version: 1.1.13
   resolution: "config-chain@npm:1.1.13"
@@ -10311,7 +10159,7 @@ __metadata:
   resolution: "demo@workspace:demo"
   dependencies:
     "@angular-devkit/architect": 0.1501.5
-    "@angular-devkit/build-angular": 15.1.1
+    "@angular-devkit/build-angular": 15.1.5
     "@angular-devkit/core": 15.1.1
     "@angular/animations": 15.1.3
     "@angular/cli": 15.1.3
