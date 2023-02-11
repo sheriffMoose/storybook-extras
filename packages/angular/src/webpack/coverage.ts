@@ -1,10 +1,9 @@
 import { checkBoolean } from '@storybook-extras/devkit';
-import { Options } from '@storybook/types';
 import { resolve } from 'path';
 import { Configuration } from 'webpack';
-import { AngularExtrasOptions } from '../utils/types';
+import { AngularConfig } from '../types';
 
-export default(config: Configuration, options: Options & AngularExtrasOptions) => {
+export default(config: Configuration, options: AngularConfig) => {
     if (checkBoolean(options.enableCoverage, true)) {
         config.module = config.module || { rules: [] };
         config.module.rules = config.module.rules || [];

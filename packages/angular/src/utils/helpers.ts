@@ -1,5 +1,12 @@
 import memoize from 'memoizerific';
-import { SelectorItem } from './types';
+
+export interface SelectorItem {
+    id: string;
+    title: string;
+    onClick: () => void;
+    value: string;
+    active: boolean;
+}
 
 export const createSelectorItem = memoize(1000)((id: string, name: string, value: string, change: (arg: { selected: string; name: string }) => void, active: boolean): SelectorItem => {
     return {

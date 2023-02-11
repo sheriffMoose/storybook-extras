@@ -1,12 +1,11 @@
-import { Options } from '@storybook/types';
 import { Configuration } from 'webpack';
-import { AngularExtrasOptions } from '../utils/types';
+import { AngularConfig } from '../types';
 
 import enableCoverage from './coverage';
 import enablePolyfills from './polyfills';
 import disableProgress from './progress';
 
-export const webpackFinal = async (config: Configuration, options: Options & AngularExtrasOptions) => {
+export const webpackFinal = async (config: Configuration, options: AngularConfig) => {
     return {
         ...config,
         ...disableProgress(config, options),

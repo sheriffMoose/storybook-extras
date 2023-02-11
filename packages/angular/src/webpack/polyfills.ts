@@ -1,10 +1,9 @@
 import { checkBoolean } from '@storybook-extras/devkit';
-import { Options } from '@storybook/types';
 import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 import { Configuration } from 'webpack';
-import { AngularExtrasOptions } from '../utils/types';
+import { AngularConfig } from '../types';
 
-export default (config: Configuration, options: Options & AngularExtrasOptions) => {
+export default (config: Configuration, options: AngularConfig) => {
     if (checkBoolean(options.enableNodePolyfills, true)) {
         config.plugins = (config.plugins || []).concat([new NodePolyfillPlugin()]);
     }

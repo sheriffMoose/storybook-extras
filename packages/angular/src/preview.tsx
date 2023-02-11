@@ -1,7 +1,8 @@
 import './utils/polyfills';
 
-import { DOCS_PARAM_KEY, WRAPPERS_PARAM_KEY } from './utils/constants';
+import { DOCS_PARAM_KEY, SOURCE_CODE_PARAM_KEY, WRAPPERS_PARAM_KEY } from './utils/constants';
 import { docsDecorator, ngModuleDecorator, sourceCodeDecorator, wrapperDecorator } from './decorators';
+import { DocsParameter, SourceCodeParameter, WrappersParameter } from './types';
 
 export const decorators = [
     //
@@ -21,11 +22,16 @@ export const parameters = {
                 value: '',
             },
         ],
-    },
+    } as WrappersParameter,
+
     [DOCS_PARAM_KEY]: {
         fetch: null,
         require: null,
-    },
+    } as DocsParameter,
+
+    [SOURCE_CODE_PARAM_KEY]: {
+        disable: true,
+    } as SourceCodeParameter,
 };
 
 export const globals = {

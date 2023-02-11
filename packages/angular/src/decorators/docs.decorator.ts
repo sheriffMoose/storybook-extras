@@ -1,16 +1,15 @@
 import { setCompodocJson } from '@storybook/addon-docs/angular';
 import { makeDecorator } from '@storybook/addons';
-import { deprecate } from '@storybook/client-logger';
 import { global } from '@storybook/global';
-import { COMPODOC_ID, COMPODOC_SOURCE_ID, DOCS_DECORATOR, DOCS_PARAM_KEY } from '../utils/constants';
-import { DocsConfig } from '../utils/types';
+import { COMPODOC_SOURCE_ID, DOCS_DECORATOR, DOCS_PARAM_KEY } from '../utils/constants';
+import { DocsParameter } from '../types';
 
 export const docsDecorator = makeDecorator({
     name: DOCS_DECORATOR,
     parameterName: DOCS_PARAM_KEY,
     skipIfNoParametersOrOptions: false,
     wrapper: (storyFn, context) => {
-        const config: DocsConfig = context.parameters[DOCS_PARAM_KEY];
+        const config: DocsParameter = context.parameters[DOCS_PARAM_KEY];
 
         const setDocs = docs => {
             setCompodocJson(docs);
@@ -21,7 +20,6 @@ export const docsDecorator = makeDecorator({
                 .then(docs => docs.json())
                 .then(docs => setDocs(docs));
 
-        // Precedence order: fetch > compodoc > data > lazyLoad > main.js
         if (config?.fetch) {
             global[COMPODOC_SOURCE_ID] = `parameters.docs.fetch`;
             fetchDocs(config.fetch);

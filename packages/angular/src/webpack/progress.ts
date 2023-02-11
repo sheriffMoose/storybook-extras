@@ -1,9 +1,8 @@
 import { checkBoolean, rejectByInstance } from '@storybook-extras/devkit';
-import { Options } from '@storybook/types';
 import { Configuration, ProgressPlugin } from 'webpack';
-import { AngularExtrasOptions } from '../utils/types';
+import { AngularConfig } from '../types';
 
-export default (config: Configuration, options: Options & AngularExtrasOptions) => {
+export default (config: Configuration, options: AngularConfig) => {
     if (!checkBoolean(options.enableWebpackProgress, false)) {
         config.plugins = rejectByInstance(config.plugins || [], [ProgressPlugin]);
     }
