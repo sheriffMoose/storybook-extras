@@ -38,6 +38,13 @@ export const WithLazyLoadedDocumentation: Story = {
     },
 };
 
+export const WithConsoleLogs: Story = {
+    play: async ({ canvasElement }) => {
+        console.log('dev', 'this message will show only in the Actions panel');
+        console.log('test', 'this message will show only in the Developer Tools Console');
+    }
+}
+
 export const WithBorderWrapper: Story = {
     args: {
         primary: true,

@@ -4,7 +4,7 @@ const config: StorybookConfig & { extras: any } = {
     framework: '@storybook/angular',
     stories: [
         //
-        '../stories/**/*.@(md|html)',
+        // '../stories/**/*.@(md|html)',
         '../src/**/*.stories.mdx',
         '../src/**/*.stories.@(js|jsx|ts|tsx)',
     ],
@@ -32,12 +32,7 @@ const config: StorybookConfig & { extras: any } = {
                 }
             ]
         },
-        markdown: {
-            exclude: [/\.component\.html$/],
-            titles: {
-                '../stories/markdown-main-js.md': 'Markdown/main.js',
-            },
-        },
+        markdown: false
     },
 };
 

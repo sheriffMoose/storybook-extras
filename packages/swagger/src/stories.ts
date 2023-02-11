@@ -7,7 +7,6 @@ export const stories = (entries = [], options: SwaggerConfig) => {
             titlePrefix: story.title,
             directory: path.resolve(__dirname, '../stories'),
             files: '.swagger',
-            importPathMatcher: /^(?:\.swagger)$/,
         });
     });
 

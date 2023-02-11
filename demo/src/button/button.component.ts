@@ -40,7 +40,7 @@ export class ButtonComponent implements OnInit {
     @Output()
     onClick = new EventEmitter<Event>();
 
-    constructor(private service: ButtonService) {}
+    constructor(private service: ButtonService) { }
 
     public get classes(): string[] {
         const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
@@ -48,8 +48,5 @@ export class ButtonComponent implements OnInit {
         return ['storybook-button', `storybook-button--${this.size}`, mode];
     }
 
-    ngOnInit() {
-        console.log('dev', 'this message will show only in the Actions panel');
-        console.log('test', 'this message will show only in the Developer Tools Console');
-    }
+    ngOnInit() { }
 }
