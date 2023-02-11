@@ -24,15 +24,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/preset -D
 ```
 
 2. Add the addon
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/preset",
@@ -40,13 +43,18 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 3. To disable the built-in features, add the following to your `main.js`:
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/preset",
@@ -85,6 +93,8 @@ module.exports = {
 
     }
 }
+
+export default config;
 ```
 
 4. Refer to the sections below for the documentation of the respective addons.

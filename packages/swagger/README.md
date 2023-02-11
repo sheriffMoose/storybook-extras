@@ -23,15 +23,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/swagger -D
 ```
 
 1. Add the addon
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/swagger",
@@ -39,6 +42,8 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 ## How to use
@@ -49,9 +54,12 @@ module.exports = {
 
 - Thanks to the pre available `swagger-ui-react`, this feature simply integrates `SwaggerUI` component into one `.mdx` file and make it available on demand if the user decides to populate the `url` option when configuring the addon like so:
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     addons: [
         {
             name: '@storybook-extras/swagger',
@@ -66,6 +74,8 @@ module.exports = {
         }
     ]
 }
+
+export default config;
 ```
 
 [img.node]:

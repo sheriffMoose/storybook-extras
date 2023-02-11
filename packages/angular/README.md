@@ -39,15 +39,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/angular -D
 ```
 
 1. Add the addon
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/angular",
@@ -55,6 +58,8 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 3. Refer to the sections below for the documentation of the built-in features.
@@ -93,7 +98,7 @@ Simply running `test-storybook --coverage` will show you test results coverage i
 -   It simply injects the service into an `APP_INITIALIZER` which runs before the `Angular` application starts.
 -   When the initializer runs, it puts the service instance into `parameters.providers` which you can retrieve in the play function like so:
 
-```jsx
+```ts
 const meta: Meta = {
     title: 'Services/AppService',
     decorators: [
@@ -131,9 +136,14 @@ Here is a simple example of the first scenario:
 
 ```ts
 // .storybook/main.ts
-module.exports = {
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     staticDirs: [{ from: '<DOCS_DIR_PATH>', to: '/<DOCS_SERVE_DIR>' }],
-};
+}
+
+export default config;
 ```
 
 -   Next, enable the documentation lazy loading in the `preview.@(js|ts)` file like so:
@@ -160,7 +170,7 @@ You can also provide `compodoc` property to be something like `require('<DOCS_DI
 -   Basically, the addon will retrieve the source code of any class under `declarations` or `providers`, along with templates & styles for the components if they exist.
 -   No setup is needed for this feature, it is enabled by default.
 -   You can disable it by using global or story parameters like so:
-    ```jsx
+    ```ts
     parameters: {
         sourceCode: {
             disable: true;
@@ -182,7 +192,7 @@ You can also provide `compodoc` property to be something like `require('<DOCS_DI
 
 In `preview.js` or `preview.ts`:
 
-```tsx
+```ts
 export const parameters = {
     wrappers: {
         disable: false,
@@ -198,7 +208,7 @@ export const parameters = {
 
 In a story file like `button.stories.ts`:
 
-```tsx
+```ts
 import { type StoryObj, type Meta } from '@storybook/angular';
 import Button from './button.component';
 

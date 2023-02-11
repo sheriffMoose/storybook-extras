@@ -23,15 +23,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/toolbars -D
 ```
 
 1. Add the addon
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/toolbars",
@@ -41,14 +44,17 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 ## How to use
 
 - Simply enable the toolbars through the toolbar or using the parameters like so:
 
-```jsx
-// .storybook/preview.js OR button.stories.ts
+```ts
+// .storybook/preview.ts
+// button.stories.ts
 parameters: {
     toolbars: [
         {

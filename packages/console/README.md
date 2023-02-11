@@ -23,15 +23,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/console -D
 ```
 
 1. Add the addon
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/console",
@@ -39,6 +42,8 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 ## How to use
@@ -47,8 +52,8 @@ module.exports = {
 -   This is helpful if you need to focus on the console output of the application.
 -   To enable the addon, you need to add the `console` property to the `parameters` object in the `preview.js` file.
 
-```jsx
-// .storybook/preview.js
+```ts
+// .storybook/preview.ts
 export const parameters = {
     console: {
         disable: false,

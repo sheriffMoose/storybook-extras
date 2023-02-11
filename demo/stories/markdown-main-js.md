@@ -4,9 +4,9 @@ This file is just a demo of the possibility of importing Markdown Docs into Stor
 
 This uses the following pattern:
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+export default {
     extras: {
         markdown: {
             titles: {

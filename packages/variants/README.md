@@ -25,15 +25,18 @@
 
 1. Install the addon:
 
-```js
+```shell
 yarn add @storybook-extras/variants -D
 ```
 
 1. Add the addon
 
-```js
-// .storybook/main.js
-module.exports = {
+```ts
+// .storybook/main.ts
+import { StorybookConfig } from '@storybook/angular';
+import { ExtrasConfig } from '@storybook-extras/preset';
+
+const config: StorybookConfig & ExtrasConfig = {
     ...
     "addons": [
         "@storybook-extras/variants",
@@ -43,14 +46,17 @@ module.exports = {
     ],
     ...
 }
+
+export default config;
 ```
 
 ## How to use
 
 - Simply enable the variants through the toolbar or using the parameters like so:
 
-```jsx
-// .storybook/preview.js OR button.stories.ts
+```ts
+// .storybook/preview.ts 
+// button.stories.ts
 parameters: {
     variants: {
         enable: true
@@ -79,8 +85,8 @@ parameters: {
 
 This addon was initially developed for Angular 15 & Storybook v7 in mind. However, you can still use it in older versions, but you will need to use the decorator directly in `preview.js` instead of adding the addon in your `main.js`.
 
-```js
-// .storybook/preview.js
+```ts
+// .storybook/preview.ts
 import { withVariants } from '@storybook-extras/variants';
 
 export const decorators = [withVariants()];
