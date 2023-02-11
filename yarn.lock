@@ -547,17 +547,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/router@npm:15.1.1":
-  version: 15.1.1
-  resolution: "@angular/router@npm:15.1.1"
+"@angular/router@npm:15.1.4":
+  version: 15.1.4
+  resolution: "@angular/router@npm:15.1.4"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/common": 15.1.1
-    "@angular/core": 15.1.1
-    "@angular/platform-browser": 15.1.1
+    "@angular/common": 15.1.4
+    "@angular/core": 15.1.4
+    "@angular/platform-browser": 15.1.4
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: c7d2c5078a0975bae15f905098a4e6752425a38a468e9f12106b2a604bcb01db7f1ab8ad3497dd91eb77b59bff4422cd1e14d50006976aa7bfe58de9baa0f16f
+  checksum: f9f44035bc1290971f41385a6f0e61f6f91f36f4005a94bafa1c2cd2289cfd7502e587978a7731dae7439bfcd36d0430fd4dd1ccfb4e2e3ac15672304753dc95
   languageName: node
   linkType: hard
 
@@ -10322,7 +10322,7 @@ __metadata:
     "@angular/forms": 15.1.2
     "@angular/platform-browser": 15.1.1
     "@angular/platform-browser-dynamic": 15.1.3
-    "@angular/router": 15.1.1
+    "@angular/router": 15.1.4
     "@compodoc/compodoc": ^1.1.19
     "@storybook-extras/preset": "*"
     "@storybook/addon-essentials": next
