@@ -55,7 +55,7 @@
         "build:watch": "yarn build --watch"
     },
     "dependencies": {
-        "@storybook-extras/devkit": "^0.0.67",
+        "@storybook-extras/devkit": "*",
         "css-loader": "^6.7.3",
         "swagger-ui-react": "^4.15.5"
     },

@@ -101,7 +101,7 @@ export default config;
 
 ## Demo
 
-Find the published demo storybook [here](https://sheriffmoose.github.io/storybook-extras/)
+Find the published demo storybook on Chromatic [here](https://master--63c1a45beed1a8f036a44e28.chromatic.com/)
 
 ## Addons
 
