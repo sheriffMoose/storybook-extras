@@ -5734,14 +5734,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:7.0.0-beta.45, @storybook/core-events@npm:next":
+"@storybook/core-events@npm:7.0.0-beta.45":
   version: 7.0.0-beta.45
   resolution: "@storybook/core-events@npm:7.0.0-beta.45"
   checksum: b170369429d4938cb9563b66dea1ab0a3ee653d6b06f5f491deba216d498e842c1f1815a4bb35a3de5f0d08d7213d7b75eda11019801d59add3265d45c4f7ccb
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:7.0.0-beta.51":
+"@storybook/core-events@npm:7.0.0-beta.51, @storybook/core-events@npm:next":
   version: 7.0.0-beta.51
   resolution: "@storybook/core-events@npm:7.0.0-beta.51"
   checksum: 1b62d6247b293285817b57faec1d6713f45abb90c89611d61b4d19204e7be3387662c3bb0afda3b11001ce622ffd5cbcb98d587aacf0a7a1f00610de76a70598
