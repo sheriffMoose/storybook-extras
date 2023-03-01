@@ -4,6 +4,45 @@ All notable changes to this project will be documented in this file. The format 
 Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [v0.0.68](https://github.com/sheriffMoose/storybook-extras/compare/v0.0.67...v0.0.68) - 2023-03-01
+
+
+
+### **deps**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [d9a2e9b](https://github.com/sheriffMoose/storybook-extras/commit/d9a2e9bc7c51b8423e29d2d5abcf51e53bb98c45) | chore | upgrade storybook to v7.0.0-beta.58 |
+| [fef8f9f](https://github.com/sheriffMoose/storybook-extras/commit/fef8f9fc4ee8d1d006b0c4d227d9d252b263bcf2) | chore | bump @angular/forms from 15.1.2 to 15.1.5 |
+| [a7e7476](https://github.com/sheriffMoose/storybook-extras/commit/a7e74764ab7f0478a7fb91fb154580ce1657c53d) | chore | bump @angular/compiler from 15.1.2 to 15.1.5 |
+### **deps-dev**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [0d66973](https://github.com/sheriffMoose/storybook-extras/commit/0d66973fce8fd8b08c91df031b09619183ab3567) | chore | bump storybook from 7.0.0-beta.45 to 7.0.0-beta.51 |
+| [46c43ad](https://github.com/sheriffMoose/storybook-extras/commit/46c43ada40d0de0a68b059f3ffc18b7a06a0717e) | chore | bump @storybook/addon-essentials |
+| [e643904](https://github.com/sheriffMoose/storybook-extras/commit/e6439045fc9ef1d79be2f89cf2bd1edafe07ecaa) | chore | bump @storybook/core-events |
+### **release**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [bfab0ac](https://github.com/sheriffMoose/storybook-extras/commit/bfab0acd6805751149a49a7607cffb5289e851a5) | chore | Update `CHANGELOG.md` [skip ci] |
+### **angular**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [deb0376](https://github.com/sheriffMoose/storybook-extras/commit/deb0376a5422d9e6ba3435b9f0b1c29655c7106e) | feat | enable upgrade insecure requests |
+| [ba6406e](https://github.com/sheriffMoose/storybook-extras/commit/ba6406eff6fc51b1e32f4ecce209603e4d2cdf88) | feat | add upgradeInsecureRequests |
+### **preset**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [b8512b6](https://github.com/sheriffMoose/storybook-extras/commit/b8512b6fff96a3229e2b074e2865b3a8dd88aa4e) | docs | update chromatic demo url [skip ci] |
+### **others**
+
+| Commit | Type | Description |
+| --- | --- | --- |
+| [e478a05](https://github.com/sheriffMoose/storybook-extras/commit/e478a05a595a7b5612d961c6b114ec01f5d5983e) | N/A | Bump version to: v0.0.68 [skip ci] |
 ## [v0.0.67](https://github.com/sheriffMoose/storybook-extras/compare/v0.0.66...v0.0.67) - 2023-02-11
 
 
