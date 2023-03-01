@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/console",
-    "version": "0.0.67",
+    "version": "0.0.68",
     "description": "Storybook addon for displaying console logs in `Actions` panel.",
     "license": "MIT",
     "keywords": [

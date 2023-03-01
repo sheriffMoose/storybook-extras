@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/variants",
-    "version": "0.0.67",
+    "version": "0.0.68",
     "description": "Storybook addon for displaying component variants all together in one story.",
     "license": "MIT",
     "keywords": [
@@ -57,8 +57,8 @@
         "build:watch": "yarn build --watch"
     },
     "dependencies": {
-        "@storybook-extras/devkit": "*",
-        "@storybook-extras/toolbars": "*",
+        "@storybook-extras/devkit": "^0.0.68",
+        "@storybook-extras/toolbars": "^0.0.68",
         "cartesian": "^1.0.1"
     },
     "devDependencies": {

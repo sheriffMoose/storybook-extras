@@ -1,6 +1,6 @@
 {
     "name": "@storybook-extras/angular",
-    "version": "0.0.67",
+    "version": "0.0.68",
     "description": "Storybook addon to add extra configurations for Angular applications.",
     "license": "MIT",
     "keywords": [
@@ -65,7 +65,7 @@
         "build:watch": "yarn build --watch"
     },
     "dependencies": {
-        "@storybook-extras/devkit": "*",
+        "@storybook-extras/devkit": "^0.0.68",
         "@storybook/addon-coverage": "^0.0.8",
         "node-polyfill-webpack-plugin": "^2.0.1",
         "vite-plugin-istanbul": "^4.0.0",
