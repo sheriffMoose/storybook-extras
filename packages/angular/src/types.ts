@@ -23,4 +23,5 @@ export type AngularConfig = {
     enableCoverage?: boolean;
     enableNodePolyfills?: boolean;
     enableWebpackProgress?: boolean;
+    upgradeInsecureRequests?: boolean;
 };

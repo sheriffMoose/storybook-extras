@@ -26,7 +26,7 @@ export const parameters = {
 
     [DOCS_PARAM_KEY]: {
         fetch: null,
-        require: null,
+        compodoc: null,
     } as DocsParameter,
 
     [SOURCE_CODE_PARAM_KEY]: {
