@@ -24,7 +24,7 @@
         "@nrwl/nx-cloud": "latest",
         "auto": "^10.3.0",
         "auto-changelog": "^2.4.0",
-        "lerna": "^5.1.8",
+        "lerna": "^6.5.1",
         "nx": "^15.6.3",
         "prettier": "^2.6.2"
     },
