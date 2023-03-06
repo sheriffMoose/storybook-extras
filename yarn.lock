@@ -5029,12 +5029,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook-extras/angular@*, @storybook-extras/angular@workspace:packages/angular":
+"@storybook-extras/angular@^0.0.68, @storybook-extras/angular@workspace:packages/angular":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/angular@workspace:packages/angular"
   dependencies:
     "@angular/core": latest
-    "@storybook-extras/devkit": "*"
+    "@storybook-extras/devkit": ^0.0.68
     "@storybook/addon-coverage": ^0.0.8
     "@storybook/addon-essentials": next
     "@storybook/angular": next
@@ -5061,7 +5061,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/console@*, @storybook-extras/console@workspace:packages/console":
+"@storybook-extras/console@^0.0.68, @storybook-extras/console@workspace:packages/console":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/console@workspace:packages/console"
   dependencies:
@@ -5090,7 +5090,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/devkit@*, @storybook-extras/devkit@workspace:packages/devkit":
+"@storybook-extras/devkit@^0.0.68, @storybook-extras/devkit@workspace:packages/devkit":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/devkit@workspace:packages/devkit"
   dependencies:
@@ -5104,11 +5104,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/markdown@*, @storybook-extras/markdown@workspace:packages/markdown":
+"@storybook-extras/markdown@^0.0.68, @storybook-extras/markdown@workspace:packages/markdown":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/markdown@workspace:packages/markdown"
   dependencies:
-    "@storybook-extras/devkit": "*"
+    "@storybook-extras/devkit": ^0.0.68
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -5135,17 +5135,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/preset@*, @storybook-extras/preset@workspace:packages/preset":
+"@storybook-extras/preset@^0.0.68, @storybook-extras/preset@workspace:packages/preset":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/preset@workspace:packages/preset"
   dependencies:
-    "@storybook-extras/angular": "*"
-    "@storybook-extras/console": "*"
-    "@storybook-extras/devkit": "*"
-    "@storybook-extras/markdown": "*"
-    "@storybook-extras/swagger": "*"
-    "@storybook-extras/toolbars": "*"
-    "@storybook-extras/variants": "*"
+    "@storybook-extras/angular": ^0.0.68
+    "@storybook-extras/console": ^0.0.68
+    "@storybook-extras/devkit": ^0.0.68
+    "@storybook-extras/markdown": ^0.0.68
+    "@storybook-extras/swagger": ^0.0.68
+    "@storybook-extras/toolbars": ^0.0.68
+    "@storybook-extras/variants": ^0.0.68
     "@storybook/addons": next
     "@storybook/api": next
     "@storybook/components": next
@@ -5170,11 +5170,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/swagger@*, @storybook-extras/swagger@workspace:packages/swagger":
+"@storybook-extras/swagger@^0.0.68, @storybook-extras/swagger@workspace:packages/swagger":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/swagger@workspace:packages/swagger"
   dependencies:
-    "@storybook-extras/devkit": "*"
+    "@storybook-extras/devkit": ^0.0.68
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -5202,7 +5202,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/toolbars@*, @storybook-extras/toolbars@workspace:packages/toolbars":
+"@storybook-extras/toolbars@^0.0.68, @storybook-extras/toolbars@workspace:packages/toolbars":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/toolbars@workspace:packages/toolbars"
   dependencies:
@@ -5230,12 +5230,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook-extras/variants@*, @storybook-extras/variants@workspace:packages/variants":
+"@storybook-extras/variants@^0.0.68, @storybook-extras/variants@workspace:packages/variants":
   version: 0.0.0-use.local
   resolution: "@storybook-extras/variants@workspace:packages/variants"
   dependencies:
-    "@storybook-extras/devkit": "*"
-    "@storybook-extras/toolbars": "*"
+    "@storybook-extras/devkit": ^0.0.68
+    "@storybook-extras/toolbars": ^0.0.68
     "@storybook/addon-essentials": next
     "@storybook/angular": next
     "@storybook/api": next
@@ -7320,9 +7320,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^18.7.14":
-  version: 18.14.2
-  resolution: "@types/node@npm:18.14.2"
-  checksum: 53c07e721f6ae33de71306f6a0b75dae6066a4f55bd5484c93bd59ff25f0c5f004ceafeef509a4d0cb9e24a247efc34d50489bcc1b05a53ecc68e2fc088e65cb
+  version: 18.14.6
+  resolution: "@types/node@npm:18.14.6"
+  checksum: 2f88f482cabadc6dbddd627a1674239e68c3c9beab56eb4ae2309fb96fd17fc3a509d99b0309bafe13b58529574f49ecf3a583f2ebe2896dd32fe4be436dc96e
   languageName: node
   linkType: hard
 
@@ -7334,9 +7334,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^16.0, @types/node@npm:^16.0.0":
-  version: 16.18.13
-  resolution: "@types/node@npm:16.18.13"
-  checksum: c284f97a0630d65887be0e0d7ef8e5e5022eb4916ffae142db07f22dad565a80f17b6a84f21b4521c707f642540430710a8aa5930a2cf2bcbecde0a476ff9c02
+  version: 16.18.14
+  resolution: "@types/node@npm:16.18.14"
+  checksum: 7865c1c3e7c7d2fef6103c6dfa181755dc48365024253d6acc460e884508b5937a222aa8bd04835988ff0bdc47867e2ada78859c0a7f9c65b44884316f3b469c
   languageName: node
   linkType: hard
 
@@ -11072,7 +11072,7 @@ __metadata:
     "@angular/platform-browser-dynamic": 15.1.3
     "@angular/router": 15.1.1
     "@compodoc/compodoc": ^1.1.19
-    "@storybook-extras/preset": "*"
+    "@storybook-extras/preset": ^0.0.68
     "@storybook/addon-essentials": next
     "@storybook/addons": next
     "@storybook/angular": next
