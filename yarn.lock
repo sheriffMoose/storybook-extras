@@ -5142,10 +5142,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/channels@npm:7.0.0-beta.62":
-  version: 7.0.0-beta.62
-  resolution: "@storybook/channels@npm:7.0.0-beta.62"
-  checksum: f46aa1098904330f6630cde748548c0a67369eabd7f30f6c111e1828e05b2afa6895a5b720c9b9346f33d07ef027ba912a91551a87dbf0a8f6bcf09d438dea3c
+"@storybook/channels@npm:7.0.0-rc.5":
+  version: 7.0.0-rc.5
+  resolution: "@storybook/channels@npm:7.0.0-rc.5"
+  checksum: 4261737445eed22aaa36007e831a653a021b449586ad0fbaaa6c3c7d127f5b9d3411b65202ca36d843860bf4a288d04c1f54c49d758bab937ffcaabcd3974959
   languageName: node
   linkType: hard
 
@@ -5217,12 +5217,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/client-logger@npm:7.0.0-beta.62":
-  version: 7.0.0-beta.62
-  resolution: "@storybook/client-logger@npm:7.0.0-beta.62"
+"@storybook/client-logger@npm:7.0.0-rc.5":
+  version: 7.0.0-rc.5
+  resolution: "@storybook/client-logger@npm:7.0.0-rc.5"
   dependencies:
     "@storybook/global": ^5.0.0
-  checksum: 1b4fe4d2b4e2764baf3908db4c081eaea75fc3205a3906101ff199d11cde0c0d92a568ffae2229cfa6837716ad49dcee5166fbf7d7c83ab9628ef963acbb70be
+  checksum: bfa14edc5b00dd01dee7c6e3a76a2a80c967412bdcdffc468672fa8c5e18901331d4202c5401199549128756fe5db1dc1572b709d9f52626bbd3812c2a382de9
   languageName: node
   linkType: hard
 
@@ -5267,21 +5267,21 @@ __metadata:
   linkType: hard
 
 "@storybook/components@npm:next":
-  version: 7.0.0-beta.62
-  resolution: "@storybook/components@npm:7.0.0-beta.62"
+  version: 7.0.0-rc.5
+  resolution: "@storybook/components@npm:7.0.0-rc.5"
   dependencies:
-    "@storybook/client-logger": 7.0.0-beta.62
+    "@storybook/client-logger": 7.0.0-rc.5
     "@storybook/csf": next
     "@storybook/global": ^5.0.0
-    "@storybook/theming": 7.0.0-beta.62
-    "@storybook/types": 7.0.0-beta.62
+    "@storybook/theming": 7.0.0-rc.5
+    "@storybook/types": 7.0.0-rc.5
     memoizerific: ^1.11.3
     use-resize-observer: ^9.1.0
     util-deprecate: ^1.0.2
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: decc36e2a322d0029c92ee3a7e69acf7887438bfe146088c6a2a50c34f0454fb2375c972b3bd46d7620e4d30b6ec9bfdf2a457755f5950b3c09cc7f709023c26
+  checksum: d6100c945cb9e44ec9ee4cdaf1e45c58f7c4743f53654fec70aafbc6168dac26a8cc922e62886c6521376b5455b676b1c4139a8433afa9dd865c996d92ffe39f
   languageName: node
   linkType: hard
 
@@ -5825,18 +5825,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:7.0.0-beta.62":
-  version: 7.0.0-beta.62
-  resolution: "@storybook/theming@npm:7.0.0-beta.62"
+"@storybook/theming@npm:7.0.0-rc.5":
+  version: 7.0.0-rc.5
+  resolution: "@storybook/theming@npm:7.0.0-rc.5"
   dependencies:
     "@emotion/use-insertion-effect-with-fallbacks": ^1.0.0
-    "@storybook/client-logger": 7.0.0-beta.62
+    "@storybook/client-logger": 7.0.0-rc.5
     "@storybook/global": ^5.0.0
     memoizerific: ^1.11.3
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: b50ddf238961233961918e40f2bf46b962daa2885301e2f9358033b418880089d0769c879a19474c07433e54fa7fdd2aa8fb6c1e1d92534e52e5b7cf36debfeb
+  checksum: 7ebe766593f4dfc83891aa6f432990f10bc971a1988a2fa19e679fc1c3543a951fff59e79579f9ebacc8c57a072fcc1211f45a2d0ad3510a4e87d28e2ba2eaa7
   languageName: node
   linkType: hard
 
@@ -5852,15 +5852,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/types@npm:7.0.0-beta.62":
-  version: 7.0.0-beta.62
-  resolution: "@storybook/types@npm:7.0.0-beta.62"
+"@storybook/types@npm:7.0.0-rc.5":
+  version: 7.0.0-rc.5
+  resolution: "@storybook/types@npm:7.0.0-rc.5"
   dependencies:
-    "@storybook/channels": 7.0.0-beta.62
+    "@storybook/channels": 7.0.0-rc.5
     "@types/babel__core": ^7.0.0
     "@types/express": ^4.7.0
     file-system-cache: ^2.0.0
-  checksum: 50842491611599aecf8bd1e4a479bd12cb4c6d96f77d040eeb1ac919a16770795933b630332eca4f01b30dae3987869333d9ab4929e06ff1e682228cbcf31ccb
+  checksum: 95673acb148aa0d6ea89bf61ced45e36a0673fd9fbd492647918ebb6b7c51cd8d086c4be06f50c58da49bcf093f9999fa04864ca743c97b256da6d79bd58fadc
   languageName: node
   linkType: hard
 
