@@ -513,17 +513,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/compiler@npm:15.1.5":
-  version: 15.1.5
-  resolution: "@angular/compiler@npm:15.1.5"
+"@angular/compiler@npm:15.2.7":
+  version: 15.2.7
+  resolution: "@angular/compiler@npm:15.2.7"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/core": 15.1.5
+    "@angular/core": 15.2.7
   peerDependenciesMeta:
     "@angular/core":
       optional: true
-  checksum: 184c6137636e6f5a6422630d8fba6dbef772289c6597412809675c8525dcf21687f044a693eef331f89a4f4072554eaf954c3b264831ef29dca1eff0cc7a9b4f
+  checksum: 3e41ddd76475ddfce5af37a90ee4e5294a73df97891fed360072cc79b3fbde4be324e8b35384c66422e58443f3ab3c2390f61d3d1f5f852d3ddf812452847e8d
   languageName: node
   linkType: hard
 
@@ -10491,7 +10491,7 @@ __metadata:
     "@angular/animations": 15.1.2
     "@angular/cli": 15.2.6
     "@angular/common": 15.1.2
-    "@angular/compiler": 15.1.5
+    "@angular/compiler": 15.2.7
     "@angular/compiler-cli": 15.1.1
     "@angular/core": 15.1.2
     "@angular/forms": 15.1.5
