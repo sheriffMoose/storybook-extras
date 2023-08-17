@@ -69,7 +69,12 @@ export class Variants {
                 } else if (typeof value === 'object') {
                     replacedValue = JSON.stringify(story.props[key]).replace(/"/g, "'");
                 }
-                story.template = story.template.replace(`"${key}"`, `"${replacedValue}"`);
+                /**
+                 * Find all occurences of the key to replace that appear to be component / attribute inputs "key"
+                 * or that are being printed to the template using the angular curly braces {{ key }}
+                 */
+                const inputAndPrintValueSearch = new RegExp(`("${key}"|{{\\s*${key}\\s*}})`, 'g');
+                story.template = story.template.replace(inputAndPrintValueSearch, `"${replacedValue}"`);
             }
         });
         return story;

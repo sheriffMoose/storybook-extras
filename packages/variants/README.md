@@ -64,6 +64,23 @@ parameters: {
 };
 ```
 
+- You can also manually pass and display the variant params in a template, this can be useful for passing transcluded content
+
+```ts
+// button.stories.ts
+render: (args) => ({
+    prop: args
+    template: `
+        <app-button [type]="type" [colour]="colour">This is a {{type}} {{colour}} button.</app-button>
+    `,
+})
+parameters: {
+    variants: {
+        enable: true,
+        include: ['type', 'colour']
+    },
+};
+```
 
 ### Parameters
 
