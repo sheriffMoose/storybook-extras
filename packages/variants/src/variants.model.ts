@@ -65,7 +65,7 @@ export class Variants {
                 const value = story.props[key];
                 let replacedValue = story.props[key];
                 if (typeof value === 'string') {
-                    replacedValue = `'${story.props[key]}'`;
+                    replacedValue = `${story.props[key]}`;
                 } else if (typeof value === 'object') {
                     replacedValue = JSON.stringify(story.props[key]).replace(/"/g, "'");
                 }
