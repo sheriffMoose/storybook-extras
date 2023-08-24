@@ -70,11 +70,19 @@ export class Variants {
                     replacedValue = JSON.stringify(story.props[key]).replace(/"/g, "'");
                 }
                 /**
-                 * Find all occurences of the key to replace that appear to be component / attribute inputs "key"
+                 * Find all occurrences of the key to replace that appear to be component / attribute inputs as "key"
                  * or that are being printed to the template using the angular curly braces {{ key }}
                  */
-                const inputAndPrintValueSearch = new RegExp(`("${key}"|{{\\s*${key}\\s*}})`, 'g');
-                story.template = story.template.replace(inputAndPrintValueSearch, `"${replacedValue}"`);
+                const inputAndPrintValueSearch = new RegExp(`(?:"${key}"|{{\\s*${key}\\s*}})`, 'g');
+                story.template = story.template.replace(inputAndPrintValueSearch, (match) => {
+                  if (match.startsWith('"')) {
+                    // If the key was in quotes, keep it in quotes
+                    return `"${replacedValue}"`;
+                  } else {
+                    // If it was matched with curly braces just print the value
+                    return replacedValue;
+                  }
+                });
             }
         });
         return story;
