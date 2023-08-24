@@ -77,7 +77,7 @@ export class Variants {
                 story.template = story.template.replace(inputAndPrintValueSearch, (match) => {
                   if (match.startsWith('"')) {
                     // If the key was in quotes, keep it in quotes
-                    return `"${replacedValue}"`;
+                    return `"'${replacedValue}'"`;
                   } else {
                     // If it was matched with curly braces just print the value
                     return replacedValue;
